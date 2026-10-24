@@ -82,6 +82,36 @@ This model uses the downloaded RNADecayCafe table. It estimates gene-level
 half-life context only; it does not prove that a custom mRNA vaccine ORF will
 be stable or translated.
 
+Combine the available T-cell sources and run a leave-one-study-out audit:
+
+```powershell
+python -m calibraneo.cli combined-immunogenicity
+```
+
+This currently harmonizes the bounded IEDB T-cell sample with the Ott cohort.
+The report is intentionally allowed to fail: in the current run the unseen
+Ott study is approximately random (AUC 0.50). That result prevents us from
+claiming that the immunogenicity model generalizes across studies.
+
+Build the computational stopping-gate report:
+
+```powershell
+python -m calibraneo.cli gate
+```
+
+The gate separates three categories: completed computation, unavailable or
+access-controlled data, and claims that require wet-lab validation. The
+current release is computationally complete for the locally available data,
+but it is not a clinical or biological proof system. It is the stopping point
+until additional licensed datasets or laboratory outcomes arrive.
+
+Patient-specific inputs now include HLA, expression, allele-specific
+expression, HLA-LOH, HLA copy number, and supplied mutant-protein context.
+The last item can generate peptide windows around a mutation. A complete
+VCF-to-peptide workflow still requires transcript selection, consequence
+calling, and a reference protein database; the parser does not invent those
+missing biological facts.
+
 The audit writes `results/validation_audit_report.json`. In the current run,
 the grouped internal holdout is strong, Zenodo transfer is moderate, and the
 Ott clinical-vaccine cohort is below random ranking. The Zaghla-derived table
@@ -162,3 +192,19 @@ RNADecayCafe. Historical biomedical data are heterogeneous and do not span a
 single comparable 100-year training series; CalibraNeo therefore records
 source, endpoint, access, and license status instead of blindly concatenating
 them.
+
+## Explicit stopping rule
+
+Computational expansion stops when the following are true:
+
+1. every accessible dataset is provenance-checked and kept endpoint-specific;
+2. grouped internal and independent-study validation has been run;
+3. leakage and label-derived proxies have been audited;
+4. available comparators are run or marked unavailable;
+5. patient-input quality checks and prediction freezing are complete; and
+6. every remaining gap is either data access, a missing reference dependency,
+   or a wet-lab/clinical question.
+
+This rule is part of the scientific design. A lower score on an unseen cohort
+is a result to report, not a reason to keep adding complexity until a desired
+number appears.

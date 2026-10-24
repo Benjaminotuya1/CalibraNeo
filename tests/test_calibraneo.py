@@ -13,6 +13,11 @@ from calibraneo.task_models import sequence_features
 from calibraneo.active_learning import compare_selection_methods, experiment_information_gain
 from calibraneo.sequence_design import rna_design_features
 from calibraneo.rna_model import annotate_gene_stability
+from calibraneo.patient import (
+    generate_peptides_from_protein_context,
+    read_allele_specific_expression,
+)
+from calibraneo.task_models import harmonize_immunogenicity_sources
 
 
 def test_orf_has_terminal_stop_and_no_internal_stop():
@@ -157,3 +162,25 @@ def test_gene_stability_annotation_preserves_unknowns():
     )
     assert result.loc[0, "gene_half_life_context"] == 4.0
     assert pd.isna(result.loc[1, "gene_half_life_context"])
+
+
+def test_patient_protein_context_generation_and_ase():
+    result = generate_peptides_from_protein_context(
+        pd.DataFrame({"mutant_protein": ["MAAAAAAAA"], "protein_position": [5]})
+    )
+    assert not result.empty
+    assert result["peptide"].str.contains("A").all()
+
+
+def test_immunogenicity_sources_are_endpoint_harmonized():
+    result = harmonize_immunogenicity_sources(
+        iedb=pd.DataFrame(
+            {
+                "peptide": ["SIINFEKL"],
+                "hla_allele": ["HLA-A*02:01"],
+                "is_positive": [True],
+                "reference_pmid": ["1"],
+            }
+        )
+    )
+    assert set(["peptide", "label", "study", "publication"]).issubset(result.columns)

@@ -1,0 +1,121 @@
+{
+  "status": "computational_release_ready_with_explicit_blockers",
+  "completed": [
+    "leakage-audited presentation model",
+    "endpoint-specific immunogenicity and immunopeptidomics models",
+    "RNA stability context model without target leakage",
+    "patient HLA/expression/ASE/LOH/copy-number parsers",
+    "protein-context peptide generation",
+    "leave-one-study-out combined immunogenicity audit",
+    "prospective prediction freezing",
+    "available comparator status",
+    "automated tests and app smoke test"
+  ],
+  "blocked": [
+    {
+      "item": "TESLA/NEPdb/NeoDB combined immunogenicity",
+      "status": "blocked_by_data_access_or_normalization",
+      "next_action": "Obtain licensed files and add source/publication-grouped adapter."
+    },
+    {
+      "item": "HLA Ligand Atlas/SysteMHC training",
+      "status": "blocked_by_download/access in this environment",
+      "next_action": "Download a permitted release and add immunopeptidomics adapter."
+    },
+    {
+      "item": "RPFdb translation model",
+      "status": "blocked_by_missing_local_labeled_table",
+      "next_action": "Obtain matched Ribo-seq/RNA-seq translation-efficiency table."
+    },
+    {
+      "item": "Full VCF-to-peptide generation",
+      "status": "blocked_by_reference_and_consequence_dependencies",
+      "next_action": "Provide transcript/protein reference and consequence caller."
+    },
+    {
+      "item": "Biological validation",
+      "status": "requires_wet_lab",
+      "next_action": "Test frozen candidates with expression, MS, and T-cell assays."
+    }
+  ],
+  "stop_rule": "Stop computational expansion until blocked data/access or wet-lab outcomes arrive.",
+  "model_manifest": {
+    "trained": {
+      "immunogenicity_ott": {
+        "path": "models/calibraneo_immunogenicity_ott.pkl",
+        "source": "Ott clinical melanoma vaccine table",
+        "endpoint": "minimal epitope CD8 response",
+        "metrics": {
+          "auc_roc": 0.68125,
+          "auprc": 0.3326923076923077,
+          "brier": 0.15330386770710377,
+          "fit_rows": 67,
+          "test_rows": 24,
+          "test_groups": 2
+        },
+        "limitations": [
+          "small cohort",
+          "patient grouped holdout only",
+          "not a pan-cancer immunogenicity model"
+        ]
+      },
+      "immunopeptidomics_zaghla": {
+        "path": "models/calibraneo_immunopeptidomics_zaghla.pkl",
+        "source": "Zaghla-derived MS experiment table",
+        "endpoint": "mutant peptide detected in MS experiment",
+        "metrics": {
+          "auc_roc": 0.9888888888888889,
+          "auprc": 0.9714285714285714,
+          "brier": 0.0477557999080243,
+          "fit_rows": 146,
+          "test_rows": 46,
+          "test_groups": 44
+        },
+        "limitations": [
+          "small study",
+          "not a public HLA Ligand Atlas/SysteMHC Atlas snapshot",
+          "label-derived binding-rank field excluded from features"
+        ]
+      },
+      "rna_context_rnadecaycafe": {
+        "path": "models/calibraneo_rna_context.pkl",
+        "source": "RNADecayCafe AvgKdegs genes table",
+        "metrics": {
+          "mae": 8.99674593079089,
+          "r2": 0.05439635311597679,
+          "fit_rows": 106097,
+          "test_rows": 35346,
+          "test_genes": 4386
+        },
+        "limitations": [
+          "gene-level context, not custom ORF stability",
+          "cell-line aggregation",
+          "not a delivery or vaccine formulation model"
+        ]
+      },
+      "immunogenicity_ott_deployable": {
+        "path": "models/calibraneo_immunogenicity_ott_deployable.pkl",
+        "source": "Ott clinical melanoma vaccine table",
+        "endpoint": "minimal epitope CD8 response",
+        "metrics": {
+          "auc_roc": 0.5375,
+          "auprc": 0.2954545454545454,
+          "brier": 0.15244975487405618,
+          "fit_rows": 67,
+          "test_rows": 24,
+          "test_groups": 2
+        },
+        "limitations": [
+          "sequence-only deployment model",
+          "small cohort",
+          "not a pan-cancer immunogenicity model"
+        ]
+      }
+    },
+    "not_trained": {
+      "immunogenicity_tesla_neodb_nepdb": "No licensed/downloaded normalized files are present locally.",
+      "immunopeptidomics_hla_ligand_atlas_systemhc": "No normalized downloadable snapshot is present locally.",
+      "translation_rpfdb": "No normalized Ribo-seq/RNA-seq translation table is present locally."
+    }
+  }
+}

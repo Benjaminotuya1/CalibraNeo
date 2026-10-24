@@ -62,6 +62,77 @@ def read_loh(path: str | Path) -> pd.DataFrame:
     return frame.dropna(subset=["hla_allele", "loh_probability"])
 
 
+def read_allele_specific_expression(path: str | Path) -> pd.DataFrame:
+    frame = pd.read_csv(path)
+    required = {"gene", "ref_reads", "alt_reads"}
+    missing = required.difference(frame.columns)
+    if missing:
+        raise ValueError(
+            f"Allele-specific expression file missing columns: {', '.join(sorted(missing))}"
+        )
+    frame["ref_reads"] = pd.to_numeric(frame["ref_reads"], errors="coerce")
+    frame["alt_reads"] = pd.to_numeric(frame["alt_reads"], errors="coerce")
+    frame["total_reads"] = frame["ref_reads"] + frame["alt_reads"]
+    frame["alt_fraction"] = frame["alt_reads"] / frame["total_reads"].replace(0, pd.NA)
+    return frame.dropna(subset=["gene", "alt_fraction"])
+
+
+def read_hla_copy_number(path: str | Path) -> pd.DataFrame:
+    frame = pd.read_csv(path)
+    required = {"hla_allele", "copy_number"}
+    missing = required.difference(frame.columns)
+    if missing:
+        raise ValueError(
+            f"HLA copy-number file missing columns: {', '.join(sorted(missing))}"
+        )
+    frame["copy_number"] = pd.to_numeric(frame["copy_number"], errors="coerce")
+    frame["hla_retained"] = frame["copy_number"] > 0
+    return frame.dropna(subset=["hla_allele", "copy_number"])
+
+
+def generate_peptides_from_protein_context(
+    variants: pd.DataFrame,
+    *,
+    context_column: str = "mutant_protein",
+    mutation_position_column: str = "protein_position",
+    lengths: tuple[int, ...] = (8, 9, 10, 11),
+) -> pd.DataFrame:
+    """Generate windows from supplied mutant protein context.
+
+    Full VCF-to-peptide generation still requires transcript selection,
+    consequence calling, and a reference protein database.
+    """
+    required = {context_column, mutation_position_column}
+    missing = required.difference(variants.columns)
+    if missing:
+        raise ValueError(
+            f"Protein-context table missing columns: {', '.join(sorted(missing))}"
+        )
+    rows = []
+    for _, row in variants.iterrows():
+        protein = str(row[context_column]).upper()
+        position = int(row[mutation_position_column])
+        if position < 1 or position > len(protein):
+            raise ValueError("protein_position must be 1-based inside mutant_protein")
+        for length in lengths:
+            for start in range(
+                max(0, position - length),
+                min(position, len(protein) - length + 1),
+            ):
+                peptide = protein[start:start + length]
+                if position - 1 in range(start, start + length):
+                    rows.append(
+                        {
+                            **row.to_dict(),
+                            "peptide": peptide,
+                            "peptide_start": start + 1,
+                        }
+                    )
+    return pd.DataFrame(rows).drop_duplicates(
+        ["peptide", context_column, mutation_position_column]
+    )
+
+
 def assemble_patient_candidates(
     candidates: pd.DataFrame,
     *,

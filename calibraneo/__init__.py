@@ -25,6 +25,9 @@ from .patient import (
     read_hla,
     read_loh,
     read_vcf,
+    read_allele_specific_expression,
+    read_hla_copy_number,
+    generate_peptides_from_protein_context,
 )
 from .active_learning import compare_selection_methods, experiment_information_gain
 from .sequence_design import rna_design_features
@@ -57,6 +60,9 @@ __all__ = [
     "read_hla",
     "read_loh",
     "read_vcf",
+    "read_allele_specific_expression",
+    "read_hla_copy_number",
+    "generate_peptides_from_protein_context",
     "compare_selection_methods",
     "experiment_information_gain",
     "rna_design_features",

@@ -148,3 +148,74 @@ def predict_endpoint(
             features[name] = pd.to_numeric(frame[name], errors="coerce").fillna(0.0)
     values = bundle["scaler"].transform(features[bundle["feature_names"]])
     return bundle["model"].predict_proba(values)[:, 1]
+
+
+def harmonize_immunogenicity_sources(
+    *,
+    ott: pd.DataFrame | None = None,
+    iedb: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    """Normalize available T-cell sources into one endpoint-specific table."""
+    rows: list[pd.DataFrame] = []
+    if ott is not None:
+        required = {"Immunizing peptide sequence", "Minimal epitope CD8+ response"}
+        missing = required.difference(ott.columns)
+        if missing:
+            raise ValueError(f"Ott table missing columns: {', '.join(sorted(missing))}")
+        table = pd.DataFrame(
+            {
+                "peptide": ott["Immunizing peptide sequence"].astype(str).str.replace(
+                    r"[^A-Z]", "", regex=True
+                ),
+                "hla_allele": ott.get("HLA", pd.Series("unknown", index=ott.index)),
+                "label": pd.to_numeric(
+                    ott["Minimal epitope CD8+ response"], errors="coerce"
+                ),
+                "study": "Ott",
+                "patient": ott.get("Patient ID", ott.get("Patient", "unknown")),
+                "publication": "Ott_2018",
+            }
+        )
+        rows.append(table)
+    if iedb is not None:
+        required = {"peptide", "hla_allele", "is_positive", "reference_pmid"}
+        missing = required.difference(iedb.columns)
+        if missing:
+            raise ValueError(f"IEDB table missing columns: {', '.join(sorted(missing))}")
+        table = pd.DataFrame(
+            {
+                "peptide": iedb["peptide"].astype(str).str.upper().str.strip(),
+                "hla_allele": iedb["hla_allele"].astype(str),
+                "label": iedb["is_positive"].astype(bool).astype(int),
+                "study": "IEDB",
+                "patient": "unknown",
+                "publication": iedb["reference_pmid"].astype(str),
+            }
+        )
+        rows.append(table)
+    if not rows:
+        raise ValueError("At least one immunogenicity source is required")
+    result = pd.concat(rows, ignore_index=True)
+    result = result[result["peptide"].str.fullmatch(r"[A-Z]{7,30}", na=False)]
+    result["label"] = pd.to_numeric(result["label"], errors="coerce")
+    return result.dropna(subset=["label"]).drop_duplicates(
+        ["peptide", "hla_allele", "label", "study", "publication"]
+    )
+
+
+def fit_grouped_endpoint(
+    frame: pd.DataFrame,
+    *,
+    group_column: str,
+    seed: int = 42,
+) -> dict[str, Any]:
+    """Fit a sequence endpoint model with an explicit grouped holdout."""
+    return train_endpoint_model(
+        frame,
+        peptide_column="peptide",
+        label_column="label",
+        group_columns=[group_column],
+        endpoint=f"immunogenicity_grouped_by_{group_column}",
+        output_path=Path("models") / f"temporary_{group_column}.pkl",
+        seed=seed,
+    )

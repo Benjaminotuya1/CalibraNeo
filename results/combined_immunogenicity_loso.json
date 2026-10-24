@@ -1,0 +1,33 @@
+{
+  "sources": {
+    "Ott": 91,
+    "IEDB": 28
+  },
+  "rows": 119,
+  "unique_peptides": 116,
+  "loso": [
+    {
+      "held_out_study": "IEDB",
+      "status": "evaluated",
+      "rows": 28,
+      "positive_rate": 0.4642857142857143,
+      "auc_roc": 0.6102564102564103,
+      "auprc": 0.6508609054762902,
+      "group_definition": "study held out; peptide features only"
+    },
+    {
+      "held_out_study": "Ott",
+      "status": "evaluated",
+      "rows": 91,
+      "positive_rate": 0.16483516483516483,
+      "auc_roc": 0.5,
+      "auprc": 0.16483516483516483,
+      "group_definition": "study held out; peptide features only"
+    }
+  ],
+  "limitations": [
+    "IEDB sample is bounded and heterogeneous",
+    "Ott and IEDB endpoints are not identical clinical assays",
+    "two-source LOSO is a feasibility audit, not definitive generalization"
+  ]
+}
