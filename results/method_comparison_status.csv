@@ -1,0 +1,8 @@
+method,status,source,auc_roc,auprc,limitation
+NetMHCpan,evaluated_local_benchmark,Nature clinical benchmark,0.5027,0.1122,
+MHCflurry,evaluated_local_benchmark,Nature clinical benchmark,0.5362,0.1239,
+BigMHC,evaluated_local_benchmark,Nature clinical benchmark,0.5167,0.1216,
+DeepNeo,not_evaluated,no reproducible local run or compatible output,,,Model/tool output is not present locally.
+NeoDisc,not_evaluated,no reproducible local run or compatible output,,,Workflow was not run on the same frozen candidates.
+pVACtools,not_evaluated,no reproducible local run or compatible output,,,Pipeline was not run; external dependencies and inputs are required.
+CalibraNeo,evaluated_local_benchmark,Nature clinical benchmark,0.5209,0.1152,

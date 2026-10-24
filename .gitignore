@@ -1,0 +1,30 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local data and downloaded source archives
+data_raw/
+data_processed/MASTER_CALIBRANEO_DATASET.csv
+data_processed/*.xls*
+data_processed/*.zip
+
+# Local model binaries and generated caches
+models/*.pkl
+results/figures/
+
+# Local secrets and editor files
+.env
+.env.*
+.vscode/
+.idea/
+
+# Keep small, provenance-safe derived artifacts explicitly tracked:
+# data_external/iedb/*.csv
+# data_external/iedb/manifest.json
+# results/*.json
+# results/*.csv

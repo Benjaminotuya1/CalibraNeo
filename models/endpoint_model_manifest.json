@@ -1,0 +1,46 @@
+{
+  "trained": {
+    "immunogenicity_ott": {
+      "path": "models/calibraneo_immunogenicity_ott.pkl",
+      "source": "Ott clinical melanoma vaccine table",
+      "endpoint": "minimal epitope CD8 response",
+      "metrics": {
+        "auc_roc": 0.5375,
+        "auprc": 0.2954545454545454,
+        "brier": 0.15244975487405618,
+        "fit_rows": 67,
+        "test_rows": 24,
+        "test_groups": 2
+      },
+      "limitations": [
+        "small cohort",
+        "patient grouped holdout only",
+        "not a pan-cancer immunogenicity model"
+      ]
+    },
+    "immunopeptidomics_zaghla": {
+      "path": "models/calibraneo_immunopeptidomics_zaghla.pkl",
+      "source": "Zaghla-derived MS experiment table",
+      "endpoint": "mutant peptide detected in MS experiment",
+      "metrics": {
+        "auc_roc": 0.9888888888888889,
+        "auprc": 0.9714285714285714,
+        "brier": 0.0477557999080243,
+        "fit_rows": 146,
+        "test_rows": 46,
+        "test_groups": 44
+      },
+      "limitations": [
+        "small study",
+        "not a public HLA Ligand Atlas/SysteMHC Atlas snapshot",
+        "label-derived binding-rank field excluded from features"
+      ]
+    }
+  },
+  "not_trained": {
+    "immunogenicity_tesla_neodb_nepdb": "No licensed/downloaded normalized files are present locally.",
+    "immunopeptidomics_hla_ligand_atlas_systemhc": "No normalized downloadable snapshot is present locally.",
+    "rna_stability_ttdb_rnadecaycafe": "No labeled half-life table is present locally.",
+    "translation_rpfdb": "No normalized Ribo-seq/RNA-seq translation table is present locally."
+  }
+}

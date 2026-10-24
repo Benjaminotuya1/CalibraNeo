@@ -1,0 +1,15 @@
+hla_allele,gene,mutation,cos7_status,k562_baseline,k562_ifng,label_presented,source_table
+HLA-A*02:01,TP53,H193Y,Detected,Detected,N/A,1,Zaghla_2026_TableS2
+HLA-A*03:01,KRAS,G12R,Detected,Detected,N/A,1,Zaghla_2026_TableS2
+HLA-A*24:02,ESR1,D538G,Detected,Detected,N/A,1,Zaghla_2026_TableS2
+HLA-A*03:01,CTNNB1,T41A,Detected,Detected,N/A,1,Zaghla_2026_TableS2
+HLA-A*02:01,TP53,R213L,Detected,Detected,N/A,1,Zaghla_2026_TableS2
+HLA-A*02:01,SF3B1,K700E,Not detected,Not detected,N/A,0,Zaghla_2026_TableS2
+HLA-A*02:01,CDKN2A,P114L,Not detected,Not detected,Not detected,0,Zaghla_2026_TableS2
+HLA-B*58:01,TP53,R248W,Not detected,Not detected,Not detected,0,Zaghla_2026_TableS2
+HLA-B*07:02,PIK3CA,E453K,Not detected,Not detected,Not detected,0,Zaghla_2026_TableS2
+HLA-B*07:02,TP53,R158L,Not detected,Not detected,Not detected,0,Zaghla_2026_TableS2
+HLA-C*07:01,PPP2R1A,R183W,Not detected,Not detected,Not detected,0,Zaghla_2026_TableS2
+HLA-A*03:01,PPP2R1A,R183W,Not detected,Not detected,N/A,0,Zaghla_2026_TableS2
+HLA-B*07:02,TP53,P152L,Not detected,Not detected,N/A,0,Zaghla_2026_TableS2
+HLA-B*07:02,TP53,R249S,Not detected,Not detected,N/A,0,Zaghla_2026_TableS2

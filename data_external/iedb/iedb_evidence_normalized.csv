@@ -1,0 +1,77 @@
+source,assay_type,assay_id,peptide,hla_allele,mhc_class,qualitative_measurement,is_positive,response_measured,reference_pmid
+IEDB,tcell,12320441,KILTFDRL,H2-Kb,I,negative,False,IFNg release,32923109
+IEDB,tcell,22939661,GLSAGATVGV,HLA-A*02:01,I,positive,True,IFNg release,24790791
+IEDB,tcell,2642493,VYLDKFIRL,HLA-A24,I,positive,True,IFNg release,22869377
+IEDB,tcell,22332790,SRTLSYYKL,HLA class I,I,negative,False,IFNg release,36603583
+IEDB,tcell,1485626,ITNDQKKLMSSNVQIV,BoLA-DRB3,II,negative,False,proliferation,11312019
+IEDB,tcell,1829167,RGPSGTTGSMQCMAL,HLA class I,I,negative,False,IFNg release,20635156
+IEDB,tcell,22900678,SAFRCFIVY,HLA-B*15:01,I,negative,False,activation,38608022
+IEDB,tcell,17928737,KGFYAEGSRGGSQASSRSSS,HLA-DRB1*01:01,II,negative,False,qualitative binding,34965282
+IEDB,tcell,17928746,KGFYAEGSRGGSQASSRSSS,HLA-DRB4*01:01,II,negative,False,qualitative binding,34965282
+IEDB,tcell,17928738,KGFYAEGSRGGSQASSRSSS,HLA-DRB1*03:01,II,negative,False,qualitative binding,34965282
+IEDB,tcell,17928698,LPYGANKDGIIWVATEGALN,HLA-DRB1*03:01,II,negative,False,qualitative binding,34965282
+IEDB,tcell,17928709,LPYGANKDGIIWVATEGALN,HLA-DRB1*04:01,II,positive,True,qualitative binding,34965282
+IEDB,tcell,22401991,CAFHHVFSPV,H2-Db,I,positive,True,IFNg release,36950115
+IEDB,tcell,1333288,ITRVESENKVVILDS,HLA class I,I,negative,False,IFNg release,16845628
+IEDB,tcell,6279924,FILWFGFPPTWESFDWWQKT,HLA-DRB1*07:01,II,negative,False,qualitative binding,31405946
+IEDB,tcell,6279784,RQPPCSSAEEASSSQFTDEE,HLA-DRB1*03:01,II,negative,False,qualitative binding,31405946
+IEDB,tcell,1699783,LKQQWVDYNLKWNPDD,HLA class II,II,positive,True,proliferation,15620460
+IEDB,tcell,15022929,RLNLFCFSF,HLA-B*07:02,I,positive,True,IL-2 release,34025684
+IEDB,tcell,12203664,AASLRKAGKSVVVLN,HLA class II,II,positive,True,IFNg release,32983097
+IEDB,tcell,1289689,WLSLLVPFV,HLA-A2,I,positive,True,cytotoxicity,12566993
+IEDB,tcell,2461839,GIDKEALLKA,"Class I, allele undetermined",,negative,False,IFNg release,25805564
+IEDB,tcell,2461836,GGEGDETSEG,"Class I, allele undetermined",,negative,False,IFNg release,25805564
+IEDB,tcell,1659778,LLGAMLVGQVTLLDL,HLA-DRB1*04:01,II,positive,True,IFNg release,
+IEDB,tcell,5044696,TLSIRGNNIRYFILP,HLA-DRA*01:01/DRB1*03:01,II,positive,True,IL-2 release,30254034
+IEDB,tcell,1312980,GHAVGLFRAAVCTRGVAK,HLA-DRB1*04:01,II,positive,True,IL-2 release,11869368
+IEDB,tcell,6369081,TNACSINGNAPAEIDLRQMRTVTPIRMQGGCGSCWAFSGVA,HLA class II,II,positive-low,True,IL-5 release,31228873
+IEDB,tcell,1298022,KTDISMSMPK,HLA-A*03:01,I,negative,False,IFNg release,
+IEDB,tcell,5346886,VVIKNSDYI,H2-Db,I,positive,True,IFNg release,30718433
+IEDB,tcell,1416604,YAYVAREQSCR,HLA class II,II,positive,True,proliferation,1370514
+IEDB,mhc_ligand,29612095,SEVQANNVVL,HLA class I,I,positive,True,ligand presentation,39827205
+IEDB,mhc_ligand,3859546,TPSASRKSL,HLA class I,I,positive,True,ligand presentation,29632711
+IEDB,mhc_ligand,2070046,RQLALVKGL,HLA-C*16:01,I,positive,True,ligand presentation,
+IEDB,mhc_ligand,8237222,SAMSNPRAM,H2-Db,I,positive,True,ligand presentation,30084848
+IEDB,mhc_ligand,2617175,NHKLQDASAEVERLRREN,HLA-DQA1*02:01/DQB1*02:02,II,positive,True,ligand presentation,25502872
+IEDB,mhc_ligand,12057435,EQMERLEAL,HLA-B*14:02,I,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,3095378,RPNCSRSSL,HLA class I,I,positive,True,ligand presentation,27846572
+IEDB,mhc_ligand,18094804,VAEFQPDWTAASIIL,HLA-DRA*01:01/DRB1*04:02,II,positive,True,MHC binding,33705522
+IEDB,mhc_ligand,3444009,SKETIEQEKQA,HLA-B*27:05,I,negative,False,ligand presentation,28188227
+IEDB,mhc_ligand,12883581,SPNIVIALSGNKAD,HLA-B*07:02,I,positive,True,ligand presentation,33298915
+IEDB,mhc_ligand,5177727,VSDANQHVK,HLA class I,I,positive,True,ligand presentation,30429286
+IEDB,mhc_ligand,23623506,ESRKHINTW,HLA class I,I,positive,True,ligand presentation,35239002
+IEDB,mhc_ligand,7518009,LIYDTKGRFAVH,HLA-B*46:01,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,11636298,DPSAFVAAAPVAAATT,HLA class II,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,23672686,LPDPIIIHL,HLA class I,I,positive,True,ligand presentation,35239002
+IEDB,mhc_ligand,7571953,TLVLASITY,HLA-C*16:01,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,7408965,EVYNEKIHDL,HLA-A*26:01,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,1099506,GSEELRSLY,HLA-B*58:01,I,negative,False,qualitative binding,
+IEDB,mhc_ligand,11726404,QAFAQVFNK,HLA-A*11:01,I,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,11336072,NPDLILPVPAFNVINGG,HLA-DRB1*15:01,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,7578394,SMGPVRVAF,HLA class I,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,11311250,YQKSLLEQY,HLA-B*15:01,I,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,7450293,VPQPHPQTL,HLA-B*42:01,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,17393207,SQDENYHHL,HLA-C*05:01,I,positive,True,ligand presentation,32938616
+IEDB,mhc_ligand,11712268,KRRLKAEKKVAEKEAK,HLA class II,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,11321988,FATPFLVVRHQLL,HLA class II,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,5520164,NGRVYFVNHNTRITQ,HLA class II,II,positive,True,ligand presentation,29242379
+IEDB,mhc_ligand,7383677,SLPDLTTPLK,HLA-A*11:01,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,11676895,EKGVPLYRHIADLAGNSEVILPVP,HLA class II,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,1140489,FQLYSDLAH,HLA-A*03:01,I,negative,False,qualitative binding,
+IEDB,mhc_ligand,25518370,QQIGKVVQV,HLA class I,I,positive,True,ligand presentation,41440022
+IEDB,mhc_ligand,3334056,MRLGALYTY,H2-Dq,I,positive,True,ligand presentation,29615400
+IEDB,mhc_ligand,6113300,SPDHSDHTL,HLA class I,I,positive,True,ligand presentation,31154438
+IEDB,mhc_ligand,12399774,FFEVSPVSF,HLA-C*04:01,I,positive,True,ligand presentation,32357974
+IEDB,mhc_ligand,11130992,EEGEKVVKTALDAFGRID,HLA-DPA1*02:01/DPB1*09:01,II,positive,True,ligand presentation,32350084
+IEDB,mhc_ligand,8414206,DEAPVLDVRY,HLA class I,I,positive,True,ligand presentation,29557506
+IEDB,mhc_ligand,11319372,KPKQSFILRV,HLA class II,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,23734334,VKTDTVLIL,HLA class I,I,positive,True,ligand presentation,35239002
+IEDB,mhc_ligand,1199003,GAVVKSDNKL,HLA-A*02:06,I,negative,False,dissociation constant KD (~IC50),
+IEDB,mhc_ligand,7525003,QQFYQPKI,HLA-B*52:01,I,positive,True,ligand presentation,31844290
+IEDB,mhc_ligand,11930756,VPHLRYLRLDGNYLKPPIP,HLA-DRB1*01:01,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,8453861,ELEDSTLRY,HLA class I,I,positive,True,ligand presentation,29557506
+IEDB,mhc_ligand,11575432,ALKATFSGF,HLA-B*15:01,I,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,1183721,RFPVVSGV,Mamu-A1*001:01,I,negative,False,dissociation constant KD (~IC50),
+IEDB,mhc_ligand,29639583,DRNTQIFKTNTQTDRESLR,HLA-B*08:01,I,positive,True,ligand presentation,38684663
+IEDB,mhc_ligand,11546237,VITWIQHLIPKIEDGNDF,HLA class II,II,positive,True,ligand presentation,33858848
+IEDB,mhc_ligand,17831269,VHSIFVLRL,HLA class I,I,positive,True,ligand presentation,34932366

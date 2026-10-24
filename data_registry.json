@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "download_mode": "explicit_only",
+    "redistribution": "not_permitted_without_source_license_review",
+    "missing_evidence_is": "unknown_not_negative"
+  },
+  "sources": [
+    {
+      "id": "iedb",
+      "purpose": "curated immune-epitope and T-cell assay evidence",
+      "url": "https://www.iedb.org",
+      "doi": "10.1093/nar/gky1006",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "tesla",
+      "purpose": "experimentally evaluated tumor neoantigen immunogenicity",
+      "url": "https://doi.org/10.1038/s41586-019-1281-8",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "systehmc_atlas_v2",
+      "purpose": "mass-spectrometry HLA ligand evidence",
+      "url": "https://doi.org/10.1093/nar/gkad1068",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "hla_ligand_atlas",
+      "purpose": "normal-tissue and allele-associated immunopeptidomics evidence",
+      "url": "https://hla-ligand-atlas.org",
+      "doi": "10.1136/jitc-2020-002071",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "dbgap_hla_loh",
+      "purpose": "cohort-scale HLA loss-of-heterozygosity validation",
+      "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002783.v1.p1",
+      "access": "restricted",
+      "license_status": "controlled_access",
+      "download_allowed": false
+    },
+    {
+      "id": "hrpdviewer",
+      "purpose": "ribosome-profiling translation-efficiency context",
+      "url": "https://doi.org/10.1093/database/bay074",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "ttdb",
+      "purpose": "transcript turnover and RNA stability context",
+      "url": "https://doi.org/10.1093/nar/gkaf1093",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "rnadecaycafe",
+      "purpose": "cross-cell-line RNA half-life validation",
+      "url": "https://doi.org/10.1101/2025.08.19.671151",
+      "access": "public",
+      "license_status": "preprint_review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "rpfdb",
+      "purpose": "ribosome-profiling and translated-ORF evidence",
+      "url": "https://sysbio.gzzoc.com/rpfdb/",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "nepdb",
+      "purpose": "curated experimentally validated cancer neoantigen evidence",
+      "url": "http://nep.whu.edu.cn/",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    },
+    {
+      "id": "neodb",
+      "purpose": "cancer neoantigen literature and validation annotations",
+      "url": "https://bioinfo.uth.edu/NeoDB/",
+      "access": "public",
+      "license_status": "review_required",
+      "download_allowed": true
+    }
+  ]
+}

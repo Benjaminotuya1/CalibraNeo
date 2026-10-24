@@ -1,0 +1,24 @@
+{
+  "source": "https://query-api.iedb.org",
+  "query_limits": {
+    "limit": 50,
+    "pages": 1
+  },
+  "tables": {
+    "iedb_tcell_normalized.csv": {
+      "rows_raw": 50,
+      "rows_normalized": 29,
+      "sha256": "9515b27f8692f6605dbd16ee34cb5e59f7bc892f2ebeda736d4687778aa81429"
+    },
+    "iedb_mhc_normalized.csv": {
+      "rows_raw": 50,
+      "rows_normalized": 47,
+      "sha256": "11322709ebfe8884de0d6f3f1f2dca796ad098288d32b8ff715f89ed8ba13e6c"
+    },
+    "iedb_evidence_normalized.csv": {
+      "rows": 76,
+      "sha256": "7590cfebcbef50f2b79de8f5044695581e308adb15b52a14b40d4c044abe320a"
+    }
+  },
+  "note": "Separate evidence layer; not merged into the local binary-label master table."
+}

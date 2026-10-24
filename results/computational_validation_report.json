@@ -1,0 +1,42 @@
+{
+  "model_version": "stage1-leakage-safe-v2",
+  "candidate_count": 2317,
+  "external_evidence_rows": 76,
+  "exact_tcell_matches": 0,
+  "external_match_fraction": 0.0,
+  "benchmark_numeric_summary": {
+    "AUC_ROC": {
+      "min": 0.4834,
+      "max": 0.5387,
+      "mean": 0.5176750000000001
+    },
+    "AUPRC": {
+      "min": 0.1056,
+      "max": 0.1271,
+      "mean": 0.1173875
+    },
+    "Brier_Score (Lower=Better)": {
+      "min": 0.0991,
+      "max": 0.6767,
+      "mean": 0.2620125
+    },
+    "ECE_Error (Lower=Better)": {
+      "min": 0.0095,
+      "max": 0.7051,
+      "mean": 0.259575
+    }
+  },
+  "validated_claims": [
+    "model inference uses the versioned serialized bundle",
+    "calibration and untouched-test metrics are reported separately",
+    "external evidence is provenance-tracked and endpoint-specific",
+    "missing evidence remains unknown"
+  ],
+  "not_proven": [
+    "tumor-specific mutation expression",
+    "translation or RNA stability of a proposed construct",
+    "peptide processing and in-tumor presentation",
+    "T-cell activation in the intended patient",
+    "safety or therapeutic benefit"
+  ]
+}

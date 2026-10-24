@@ -1,0 +1,273 @@
+{
+  "model_version": "stage1-leakage-safe-v2",
+  "internal_grouped_holdout": {
+    "auc_roc": {
+      "estimate": 0.924128360734387,
+      "lower_95": 0.9215364458578803,
+      "upper_95": 0.9268536193532593
+    },
+    "auprc": {
+      "estimate": 0.9117696130122542,
+      "lower_95": 0.9080897370808747,
+      "upper_95": 0.9154502878769433
+    },
+    "brier": {
+      "estimate": 0.1099903679791271,
+      "lower_95": 0.10781454692950075,
+      "upper_95": 0.11202319083134533
+    },
+    "ece": {
+      "estimate": 0.006036791482815317,
+      "lower_95": 0.004988115789807919,
+      "upper_95": 0.010787787118186683
+    }
+  },
+  "external_zaghla": {
+    "auc_roc": {
+      "estimate": 0.9771730914588057,
+      "lower_95": 0.9548024123397881,
+      "upper_95": 0.9936253965832521
+    },
+    "auprc": {
+      "estimate": 0.9462980335744311,
+      "lower_95": 0.8962161317699725,
+      "upper_95": 0.9823828388550857
+    },
+    "brier": {
+      "estimate": 0.04184445705188922,
+      "lower_95": 0.025773355040472616,
+      "upper_95": 0.05988017572610168
+    },
+    "ece": {
+      "estimate": 0.05824504014452046,
+      "lower_95": 0.04203995693947766,
+      "upper_95": 0.08523012897184995
+    }
+  },
+  "external_cohorts": {
+    "Ott_Clinical_Melanoma_Vaccine": {
+      "rows": 91,
+      "positive_rate": 0.16483516483516483,
+      "metrics": {
+        "auc_roc": {
+          "estimate": 0.3583333333333334,
+          "lower_95": 0.2157675438596491,
+          "upper_95": 0.5116914556962024
+        },
+        "auprc": {
+          "estimate": 0.1316141982794155,
+          "lower_95": 0.07526009187271855,
+          "upper_95": 0.23044675568527254
+        },
+        "brier": {
+          "estimate": 0.20750565405561738,
+          "lower_95": 0.14603521195816882,
+          "upper_95": 0.27915864277081653
+        },
+        "ece": {
+          "estimate": 0.22328745645155354,
+          "lower_95": 0.15806036384479136,
+          "upper_95": 0.31249246619148174
+        }
+      },
+      "group_overlap_with_training": 0,
+      "fully_independent": true
+    },
+    "Zenodo_2026_TumorRNA": {
+      "rows": 872,
+      "positive_rate": 0.569954128440367,
+      "metrics": {
+        "auc_roc": {
+          "estimate": 0.6618618376928237,
+          "lower_95": 0.6268899274603961,
+          "upper_95": 0.696454214208057
+        },
+        "auprc": {
+          "estimate": 0.7366465470007746,
+          "lower_95": 0.6954286618136732,
+          "upper_95": 0.7755058647179756
+        },
+        "brier": {
+          "estimate": 0.2561095717612924,
+          "lower_95": 0.237736143515825,
+          "upper_95": 0.2763034785337461
+        },
+        "ece": {
+          "estimate": 0.16865158610017655,
+          "lower_95": 0.14035448441537124,
+          "upper_95": 0.20211058173514831
+        }
+      },
+      "group_overlap_with_training": 0,
+      "fully_independent": true
+    }
+  },
+  "nature_benchmark": {
+    "auc_roc": {
+      "estimate": 0.49125883340674903,
+      "lower_95": 0.4501811847123939,
+      "upper_95": 0.528915771608631
+    },
+    "auprc": {
+      "estimate": 0.1175789474243341,
+      "lower_95": 0.09892235189376453,
+      "upper_95": 0.1417632062596936
+    },
+    "brier": {
+      "estimate": 0.4667910279444519,
+      "lower_95": 0.4526477068560086,
+      "upper_95": 0.48113282667616275
+    },
+    "ece": {
+      "estimate": 0.5238145827359169,
+      "lower_95": 0.5062639496424358,
+      "upper_95": 0.5405649415204902
+    }
+  },
+  "group_leakage_audit": {
+    "rows": 213788,
+    "unique_peptide_hla_groups": 213778,
+    "fit_rows": 181719,
+    "test_rows": 32069,
+    "fit_groups": 181711,
+    "test_groups": 32067,
+    "group_overlap": 0,
+    "duplicate_peptide_hla_rows": 10
+  },
+  "external_group_overlap_with_training": 11,
+  "external_baselines": {
+    "proteasome_cleavage_score": {
+      "auc_roc": 0.6396069538926682,
+      "auprc": 0.5240127916159015,
+      "brier": 0.4095684623046407,
+      "ece": 0.4918829191033138
+    },
+    "tap_transport_score": {
+      "auc_roc": 0.37135298563869995,
+      "auprc": 0.3847559504227203,
+      "brier": 0.4375093673839096,
+      "ece": 0.5223751504211793
+    },
+    "combined_anchor_motif_score": {
+      "auc_roc": 0.9201058201058201,
+      "auprc": 0.8494505210043175,
+      "brier": 0.2049326041272973,
+      "ece": 0.3268751360747964
+    }
+  },
+  "zaghla_quality_flags": {
+    "binding_rank_pct_filled_unique_values": [
+      0.25,
+      0.35
+    ],
+    "binding_rank_pct_filled_perfectly_separates_label": true,
+    "usable_as_independent_validation": false,
+    "reason": "The imported filled binding rank is a label-derived proxy in this table."
+  },
+  "external_baseline_note": "Mechanistic feature baselines are min-max scaled within the external set for Brier/ECE; their AUC is ranking-only and not a calibrated probability.",
+  "hla_subgroups_external": [
+    {
+      "hla_allele": "HLA-A*01:01",
+      "rows": 20,
+      "auc_roc": 1.0,
+      "auprc": 1.0,
+      "brier": 0.01417037226848048,
+      "ece": 0.07256940167483467
+    },
+    {
+      "hla_allele": "HLA-A*02:01",
+      "rows": 42,
+      "auc_roc": 1.0,
+      "auprc": 1.0,
+      "brier": 0.016067880768604874,
+      "ece": 0.09312791045761869
+    },
+    {
+      "hla_allele": "HLA-A*03:01",
+      "rows": 23,
+      "auc_roc": 1.0,
+      "auprc": 1.0,
+      "brier": 0.015644983744913302,
+      "ece": 0.08064527336383785
+    },
+    {
+      "hla_allele": "HLA-A*11:01",
+      "rows": 14,
+      "auc_roc": 1.0,
+      "auprc": 1.0,
+      "brier": 0.02036361062832157,
+      "ece": 0.06286138185923545
+    },
+    {
+      "hla_allele": "HLA-B*07:02",
+      "rows": 17,
+      "auc_roc": 1.0,
+      "auprc": 1.0,
+      "brier": 0.03016652086336896,
+      "ece": 0.09105933378238718
+    },
+    {
+      "hla_allele": "HLA-B*08:01",
+      "rows": 14,
+      "auc_roc": 1.0,
+      "auprc": 1.0,
+      "brier": 0.01136362140931071,
+      "ece": 0.06572158765982093
+    }
+  ],
+  "dataset_shift": {
+    "internal_positive_rate": 0.47401631522816995,
+    "zaghla_positive_rate": 0.234375,
+    "nature_positive_rate": 0.11135088476478204,
+    "internal_feature_mean": {
+      "peptide_length": 9.081852115179524,
+      "gravy_hydrophobicity": -0.10086202064522069,
+      "molecular_weight_da": 1060.2066158468588,
+      "net_charge_ph7": 0.10325556040666244,
+      "aromatic_fraction": 0.1343217143600584,
+      "tcr_core_hydrophobicity": -0.28244357359740485,
+      "tcr_core_aromaticity": 0.11545091974366536,
+      "p1_hydrophobicity": -0.2934804572754317,
+      "p2_hydrophobicity": 0.16355408161356108,
+      "p2_charge": -0.073380638763635,
+      "p_omega_hydrophobicity": 0.8968342470110575,
+      "p_omega_charge": 0.09269930959642263,
+      "proteasome_cleavage_score": 1.1344626452373379,
+      "tap_transport_score": 0.5324663685520235,
+      "hla_locus_A": 0.4527195165303946,
+      "hla_locus_B": 0.5362695754672854,
+      "hla_locus_C": 0.011010908002320055,
+      "hla_p2_motif_prob": 0.18067676409908598,
+      "hla_p_omega_motif_prob": 0.1773269389004415,
+      "combined_anchor_motif_score": -2.420776162606785
+    },
+    "zaghla_feature_mean": {
+      "peptide_length": 9.151041666666666,
+      "gravy_hydrophobicity": 0.04318780311243989,
+      "molecular_weight_da": 629.7954125595094,
+      "net_charge_ph7": 0.3916666669926296,
+      "aromatic_fraction": 0.051405329335016826,
+      "tcr_core_hydrophobicity": -0.2169097249900612,
+      "tcr_core_aromaticity": 0.031119791666666664,
+      "p1_hydrophobicity": 1.3927083333333332,
+      "p2_hydrophobicity": 0.4078125000000001,
+      "p2_charge": -0.005208333333333333,
+      "p_omega_hydrophobicity": 0.024999999999999942,
+      "p_omega_charge": 0.20625000000000002,
+      "proteasome_cleavage_score": 0.9565104166666666,
+      "tap_transport_score": 1.0146354166666667,
+      "hla_locus_A": 0.6666666666666666,
+      "hla_locus_B": 0.19791666666666666,
+      "hla_locus_C": 0.13541666666666666,
+      "hla_p2_motif_prob": 0.08505671030984219,
+      "hla_p_omega_motif_prob": 0.15822611803808742,
+      "combined_anchor_motif_score": -2.5831031159317597
+    }
+  },
+  "interpretation": {
+    "group_overlap_zero_required": true,
+    "external_validation_is_not_patient_specific": true,
+    "confidence_intervals_are_bootstrap_not_clinical": true,
+    "zaghla_auc_is_not_claimed_as_independent": true
+  }
+}
