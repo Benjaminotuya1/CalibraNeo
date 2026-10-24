@@ -14,7 +14,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run CalibraNeo workflows")
     parser.add_argument(
         "command",
-        choices=("train", "optimize", "figures", "registry", "external-data", "validation", "audit", "endpoint-models", "freeze", "comparators", "all"),
+        choices=("train", "optimize", "figures", "registry", "external-data", "validation", "audit", "endpoint-models", "rna-model", "freeze", "comparators", "all"),
         help="Workflow to execute",
     )
     args = parser.parse_args()
@@ -45,13 +45,16 @@ def main() -> int:
     if args.command == "endpoint-models":
         script = root / "scripts" / "23_train_endpoint_models.py"
         return subprocess.run([sys.executable, str(script)], cwd=root).returncode
+    if args.command == "rna-model":
+        script = root / "scripts" / "26_train_rna_context_model.py"
+        return subprocess.run([sys.executable, str(script)], cwd=root).returncode
     if args.command == "freeze":
         script = root / "scripts" / "24_freeze_prospective_predictions.py"
         return subprocess.run([sys.executable, str(script)], cwd=root).returncode
     if args.command == "comparators":
         script = root / "scripts" / "25_build_method_comparison.py"
         return subprocess.run([sys.executable, str(script)], cwd=root).returncode
-    selected = ("train", "optimize", "figures", "validation", "audit", "endpoint-models", "freeze", "comparators") if args.command == "all" else (args.command,)
+    selected = ("train", "optimize", "figures", "validation", "audit", "endpoint-models", "rna-model", "freeze", "comparators") if args.command == "all" else (args.command,)
     for name in selected:
         result = subprocess.run([sys.executable, str(commands[name])], cwd=root)
         if result.returncode:

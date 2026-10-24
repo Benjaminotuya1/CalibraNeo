@@ -28,6 +28,7 @@ from .patient import (
 )
 from .active_learning import compare_selection_methods, experiment_information_gain
 from .sequence_design import rna_design_features
+from .rna_model import annotate_gene_stability, train_rna_context_model
 
 __all__ = [
     "CalibraNeoPredictor",
@@ -59,4 +60,6 @@ __all__ = [
     "compare_selection_methods",
     "experiment_information_gain",
     "rna_design_features",
+    "annotate_gene_stability",
+    "train_rna_context_model",
 ]

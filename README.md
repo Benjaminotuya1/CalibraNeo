@@ -72,6 +72,16 @@ Build the comparator availability table:
 python -m calibraneo.cli comparators
 ```
 
+Train the available gene-level RNA stability context model:
+
+```powershell
+python -m calibraneo.cli rna-model
+```
+
+This model uses the downloaded RNADecayCafe table. It estimates gene-level
+half-life context only; it does not prove that a custom mRNA vaccine ORF will
+be stable or translated.
+
 The audit writes `results/validation_audit_report.json`. In the current run,
 the grouped internal holdout is strong, Zenodo transfer is moderate, and the
 Ott clinical-vaccine cohort is below random ranking. The Zaghla-derived table
@@ -82,9 +92,11 @@ retained in the report rather than hidden.
 The endpoint model manifest distinguishes trained models from unavailable
 datasets. The current local build can train an Ott T-cell-response model and a
 Zaghla-derived immunopeptidomics model. TESLA, NEPdb, NeoDB, HLA Ligand Atlas,
-SysteMHC Atlas, TTDB, RNADecayCafe, and RPFdb are tracked as sources but are
-not claimed as trained inputs until normalized files are available and license
-conditions are checked.
+SysteMHC Atlas, TTDB, and RPFdb are tracked as sources but are not claimed as
+trained inputs until normalized files are available and license conditions are
+checked. A public RNADecayCafe gene-level half-life table is now downloaded
+under `data_external/rna/` and used for a separate gene-context model; it is
+not a custom vaccine-ORF stability predictor.
 
 Run the complete reproducible workflow:
 

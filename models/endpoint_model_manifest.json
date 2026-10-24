@@ -5,9 +5,9 @@
       "source": "Ott clinical melanoma vaccine table",
       "endpoint": "minimal epitope CD8 response",
       "metrics": {
-        "auc_roc": 0.5375,
-        "auprc": 0.2954545454545454,
-        "brier": 0.15244975487405618,
+        "auc_roc": 0.68125,
+        "auprc": 0.3326923076923077,
+        "brier": 0.15330386770710377,
         "fit_rows": 67,
         "test_rows": 24,
         "test_groups": 2
@@ -35,12 +35,45 @@
         "not a public HLA Ligand Atlas/SysteMHC Atlas snapshot",
         "label-derived binding-rank field excluded from features"
       ]
+    },
+    "rna_context_rnadecaycafe": {
+      "path": "models/calibraneo_rna_context.pkl",
+      "source": "RNADecayCafe AvgKdegs genes table",
+      "metrics": {
+        "mae": 8.99674593079089,
+        "r2": 0.05439635311597679,
+        "fit_rows": 106097,
+        "test_rows": 35346,
+        "test_genes": 4386
+      },
+      "limitations": [
+        "gene-level context, not custom ORF stability",
+        "cell-line aggregation",
+        "not a delivery or vaccine formulation model"
+      ]
+    },
+    "immunogenicity_ott_deployable": {
+      "path": "models/calibraneo_immunogenicity_ott_deployable.pkl",
+      "source": "Ott clinical melanoma vaccine table",
+      "endpoint": "minimal epitope CD8 response",
+      "metrics": {
+        "auc_roc": 0.5375,
+        "auprc": 0.2954545454545454,
+        "brier": 0.15244975487405618,
+        "fit_rows": 67,
+        "test_rows": 24,
+        "test_groups": 2
+      },
+      "limitations": [
+        "sequence-only deployment model",
+        "small cohort",
+        "not a pan-cancer immunogenicity model"
+      ]
     }
   },
   "not_trained": {
     "immunogenicity_tesla_neodb_nepdb": "No licensed/downloaded normalized files are present locally.",
     "immunopeptidomics_hla_ligand_atlas_systemhc": "No normalized downloadable snapshot is present locally.",
-    "rna_stability_ttdb_rnadecaycafe": "No labeled half-life table is present locally.",
     "translation_rpfdb": "No normalized Ribo-seq/RNA-seq translation table is present locally."
   }
 }

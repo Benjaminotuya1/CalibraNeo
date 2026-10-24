@@ -18,7 +18,13 @@ def main() -> int:
     models = ROOT / "models"
     raw = ROOT / "data_raw"
     processed = ROOT / "data_processed"
-    manifest: dict[str, object] = {"trained": {}, "not_trained": {}}
+    manifest_path = models / "endpoint_model_manifest.json"
+    if manifest_path.is_file():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        manifest.setdefault("trained", {})
+        manifest.setdefault("not_trained", {})
+    else:
+        manifest = {"trained": {}, "not_trained": {}}
 
     ott = pd.read_csv(
         raw / "big_benchmarks" / "ott_clinical_vaccine" / "immunizing-peptides-with-tcell.csv"
@@ -37,6 +43,15 @@ def main() -> int:
         group_columns=["patient_group"],
         endpoint="immunogenicity_ott",
         output_path=models / "calibraneo_immunogenicity_ott.pkl",
+        extra_features=["Gene Expression"],
+    )
+    deployable_bundle = train_endpoint_model(
+        ott,
+        peptide_column="peptide",
+        label_column="t_cell_response",
+        group_columns=["patient_group"],
+        endpoint="immunogenicity_ott_deployable",
+        output_path=models / "calibraneo_immunogenicity_ott_deployable.pkl",
     )
     manifest["trained"]["immunogenicity_ott"] = {
         "path": "models/calibraneo_immunogenicity_ott.pkl",
@@ -46,6 +61,17 @@ def main() -> int:
         "limitations": [
             "small cohort",
             "patient grouped holdout only",
+            "not a pan-cancer immunogenicity model",
+        ],
+    }
+    manifest["trained"]["immunogenicity_ott_deployable"] = {
+        "path": "models/calibraneo_immunogenicity_ott_deployable.pkl",
+        "source": "Ott clinical melanoma vaccine table",
+        "endpoint": "minimal epitope CD8 response",
+        "metrics": deployable_bundle["metrics"],
+        "limitations": [
+            "sequence-only deployment model",
+            "small cohort",
             "not a pan-cancer immunogenicity model",
         ],
     }
@@ -76,11 +102,10 @@ def main() -> int:
     unavailable = {
         "immunogenicity_tesla_neodb_nepdb": "No licensed/downloaded normalized files are present locally.",
         "immunopeptidomics_hla_ligand_atlas_systemhc": "No normalized downloadable snapshot is present locally.",
-        "rna_stability_ttdb_rnadecaycafe": "No labeled half-life table is present locally.",
         "translation_rpfdb": "No normalized Ribo-seq/RNA-seq translation table is present locally.",
     }
     manifest["not_trained"] = unavailable
-    (models / "endpoint_model_manifest.json").write_text(
+    manifest_path.write_text(
         json.dumps(manifest, indent=2, default=str),
         encoding="utf-8",
     )

@@ -1,8 +1,8 @@
 {
-  "frozen_at_utc": "2026-10-24T18:30:16.176502+00:00",
+  "frozen_at_utc": "2026-10-24T18:46:54.484123+00:00",
   "input_sha256": "b0acd85b7a06db6f5b0382f9921532ff5465eb6decb3354ec2a3895a6d435873",
   "presentation_model_sha256": "6699157f32e3037f88b7316442b5073dc0bd8d1797bcbcec36fd46f18f127e23",
-  "immunogenicity_model_sha256": "fdbcbcb31aff8f0a833b684ae0a3ef09c8974d63b5716ede128f2d0bc67c81ec",
+  "immunogenicity_model_sha256": "3cc83f206d51df5a9acd4bfe4d60f7dfda0b4f33db73e02bbd1776eac18d3f5b",
   "output_sha256": "553ae4f43f5debc088038a07dc24fa1094dbf4964e107d027d986d650dde1775",
   "rows": 2317,
   "status": "frozen_before_wet_lab",

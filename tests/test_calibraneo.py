@@ -12,6 +12,7 @@ from calibraneo.validation import add_validation_scores, build_experiment_plan
 from calibraneo.task_models import sequence_features
 from calibraneo.active_learning import compare_selection_methods, experiment_information_gain
 from calibraneo.sequence_design import rna_design_features
+from calibraneo.rna_model import annotate_gene_stability
 
 
 def test_orf_has_terminal_stop_and_no_internal_stop():
@@ -147,3 +148,12 @@ def test_rna_design_features_are_qc_not_biological_proof():
     result = rna_design_features("AUGGCCUGAUAA")
     assert result["start_codon_present"] is True
     assert result["validated_translation_model"] is False
+
+
+def test_gene_stability_annotation_preserves_unknowns():
+    result = annotate_gene_stability(
+        pd.DataFrame({"gene": ["TP53", "UNKNOWN"]}),
+        pd.DataFrame({"feature_ID": ["TP53"], "avg_halflife": [4.0]}),
+    )
+    assert result.loc[0, "gene_half_life_context"] == 4.0
+    assert pd.isna(result.loc[1, "gene_half_life_context"])

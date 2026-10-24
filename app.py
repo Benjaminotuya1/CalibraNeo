@@ -26,6 +26,7 @@ from calibraneo import (
     predict_endpoint,
     experiment_information_gain,
     assemble_patient_candidates,
+    annotate_gene_stability,
 )
 
 st.set_page_config(page_title="CalibraNeo: Shortlist Audit Studio", layout="wide")
@@ -34,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent
 PROC_DIR = BASE_DIR / "data_processed"
 RESULTS_DIR = BASE_DIR / "results"
 MODEL_PATH = BASE_DIR / "models" / "calibraneo_stage1_bundle.pkl"
-IMMUNOGENICITY_MODEL_PATH = BASE_DIR / "models" / "calibraneo_immunogenicity_ott.pkl"
+IMMUNOGENICITY_MODEL_PATH = BASE_DIR / "models" / "calibraneo_immunogenicity_ott_deployable.pkl"
 MS_MODEL_PATH = BASE_DIR / "models" / "calibraneo_immunopeptidomics_zaghla.pkl"
 
 st.title("CalibraNeo: Provenance-Aware Neoantigen Shortlist Audit")
@@ -95,6 +96,14 @@ with tab1:
         dominant_loh_risk = st.slider("Dominant-HLA LOH risk", 0.0, 0.90, 0.65, 0.05)
 
     candidates = pool_df if selected_cancer == "All Solid Tumors" else pool_df[pool_df["Cancer type"].eq(selected_cancer)]
+    rna_context_path = BASE_DIR / "data_external" / "rna" / "RNADecayCafe_AvgKdegs_genes_v1.csv"
+    if rna_context_path.is_file() and "gene" in candidates.columns:
+        rna_context = pd.read_csv(rna_context_path, usecols=["feature_ID", "avg_halflife"])
+        rna_annotated = candidates.rename(columns={"peptide(mut)": "peptide", "hla_clean": "hla_allele", "gene": "gene"}).copy()
+        rna_annotated = annotate_gene_stability(rna_annotated, rna_context, gene_column="gene")
+        candidates = candidates.copy()
+        candidates["gene_half_life_context"] = rna_annotated["gene_half_life_context"].to_numpy()
+        candidates["rna_stability_evidence_status"] = rna_annotated["rna_stability_evidence_status"].to_numpy()
     if len(candidates) < capacity:
         st.warning("The selected cohort has fewer candidates than the requested capacity; using the full cohort.")
     method = st.radio(

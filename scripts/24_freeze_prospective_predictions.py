@@ -29,7 +29,7 @@ def main() -> int:
     pool = master[master["dataset_source"].eq("Nature_Clinical_NeoVaccine_2317")].copy()
     predictor = load_predictor(models / "calibraneo_stage1_bundle.pkl")
     pool["presentation_score_frozen"] = predictor.predict_proba(pool)
-    immunogenicity_model = models / "calibraneo_immunogenicity_ott.pkl"
+    immunogenicity_model = models / "calibraneo_immunogenicity_ott_deployable.pkl"
     if immunogenicity_model.is_file():
         pool["immunogenicity_score_frozen"] = predict_endpoint(
             immunogenicity_model, pool, peptide_column="peptide"

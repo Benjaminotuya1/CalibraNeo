@@ -67,9 +67,9 @@
     {
       "id": "rnadecaycafe",
       "purpose": "cross-cell-line RNA half-life validation",
-      "url": "https://doi.org/10.1101/2025.08.19.671151",
+      "url": "https://zenodo.org/records/15785218",
       "access": "public",
-      "license_status": "preprint_review_required",
+      "license_status": "review_required",
       "download_allowed": true
     },
     {
