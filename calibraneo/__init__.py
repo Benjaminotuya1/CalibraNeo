@@ -1,7 +1,10 @@
 """Reusable CalibraNeo inference and design utilities."""
 
 from .inference import CalibraNeoPredictor, load_predictor
-from .selection import select_loh_aware_cassette
+from .selection import (
+    exact_small_pool_hierarchical_selection,
+    select_loh_aware_cassette,
+)
 from .constructs import build_orf, calculate_cai, construct_quality
 from .evidence import (
     EvidencePolicy,
@@ -37,6 +40,7 @@ __all__ = [
     "CalibraNeoPredictor",
     "load_predictor",
     "select_loh_aware_cassette",
+    "exact_small_pool_hierarchical_selection",
     "build_orf",
     "calculate_cai",
     "construct_quality",

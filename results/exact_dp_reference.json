@@ -1,0 +1,15 @@
+{
+  "status": "bounded_exact_reference",
+  "candidate_count": 10,
+  "capacity": 5,
+  "threshold": 3,
+  "objective_probability_at_least_threshold": 0.5192758527750538,
+  "selected_rows": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "not_large_pool_milp": true
+}

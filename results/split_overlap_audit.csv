@@ -1,0 +1,6 @@
+split_role,records,unique_groups,overlap_with_train_val
+clinical_vaccine_test,91,91,0
+external_cohort_2026,872,860,0
+nature_clinical_benchmark,2317,2288,9
+train_val,213788,213778,0
+zaghla_2026_test,192,188,11

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+from itertools import combinations
 
 
 def select_loh_aware_cassette(
@@ -60,3 +61,73 @@ def select_loh_aware_cassette(
     result.index = np.arange(1, len(result) + 1)
     result.index.name = "slot"
     return result
+
+
+def exact_small_pool_hierarchical_selection(
+    candidates: pd.DataFrame,
+    capacity: int,
+    *,
+    threshold: int = 3,
+    peptide_probability_column: str = "presentation_probability",
+    loh_probability_column: str = "loh_probability",
+    max_candidates: int = 30,
+) -> tuple[pd.DataFrame, float]:
+    """Exhaustively optimize P(S >= threshold) for a bounded candidate pool.
+
+    This exact reference implementation is intentionally limited to small
+    pools. It is a correctness baseline for the future scalable DP/MILP
+    implementation, not a large-pool optimizer.
+    """
+    required = {
+        "hla_clean",
+        peptide_probability_column,
+        loh_probability_column,
+    }
+    missing = required.difference(candidates.columns)
+    if missing:
+        raise ValueError(f"Missing exact-selection columns: {', '.join(sorted(missing))}")
+    if len(candidates) > max_candidates:
+        raise ValueError(f"Exact selection is limited to {max_candidates} candidates")
+    if capacity < 1 or capacity > len(candidates):
+        raise ValueError("capacity must be within candidate count")
+    if threshold < 1:
+        raise ValueError("threshold must be positive")
+
+    frame = candidates.reset_index(drop=True).copy()
+
+    def objective(indices: tuple[int, ...]) -> float:
+        grouped: dict[str, list[float]] = {}
+        loh: dict[str, float] = {}
+        for index in indices:
+            row = frame.iloc[index]
+            allele = str(row["hla_clean"])
+            grouped.setdefault(allele, []).append(float(row[peptide_probability_column]))
+            loh[allele] = float(row[loh_probability_column])
+        polynomial = np.array([1.0])
+        for allele, probabilities in grouped.items():
+            conditional = np.array([1.0])
+            for probability in probabilities:
+                next_values = np.zeros(len(conditional) + 1)
+                next_values[:-1] += conditional * (1.0 - probability)
+                next_values[1:] += conditional * probability
+                conditional = next_values
+            group_polynomial = np.zeros(len(conditional))
+            group_polynomial[0] = loh[allele]
+            group_polynomial += (1.0 - loh[allele]) * conditional
+            combined = np.zeros(len(polynomial) + len(group_polynomial) - 1)
+            for left, left_value in enumerate(polynomial):
+                combined[left:left + len(group_polynomial)] += (
+                    left_value * group_polynomial
+                )
+            polynomial = combined
+        return float(1.0 - polynomial[:threshold].sum())
+
+    best_indices: tuple[int, ...] | None = None
+    best_value = -1.0
+    for indices in combinations(range(len(frame)), capacity):
+        value = objective(indices)
+        if value > best_value:
+            best_indices, best_value = indices, value
+    if best_indices is None:
+        raise RuntimeError("No exact candidate subset was evaluated")
+    return frame.iloc[list(best_indices)].reset_index(drop=True), best_value
