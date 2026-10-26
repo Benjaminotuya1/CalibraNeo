@@ -46,6 +46,17 @@ st.caption(
     "Analytical ranking and LOH-sensitivity exploration only. "
     "No output is biologically validated or ready for clinical use."
 )
+with st.sidebar:
+    st.header("Public research demo")
+    st.caption("CalibraNeo is an analytical prototype, not a clinical tool.")
+    st.markdown(
+        "Shareable deployment target: "
+        "[Streamlit Community Cloud](https://share.streamlit.io/)"
+    )
+    st.caption(
+        "Do not upload identifiable patient data. Missing downstream evidence "
+        "remains unknown; it is not treated as a negative result."
+    )
 
 @st.cache_resource
 def get_predictor():

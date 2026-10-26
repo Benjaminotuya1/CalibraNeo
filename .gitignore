@@ -17,6 +17,10 @@ data_processed/*.zip
 models/*.pkl
 results/figures/
 
+# Required public demo artifacts for Streamlit deployment
+!models/calibraneo_stage1_bundle.pkl
+!data_processed/MASTER_CALIBRANEO_DATASET.csv
+
 # Local secrets and editor files
 .env
 .env.*
