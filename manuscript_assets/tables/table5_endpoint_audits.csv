@@ -1,0 +1,7 @@
+endpoint,roc_auc,auprc,note
+Ott expression-enhanced,0.68125,0.3326923076923077,Patient-grouped; small cohort
+Ott sequence-only,0.5375,0.2954545454545454,Deployable sequence-only model
+Zaghla immunopeptidomics,0.9888888888888889,0.9714285714285714,46-record grouped holdout; proxy excluded
+LOSO: held-out IEDB,0.6102564102564103,0.6508609054762902,Study held out
+LOSO: held-out Ott,0.5,0.16483516483516483,Study held out
+RNADecayCafe context,,,Regression: R2=0.0544; MAE=8.9967
