@@ -1,9 +1,65 @@
-**Table 6. Simulated 20-slot cassette resilience under dominant HLA-LOH.**
+**Table 6. Stochastic shared-score LOH sensitivity at secondary LOH rate 0.10. Values are Monte Carlo outcomes from presentation and HLA-loss draws.**
 
-| Cassette_Design_Strategy | Mean_HLA_Bridges_Used (Max=4) | Mean_Surviving_Epitopes_Per_Vaccine | Prob_At_Least_2_Active_Epitopes (%) | Total_Vaccine_Failure_Rate_Under_HLA_LOH (%) |
-| --- | --- | --- | --- | --- |
-| NetMHC-4 Greedy Top-20 | 2.94 | 1.22 | 31.0 | 47.5 |
-| BigMHC_EL Greedy Top-20 | 3.42 | 1.53 | 39.5 | 35.5 |
-| PimRNA-Style Uncalibrated Rank | 3.41 | 1.46 | 36.5 | 37.0 |
-| CalibraNeo LOH-aware Greedy Optimizer | 4.0 | 1.76 | 50.5 | 21.5 |
+| scenario | secondary_loh_rate | method | metric | estimate | lower_95 | upper_95 | n_patients | seed | simulation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| dominant_single | 0.1 | score_greedy | bridges | 2.37 | 1.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | score_greedy | surviving_epitopes | 12.68 | 0.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | score_greedy | at_least_2 | 0.88 | 0.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | score_greedy | complete_failure | 0.075 | 0.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | bridges | 2.015 | 1.0 | 3.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | surviving_epitopes | 18.41 | 9.975000000000001 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_045 | bridges | 2.89 | 2.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_045 | surviving_epitopes | 16.38 | 9.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_045 | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_045 | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | bridges | 2.89 | 2.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | surviving_epitopes | 17.18 | 9.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | round_robin | bridges | 4.0 | 4.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | round_robin | surviving_epitopes | 11.865 | 5.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | round_robin | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | round_robin | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | score_greedy | bridges | 2.395 | 1.0 | 3.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | score_greedy | surviving_epitopes | 14.46 | 2.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | score_greedy | at_least_2 | 0.98 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | score_greedy | complete_failure | 0.01 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_0 | bridges | 1.98 | 1.0 | 3.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_0 | surviving_epitopes | 18.79 | 13.975000000000001 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_0 | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_0 | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_045 | bridges | 3.0 | 3.0 | 3.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_045 | surviving_epitopes | 16.65 | 11.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_045 | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | lambda_045 | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | hla_diversity | bridges | 3.0 | 3.0 | 3.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | hla_diversity | surviving_epitopes | 17.19 | 11.975000000000001 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | hla_diversity | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | hla_diversity | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | round_robin | bridges | 4.0 | 4.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | round_robin | surviving_epitopes | 12.205 | 7.0 | 15.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | round_robin | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| random_single | 0.1 | round_robin | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | score_greedy | bridges | 2.445 | 1.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | score_greedy | surviving_epitopes | 9.84 | 0.0 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | score_greedy | at_least_2 | 0.845 | 0.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | score_greedy | complete_failure | 0.125 | 0.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_0 | bridges | 1.645 | 1.0 | 2.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_0 | surviving_epitopes | 17.9 | 8.975000000000001 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_0 | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_0 | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_045 | bridges | 2.0 | 2.0 | 2.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_045 | surviving_epitopes | 16.315 | 7.9750000000000005 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_045 | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | lambda_045 | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | hla_diversity | bridges | 2.0 | 2.0 | 2.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | hla_diversity | surviving_epitopes | 16.975 | 8.950000000000001 | 20.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | hla_diversity | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | hla_diversity | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | round_robin | bridges | 4.0 | 4.0 | 4.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | round_robin | surviving_epitopes | 8.41 | 4.9750000000000005 | 10.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | round_robin | at_least_2 | 1.0 | 1.0 | 1.0 | 200 | 42 | stochastic_X_and_Z |
+| two_allele | 0.1 | round_robin | complete_failure | 0.0 | 0.0 | 0.0 | 200 | 42 | stochastic_X_and_Z |
 

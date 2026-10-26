@@ -243,6 +243,141 @@ def shared_score_loh_simulation(
     return pd.DataFrame(rows)
 
 
+def stochastic_shared_score_loh_simulation(
+    pool: pd.DataFrame,
+    *,
+    n_patients: int = 200,
+    seed: int = 42,
+) -> pd.DataFrame:
+    """Estimate stochastic surviving-epitope outcomes under shared scores.
+
+    For each patient and policy, this draws HLA-loss indicators Z_h and
+    presentation indicators X_i ~ Bernoulli(p_i), then computes
+    S = sum_i X_i * (1 - Z_h(i)). The output is descriptive Monte Carlo
+    estimation under hypothetical LOH assumptions, not patient validation.
+    """
+    rng = np.random.default_rng(seed)
+    top_hlas = pool["hla_clean"].value_counts().head(12).index.tolist()
+    methods = ["score_greedy", "lambda_0", "lambda_045", "hla_diversity", "round_robin"]
+    scenarios = ["dominant_single", "random_single", "two_allele"]
+    rows = []
+    for scenario in scenarios:
+        for loh_rate in (0.05, 0.10, 0.20, 0.30):
+            outcomes = {method: [] for method in methods}
+            for _ in range(n_patients):
+                patient_hlas = list(rng.choice(top_hlas, size=4, replace=False))
+                dominant = patient_hlas[0]
+                pieces = []
+                for allele in patient_hlas:
+                    count = 55 if allele == dominant else 25
+                    pieces.append(
+                        pool[pool["hla_clean"].eq(allele)].sample(
+                            count,
+                            replace=True,
+                            random_state=int(rng.integers(1_000_000)),
+                        )
+                    )
+                candidates = pd.concat(pieces, ignore_index=True).reset_index(drop=True)
+                presentation = candidates["presentation_score_frozen"].clip(0, 1).to_numpy(float)
+                allele_values = candidates["hla_clean"].astype(str).to_numpy()
+                if scenario == "dominant_single":
+                    loh = {
+                        allele: (0.75 if allele == dominant else loh_rate)
+                        for allele in patient_hlas
+                    }
+                    loss = {
+                        allele: bool(rng.random() < probability)
+                        for allele, probability in loh.items()
+                    }
+                elif scenario == "random_single":
+                    lost = str(rng.choice(patient_hlas))
+                    loss = {allele: allele == lost for allele in patient_hlas}
+                else:
+                    lost = set(rng.choice(patient_hlas, size=2, replace=False))
+                    loss = {allele: allele in lost for allele in patient_hlas}
+                loh_probability = np.array(
+                    [float(loss[allele]) for allele in allele_values],
+                    dtype=float,
+                )
+                effective = presentation * (1.0 - loh_probability)
+                selections = {}
+                selections["score_greedy"] = np.argsort(-presentation, kind="stable")[:20].tolist()
+                for method, decay in [("lambda_0", 0.0), ("lambda_045", 0.45)]:
+                    chosen, counts = [], {}
+                    for _slot in range(20):
+                        scores = effective.copy()
+                        if chosen:
+                            scores[chosen] = -np.inf
+                        scores *= np.exp(
+                            -decay * np.array(
+                                [counts.get(allele, 0) for allele in allele_values]
+                            )
+                        )
+                        pick = int(np.argmax(scores))
+                        chosen.append(pick)
+                        allele = allele_values[pick]
+                        counts[allele] = counts.get(allele, 0) + 1
+                    selections[method] = chosen
+                chosen, counts = [], {}
+                for _slot in range(20):
+                    scores = effective.copy()
+                    if chosen:
+                        scores[chosen] = -np.inf
+                    scores /= 1 + np.array(
+                        [counts.get(allele, 0) for allele in allele_values]
+                    )
+                    pick = int(np.argmax(scores))
+                    chosen.append(pick)
+                    allele = allele_values[pick]
+                    counts[allele] = counts.get(allele, 0) + 1
+                selections["hla_diversity"] = chosen
+                chosen = []
+                for allele in patient_hlas:
+                    allele_indices = np.flatnonzero(allele_values == allele)
+                    chosen.extend(
+                        allele_indices[np.argsort(-presentation[allele_indices])[:5]].tolist()
+                    )
+                selections["round_robin"] = chosen[:20]
+                presentation_draw = rng.random(len(candidates)) < presentation
+                for method, indices in selections.items():
+                    selected = candidates.iloc[indices]
+                    selected_alleles = selected["hla_clean"].astype(str).to_numpy()
+                    surviving = int(
+                        np.sum(
+                            presentation_draw[indices]
+                            & ~np.array([loss[allele] for allele in selected_alleles])
+                        )
+                    )
+                    outcomes[method].append(
+                        {
+                            "bridges": selected["hla_clean"].nunique(),
+                            "surviving_epitopes": surviving,
+                            "at_least_2": int(surviving >= 2),
+                            "complete_failure": int(surviving == 0),
+                        }
+                    )
+            for method, values in outcomes.items():
+                frame = pd.DataFrame(values)
+                for metric in ("bridges", "surviving_epitopes", "at_least_2", "complete_failure"):
+                    mean = float(frame[metric].mean())
+                    lower, upper = np.quantile(frame[metric].to_numpy(), [0.025, 0.975])
+                    rows.append(
+                        {
+                            "scenario": scenario,
+                            "secondary_loh_rate": loh_rate,
+                            "method": method,
+                            "metric": metric,
+                            "estimate": mean,
+                            "lower_95": float(lower),
+                            "upper_95": float(upper),
+                            "n_patients": n_patients,
+                            "seed": seed,
+                            "simulation": "stochastic_X_and_Z",
+                        }
+                    )
+    return pd.DataFrame(rows)
+
+
 def main() -> int:
     proc = ROOT / "data_processed"
     results = ROOT / "results"
@@ -340,6 +475,10 @@ def main() -> int:
     pool["hla_clean"] = pool["hla_allele"].astype(str)
     loh = shared_score_loh_simulation(pool, n_patients=200)
     loh.to_csv(results / "shared_score_loh_sensitivity.csv", index=False)
+    stochastic_loh = stochastic_shared_score_loh_simulation(pool, n_patients=200)
+    stochastic_loh.to_csv(
+        results / "stochastic_shared_score_loh_sensitivity.csv", index=False
+    )
     small = pool.head(10).copy()
     small["presentation_probability"] = small["presentation_score_frozen"]
     small["loh_probability"] = 0.10

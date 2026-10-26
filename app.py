@@ -301,26 +301,60 @@ with tab3:
     for filename, title in [
         ("table1_clinical_benchmark_vs_9tools.csv", "Clinical benchmark"),
         ("table1_stage2_leave_one_tool_out.csv", "Stage 2 leave-one-tool-out ablation"),
-        ("table2_rl_cassette_optimization_under_hlaloh.csv", "LOH simulation"),
     ]:
         path = RESULTS_DIR / filename
         if path.is_file():
             st.markdown(f"**{title}**")
             st.dataframe(pd.read_csv(path), use_container_width=True)
+    shared_loh_path = RESULTS_DIR / "shared_score_loh_sensitivity.csv"
+    if shared_loh_path.is_file():
+        st.markdown("**Shared-score LOH sensitivity (expected scores only)**")
+        st.dataframe(
+            pd.read_csv(shared_loh_path),
+            use_container_width=True,
+        )
+        st.caption(
+            "These are expected retained presentation-score sums under a shared "
+            "frozen score. They are not stochastic failure probabilities or P(S ≥ 2)."
+        )
+    stochastic_loh_path = RESULTS_DIR / "stochastic_shared_score_loh_sensitivity.csv"
+    if stochastic_loh_path.is_file():
+        st.markdown("**Stochastic LOH outcomes**")
+        stochastic = pd.read_csv(stochastic_loh_path)
+        st.dataframe(
+            stochastic[
+                stochastic["secondary_loh_rate"].eq(0.10)
+            ],
+            use_container_width=True,
+        )
+        st.caption(
+            "These outcomes draw Bernoulli presentation indicators and HLA-loss "
+            "indicators for 200 simulated patients with seed 42. They are "
+            "hypothetical Monte Carlo results, not patient-level estimates."
+        )
     st.warning(
         "The current evidence supports shortlist sensitivity and provenance auditing. "
         "It does not establish peptide presentation, immunogenicity, vaccine efficacy, safety, "
         "or clinical readiness. The co-delivery siRNA design is intentionally not presented as a recommendation."
     )
-    for filename in [
-        "Fig1_Calibration_Benchmark.png",
-        "Fig2_RL_Cassette_HLA_LOH_Resilience.png",
-        "Fig3_Reliability_Diagram.png",
-        "Fig4_Biophysical_Feature_Importance.png",
+    st.markdown("**Corrected manuscript figures**")
+    for filename, caption in [
+        (
+            "Figure2_calibration_transfer.png",
+            "Figure 2: internal calibration, prevalence baseline, and Zenodo transfer.",
+        ),
+        (
+            "Figure3_nature_benchmark.png",
+            "Figure 3: direct frozen Nature evaluation versus within-cohort OOF benchmark.",
+        ),
+        (
+            "Figure4_hla_loh_simulation.png",
+            "Figure 4: stochastic P(S ≥ 2) and complete-failure outcomes under simulated HLA loss.",
+        ),
     ]:
-        path = RESULTS_DIR / "figures" / filename
+        path = BASE_DIR / "manuscript_assets" / "figures" / filename
         if path.is_file():
-            st.image(str(path), caption=filename)
+            st.image(str(path), caption=caption)
 
 with tab4:
     st.subheader("Computational validation and experiment queue")

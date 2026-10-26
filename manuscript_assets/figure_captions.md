@@ -1,0 +1,7 @@
+# Figure captions
+
+**Figure 2. Internal calibration and external transfer.** (A) Internal ROC and precision–recall curves for uncalibrated and isotonic-calibrated predictions. (B) Reliability diagram for the internal test set; the prevalence line is the internal test-set positive prevalence. (C) Reliability diagram for Zenodo transfer. Reliability curves use 10 equal-width bins over [0,1], rather than adaptive bins. Zenodo confidence intervals were estimated at record level because patient identifiers were unavailable; they were not group-aware.
+
+**Figure 3. Nature benchmark comparison.** (A) Direct frozen-model evaluation on the 2,317-record clinical benchmark, with comparator scores and a 95% confidence interval for CalibraNeo (ROC-AUC 0.4913, 95% CI 0.4528–0.5303). This direct evaluation was not statistically distinguishable from chance. (B) Within-cohort five-fold out-of-fold benchmark using Nature labels (ROC-AUC 0.5209). The OOF benchmark is shown separately because it is not external validation.
+
+**Figure 4. Stochastic outcomes under simulated HLA loss.** Proportions of simulated patients with at least two surviving epitopes and complete failure after Bernoulli presentation and HLA-loss draws, under dominant single-allele, random single-allele, and two-allele loss scenarios. Error bars are empirical 95% intervals over 200 patients at secondary LOH rate 0.10. These are simulation outcomes under hypothetical parameters, not patient-level estimates.

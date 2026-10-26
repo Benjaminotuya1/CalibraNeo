@@ -305,13 +305,17 @@ def make_tables() -> None:
         "Table 5. Endpoint-specific models, transfer, and leakage-aware audits.",
     )
 
-    table6 = pd.read_csv(
-        ROOT / "results" / "table2_rl_cassette_optimization_under_hlaloh.csv"
+    loh = pd.read_csv(
+        ROOT / "results" / "stochastic_shared_score_loh_sensitivity.csv"
     )
+    table6 = loh.loc[
+        (loh["secondary_loh_rate"].eq(0.10))
+        & (loh["metric"].isin(["bridges", "surviving_epitopes", "at_least_2", "complete_failure"]))
+    ].copy()
     save_table(
         table6,
         "table6_hla_loh_simulation",
-        "Table 6. Simulated 20-slot cassette resilience under dominant HLA-LOH.",
+        "Table 6. Stochastic shared-score LOH sensitivity at secondary LOH rate 0.10. Values are Monte Carlo outcomes from presentation and HLA-loss draws.",
     )
 
 
@@ -504,7 +508,15 @@ def make_figure2() -> None:
     frac_cal, mean_cal = calibration_curve(y, calibrated, n_bins=10)
     axes[1].plot(mean_raw, frac_raw, "o-", label="Uncalibrated; ECE 0.0138")
     axes[1].plot(mean_cal, frac_cal, "o-", label="Calibrated; ECE 0.0060")
-    axes[1].plot([0, 1], [0, 1], "--", color="gray")
+    prevalence = float(np.mean(y))
+    axes[1].plot(
+        [0, 1],
+        [prevalence, prevalence],
+        ":",
+        color="#b45309",
+        label=f"Test prevalence ({prevalence:.3f})",
+    )
+    axes[1].plot([0, 1], [0, 1], "--", color="gray", label="Ideal calibration")
     axes[1].set_title("B  Internal reliability")
     axes[1].set_xlabel("Mean predicted probability")
     axes[1].set_ylabel("Observed frequency")
@@ -519,114 +531,170 @@ def make_figure2() -> None:
     axes[2].set_ylabel("Observed frequency")
     axes[2].legend(fontsize=8)
     fig.suptitle("Figure 2. Internal calibration and external transfer", fontsize=15)
+    fig.text(
+        0.5,
+        0.01,
+        "Reliability curves use 10 equal-width probability bins; Zenodo intervals are record-level because patient identifiers were unavailable.",
+        ha="center",
+        fontsize=8.5,
+        color="#475569",
+    )
     fig.savefig(FIG / "Figure2_calibration_transfer.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
 def make_figure3() -> None:
-    frame = pd.read_csv(ROOT / "results" / "table1_clinical_benchmark_vs_9tools.csv")
-    selected = frame[
-        frame["Method"].isin(
-            [
-                "CalibraNeo (Biophysics-Only Calibrated)",
-                "NetMHC-4 (Uncalibrated Rank)",
-                "MHCflurryPres (Presentation Score)",
-                "BigMHC_EL (Deep Learning Baseline)",
-                "NetMHCstab (Stability Score)",
-            ]
-        )
-    ].copy()
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5), constrained_layout=True)
-    labels = selected["Method"].str.replace(
-        " (Biophysics-Only Calibrated)", "", regex=False
-    ).str.replace(" (Uncalibrated Rank)", "", regex=False).str.replace(
-        " (Presentation Score)", "", regex=False
-    ).str.replace(" (Deep Learning Baseline)", "", regex=False).str.replace(
-        " (Stability Score)", "", regex=False
+    audit = pd.read_csv(ROOT / "results" / "full_calibration_audit.csv")
+    comparisons = pd.read_csv(ROOT / "results" / "nature_auc_bootstrap_comparisons.csv")
+    comparator_names = {
+        "NetMHC-4": "NetMHC-4",
+        "MHCflurryPres": "MHCflurry presentation",
+        "BigMHC EL": "BigMHC EL",
+        "NetMHCstab": "NetMHCstab",
+    }
+    direct = audit.set_index("method")["auc"].to_dict()
+    methods = ["CalibraNeo", *comparator_names]
+    aucs = [direct.get("CalibraNeo Nature full", np.nan)]
+    for name in comparator_names:
+        aucs.append(direct.get(name, np.nan))
+    ci_row = comparisons.loc[comparisons["method"].eq("CalibraNeo")].iloc[0]
+    lower = [aucs[0] - float(ci_row["ci_low"])] + [0.0] * (len(aucs) - 1)
+    upper = [float(ci_row["ci_high"]) - aucs[0]] + [0.0] * (len(aucs) - 1)
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5.2), constrained_layout=True)
+    x = np.arange(len(methods))
+    axes[0].bar(x, aucs, color=["#1f77b4", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af"])
+    axes[0].errorbar(
+        x[0], aucs[0], yerr=np.array([lower[0], upper[0]])[:, None],
+        fmt="none", ecolor="#111827", capsize=4, linewidth=1.5,
     )
-    x = np.arange(len(selected))
-    width = 0.36
-    axes[0].bar(x - width / 2, selected["AUC_ROC"], width, label="ROC-AUC")
-    axes[0].bar(x + width / 2, selected["AUPRC"], width, label="AUPRC")
-    axes[0].set_xticks(x, labels, rotation=28, ha="right")
-    axes[0].set_ylim(0, 0.65)
-    axes[0].set_title("A  Ranking performance")
-    axes[0].set_ylabel("Score")
-    axes[0].legend()
-    axes[1].bar(
-        x - width / 2,
-        selected["Brier_Score (Lower=Better)"],
-        width,
-        label="Brier score",
+    axes[0].axhline(0.5, linestyle="--", color="gray", linewidth=1)
+    axes[0].set_xticks(x, methods, rotation=28, ha="right")
+    axes[0].set_ylim(0.4, 0.6)
+    axes[0].set_title("A  Direct frozen-model evaluation")
+    axes[0].set_ylabel("ROC-AUC")
+    axes[0].text(
+        0.02, 0.04, "CalibraNeo: 0.4913\n95% CI 0.4528–0.5303",
+        transform=axes[0].transAxes, fontsize=8.5,
     )
     axes[1].bar(
-        x + width / 2,
-        selected["ECE_Error (Lower=Better)"],
-        width,
-        label="ECE",
+        ["CalibraNeo OOF"],
+        [0.5209],
+        color="#7c3aed",
+        width=0.5,
     )
-    axes[1].set_xticks(x, labels, rotation=28, ha="right")
-    axes[1].set_title("B  Calibration error")
-    axes[1].set_ylabel("Lower is better")
-    axes[1].legend()
-    fig.suptitle("Figure 3. Nature clinical benchmark (n=2,317)", fontsize=15)
+    axes[1].axhline(0.5, linestyle="--", color="gray", linewidth=1)
+    axes[1].set_ylim(0.4, 0.6)
+    axes[1].set_title("B  Within-cohort OOF benchmark")
+    axes[1].set_ylabel("ROC-AUC")
+    axes[1].text(
+        0.02, 0.04,
+        "AUC 0.5209\nNot external validation",
+        transform=axes[1].transAxes, fontsize=8.5,
+    )
+    fig.suptitle("Figure 3. Nature benchmark comparison (n=2,317)", fontsize=15)
+    fig.text(
+        0.5,
+        0.01,
+        "Direct evaluation uses the frozen Stage-1 model; the OOF panel uses Nature labels within cohort and is shown separately.",
+        ha="center",
+        fontsize=8.5,
+        color="#475569",
+    )
     fig.savefig(FIG / "Figure3_nature_benchmark.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
 def make_figure4() -> None:
     frame = pd.read_csv(
-        ROOT / "results" / "table2_rl_cassette_optimization_under_hlaloh.csv"
+        ROOT / "results" / "stochastic_shared_score_loh_sensitivity.csv"
     )
-    labels = frame["Cassette_Design_Strategy"].str.replace(
-        " Greedy Top-20", "", regex=False
-    ).str.replace(" Greedy Optimizer", "", regex=False)
-    x = np.arange(len(frame))
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5), constrained_layout=True)
-    width = 0.36
-    axes[0].bar(
-        x - width / 2,
-        frame["Mean_HLA_Bridges_Used (Max=4)"],
-        width,
-        label="Mean HLA bridges",
-    )
-    axes[0].bar(
-        x + width / 2,
-        frame["Mean_Surviving_Epitopes_Per_Vaccine"],
-        width,
-        label="Mean surviving epitopes",
-    )
-    axes[0].set_xticks(x, labels, rotation=28, ha="right")
-    axes[0].set_title("A  Portfolio diversity and survival")
-    axes[0].legend()
-    axes[1].bar(
-        x - width / 2,
-        frame["Prob_At_Least_2_Active_Epitopes (%)"],
-        width,
-        label="≥2 active epitopes",
-    )
-    axes[1].bar(
-        x + width / 2,
-        frame["Total_Vaccine_Failure_Rate_Under_HLA_LOH (%)"],
-        width,
-        label="Complete failure",
-    )
-    axes[1].set_xticks(x, labels, rotation=28, ha="right")
-    axes[1].set_ylim(0, 60)
-    axes[1].set_ylabel("Simulated patients (%)")
-    axes[1].set_title("B  Resilience under simulated HLA-LOH")
-    axes[1].legend()
-    fig.suptitle("Figure 4. Simulated 20-slot cassette resilience", fontsize=15)
+    frame = frame[
+        frame["secondary_loh_rate"].eq(0.10)
+        & frame["metric"].isin(["at_least_2", "complete_failure"])
+    ].copy()
+    policy_labels = {
+        "score_greedy": "Score-greedy",
+        "hla_diversity": "HLA-diversity",
+        "round_robin": "Round-robin",
+        "lambda_0": "CalibraNeo λ=0",
+        "lambda_045": "CalibraNeo λ=0.45",
+    }
+    scenarios = [
+        ("dominant_single", "A  Dominant single-allele loss"),
+        ("random_single", "B  Random single-allele loss"),
+        ("two_allele", "C  Two-allele loss"),
+    ]
+    policy_order = list(policy_labels)
+    fig, axes = plt.subplots(1, 3, figsize=(16, 5), sharey=True, constrained_layout=True)
+    for axis, (scenario, title) in zip(axes, scenarios):
+        subset = frame[frame["scenario"].eq(scenario)].copy()
+        subset["label"] = subset["method"].map(policy_labels)
+        x = np.arange(len(policy_order))
+        for metric, color, label in [
+            ("at_least_2", "#2563eb", "P(S ≥ 2)"),
+            ("complete_failure", "#dc2626", "Complete failure"),
+        ]:
+            metric_values = subset[subset["metric"].eq(metric)].set_index("method")
+            values = metric_values.reindex(policy_order)["estimate"].to_numpy()
+            axis.bar(
+                x + (-0.18 if metric == "at_least_2" else 0.18),
+                values,
+                width=0.34,
+                color=color,
+                label=label,
+            )
+        axis.set_ylim(0, 1.05)
+        at_least_2 = (
+            subset[subset["metric"].eq("at_least_2")]
+            .set_index("method")
+            .reindex(policy_order)
+        )
+        axis.errorbar(
+            x - 0.18,
+            at_least_2["estimate"],
+            yerr=np.vstack(
+                [
+                    np.maximum(
+                        at_least_2["estimate"] - at_least_2["lower_95"], 0
+                    ),
+                    np.maximum(
+                        at_least_2["upper_95"] - at_least_2["estimate"], 0
+                    ),
+                ]
+            ),
+            fmt="none",
+            ecolor="#111827",
+            capsize=3,
+            linewidth=1,
+        )
+        axis.set_xticks(x, [policy_labels[method] for method in policy_order], rotation=35, ha="right")
+        axis.set_title(title)
+        axis.set_ylabel("Monte Carlo proportion")
+        axis.legend(fontsize=8)
+        axis.grid(axis="y", alpha=0.2)
+    fig.suptitle("Figure 4. Stochastic outcomes under simulated HLA loss", fontsize=15)
     fig.text(
         0.5,
         0.01,
-        "Simulation-based comparison; not patient-level or biological validation.",
+        "Bars show P(S ≥ 2) and complete-failure rates after Bernoulli presentation and HLA-loss draws. Error bars are empirical 95% intervals over 200 patients; secondary LOH rate = 0.10.",
         ha="center",
-        fontsize=9,
+        fontsize=8.5,
         color="#475569",
     )
     fig.savefig(FIG / "Figure4_hla_loh_simulation.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
+
+
+def write_figure_captions() -> None:
+    captions = """# Figure captions
+
+**Figure 2. Internal calibration and external transfer.** (A) Internal ROC and precision–recall curves for uncalibrated and isotonic-calibrated predictions. (B) Reliability diagram for the internal test set; the prevalence line is the internal test-set positive prevalence. (C) Reliability diagram for Zenodo transfer. Reliability curves use 10 equal-width bins over [0,1], rather than adaptive bins. Zenodo confidence intervals were estimated at record level because patient identifiers were unavailable; they were not group-aware.
+
+**Figure 3. Nature benchmark comparison.** (A) Direct frozen-model evaluation on the 2,317-record clinical benchmark, with comparator scores and a 95% confidence interval for CalibraNeo (ROC-AUC 0.4913, 95% CI 0.4528–0.5303). This direct evaluation was not statistically distinguishable from chance. (B) Within-cohort five-fold out-of-fold benchmark using Nature labels (ROC-AUC 0.5209). The OOF benchmark is shown separately because it is not external validation.
+
+**Figure 4. Stochastic outcomes under simulated HLA loss.** Proportions of simulated patients with at least two surviving epitopes and complete failure after Bernoulli presentation and HLA-loss draws, under dominant single-allele, random single-allele, and two-allele loss scenarios. Error bars are empirical 95% intervals over 200 patients at secondary LOH rate 0.10. These are simulation outcomes under hypothetical parameters, not patient-level estimates.
+"""
+    (OUT / "figure_captions.md").write_text(captions, encoding="utf-8")
 
 
 def main() -> int:
@@ -635,6 +703,7 @@ def main() -> int:
     make_figure2()
     make_figure3()
     make_figure4()
+    write_figure_captions()
     print(f"Generated manuscript assets in {OUT}")
     return 0
 
