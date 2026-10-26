@@ -329,7 +329,8 @@ with tab3:
         )
         st.caption(
             "These outcomes draw Bernoulli presentation indicators and HLA-loss "
-            "indicators for 200 simulated patients with seed 42. They are "
+            "indicators for 2,000 simulated patients with seed 42. Binary "
+            "outcome intervals use Wilson 95% intervals. They are "
             "hypothetical Monte Carlo results, not patient-level estimates."
         )
     st.warning(

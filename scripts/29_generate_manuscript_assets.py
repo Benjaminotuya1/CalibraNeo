@@ -676,7 +676,7 @@ def make_figure4() -> None:
     fig.text(
         0.5,
         0.01,
-        "Bars show P(S ≥ 2) and complete-failure rates after Bernoulli presentation and HLA-loss draws. Error bars are empirical 95% intervals over 200 patients; secondary LOH rate = 0.10.",
+        "Bars show P(S ≥ 2) and complete-failure rates after Bernoulli presentation and HLA-loss draws. Error bars are Wilson 95% intervals for binary outcomes over 2,000 patients; secondary LOH rate = 0.10. Selection precedes the LOH draw.",
         ha="center",
         fontsize=8.5,
         color="#475569",
@@ -692,7 +692,7 @@ def write_figure_captions() -> None:
 
 **Figure 3. Nature benchmark comparison.** (A) Direct frozen-model evaluation on the 2,317-record clinical benchmark, with comparator scores and a 95% confidence interval for CalibraNeo (ROC-AUC 0.4913, 95% CI 0.4528–0.5303). This direct evaluation was not statistically distinguishable from chance. (B) Within-cohort five-fold out-of-fold benchmark using Nature labels (ROC-AUC 0.5209). The OOF benchmark is shown separately because it is not external validation.
 
-**Figure 4. Stochastic outcomes under simulated HLA loss.** Proportions of simulated patients with at least two surviving epitopes and complete failure after Bernoulli presentation and HLA-loss draws, under dominant single-allele, random single-allele, and two-allele loss scenarios. Error bars are empirical 95% intervals over 200 patients at secondary LOH rate 0.10. These are simulation outcomes under hypothetical parameters, not patient-level estimates.
+**Figure 4. Stochastic outcomes under simulated HLA loss.** Proportions of simulated patients with at least two surviving epitopes and complete failure after Bernoulli presentation and HLA-loss draws, under dominant single-allele, random single-allele, and two-allele loss scenarios. Error bars are Wilson 95% intervals for binary outcomes over 2,000 patients at secondary LOH rate 0.10. These are simulation outcomes under hypothetical parameters, not patient-level estimates; selection was performed before the LOH state was drawn.
 """
     (OUT / "figure_captions.md").write_text(captions, encoding="utf-8")
 

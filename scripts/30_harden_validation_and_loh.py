@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import argparse
+import math
 import sys
 from itertools import combinations
 from pathlib import Path
@@ -280,6 +282,46 @@ def stochastic_shared_score_loh_simulation(
                 candidates = pd.concat(pieces, ignore_index=True).reset_index(drop=True)
                 presentation = candidates["presentation_score_frozen"].clip(0, 1).to_numpy(float)
                 allele_values = candidates["hla_clean"].astype(str).to_numpy()
+                presentation_draw = rng.random(len(candidates)) < presentation
+                selections = {}
+                selections["score_greedy"] = np.argsort(-presentation, kind="stable")[:20].tolist()
+                for method, decay in [("lambda_0", 0.0), ("lambda_045", 0.45)]:
+                    chosen, counts = [], {}
+                    for _slot in range(20):
+                        scores = presentation.copy()
+                        if chosen:
+                            scores[chosen] = -np.inf
+                        scores *= np.exp(
+                            -decay * np.array(
+                                [counts.get(allele, 0) for allele in allele_values]
+                            )
+                        )
+                        pick = int(np.argmax(scores))
+                        chosen.append(pick)
+                        allele = allele_values[pick]
+                        counts[allele] = counts.get(allele, 0) + 1
+                    selections[method] = chosen
+                chosen, counts = [], {}
+                for _slot in range(20):
+                    scores = presentation.copy()
+                    if chosen:
+                        scores[chosen] = -np.inf
+                    scores /= 1 + np.array(
+                        [counts.get(allele, 0) for allele in allele_values]
+                    )
+                    pick = int(np.argmax(scores))
+                    chosen.append(pick)
+                    allele = allele_values[pick]
+                    counts[allele] = counts.get(allele, 0) + 1
+                selections["hla_diversity"] = chosen
+                chosen = []
+                for allele in patient_hlas:
+                    allele_indices = np.flatnonzero(allele_values == allele)
+                    chosen.extend(
+                        allele_indices[np.argsort(-presentation[allele_indices])[:5]].tolist()
+                    )
+                selections["round_robin"] = chosen[:20]
+
                 if scenario == "dominant_single":
                     loh = {
                         allele: (0.75 if allele == dominant else loh_rate)
@@ -299,46 +341,6 @@ def stochastic_shared_score_loh_simulation(
                     [float(loss[allele]) for allele in allele_values],
                     dtype=float,
                 )
-                effective = presentation * (1.0 - loh_probability)
-                selections = {}
-                selections["score_greedy"] = np.argsort(-presentation, kind="stable")[:20].tolist()
-                for method, decay in [("lambda_0", 0.0), ("lambda_045", 0.45)]:
-                    chosen, counts = [], {}
-                    for _slot in range(20):
-                        scores = effective.copy()
-                        if chosen:
-                            scores[chosen] = -np.inf
-                        scores *= np.exp(
-                            -decay * np.array(
-                                [counts.get(allele, 0) for allele in allele_values]
-                            )
-                        )
-                        pick = int(np.argmax(scores))
-                        chosen.append(pick)
-                        allele = allele_values[pick]
-                        counts[allele] = counts.get(allele, 0) + 1
-                    selections[method] = chosen
-                chosen, counts = [], {}
-                for _slot in range(20):
-                    scores = effective.copy()
-                    if chosen:
-                        scores[chosen] = -np.inf
-                    scores /= 1 + np.array(
-                        [counts.get(allele, 0) for allele in allele_values]
-                    )
-                    pick = int(np.argmax(scores))
-                    chosen.append(pick)
-                    allele = allele_values[pick]
-                    counts[allele] = counts.get(allele, 0) + 1
-                selections["hla_diversity"] = chosen
-                chosen = []
-                for allele in patient_hlas:
-                    allele_indices = np.flatnonzero(allele_values == allele)
-                    chosen.extend(
-                        allele_indices[np.argsort(-presentation[allele_indices])[:5]].tolist()
-                    )
-                selections["round_robin"] = chosen[:20]
-                presentation_draw = rng.random(len(candidates)) < presentation
                 for method, indices in selections.items():
                     selected = candidates.iloc[indices]
                     selected_alleles = selected["hla_clean"].astype(str).to_numpy()
@@ -360,7 +362,24 @@ def stochastic_shared_score_loh_simulation(
                 frame = pd.DataFrame(values)
                 for metric in ("bridges", "surviving_epitopes", "at_least_2", "complete_failure"):
                     mean = float(frame[metric].mean())
-                    lower, upper = np.quantile(frame[metric].to_numpy(), [0.025, 0.975])
+                    if metric in {"at_least_2", "complete_failure"}:
+                        z = 1.959963984540054
+                        successes = float(frame[metric].sum())
+                        denominator = float(len(frame))
+                        center = (successes + z**2 / 2) / (denominator + z**2)
+                        margin = (
+                            z
+                            * math.sqrt(
+                                successes * (denominator - successes) / denominator
+                                + z**2 / 4
+                            )
+                            / (denominator + z**2)
+                        )
+                        lower, upper = center - margin, center + margin
+                    else:
+                        lower, upper = np.quantile(
+                            frame[metric].to_numpy(), [0.025, 0.975]
+                        )
                     rows.append(
                         {
                             "scenario": scenario,
@@ -379,6 +398,22 @@ def stochastic_shared_score_loh_simulation(
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Run CalibraNeo validation and LOH audits.")
+    parser.add_argument(
+        "--stochastic-patients",
+        type=int,
+        default=2000,
+        help="Number of patients for the stochastic LOH simulation (default: 2000).",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=42,
+        help="Random seed for reproducible LOH simulations (default: 42).",
+    )
+    args = parser.parse_args()
+    if args.stochastic_patients < 1:
+        parser.error("--stochastic-patients must be positive")
     proc = ROOT / "data_processed"
     results = ROOT / "results"
     master = pd.read_csv(proc / "MASTER_CALIBRANEO_DATASET.csv", low_memory=False)
@@ -475,7 +510,11 @@ def main() -> int:
     pool["hla_clean"] = pool["hla_allele"].astype(str)
     loh = shared_score_loh_simulation(pool, n_patients=200)
     loh.to_csv(results / "shared_score_loh_sensitivity.csv", index=False)
-    stochastic_loh = stochastic_shared_score_loh_simulation(pool, n_patients=200)
+    stochastic_loh = stochastic_shared_score_loh_simulation(
+        pool,
+        n_patients=args.stochastic_patients,
+        seed=args.seed,
+    )
     stochastic_loh.to_csv(
         results / "stochastic_shared_score_loh_sensitivity.csv", index=False
     )
