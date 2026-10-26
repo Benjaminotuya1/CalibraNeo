@@ -35,6 +35,21 @@ from .patient import (
 from .active_learning import compare_selection_methods, experiment_information_gain
 from .sequence_design import rna_design_features
 from .rna_model import annotate_gene_stability, train_rna_context_model
+from .platform import (
+    build_platform_interface,
+    circ_rna_candidate_score,
+    circ_rna_constraints,
+    joint_platform_score,
+    joint_weight_sensitivity,
+    normalize_shared_antigens,
+    population_hla_coverage,
+    rank_cytokine_triplets,
+    score_shared_antigens,
+)
+from .outcomes import (
+    combine_endpoint_predictions,
+    endpoint_validation_status,
+)
 
 __all__ = [
     "CalibraNeoPredictor",
@@ -72,4 +87,15 @@ __all__ = [
     "rna_design_features",
     "annotate_gene_stability",
     "train_rna_context_model",
+    "build_platform_interface",
+    "circ_rna_candidate_score",
+    "circ_rna_constraints",
+    "joint_platform_score",
+    "joint_weight_sensitivity",
+    "normalize_shared_antigens",
+    "population_hla_coverage",
+    "rank_cytokine_triplets",
+    "score_shared_antigens",
+    "combine_endpoint_predictions",
+    "endpoint_validation_status",
 ]

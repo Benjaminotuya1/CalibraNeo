@@ -149,6 +149,57 @@ not a scalable MILP implementation. No real patient HLA-LOH calls were used.
 `scripts/31_harden_manuscript.py` without overwriting the author-supplied
 `Manuscript.docx`.
 
+### Thesis platform extensions
+
+The platform extension layer is implemented in `calibraneo/platform.py`.
+It adds:
+
+- dual-mode shared-antigen scoring and allele-frequency-weighted population
+  coverage from user-supplied HLA frequencies;
+- circRNA BSJ, local-structure, IRES compatibility, and rolling-translation
+  proxy features;
+- literature-curated cytokine-triplet ranking with explicit synergy,
+  antagonism, and risk proxies;
+- versioned hand-off contracts for future IRES and LNP-QSAR models.
+
+Public resources are registered in `data_registry_platform.json`. Raw data are
+not copied into the repository because public availability does not by itself
+establish redistribution rights. The circRNA and cytokine scores are
+hypothesis-ranking proxies, not validated biological predictions. The LNP
+interface is a contract until a licensed formulation/outcome table is obtained.
+
+The circRNA module now treats BSJ frame continuity and IRES length compatibility
+as hard constraints. It uses ViennaRNA `RNAfold` when installed and reports an
+explicit fallback status when it is unavailable; the reverse-complement
+self-complementarity value is retained only as a secondary descriptor. The
+rolling-translation proxy is defined as a weighted combination of BSJ frame
+continuity, complete codon traversal, in-frame stop avoidance, and GC
+compatibility. It is not a translation model. These sequence-level constraints
+have not been validated against measured circularisation efficiency or
+translation yield.
+
+The planned retrospective benchmark is tracked in
+`circRNA_benchmark_manifest.json`. It is intentionally not populated with
+invented sequences or assay labels: each construct must be traceable to a
+primary record or permitted accession before it is scored. The contribution
+being evaluated is cassette-level design on top of a circular backbone and
+IRES, not the circular backbone itself. This is orthogonal to the published
+scarless circularisation work, which established improved circular RNA
+production and expression.
+
+Once a permitted construct table is available, run the retrospective benchmark
+with:
+
+```powershell
+python scripts/32_benchmark_circRNA.py `
+  --input path\to\permitted_circRNA_constructs.csv `
+  --output results\circRNA_constraint_benchmark.csv
+```
+
+The runner does not infer labels from publication status. It reports
+construct-level scores and calculates Spearman correlations only for measured
+circularisation or translation outcomes with at least three non-missing values.
+
 The endpoint model manifest distinguishes trained models from unavailable
 datasets. The current local build can train an Ott T-cell-response model and a
 Zaghla-derived immunopeptidomics model. TESLA, NEPdb, NeoDB, HLA Ligand Atlas,
@@ -197,6 +248,28 @@ External IEDB T-cell and MHC-ligand assays are written to
 the local presentation-label master table because they represent different
 biological endpoints. Full snapshots and restricted datasets require explicit
 access and licence review.
+
+### Endpoint validation and combination boundary
+
+Run:
+
+```powershell
+python scripts/33_build_endpoint_status.py
+```
+
+This writes `results/endpoint_validation_status.json`. The registry records
+which endpoints are currently trainable and which have internal or external
+validation. It is intentionally conservative: presentation and
+immunogenicity are separate endpoints; the RNA model is gene-level context;
+and circRNA translation, LNP delivery, tumour killing, and cytokine safety are
+not currently validated prediction models.
+
+Endpoint models can be trained individually when a dataset has compatible
+labels, features, and independent groups. Their outputs can then be combined
+with `combine_endpoint_predictions`, but only as an uncertainty-aware
+decision-layer score. A combined score is not a new experimentally validated
+outcome and cannot infer tumour killing or safety from presentation evidence.
+Missing endpoint measurements remain unknown and reduce completeness.
 
 ## How computational validation works
 

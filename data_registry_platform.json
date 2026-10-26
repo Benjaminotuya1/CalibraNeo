@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "policy": "metadata_and_derived_features_only_until_license_review",
+  "sources": [
+    {
+      "id": "ribocirc_v2",
+      "purpose": "translatable circRNA and IRES evidence",
+      "url": "https://academic.oup.com/nar/article/54/D1/D273/8294343",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "registered_not_downloaded"
+    },
+    {
+      "id": "transcirc",
+      "purpose": "circRNA translation and IRES annotations",
+      "url": "https://www.biosino.org/transcirc/download",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "registered_not_downloaded"
+    },
+    {
+      "id": "tantigen_2",
+      "purpose": "curated tumour T-cell antigens and HLA ligands",
+      "url": "https://projects.met-hilab.org/tadb/",
+      "doi": "10.1093/nar/gkaa1021",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "registered_not_downloaded"
+    },
+    {
+      "id": "caatlas",
+      "purpose": "cancer and normal-tissue immunopeptidomics",
+      "url": "http://www.zhang-lab.org/caatlas/",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "registered_not_downloaded"
+    },
+    {
+      "id": "pci_db",
+      "purpose": "primary-tissue cancer immunopeptidome evidence",
+      "url": "https://pci-db.org/",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "registered_not_downloaded"
+    },
+    {
+      "id": "lnp_atlas",
+      "purpose": "LNP composition, descriptors, and delivery outcomes",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12858976/",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "registered_not_downloaded"
+    },
+    {
+      "id": "sort_lnp_primary",
+      "purpose": "organ-selective LNP formulation evidence",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7735425/",
+      "doi": "10.1038/s41565-020-00775-0",
+      "access": "public_metadata",
+      "raw_redistribution": "not_assumed",
+      "integration_status": "literature_reference_only"
+    },
+    {
+      "id": "cytokine_rules",
+      "purpose": "directional cytokine synergy and antagonism curation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10040457/",
+      "access": "public_literature",
+      "raw_redistribution": "not_applicable",
+      "integration_status": "rule_schema_only"
+    }
+  ]
+}

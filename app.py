@@ -27,6 +27,9 @@ from calibraneo import (
     experiment_information_gain,
     assemble_patient_candidates,
     annotate_gene_stability,
+    circ_rna_constraints,
+    joint_platform_score,
+    endpoint_validation_status,
 )
 
 st.set_page_config(page_title="CalibraNeo: Shortlist Audit Studio", layout="wide")
@@ -71,12 +74,13 @@ except (FileNotFoundError, ValueError) as error:
     st.error(str(error))
     st.stop()
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "1. LOH-aware shortlist optimizer",
     "2. ORF construct inspection",
     "3. Benchmark and evidence boundaries",
     "4. Computational validation",
     "5. Patient-specific inputs",
+    "6. circRNA constraints",
 ])
 
 with tab1:
@@ -194,6 +198,75 @@ with tab2:
     except ValueError as error:
         st.error(str(error))
 
+with tab6:
+    st.subheader("circRNA cassette constraint audit")
+    st.info(
+        "This is a sequence-level audit for a proposed circular RNA cassette. "
+        "BSJ frame and IRES length checks are hard constraints. RNAfold MFE is "
+        "used when ViennaRNA is installed; all remaining terms are transparent "
+        "proxies and require circularisation and translation assays."
+    )
+    selected = st.session_state.get("cassette_df", pool_df.head(20))
+    try:
+        _, dna = build_orf(
+            selected["peptide(mut)"].astype(str).str.strip().tolist(),
+            st.selectbox("Peptide linker for circRNA audit", ["AAY", "GPGPG", "KK"]),
+        )
+        rna = dna.replace("T", "U")
+        controls_a, controls_b, controls_c = st.columns(3)
+        with controls_a:
+            bsj_index = st.number_input(
+                "BSJ boundary index (nt)",
+                min_value=0,
+                max_value=max(0, len(rna) - 1),
+                value=min(len(rna) // 2, max(0, len(rna) - 1)),
+            )
+        with controls_b:
+            orf_start_index = st.number_input(
+                "ORF start index (nt)",
+                min_value=0,
+                max_value=max(0, len(rna) - 1),
+                value=0,
+            )
+        with controls_c:
+            ires_sequence = st.text_input(
+                "IRES sequence (optional)",
+                value="",
+                help="Provide the nucleotide sequence to calculate continuous overlap compatibility.",
+            )
+        features = circ_rna_constraints(
+            rna,
+            bsj_index=int(bsj_index),
+            orf_start_index=int(orf_start_index),
+            ires_sequence=ires_sequence or None,
+        )
+        metrics = st.columns(5)
+        metrics[0].metric("BSJ in frame", "PASS" if features["bsj_in_frame"] else "FAIL")
+        metrics[1].metric("Rolling proxy", f"{features['rolling_translation_proxy']:.3f}")
+        metrics[2].metric("IRES compatibility", f"{features['ires_compatibility']:.3f}")
+        metrics[3].metric(
+            "RNAfold MFE",
+            "unavailable" if features["rnafold_mfe_kcal_mol"] is None
+            else f"{features['rnafold_mfe_kcal_mol']:.2f} kcal/mol",
+        )
+        metrics[4].metric("GC fraction", f"{features['gc_fraction']:.3f}")
+        st.dataframe(pd.DataFrame([features]), use_container_width=True)
+        if not features["bsj_in_frame"]:
+            st.error("Hard constraint failed: the selected BSJ is out of frame relative to the ORF start.")
+        if features["rnafold_mfe_kcal_mol"] is None:
+            st.warning(
+                "ViennaRNA RNAfold was not available. The structure field is a "
+                "self-complementarity fallback and is not an MFE prediction."
+            )
+        else:
+            st.success("ViennaRNA RNAfold MFE was calculated for this sequence.")
+        st.caption(
+            "This module does not prove circularisation, RNA stability, translation, "
+            "HLA presentation, delivery, safety, or therapeutic effect."
+        )
+    except ValueError as error:
+        st.error(str(error))
+
 with tab3:
     st.subheader("Benchmark results and claim boundary")
     evidence = build_evidence_table(pool_df, source="Nature clinical benchmark", source_version="local")
@@ -240,6 +313,12 @@ with tab3:
 
 with tab4:
     st.subheader("Computational validation and experiment queue")
+    st.markdown("**Endpoint validation status**")
+    st.dataframe(endpoint_validation_status(), use_container_width=True, hide_index=True)
+    st.caption(
+        "Endpoint scores can be combined only as an uncertainty-aware decision "
+        "layer. A combined score is not a validated tumour-killing or safety model."
+    )
     st.info(
         "This page validates the computational workflow, not a patient's response. "
         "It reports provenance, model outputs, uncertainty, and the next experiment "

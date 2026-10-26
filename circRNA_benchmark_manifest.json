@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "purpose": "retrospective circRNA constraint benchmark manifest",
+  "status": "metadata_registered; sequence_and_assay_extraction_pending",
+  "policy": "do_not_infer_good_or_bad_labels_without_primary_construct_data",
+  "planned_sources": [
+    {
+      "source_id": "scarless_circularization_2025",
+      "citation_status": "published",
+      "url": "https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(25)00141-6",
+      "construct_count_target": 5,
+      "required_fields": [
+        "construct_id",
+        "sequence_or_accession",
+        "bsj_definition",
+        "ires",
+        "reported_circularization_assay",
+        "reported_translation_assay"
+      ]
+    },
+    {
+      "source_id": "ribocirc_v2",
+      "citation_status": "public_database",
+      "url": "https://academic.oup.com/nar/article/54/D1/D273/8294343",
+      "construct_count_target": 10,
+      "required_fields": [
+        "construct_id",
+        "sequence_or_accession",
+        "translation_evidence",
+        "ires_annotation",
+        "source_record"
+      ]
+    },
+    {
+      "source_id": "transcirc",
+      "citation_status": "public_database",
+      "url": "https://www.biosino.org/transcirc/download",
+      "construct_count_target": 5,
+      "required_fields": [
+        "construct_id",
+        "sequence_or_accession",
+        "translation_evidence",
+        "ires_annotation",
+        "source_record"
+      ]
+    }
+  ],
+  "planned_analysis": [
+    "run RNAfold MFE and explicit BSJ frame checks",
+    "separate construct-level assay outcomes from sequence-only scores",
+    "report rank correlation only where quantitative assay values are available",
+    "report calibration and failure cases; do not label constructs known-good or known-bad from citation alone"
+  ]
+}

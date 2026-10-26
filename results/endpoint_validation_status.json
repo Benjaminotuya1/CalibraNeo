@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "interpretation": "Endpoint-specific validation status. Combining scores is a decision layer and does not establish a validated therapeutic outcome model.",
+  "endpoints": [
+    {
+      "name": "presentation",
+      "target": "peptide-HLA presentation-related label",
+      "trainable": true,
+      "internally_validated": true,
+      "externally_validated": true,
+      "validation_scope": "grouped internal test; Zenodo record-level transfer; Nature direct failure",
+      "evidence_boundary": "does not prove tumour presentation or immunogenicity"
+    },
+    {
+      "name": "immunogenicity",
+      "target": "T-cell response",
+      "trainable": true,
+      "internally_validated": true,
+      "externally_validated": false,
+      "validation_scope": "Ott/Zaghla descriptive endpoint audits; weak cross-study LOSO",
+      "evidence_boundary": "does not prove patient-specific T-cell activation or tumour killing"
+    },
+    {
+      "name": "rna_context",
+      "target": "gene-level RNA half-life context",
+      "trainable": true,
+      "internally_validated": true,
+      "externally_validated": false,
+      "validation_scope": "grouped RNADecayCafe holdout; R2 approximately 0.0544",
+      "evidence_boundary": "does not predict custom circRNA half-life"
+    },
+    {
+      "name": "circRNA_translation",
+      "target": "circRNA translation evidence or measured yield",
+      "trainable": false,
+      "internally_validated": false,
+      "externally_validated": false,
+      "validation_scope": "sequence proxies and benchmark runner only",
+      "evidence_boundary": "requires construct-level assays and permitted labeled data"
+    },
+    {
+      "name": "lnp_delivery",
+      "target": "formulation-to-organ delivery outcome",
+      "trainable": false,
+      "internally_validated": false,
+      "externally_validated": false,
+      "validation_scope": "interface contract only; no local compatible labeled table",
+      "evidence_boundary": "spleen delivery does not imply tumour-cell delivery"
+    },
+    {
+      "name": "tumour_killing",
+      "target": "tumour-cell killing assay outcome",
+      "trainable": false,
+      "internally_validated": false,
+      "externally_validated": false,
+      "validation_scope": "no harmonized local endpoint dataset",
+      "evidence_boundary": "requires matched HLA, effector, tumour, and assay context"
+    },
+    {
+      "name": "cytokine_safety",
+      "target": "dose/route/species-specific toxicity outcome",
+      "trainable": false,
+      "internally_validated": false,
+      "externally_validated": false,
+      "validation_scope": "literature-curated interaction rules only",
+      "evidence_boundary": "not a generic safety predictor"
+    }
+  ]
+}
