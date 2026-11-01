@@ -1,8 +1,15 @@
 {
   "schema_version": "1.0",
   "purpose": "retrospective circRNA constraint benchmark manifest",
-  "status": "metadata_registered; sequence_and_assay_extraction_pending",
-  "policy": "do_not_infer_good_or_bad_labels_without_primary_construct_data",
+  "status": "phase_1A_audit_complete; qualifying_construct_set_empty",
+  "policy": "do_not_infer_good_or_bad_labels_without_primary_construct_data; record_NOT_FOUND_when_sequence_or_outcome_is_unverified",
+  "harvest_artifacts": {
+    "constructs": "circdesign_data/benchmark/constructs.csv",
+    "provenance_ledger": "circdesign_data/benchmark/provenance_ledger.json",
+    "ires_reference": "circdesign_data/ires/ires_reference.csv",
+    "software_versions": "circdesign_data/software_versions.txt"
+  },
+  "phase_1A_result": "No construct currently satisfies both independently retrievable full nucleotide sequence and quantitative construct-level outcome.",
   "planned_sources": [
     {
       "source_id": "scarless_circularization_2025",

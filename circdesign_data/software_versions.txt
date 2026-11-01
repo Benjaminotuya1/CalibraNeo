@@ -1,0 +1,7 @@
+python-codon-tables=0.1.18
+human_codon_table=h_sapiens_9606
+codon_table_verification=completed; ATG frequency 1.0; stop codons retain nonzero relative frequencies in the package table
+RNAfold=NOT_FOUND
+viennaRNA_python_install=failed; Microsoft Visual C++ 14.0 or greater required
+conda=NOT_FOUND
+benchmark_phase_1A=blocked; no qualifying construct had both independently retrievable full sequence and quantitative construct-level outcome

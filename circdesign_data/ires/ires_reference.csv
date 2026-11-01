@@ -1,0 +1,2 @@
+ires_id,sequence_fasta,source,known_efficiency,notes
+IRESite_All_IRES_v1.1.0,NOT_FOUND,http://iresite.org/IRESite_web.php?page=faq,NOT_FOUND,Official FAQ was reachable; the requested FASTA download was not independently retrieved in this environment and license terms require confirmation
