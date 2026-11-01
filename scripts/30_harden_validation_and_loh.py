@@ -285,10 +285,21 @@ def stochastic_shared_score_loh_simulation(
                 presentation_draw = rng.random(len(candidates)) < presentation
                 selections = {}
                 selections["score_greedy"] = np.argsort(-presentation, kind="stable")[:20].tolist()
+                if scenario == "dominant_single":
+                    loh = {
+                        allele: (0.75 if allele == dominant else loh_rate)
+                        for allele in patient_hlas
+                    }
+                else:
+                    loh = {allele: loh_rate for allele in patient_hlas}
+                r_h_array = np.array(
+                    [loh.get(allele, loh_rate) for allele in allele_values],
+                    dtype=float,
+                )
                 for method, decay in [("lambda_0", 0.0), ("lambda_045", 0.45)]:
                     chosen, counts = [], {}
                     for _slot in range(20):
-                        scores = presentation.copy()
+                        scores = presentation * (1.0 - r_h_array)
                         if chosen:
                             scores[chosen] = -np.inf
                         scores *= np.exp(
@@ -303,7 +314,7 @@ def stochastic_shared_score_loh_simulation(
                     selections[method] = chosen
                 chosen, counts = [], {}
                 for _slot in range(20):
-                    scores = presentation.copy()
+                    scores = presentation * (1.0 - r_h_array)
                     if chosen:
                         scores[chosen] = -np.inf
                     scores /= 1 + np.array(
@@ -323,10 +334,6 @@ def stochastic_shared_score_loh_simulation(
                 selections["round_robin"] = chosen[:20]
 
                 if scenario == "dominant_single":
-                    loh = {
-                        allele: (0.75 if allele == dominant else loh_rate)
-                        for allele in patient_hlas
-                    }
                     loss = {
                         allele: bool(rng.random() < probability)
                         for allele, probability in loh.items()

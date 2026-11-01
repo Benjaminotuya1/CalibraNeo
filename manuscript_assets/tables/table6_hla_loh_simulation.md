@@ -1,4 +1,4 @@
-**Table 6. Stochastic shared-score LOH sensitivity at secondary LOH rate 0.10. Values are Monte Carlo outcomes from presentation and HLA-loss draws.**
+**Table 6. Stochastic shared-score LOH sensitivity at secondary LOH rate 0.10. Values are Monte Carlo outcomes from presentation and HLA-loss draws; selection precedes the simulated LOH draw.**
 
 | scenario | secondary_loh_rate | method | metric | estimate | lower_95 | upper_95 | n_patients | seed | simulation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -6,18 +6,18 @@
 | dominant_single | 0.1 | score_greedy | surviving_epitopes | 12.5175 | 0.0 | 20.0 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | score_greedy | at_least_2 | 0.9015 | 0.8876604197168966 | 0.9138001913162576 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | score_greedy | complete_failure | 0.0705 | 0.06008497467017321 | 0.08256176894442308 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | lambda_0 | bridges | 2.399 | 1.0 | 4.0 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | lambda_0 | surviving_epitopes | 12.5175 | 0.0 | 20.0 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | lambda_0 | at_least_2 | 0.9015 | 0.8876604197168966 | 0.9138001913162576 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | lambda_0 | complete_failure | 0.0705 | 0.06008497467017321 | 0.08256176894442308 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | bridges | 2.143 | 1.0 | 3.0 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | surviving_epitopes | 16.6685 | 1.0 | 20.0 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | at_least_2 | 0.9735 | 0.9655014766396226 | 0.9796830795850311 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_0 | complete_failure | 0.022 | 0.016428908114317704 | 0.029403789086560102 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | lambda_045 | bridges | 4.0 | 4.0 | 4.0 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | lambda_045 | surviving_epitopes | 12.393 | 5.0 | 19.0 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | lambda_045 | at_least_2 | 0.9965 | 0.9927928037467583 | 0.9983035683029576 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_045 | surviving_epitopes | 13.319 | 5.0 | 19.0 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | lambda_045 | at_least_2 | 0.9975 | 0.9941608466835673 | 0.9989316912715861 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | lambda_045 | complete_failure | 0.0005 | 8.826773070546787e-05 | 0.0028268625032662137 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | hla_diversity | bridges | 4.0 | 4.0 | 4.0 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | hla_diversity | surviving_epitopes | 12.7765 | 5.0 | 19.0 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | hla_diversity | at_least_2 | 0.9945 | 0.9901779372483847 | 0.9969261029904563 | 2000 | 42 | stochastic_X_and_Z |
-| dominant_single | 0.1 | hla_diversity | complete_failure | 0.0015 | 0.0005102635836384821 | 0.004401032555770694 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | bridges | 3.9995 | 4.0 | 4.0 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | surviving_epitopes | 14.5825 | 5.0 | 19.0 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | at_least_2 | 0.997 | 0.9934700849260647 | 0.99862437007637 | 2000 | 42 | stochastic_X_and_Z |
+| dominant_single | 0.1 | hla_diversity | complete_failure | 0.0005 | 8.826773070546787e-05 | 0.0028268625032662137 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | round_robin | bridges | 4.0 | 4.0 | 4.0 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | round_robin | surviving_epitopes | 11.958 | 5.0 | 19.0 | 2000 | 42 | stochastic_X_and_Z |
 | dominant_single | 0.1 | round_robin | at_least_2 | 0.9975 | 0.9941608466835673 | 0.9989316912715861 | 2000 | 42 | stochastic_X_and_Z |

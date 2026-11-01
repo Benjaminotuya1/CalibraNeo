@@ -315,7 +315,7 @@ def make_tables() -> None:
     save_table(
         table6,
         "table6_hla_loh_simulation",
-        "Table 6. Stochastic shared-score LOH sensitivity at secondary LOH rate 0.10. Values are Monte Carlo outcomes from presentation and HLA-loss draws.",
+        "Table 6. Stochastic shared-score LOH sensitivity at secondary LOH rate 0.10. Values are Monte Carlo outcomes from presentation and HLA-loss draws; selection precedes the simulated LOH draw.",
     )
 
 
