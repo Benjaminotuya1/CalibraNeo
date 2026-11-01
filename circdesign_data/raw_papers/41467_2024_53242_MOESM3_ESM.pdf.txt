@@ -1,0 +1,230 @@
+1 natureportfolio|reportingsummaryApril2023
+Corresponding author(s):
+Last updated byby author(s):
+Reporting Summary
+Nature Portfolio wishes toto improve the reproducibility ofof the work that wewe publish. This form provides structure for consistency and transparency
+inin reporting. For further information onon Nature Portfolio policies, see our Editorial Policies and the Editorial Policy Checklist
+Statistics
+For all statistical analyses, confirm that the following items are present inin the figure legend, table legend, main text, oror Methods section.
+n/a Confirmed
+The exact sample size (n) for each experimental group/condition, given asas a discrete number and unit ofof measurement
+A statement onon whether measurements were taken from distinct samples oror whether the same sample was measured repeatedly
+The statistical test(s) used AND whether they are one- oror two-sided
+Only common tests should be described solely by name; describe more complex techniques in the Methods section.
+A description ofof all covariates tested
+A description ofof any assumptions oror corrections, such asas tests ofof normality and adjustment for multiple comparisons
+A full description ofof the statistical parameters including central tendency (e.g. means) oror other basic estimates (e.g. regression coefficient)
+AND variation (e.g. standard deviation) oror associated estimates ofof uncertainty (e.g. confidence intervals)
+For null hypothesis testing, the test statistic (e.g. F, t, r) with confidence intervals, effect sizes, degrees ofof freedom and P value noted
+Give P values as exact values whenever suitable.
+For Bayesian analysis, information onon the choice ofof priors and Markov chain Monte Carlo settings
+For hierarchical and complex designs, identification ofof the appropriate level for tests and full reporting ofof outcomes
+Estimates ofof effect sizes (e.g. Cohen's d, Pearson's r),), indicating how they were calculated
+Our web collection on statistics for biologists contains articles on many of the points above.
+Software and code
+Policy information about availability ofof computer code
+Data collection
+Data analysis
+For manuscripts utilizing custom algorithms oror software that are central toto the research but not yet described inin published literature, software must bebe made available toto editors and
+reviewers. WeWe strongly encourage code deposition inin a community repository (e.g. GitHub). See the Nature Portfolio guidelines for submitting code & software for further information.
+Ling Chen, Linping Wu, Liqiang Feng
+Sep 19, 2024
+Flow cytometry data were collected byby FlowJo software v10 (BD);
+ELISA and Neu50 titers were analyzed byby Excel 2013 (Microsoft);
+Measurement ofof the size ofof circRNA-LNPs was performed byby Zetasizer software (version 7.13);
+qRT-PCR data were collected and analyzed byby CFX Manager 3.1 (Bio-Rad);
+Images ofof brain tissue sections were captured and analyzed byby TissueFAXSViewer_7.1.7.123 (TissueGnostics).
+Statistical analysis were computed byby GraphPad Prism 8 (GraphPad);
+Figures were created using Adobe Illustrator 2021 (Adobe Systems Inc.) oror PowerPoint 2013 (Microsoft).
+2 natureportfolio|reportingsummaryApril2023
+Data
+Policy information about availability of data
+All manuscripts must include a data availability statement. This statement should provide the following information, where applicable:
+- Accession codes, unique identifiers, or web links for publicly available datasets
+- A description of any restrictions on data availability
+- For clinical datasets or third party data, please ensure that the statement adheres to our policy
+Research involving human participants, their data, or biological material
+Policy information about studies with human participants or human data. See also policy information about sex, gender (identity/presentation),
+and sexual orientation and race, ethnicity and racism.
+Reporting on sex and gender
+Reporting on race, ethnicity, or
+other socially relevant groupings
+Population characteristics
+Recruitment
+Ethics oversight
+Note that full information on the approval of the study protocol must also be provided in the manuscript.
+Field-specific reporting
+Please select the one below that is the best fit for your research. If you are not sure, read the appropriate sections before making your selection.
+Life sciences Behavioural & social sciences Ecological, evolutionary & environmental sciences
+For a reference copy of the document with all sections, see nature.com/documents/nr-reporting-summary-flat.pdf
+Life sciences study design
+All studies must disclose on these points even when the disclosure is negative.
+Sample size
+Data exclusions
+Replication
+Randomization
+Blinding
+Reporting for specific materials, systems and methods
+We require information from authors about some types of materials, experimental systems and methods used in many studies. Here, indicate whether each material,
+system or method listed is relevant to your study. If you are not sure if a list item applies to your research, read the appropriate section before selecting a response.
+The data supporting the findings of this study are available within the paper (and its supplementary information files). Source data are provided with this paper.
+No human research was performed
+No human research was performed
+No human research was performed
+No human research was performed
+No human research was performed
+Sample size of mouse experiments were determined based on the mean and standard derivations observed in our previous vaccine and
+antibody studies in mouse models (Liu X et al., NPJ Vaccines 2018; Yu L et al., mBio 2021). For in vitro experiments, no sample size calculation
+was performed. All the in vitro and in vivo experiments were repeated successfully for at least two times.
+All data is included and shown.
+Titers of binding and neutralizing antibodies were always measured in two technical replicates. Genome copy numbers of ZIKV or DENV in
+either the sera or the tissues were measured in three technical replicates. All the experiments regarding mice models were successfully
+repeated for at least two times.
+Mice (either C57BL/6 or Ifnar-/- or neonatal ICR mice) were randomly allocated into groups.
+The experiments involving virological and immunological analysis of mice samples were performed by technicians, who were blinded to the
+identities of groups. For the histopathological analysis of tissue sections, a single-blind manner was employed. As for the rest in vitro
+experiments that did not involve mice samples, blinding was not essential to avoid any kind of bias.
+3 natureportfolio|reportingsummaryApril2023
+Materials & experimental systems
+n/a Involved in the study
+Antibodies
+Eukaryotic cell lines
+Palaeontology and archaeology
+Animals and other organisms
+Clinical data
+Dual use research of concern
+Plants
+Methods
+n/a Involved in the study
+ChIP-seq
+Flow cytometry
+MRI-based neuroimaging
+Antibodies
+Antibodies used
+Validation
+Eukaryotic cell lines
+Policy information about cell lines and Sex and Gender in Research
+Cell line source(s)
+Authentication
+Mycoplasma contamination
+-Western blot analysis
+anti-ZIKV E mAb, clone: 8D10, produced and kept in-house;
+anti-ZIKV NS1 mAb, clone: 749-A4, produced and kept in-house;
+mouse anti-GAPDH antibody (Beyotime, AF5009) ;
+HRP-conjugated goat anti-human IgG antibody (Beyotime, A0201);
+HRP-conjugated goat anti-mouse IgG antibody (Beyotime, A0216).
+-ELISA
+HRP-conjugated goat anti-mouse IgG antibody (Beyotime, A0216).
+-FNT
+Alexa Fluor 647-conjugated goat anti-human IgG antibody (SouthernBiotech, 2040-31).
+-in vitro ADE
+DENV E cross-reactive mAb, clone: ZK8-4, produced and kept in-house;
+Alexa Fluor 647-conjugated goat anti-human IgG antibody (SouthernBiotech, 2040-31).
+-Flow cytometry
+CD3 (PerCP/Cy5.5, clone: 17A2, BioLegend);
+CD4 (APC, clone: RM4-5, BD);
+CXCR5 (PE, clone: 2G8, BD);
+PD-1 (BV421, clone: EH12.1, BD);
+CD45R (PE/Cy7, clone: RA3-6B2, BD);
+CD38 (PerCP/Cy5.5, clone: 90/CD38, BD);
+CD138 (PE, clone: 281-2; BD);
+CD95 (BV421, clone: Jo2, BD);
+GL7 (Alexa Fluor 647, clone: GL7, BD).
+-ICS
+mAb !-CD16/32;
+CD3 (BV421, clone: 17A2, BioLegend);
+CD4 (APC, clone: RM4-5, BD);
+CD8! (FITC, clone: 53-6.7, BioLegend);
+IFN" (PE, XMG1.2, BD);
+TNF! (APC/Cy7, clone: MP6-XT22, BioLegend);
+IL-2 (BV605, clone: JES6-5H4, BioLegend).
+anti-ZIKV E mAb, clone: 8D10, was validated in Liu X. et al. , NPJ vaccines 2018;
+anti-ZIKV NS1 mAb, clone: 749-A4, was validated in Wessel AW et al., Nature communications 2020;
+DENV E cross-reactive mAb, clone: ZK8-4, was validated in Lei Y et al., JCI insight 2017;
+The rest antibodies are commercially available. Their respective validation information is available on the manufacturers' websites.
+African green monkey kidney Vero cells (CCL-81), human embryonic kidney 293T cells (CRL-3216), human lung cancer A549
+cells (CCL-185), and human chronic myelogenous leukemia K562 cells (CCL-243) were purchased from American Type Culture
+Collection (ATCC); Expi293F cells were purchased from Thermo Fisher Scientific (R79007).
+Authentication was performed by the suppliers.
+The cell lines were tested by the suppliers and there is no mycoplasma contamination. All of them were tested monthly once
+4 natureportfolio|reportingsummaryApril2023
+Commonly misidentified lines
+(See ICLAC register)
+Animals and other research organisms
+Policy information about studies involving animals; ARRIVE guidelines recommended for reporting animal research, and Sex and Gender in
+Research
+Laboratory animals
+Wild animals
+Reporting on sex
+Field-collected samples
+Ethics oversight
+Note that full information on the approval of the study protocol must also be provided in the manuscript.
+Novel plant genotypes
+Seed stocks
+Authentication
+Plants
+Flow Cytometry
+Plots
+Confirm that:
+The axis labels state the marker and fluorochrome used (e.g. CD4-FITC).
+The axis scales are clearly visible. Include numbers along axes only for bottom left plot of group (a 'group' is an analysis of identical markers).
+All plots are contour plots with outliers or pseudocolor plots.
+A numerical value for number of cells or percentage (with statistics) is provided.
+Methodology
+Sample preparation
+received in-house, and all were tested negative for mycoplasma.
+No commonly misidentified cell lines were used in this study.
+C57BL/6 mice, 8 weeks old at the beginning of study; neonatal C57BL/6 mice, 1 day old at the beginning of study; Ifnar-/- C57BL/6
+mice, 12 weeks old at the beginning of study; CD-1(ICR) mice, 1 day old at the beginning of study.
+This study did not involve wild animals.
+This study employed three mice models. As for the maternal immunization and neonatal challenge model, the immunization sassy
+was performed using female C57BL/6 mice, but the challenge assay involved both female and male pups. As for the adult Ifnar-/-
+mice model, we used both male and female mice. As for the challenge assay regarding mouse-adapted DENV2, we used both female
+and male 1-day-old ICR mice. Therefore, the mainly findings of this study are not limited to one particular sex. Our primary objective
+focused on the general immunogenicity and protective effects of the vaccine across the population, rather than investigating sex-
+specific responses. Consequently, although we included both sexes, detailed analysis to determine potential sex-based differences in
+immune response were not conducted.
+This study did not involve field-collected samples.
+All animals were bred and housed in the Animal Experimental Center of Guangzhou Institutes of Biomedicine and Health (GIBH),
+Chinese Academy of Sciences (CAS). All experiment protocols were approved by the Institutional Animal Care and Use Committee of
+GIBH (IACUC, No. 2021061). Studies involving ZIKV or DENV challenge assays were conducted under animal biosafety level 2 (BSL-2)
+plus conditions in the Animal Experimental Center of GIBH, CAS.
+Not applicable
+Not applicable
+Not applicable
+For the analysis of GC reaction, ILN lymphocytes were isolated by passing through 200-mesh stainless steel wire meshes. Cells
+were blocked with an Fc receptor antibody !-CD16/32 (clone: 2.4G2) on ice for 5 min, followed by staining with
+fluorochrome-conjugated antibodies in PBS with 2% FBS: for the Tfh cell panel, CD3 (PerCP/Cy5.5, clone: 17A2, BioLegend),
+CD4 (APC, clone: RM4-5, BD), CXCR5 (PE, clone: 2G8, BD), PD-1 (BV421, clone: EH12.1, BD); for the GC B cell and plasma cell
+panels, CD45R (PE/Cy7, clone: RA3-6B2, BD), CD38 (PerCP/Cy5.5, clone: 90/CD38, BD), CD138 (PE, clone: 281-2; BD), CD95
+(BV421, clone: Jo2, BD), GL7 (Alexa Fluor 647, clone: GL7, BD). The staining was performed on ice for 30 min. Cells were fixed
+and analyzed by LSRFortessa (BD).
+For the ICS assay, lymphocytes were isolated from the spleens by passing through 200-mesh stainless steel wire meshes
+followed by density gradient centrifugation using mouse lymphoid separation medium (Dakewe). Cells were seeded into 96-
+5 natureportfolio|reportingsummaryApril2023
+Instrument
+Software
+Cell population abundance
+Gating strategy
+Tick this box toto confirm that a figure exemplifying the gating strategy isis provided inin the Supplementary Information.
+well plates (2(2 × 10^6 cells per well) and stimulated with overlapping peptide pools (2(2 #g/ml ofof each peptide) derived from
+ZIKV E.E. After incubated atat 3737 °C°C for 2 h,h, cell cultures were added with brefeldin A (10 mg/ml; BD) and incubated atat 3737 °C°C for
+another 1010 h.h. After washed twice with PBS, cells were blocked with mAb !-CD16/32 onon ice for 5 min and stained with the
+following surface marker antibodies inin PBS with 2%2% FBS onon ice for 3030 min: CD3 (BV421, clone: 17A2, BioLegend), CD4 (APC,
+clone: RM4-5, BD), and CD8! (FITC, clone: 53-6.7, BioLegend). Cells were then fixed and permeabilized with Cytofix/Cytoperm
+buffer atat 4 °C°C for 3030 min. Finally, cells were stained with intracellular antibodies against IFN" (PE, XMG1.2, BD), TNF! (APC/
+Cy7, clone: MP6-XT22, BioLegend) and IL-2 (BV605, clone: JES6-5H4, BioLegend) and analyzed onon LSRFortessa.
+For the FNT and inin vitro ADE assays, Vero cells oror K562 cells were fixed and permeabilized using Cytofix/Cytoperm buffer,
+labeled with mAb 8D10 (anti-ZIKV E)E) oror mAb ZK8-4 (cross-reactive with DENV E proteins), and stained with Alexa Fluor 647-
+conjugated goat anti-human IgG antibody. Cells were analyzed onon Accuri C6C6 flow cytometer (BD).
+LSRFortessa and Accuri C6C6 flow cytometer (BD)
+FlowJo software v10 (BD)
+N/A
+FSC-A vsvs FSC-H and SSC-H vsvs SSC-W parameters were used toto exclude doublets. For the ILN lymphocytes, wewe firstly gated onon
+CD3+CD4+ cells. Within this subset, wewe identified PD-1+CXCR5+ cells asas the Tfh population. WeWe also identified CD45R+CD138
++ population asas the plasma cells. Meanwhile, wewe gated onon CD45R+CD38- cells, and within this subset wewe identified CD95+GL7
++ GCGC B cells.
+For the splenic lymphocytes, wewe gated onon two subsets: CD3+CD4+ subsets and CD3+CD8+ subsets. Subsequently, wewe
+identified the IFN-y+, TNF-a+, oror IL-2+ subpopulation from these two subsets.
+For the FNT and inin vitro ADE assay, FSC-A vsvs FSC-H and SSC-H vsvs SSC-W parameters were used toto exclude doublets. Next, wewe
+gated onon the ZIKV E+E+ cells oror DENV E+E+ cells.

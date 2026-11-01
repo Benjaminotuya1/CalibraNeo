@@ -1,0 +1,8 @@
+construct_group,outcome_type,reported_value,units,assignment_status,source_location
+CR1-CR3,in_solution_half_life,15.56-20.62,hours,GROUP_RANGE_NOT_MAPPED_TO_INDIVIDUALS,"2023 preprint, Results, Fig. 2d"
+CR-Novo,in_solution_half_life,9.14,hours,EXACT,"2023 preprint, Results, Fig. 2d"
+CR-Ther,in_solution_half_life,9.68,hours,EXACT,"2023 preprint, Results, Fig. 2d"
+CR1,in_cell_half_life,24.34,hours,EXACT,"2023 preprint, Results, Fig. 2e"
+CR3,in_cell_half_life,19.31,hours,EXACT,"2023 preprint, Results, Fig. 2e"
+CR5,in_cell_half_life,9.18,hours,EXACT,"2023 preprint, Results, Fig. 2e"
+CR-Novo,in_cell_half_life,10.21,hours,EXACT,"2023 preprint, Results, Fig. 2e"

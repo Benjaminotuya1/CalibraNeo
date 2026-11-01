@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "harvest_status": "phase_1A_audit_complete_qualifying_set_empty",
+  "harvest_status": "phase_1A_extraction_complete_qualifying_set_empty",
   "policy": "No sequence or outcome is inferred when an authoritative source cannot be independently inspected.",
   "sources": [
     {
@@ -8,19 +8,19 @@
       "doi": "10.1038/s41551-026-01725-4",
       "official_url": "https://www.nature.com/articles/s41551-026-01725-4",
       "supplement_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41551-026-01725-4/MediaObjects/41551_2026_1725_MOESM1_ESM.pdf",
-      "sequence_status": "NOT_FOUND",
+      "sequence_status": "VERIFIED_FROM_SUPPLIED_SUPPLEMENT",
       "outcome_status": "article-level quantitative outcomes reported; construct-level sequence-to-outcome table not verified",
       "license": "Article record identifies author copyright; sequence redistribution license not established",
-      "retrieval_note": "Official supplementary URL identified; access returned HTTP 406 in this environment."
+      "retrieval_note": "User-supplied official supplementary PDF was parsed. 32 explicit IRES sequences and 31 CITE/H2SL records were extracted; measured efficiencies remain NOT_FOUND."
     },
     {
       "source_id": "nature_small_circ_vaccine_2025",
       "doi": "10.1038/s41551-025-01344-5",
       "official_url": "https://www.nature.com/articles/s41551-025-01344-5",
-      "sequence_status": "NOT_FOUND",
+      "sequence_status": "VERIFIED_FROM_SUPPLIED_SUPPLEMENT",
       "outcome_status": "article verified; quantitative construct-level outcome not independently extracted",
       "license": "Not established from accessible official metadata",
-      "retrieval_note": "DOI resolves, but supplementary sequence data were not independently retrieved."
+      "retrieval_note": "User-supplied official supplementary PDF was parsed. Fourteen explicit RNA-table records were extracted. The reported 32% circularisation rate is retained as paper-level context and not assigned to a construct row."
     },
     {
       "source_id": "nature_sci_rep_circ_vaccine_2026",
@@ -43,12 +43,39 @@
       "retrieval_note": "Official PMC XML exposes supplementary links, but no full nucleotide sequence was found in accessible article metadata."
     },
     {
+      "source_id": "circdesign_preprint_2023",
+      "doi": "10.1101/2023.07.09.548293",
+      "official_url": "https://doi.org/10.1101/2023.07.09.548293",
+      "sequence_status": "VERIFIED_FROM_SUPPLIED_SUPPLEMENT",
+      "outcome_status": "CR1-CR6 names and quantitative outcomes are discussed, but exact nucleotide sequences were not found in the supplied PDF text or tables",
+      "license": "Preprint license/sequence redistribution terms not independently established",
+      "retrieval_note": "Six explicit audit rows were created with NOT_FOUND_SEQUENCE; no sequence was inferred."
+    },
+    {
       "source_id": "iresite",
       "official_url": "http://iresite.org/IRESite_web.php?page=faq",
       "sequence_status": "NOT_FOUND",
       "outcome_status": "database describes experimentally verified IRES records and relative activity measurements",
       "license": "Freely available database; redistribution/commercial terms not confirmed",
       "retrieval_note": "FAQ reachable; requested All_IRES.fa download was not independently retrieved."
+    },
+    {
+      "source_id": "circdesign_preprint_2023",
+      "doi": "10.1101/2023.07.09.548293",
+      "official_url": "https://doi.org/10.1101/2023.07.09.548293",
+      "sequence_status": "NOT_FOUND_SEQUENCE",
+      "outcome_status": "Exact in-cell outcomes for CR1, CR3, CR5 and CR-Novo and exact in-solution outcomes for CR-Novo and CR-Ther extracted; CR1-3 in-solution value is only reported as a group range",
+      "license": "Preprint license/sequence redistribution terms not independently established",
+      "retrieval_note": "The supplied media-1.pdf is a 9-page Extended Data figure supplement and does not contain nucleotide strings. The supplied anie74170-sup-0002-suppmat.xlsx contains a Rabies seq sheet with explicit B-G components for CR1-CR6, CR-Ther, and CR-Novo; each concatenated sequence is 2,504 nt and was written to benchmark/fasta and linked in constructs.csv."
+    },
+    {
+      "source_id": "ires_activity_dataset",
+      "doi": "10.1371/journal.pcbi.1005734",
+      "official_url": "https://doi.org/10.1371/journal.pcbi.1005734",
+      "sequence_status": "VERIFIED_FROM_SUPPLIED_MACHINE_READABLE_DATA",
+      "outcome_status": "100 records selected from pcbi.1005734.s013.tab by mean of two cap-independent activity replicates",
+      "license": "Dataset license not independently established from supplied files",
+      "retrieval_note": "pcbi.1005734.s001.pdf describes preprocessing; pcbi.1005734.s013.tab contains the sequence/activity rows."
     }
   ]
 }

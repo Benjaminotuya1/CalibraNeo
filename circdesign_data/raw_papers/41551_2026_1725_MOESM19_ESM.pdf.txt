@@ -1,0 +1,360 @@
+Empty vectorUntreatedBBV-3×Flag-P2ASTNV-3×Flag-P2ASCV (PTE)-3×Flag-P2APEMV2-3×Flag-P2A
+Fig. 2b
+Flag
+Fig. 2g
+55 KDa β-tubulin
+Empty vector (U6)Empty vector (CMV)UntreatedU6-BBV-3×Flag-StopU6-BBV-3×Flag-P2ACMV-BBV-3×Flag-StopCMV-BBV-3×Flag-P2ACMV-CVB3-3×Flag-StopCMV-3×Flag (linear)CMV-CVB3-3×Flag-P2AU6-CVB3-3×Flag-StopU6-CVB3-3×Flag-P2A Synthetic Flag peptide
+35 KDa
+70 KDa
+Flag
+Untreated24 h48 h72 h12 d
+CircRNA (U6)
+24 h48 h72 h12 d24 h48 h72 h12 d
+CircRNA (CMV)mRNA (CMV)
+Fig. 2n
+Flag
+(SE)35 KDa
+70 KDa
+Flag
+(LE)
+35 KDa
+70 KDa
+β-tubulin55 KDa
+Fig. 2c
+55 KDaβ-tubulin
+35 KDa
+70 KDa
+Flag
+Empty vectorUntreatedBBV-3×Flag-StopSynthetic Flag peptideBBV-3×Flag-P2A
+Fig. 2e
+Empty vectorUntreatedBBV (5’-UUUU
+-3’)
+Synthetic Flag peptideBBV (5’-AUUU-3’)BBV (5’-UAUU-3’)BBV (5’-UUAU-3’)BBV (5’-UUUA-3’)
+Flag
+35 KDa
+70 KDa
+β-tubulin 55 KDa
+p53A-3×Flag-P2ASynthetic Flag peptide
+β-tubulin 55 KDa
+35 KDa
+70 KDa
+Fig. 3g Fig. 3h
+2,000
+1,000
+500
+M
+(nt)
+M 0 20 35 70 105 140
+External homology arm (nt)
+2,000
+1,000
+500
+M
+(nt)
+M 0 20 35 70 150 200100
+Internal homology arm (nt)
+10
+Fig. 3c Fig. 3d
+2,000
+1,000
+500
+(nt)
+GTP
+PICC PIE STS
+2,000
+1,000
+500
+300
+(nt)
+PICC PIE
+RNase R− + − +
+Fig. 3e
+LM C L C
+F1/R1 F2/R2
+(nt)
+2,000
+750
+500
+250
+100
+2,000
+1,000
+500
+(nt)
+M M
+PIE
+0.5 2 4 16
+STS
+0.5 2 4 16 h
+PICC
+0.5
+2,000
+1,000
+500
+M
+(nt)
+M 2 4 16
+Fig. 3b
+Fig. 3k
+EGFP
+2,000
+1,000
+500
+(nt)
+PICCM M PIE STS
+hEPO
+2,000
+1,000
+500
+(nt)
+PICCM M PIE STS
+2,000
+1,000
+500
+(nt)
+Cre
+PICCM M PIE STS
+2,000
+1,000
+500
+nt
+Gluc
+PICCM M PIESTS
+Fig. 3m
+M RNase R− +
+PIE-CAR
+− +
+PICC-CAR
+2,000
+1,000
+500
+(nt)
+Fig. 3j
+2,000
+1,000
+500
+300
+(nt)
+PICC-   P10PICC
+Fig. 3i
+2,000
+1,000
+500
+300
+(nt)
+PIE
+External homology arm
+Internal homology arm
+PICC
+− −
+− −
+− +
++ +
+Fig. 3pFig. 3o Fig. 3q
+BBV-EVBBV-3×Flag-TAABBV-3×Flag-P2ACVB3-3×Flag-TAACVB3-3×Flag-P2AmRNA-3×FlagUntreated
+55 KDa
+β-tubulin
+70 KDa
+35 KDa
+Flag
+β-tubulin 55 KDa
+Flag
+70 KDa
+35 KDa
+Ex (nt)
+Inter (nt)
+3×OVApeptide-3×Flag-P2A
+0
+0
+70
+0
+35
+12
+70
+12
+Untreated
+β-tubulin
+Flag
+Ex (nt)
+Inter (nt)
+OVApeptide-3×Flag-P2A
+0
+20
+20
+20
+35
+12
+70
+12
+Untreated
+130 KDa
+100 KDa
+70 KDa
+55 KDa
+40 KDa
+35 KDa
+55 KDa
+Fig. 4b
+m5CUnmodifiedhm5Cmo5Us4Um1ψψ
+400
+300
+200
+100
+(nt)
+Marker
+Fig. 4c
+(nt)
+750
+500
+250
+100
+m5CUnmodifiedhm5Cmo5Us4Um1ψψMarkerUntreated
+Fig. 4d
+(KDa)
+70 KDa
+55 KDa
+40 KDa
+m5CUnmodifiedUntreated hm5Cmo5Us4Um1ψψ Synthetic Flag peptide
+β-tubulin
+Flag
+Fig. 5b
+600
+1,000
+400
+300
+100
+200
+m5CUnmodifiedhm5Cmo5Us4U m1ψψ
+(nt)
+Marker
+Fig. 5c
+5,000
+1,000
+500
+100
+250
+m5CUnmodifiedLinear hm5CMarker
+(nt)
+Fig. 5d
+β-tubulin
+Flag
+2 µg 5 µg
+100 KDa
+70 KDa
+55 KDa
+40 KDa
+35 KDa
+25
+55 KDa
+25 KDa
+m5CUnmodifiedUntreated hm5C m5CUnmodifiedhm5C
+Fig. 8d
+55 KDa
+130 KDa
+100 KDa
+Producer cells
+VSVG
+55 KDa β-tubulin
+β-tubulin
+Control EASY-mRNA-EGFP
+VLP
+UntreatedEASY-circRNA-Flag
+130 KDa
+100 KDa
+70 KDa
+55 KDa
+40 KDa
+35 KDa
+55 KDa
+180 KDa
+Flag
+β-tubulin
+Fig. 8h
+Extended Data Fig. 3b Extended Data Fig. 3c
+β-tubulin
+Flag
+Untreated0 nt33 nt84 nt132 nt183 nt285 nt234 nt333 nt435 nt
+IVT-produced RNAs
+55 KDa
+35 KDa
+70 KDa
+180 KDa
+70 KDa
+40 KDa
+35 KDa
+25 KDa
+15 KDa
+55 KDa
+CMV-derived RNAs
+Untreated0 bp33 bp84 bp132 bp183 bp285 bp234 bp333 bp435 bp714 bp (FL)
+Flag
+β-tubulin
+Extended Data Fig. 4a
+β-tubulin
+Flag
+U6-BBV-OVA
+peptide
+-3×Flag
+ (length of Flag)
+U6-BBV-3×OVA
+peptide
+-3×Flag
+− 66 72 78 66 72 78 −Empty vector (U6)
+35 KDa
+70 KDa
+55 KDa
+Extended Data Fig. 8
+Flag
+β-tubulin
+180 KDa
+70 KDa
+40 KDa
+35 KDa
+25 KDa
+15 KDa
+55 KDa
+UntreatedUnmodified-circRNA-MOGhm5C-circRNA-MOG
+PICC
+M M ψm1AUnmodifiedm6Am1ψ mo5U s2Um5Chm5Cs4U
+2,000
+1,000
+400
+300
+200
+(nt)
+Extended Data Fig. 6a Extended Data Fig. 6b
+M M
+PIE
+2,000
+1,000
+400
+300
+200
+(nt) ψm1AUnmodifiedm6Am1ψ mo5U s2Um5Chm5Cs4U
+Extended Data Fig. 9f
+Untreated
+KDa
+EASYHELPLenti
+Flag
+β-tubulin
+130 KDa
+100 KDa
+70 KDa
+55 KDa
+40 KDa
+35 KDa
+25 KDa
+55 KDa
+Extended Data Fig. 9g
+UntreatedEASY-circRNA-MOG
+130 KDa
+100 KDa
+70 KDa
+55 KDa
+40 KDa
+35 KDa
+25 KDa
+15 KDa
+55 KDa
+Flag
+β-tubulin

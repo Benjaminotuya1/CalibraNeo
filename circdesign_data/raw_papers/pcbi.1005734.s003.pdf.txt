@@ -1,0 +1,45 @@
+Outer cross-validation 
+Testing 
+Training 
+Feature 
+pre-selection 
+Training 
+set 
+	  
+Validation 
+set 
+	  
+Sequence 
+group	  
+Selected 
+features	   Inner cross-validation 
+Testing 
+Training 
+Feature 
+pre-selection 
+Grid 
+search 
+Validation 
+set 
+	  
+Training 
+set 
+	  
+Selected 
+features	  
+Grid RF 
+models	  
+Validation 
+predictions	  
+Overall 
+predictor R2	  
+Best grid 
+parameters	  
+RF 
+training 
+RF 
+model	  
+Overall 
+predictor R2	  
+Validation 
+predictions	  

@@ -1,5 +1,15 @@
-construct_id,source_doi,supplementary_table,sequence_fasta,outcome_type,outcome_value,outcome_units,circularisation_strategy,ires_used,notes
-nature_bbe_2026,10.1038/s41551-026-01725-4,official supplementary information,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,scarless IVT; exact architecture not independently verified,BBV CITE,DOI and article verified; official supplement identified but full nucleotide sequence was not independently retrievable
-nature_small_circ_vaccine_2025,10.1038/s41551-025-01344-5,Supplementary Table 1,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,DOI and article verified; full construct sequence and construct-level quantitative outcome were not independently retrieved
-nature_sci_rep_circ_vaccine_2026,10.1038/s41598-026-46871-6,41598_2026_46871_MOESM1_ESM.docx,NOT_FOUND,antitumour activity,NOT_FOUND,NOT_FOUND,exact architecture not independently verified,IRES reported,official supplement link verified but sequence inspection was blocked
-nature_zika_circ_vaccine_2024,10.1038/s41467-024-53242-0,41467_2024_53242_MOESM*.pdf/xlsx,NOT_FOUND,protection after challenge,NOT_FOUND,NOT_FOUND,group-I Anabaena pre-tRNA split-intron autocatalytic circularisation,iCVB3 IRES,architecture and outcomes verified; full nucleotide sequence was not found in official article XML or supplement metadata
+construct_id,sequence_fasta,expression_mfi_10ug,stability_day7_4C,in_solution_half_life_h,in_cell_half_life_h,source_doi
+circRNA-SIINFEKL,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1038/s41551-025-01344-5
+circRNA-OVA,benchmark/fasta/circRNA-OVA.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1038/s41551-025-01344-5
+circRNA-Adpgk,benchmark/fasta/circRNA-Adpgk.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1038/s41551-025-01344-5
+circRNA-E7,benchmark/fasta/circRNA-E7.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1038/s41551-025-01344-5
+circRNA-Trp2/gp100,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1038/s41551-025-01344-5
+circRNA-RBD,benchmark/fasta/circRNA-RBD.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1038/s41551-025-01344-5
+CR1,benchmark/fasta/CR1.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,24.34,10.1101/2023.07.09.548293
+CR2,benchmark/fasta/CR2.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1101/2023.07.09.548293
+CR3,benchmark/fasta/CR3.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,19.31,10.1101/2023.07.09.548293
+CR4,benchmark/fasta/CR4.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1101/2023.07.09.548293
+CR5,benchmark/fasta/CR5.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,9.18,10.1101/2023.07.09.548293
+CR6,benchmark/fasta/CR6.fasta,NOT_FOUND,NOT_FOUND,NOT_FOUND,NOT_FOUND,10.1101/2023.07.09.548293
+CR-Novo,benchmark/fasta/CR-Novo.fasta,NOT_FOUND,NOT_FOUND,9.14,10.21,10.1101/2023.07.09.548293
+CR-Ther,benchmark/fasta/CR-Ther.fasta,NOT_FOUND,NOT_FOUND,9.68,NOT_FOUND,10.1101/2023.07.09.548293

@@ -1,0 +1,168 @@
+1 nature portfolio  |  reporting summaryApril 2023
+Corresponding author(s): Guizhi Zhu
+Last updated by author(s): May 23, 2024
+Reporting Summary
+Nature Portfolio wishes to improve the reproducibility of the work that we publish. This form provides structure for consistency and transparency 
+in reporting. For further information on Nature Portfolio policies, see our Editorial Policies and the Editorial Policy Checklist.
+Statistics
+For all statistical analyses, confirm that the following items are present in the figure legend, table legend, main text, or Methods section.
+n/a Confirmed
+The exact sample size (n) for each experimental group/condition, given as a discrete number and unit of measurement
+A statement on whether measurements were taken from distinct samples or whether the same sample was measured repeatedly
+The statistical test(s) used AND whether they are one- or two-sided 
+Only common tests should be described solely by name; describe more complex techniques in the Methods section.
+A description of all covariates tested
+A description of any assumptions or corrections, such as tests of normality and adjustment for multiple comparisons
+A full description of the statistical parameters including central tendency (e.g. means) or other basic estimates (e.g. regression coefficient) 
+AND variation (e.g. standard deviation) or associated estimates of uncertainty (e.g. confidence intervals)
+For null hypothesis testing, the test statistic (e.g. F, t, r) with confidence intervals, effect sizes, degrees of freedom and P value noted 
+Give P values as exact values whenever suitable.
+For Bayesian analysis, information on the choice of priors and Markov chain Monte Carlo settings
+For hierarchical and complex designs, identification of the appropriate level for tests and full reporting of outcomes
+Estimates of effect sizes (e.g. Cohen's d, Pearson's r), indicating how they were calculated
+Our web collection on statistics for biologists contains articles on many of the points above.
+Software and code
+Policy information about availability of computer code
+Data collection IVIS Lumina system (Perkin Elmer), LSRFortessa X-50 (BD Biosciences), Beckman Coulter flow cytometer (BD Biosciences), LSM 780 confocal 
+microscope (Zeiss), plate reader (Agilent BioTek), Zetasizer Nano (Malvern), ChemiDoc Imaging System (Bio-Rad Laboratories). 
+Data analysis Graphpad Prism v9, FlowJo v10, Living Image Software (Perkin Elmer) v4, Image Lab v6, Microsoft Excel v16. The quality of RNA-Seq reads was 
+assessed with FastQC v0.11.9. Reads from individual samples were aligned using STAR aligner version 2.7.6a to the mouse reference genome 
+GRCm39. The differential gene-expression analysis was performed with Bioconductor package DESeq2 v1.30.0 using the normalized and 
+filtered counts per gene from the RNA-Seq data. The visualization of upregulated genes and associated gene-ontology functions when 
+comparing the three biological conditions was carried out using the Triwise R package.
+For manuscripts utilizing custom algorithms or software that are central to the research but not yet described in published literature, software must be made available to editors and 
+reviewers. We strongly encourage code deposition in a community repository (e.g. GitHub). See the Nature Portfolio guidelines for submitting code & software for further information.
+2 nature portfolio  |  reporting summaryApril 2023
+Data
+Policy information about availability of data
+All manuscripts must include a data availability statement. This statement should provide the following information, where applicable: 
+- Accession codes, unique identifiers, or web links for publicly available datasets 
+- A description of any restrictions on data availability 
+- For clinical datasets or third party data, please ensure that the statement adheres to our policy 
+ 
+The data supporting the results in this study are available within the paper and its Supplementary Information. Source data for the figures are provided with this 
+paper and in figshare at https://doi.org/10.6084/m9.figshare.25919746. The raw and analysed datasets generated during the study are available for research 
+purposes from the corresponding authors on reasonable request.
+Research involving human participants, their data, or biological material
+Policy information about studies with human participants or human data. See also policy information about sex, gender (identity/presentation), 
+and sexual orientation and race, ethnicity and racism.
+Reporting on sex and gender The study did not involve human research participants.
+Reporting on race, ethnicity, or 
+other socially relevant 
+groupings
+–
+Population characteristics –
+Recruitment –
+Ethics oversight –
+Note that full information on the approval of the study protocol must also be provided in the manuscript.
+Field-specific reporting
+Please select the one below that is the best fit for your research. If you are not sure, read the appropriate sections before making your selection.
+Life sciences Behavioural & social sciences  Ecological, evolutionary & environmental sciences
+For a reference copy of the document with all sections, see nature.com/documents/nr-reporting-summary-flat.pdf
+Life sciences study design
+All studies must disclose on these points even when the disclosure is negative.
+Sample size No power analysis on sample size was performed. In vivo studies on biodistribution were conducted with n>=3; on monitoring T-cell 
+responses were conducted with n=5; on monitoring tumour growth were conducted with n>= 6 tumour-bearing mice per condition. 
+Differences between treatment groups in terms of average T-cell responses or tumour size at the endpoint of the experiment were analysed 
+using one-way ANOVA and Tukey’s multiple comparisons test with alpha set to 0.05. All cell samples were evaluated in at least three biological 
+triplicates to allow for statistical analyses. All RNA-stability experiments were performed with three independent replicates. All other sample-
+size numbers are listed in the corresponding figure captions. Sample sizes for these experiments were chosen on the basis of standards in the 
+field and on prior knowledge of experimental variation.
+Data exclusions No data were excluded.
+Replication All attempts at replication were successful (at least twice at different times).
+Randomization For the in vivo animal study, animal groups were randomized while body weights (20–25g) were maintained within the selected ranges. For 
+the other experiments, all samples were randomly assigned into experimental groups.
+Blinding Blinding was not relevant to the study because the results are purely based on objective measurements.
+Reporting for specific materials, systems and methods
+We require information from authors about some types of materials, experimental systems and methods used in many studies. Here, indicate whether each material, 
+system or method listed is relevant to your study. If you are not sure if a list item applies to your research, read the appropriate section before selecting a response. 
+3 nature portfolio  |  reporting summaryApril 2023
+Materials & experimental systems
+n/a Involved in the study
+Antibodies
+Eukaryotic cell lines
+Palaeontology and archaeology
+Animals and other organisms
+Clinical data
+Dual use research of concern
+Plants
+Methods
+n/a Involved in the study
+ChIP-seq
+Flow cytometry
+MRI-based neuroimaging
+Antibodies
+Antibodies used Antibodies used in this study are: CD45 Brilliant Violet 421 30-F11 BioLegend 103133;CD11c Alexa Fluor 594 N418 BioLegend 117346; 
+CD11b FITC M1/70 BioLegend 101205;CD8a APC/Cy7 53-6.7 BioLegend 100713;CD4 PerCP/Cy5.5 GK1.5 BioLegend 100433;CD103 
+Brilliant Violet 605 2E7 BioLegend 121433;CD205 PE/Cy7 NLDC-145 BioLegend 138209;F4/80 APC/Cy7 BM8 BioLegend 
+123117;CD11b PE/Cy5 M1/70 BioLegend 101209;NK1.1 APC S17016D BioLegend 156505;CD3 PerCP/Cy5.5 17A2 BioLegend 
+100217;CD279(PD-1) Brilliant Violet 421 29F.1A12 BioLegend 135217;IFN-γ PE XMG1.2 BioLegend 505807;TNF-α FITC MP6-XT22 
+BioLegend 506303;CD44 PE/Cy5 IM7 BioLegend 103009;CD62L FITC MEL-14 BioLegend 104405;CD25 FITC 3C7 BioLegend 
+101907;FoxP3 Alexa Fluor 647 MF-14 BioLegend 126407;CD279(PD-1) N/A RMP1-14-CP162 Bio X Cell CP162;CD152(CTLA-4) N/A 
+9H10-CP146 Bio X Cell CP146;CD4 N/A YTS 177 Bio X Cell BP0003-3;CD8α N/A YTS 169.4 Bio X Cell BP0117;NK1.1 N/A PK136 Bio X Cell 
+BP0036;Phospho-PKR (Thr446) N/A  Thermo Fisher PA5-121356;EIF2AK2/PKR N/A  Thermo Fisher 18244-1-AP;FLAG M2 N/A  Sigma-
+Aldrich F1804;β-actin N/A 15G5A11/E2 Thermo Fisher MA1-140.
+Validation All primary antibodies were bought from vendors (Biolegend, Bio X Cell, Sigma-Aldrich, and Thermo Fisher), and were used for the 
+species suggested by the manufacturers (mouse-specific). All antibodies were validated by the supplier. Validation statements are 
+provided on the manufacturer's website. 
+Eukaryotic cell lines
+Policy information about cell lines and Sex and Gender in Research
+Cell line source(s) The EG7.OVA, TC-1, DC2.4, MC38, B16F10 and HEK293T cell  lines were purchased form ATCC. PRR reporter cells were 
+provided by the laboratories of James Moon and Connie Wu (University of Michigan). B3Z cells were originally from Xiaoyuan 
+Chen's lab. The BrafV600E SM1 cell line was from Anthony Ribas' lab at the University of California Los Angeles, USA.
+Authentication The cell lines were authenticated by morphology. 
+Mycoplasma contamination The cell lines tested negative for mycoplasma contamination.
+Commonly misidentified lines
+(See ICLAC register)
+No commonly misidentified cell lines were used.
+Animals and other research organisms
+Policy information about studies involving animals; ARRIVE guidelines recommended for reporting animal research, and Sex and Gender in 
+Research
+Laboratory animals Unless denoted otherwise, 6–8-week old female C57BL/6 mice were used. 12–18 month old female C57BL/6 mice were used in part 
+of the studies of T-cell responses elicited by circRNA vaccines. Mice were given free access to food and water, and were maintained 
+under a 12/12-h light–dark cycle with controlled temperature (20-25°C) and humidity (50 ± 10%).
+Wild animals The study did not involve wild animals.
+Reporting on sex We did not contemplate sex-based analyses.
+Field-collected samples The study did not involve samples collected from the field.
+Ethics oversight All animal work was conducted in compliance with the Virginia Commonwealth University and the University of Michigan Guide for 
+the Care and Use of Animals under protocols approved by the Virginia Commonwealth University Animal Care and by the University 
+of Michigan Animal Care and Use Committee.
+Note that full information on the approval of the study protocol must also be provided in the manuscript.
+4 nature portfolio  |  reporting summaryApril 2023
+Flow Cytometry
+Plots
+Confirm that:
+The axis labels state the marker and fluorochrome used (e.g. CD4-FITC).
+The axis scales are clearly visible. Include numbers along axes only for bottom left plot of group (a 'group' is an analysis of identical markers).
+All plots are contour plots with outliers or pseudocolor plots.
+A numerical value for number of cells or percentage (with statistics) is provided.
+Methodology
+Sample preparation For tetramer staining, peripheral blood was collected from the vaccinated mice, and blood cells were enriched by 
+centrifugation. Red blood cells were lysed using ACK lysis buffer for 10 min at room temperature. Blood clots were removed 
+using a filter. Cells were washed twice in PBS and then stained using Zombie Aqua Fixable Viability Kit (BioLegend) for 20 min 
+at room temperature. Staining was quenched and cells were washed with FCS buffer (PBS buffer with 0.1% FBS). Cells were 
+then blocked with αCD16/CD32 (BioLegend) for 10 min, followed by adding staining cocktail (PerCP/Cy5.5 anti-mouse CD3, 
+APC/Cy7 anti-mouse CD8a, Brilliant Violet 421 anti-mouse PD-1, and tetramer-PE) and staining at room temperature for 30 
+min. Cells were then washed and 100 μL Cytofix was added into each well to resuspend cells prior to fixation at 4 °C for 20 
+min. Cells were then washed with Perm/Wash buffer, and resuspended for flow cytometric analysis. For intracellular cytokine 
+staining, Peripheral blood was collected from immunized mice. Red blood cells were removed using ACK lysis buffer, and the 
+obtained lymphocytes were transferred into U-bottom 96-well plates in 200 μL T cell culture media (RPMI 1640, 10% FBS, 
+100 U/mL penn/strep, 50 μM β-mercaptoethanol, 1x MEM non-essential amino acid solution, and 1 mM sodium pyruvate). 
+Lymphocytes were pulsed with antigen peptides (40 μg/mL) for 4 h, followed by addition of GolgePlug Protein Transport 
+Inhibitor containing brefeldin A (Thermo Fisher Scientific). The sequences of antigen peptides (CSBio, Menlo Park, CA) are 
+shown in Supplementary Table 4. Cells were then placed in a culture incubator for 6 h before incubation with αCD16/CD32 
+for 10 min at room temperature. Cells were stained with APC/Cy7 anti-mouse CD8a, PerCP/Cy5.5 anti-mouse CD4 and 
+Zombie Aqua Fixable Viability Kit for 20 min at room temperature. Cells were washed and subsequently fixed using Cytofix 
+(BD Biosciences), washed, and permeabilized in 200 μL Cytoperm solution (BD Biosciences). Cells were then washed using 
+Perm/Wash Buffer (BD Biosciences), and permeabilized cells were then stained using PE anti-mouse IFN-γ (BioLegend) and 
+FITC anti-mouse TNF-α (BioLegend). Stained cells were washed for flow cytometric analysis.
+Instrument LSRFortessa X-50 (BD Biosciences), Beckman Coulter flow cytometer (BD Biosciences).
+Software FlowJo V10
+Cell population abundance Cell populations of interest were abundant.
+Gating strategy For antigen presentation, co-stimulatory factors and cell uptake, the cells were first gated based on FSC/SSC and FSCA/FSCH 
+to select for live single cells. Unedited cells were employed as negative control for gating the positive signal. 
+For tetramer staining on T cells, see Supplementary Fig. 32. The cells were first gated based on FSCA/FSCH to select for single 
+cells, then gated based on FSCA/SSCA to select for lymphocytes. Then cells were gated based on SSCA/ Live/Dead to select 
+for live cells. The live cells were gated based on SSCA/CD8 to select for CD8 positive cells. These cells were gated based on 
+CD8/tetramer to select for epitope-positive CD8-positive cells.
+Tick this box to confirm that a figure exemplifying the gating strategy is provided in the Supplementary Information.

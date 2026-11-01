@@ -1,0 +1,1394 @@
+Improving the Circularization Efficiency, Stability and1
+Translatability of Circular RNA by circDesign2
+3
+CongcongXu1,†,LiangZhang2,†,WeiyunWang1,†,YuyingTang1,QiuheWang1,4
+JinqiAn1,HengXu1,YunGe1,HanfeiZhu1,HeWang1,BinLi1, XiaotianWang1,5
+XuhuiQiu1,MingyunShen1,GengChen1,HaifaShen1,$,LiangHuang3,$,6
+HangwenLi1,4,$7
+8
+9
+1StemiRNATherapeutics,Shanghai,China10
+2ChinaPharmaceuticalUniversity,Nanjing,China11
+3Coderna.ai,Sunnyvale,CA,USA12
+4ShanghaiEastHospital,Shanghai,China13
+14
+15
+16
+17
+$Correspondenceto:18
+19
+LiangHuang(liang.huang.sh@gmail.com)20
+HaifaShen(shf@stemirna.com)21
+Leadcontact:HangwenLi(lihangwen@stemirna.com)22
+23
+†Theseauthorscontributedequally.24
+25
+26
+27
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+Abstract28
+29
+Synthetic circular RNA (circRNA) has recently emerged as the next generation30
+RNAtechnologyforvaccineanddrugdevelopment,featuringitsuniquenessina31
+closed-loop structure and cap-independent translation mechanism. However,32
+rationaldesign and optimization of circRNAto improve its stability and protein33
+codingpotentialremainschallengingduetolackofstructurepredictiontooland34
+sequence design algorithm for endless circular-shaped RNA. In this study, we35
+presentedcircDesign,acomputationalapproachtoachieveoptimaldesignofthe36
+circRNA with enhanced circularization efficiency, stability, and translatability.37
+Using rabies virus glycoprotein (RABV-G) and varicella-zoster virus (VZV)38
+glycoprotein gE as the exemplified antigens, we demonstrated that optimized39
+circRNAsencodingcorrespondingantigensexhibitedhigherstabilityandprotein40
+translation efficiency in vitro. Formulated by proprietary delivery system41
+lipopolyplex(LPP),theoptimizedcircRNAvaccinesencodingRABV-GorVZV42
+gE antigen further elicited enhanced humoral and cellular in vivo immune43
+responsesinmice.Takentogether,thiscircularRNAdesignapproachprovideda44
+generalstrategytoleveragethecapabilityofcircRNAasnextgenerationvaccines45
+ortherapeutics.46
+47
+48
+49
+Keywords:circularRNA;circDesign;Algorithm;RNAvaccine;Rabiesvaccine;50
+Varicella-zostervirusvaccine;Lipopolyplex51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+67
+68
+69
+70
+71
+72
+Introduction73
+74
+RationalsequencedesignofmessengerRNAs(mRNAs)isofpivotalimportance75
+to maximize the potency of mRNA vaccines or therapeutics1. Optimization of76
+conventional linear mRNA usually involves 5'- & 3'-untranslated region (UTR)77
+and open reading frame (ORF), which could be simply achieved by combining78
+naturally occurring UTR pair with codon optimized ORF region2, 3. As79
+exemplifiedbyModerna'smRNA-1273and BioNTech'sBNT162b2COVID-1980
+mRNA vaccines, the optimized ORF was directly flanked with previously81
+screened UTR pair4. Besides, it was reported the functional half-life of mRNA82
+dictates its in vivo performance as the translation efficiency and stability of83
+mRNA synergistically impact the protein output5, 6. To achieve enduring and84
+efficienttranslation,theORFsequenceshouldbeoptimizedtowardsmorestable85
+secondarystructurewithoutcompromisingitscodonpreference.86
+87
+Recent advancement in circRNA demonstrated its potentials as next generation88
+vaccinesortherapeuticsowingtoitsuniquenessinendlessstructuredistinctfrom89
+linear mRNA7-9. Other than ORF region, synthetic circRNA usually contains90
+internal ribosome entry site (IRES) motif upstream of ORF for translation91
+initiation10.ThecorrectfoldingofIRESasafunctionalmotiftorecruittranslation92
+pre-initiationcomplex(PIC)isaprerequisiteofefficienttranslationofcircRNA11.93
+However,duetothelackofstructurepredictiontoolforcircularRNA,alongwith94
+insufficient understanding of the crosstalk between IRES and ORF regions on95
+circRNA, current sequence optimization of circRNA heavily relied on modular96
+screening12.ThisindependentORFoptimizationoncircRNAwithoutconsidering97
+the backbone sequence including IRES motif and residual regions as a whole98
+introducesmoreuncertaintiesintheprocessofcircRNAsequenceoptimization.99
+100
+Here we present an efficient approach called circDesign based on previously101
+reported LinearDesign algorithm6 to generate optimized circRNA sequences for102
+rabies and VZV vaccine development. In brief, a pool of candidate ORFs were103
+firstly generated using LinearDesign algorithm based on optimization of codon104
+usageandminimumfreeenergy(MFE).ByassemblyofORFwithIRESmotifas105
+well as other functional regions, the positional entropy and ensemble diversity106
+wereevaluatedasidefromoverallMFEandcodonadaptationindex(CAI)13-15.To107
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+evaluatetheimpactoftheseparametersoncircRNAperformance,weperformed108
+in vitro and in vivo characterization of these circRNAs compared to109
+conventionallyoptimizedORFsequences,itdemonstratedgreaterperformancein110
+terms of circularization, stability, protein translation as well as in vivo immune111
+responses. The circDesign approach provides a general strategy for112
+protein-coding circular RNA design and potentially enables broader113
+circRNA-basedvaccineandtherapeuticdevelopment.114
+115
+Results116
+117
+circDesign approach for circular RNA design118
+119
+To implement circDesign for circRNA-based rabies vaccine design, the ORF120
+region encoding RABV-G16, 17 was designed such as to achieve efficient and121
+prolongedexpression.DifferentfromlinearmRNAdesignwhichiscomposedof122
+relatively short functional elements (~ 100 nt in length) including 5'-UTR and123
+3'-UTR, artificially constructed circular RNA with protein translation capacity124
+usually contains long viral or cellular IRES sequence (500-800 nt in length) for125
+cap-independent translation10, 18, 19. More importantly, the IRES region needs to126
+be independently folded into a hierarchical structure without interference from127
+other sequence as to efficiently recruit translational PIC. Therefore, a key128
+consideration in circDesign involves mitigating the cross-interaction of ORF129
+region with IRES motif, thus facilitating the formation of functional IRES with130
+high confidence. Moreover, following a permuted intron-exon (PIE)131
+circularization20, residual exon fragments on circularized RNA is redundant and132
+introduced more uncertainties to the function of circRNA as this element may133
+interfere with the folding of other elements. As such, precautionsmust be taken134
+whenoptimizing the ORF of circRNAsince functionalIRES motif and residual135
+exonsarepresentinthesequence.136
+137
+In this study, the circDesign approach consisted of four integral steps as138
+illustrated in Fig. 1a. In brief, the first step involves the implementation of139
+LinearDesign algorithm to generate a pool of ORF candidates. Followed by the140
+screeningofORFbasedonCAIandMFE,thestabilityandtranslationefficiency141
+were carefully considered. Then a completed circular RNA was assembled with142
+other necessary residual fragments including IRES, exons and spacers. In143
+addition,thepositionalentropyofIRESandensemblediversityofcircRNAwere144
+evaluated.LowerpositionalentropysuggestsamoreconservedstructureofIRES,145
+whilealowerensemblediversityindicatesahigherconsistencyandpredictability146
+ofthecircRNAstructure,bothofwhichcontributetohigherstructurestringency21,147
+22. In addition, the inter-region and intra-region interaction was evaluated148
+primarilyaimingtomitigatetheimpactfromORFontheindependentfoldingof149
+IRES, which is critical for efficient translation initiation. Based on the150
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+abovementioned screening process, the designed circRNAs were then subjected151
+to in vitroand in vivoevaluationforscreening.152
+153
+Design, synthesis, and characterization of circular RNA encoding RABV-G154
+155
+Herewith RABV-G encoding circRNA, we designed six ORFs, along with two156
+benchmarksequences.ThesixcircDesign-generateddesignsarewidelydispersed157
+in the low-MFEregions (Fig. 1b). To better understand the impact of MFE and158
+CAI in terms of biological implications, following the LinearDesign's159
+experimentaldesignprinciple,wecraftedsequenceswithnearlyidenticalvalues160
+in MFE (CR2,CR3 // CR4, CR5) or in CAI (CR5, CR6, CR-Ther // CR1, CR2,161
+CR-Novo).BenchmarkORFsequences(CR-Therand CR-Novo)weredesigned162
+with publicly available platforms from Thermo Fisher and Novoprotein163
+respectively, which primarily optimized the codon preference without164
+considering the secondary structure. The color darkness of each sequence165
+representsthe ensemblediversityof assembledcircular RNA.As suggested,the166
+ensemble diversity of designed circRNA is correlated with MFE. With a lower167
+MFEofORFregion,theensemblediversityofcircRNAwaslowered,suggesting168
+amorewell-definedstructurewithindependentfoldingofeachregion.169
+170
+To synthesize the circRNA, the circularization of RNA was mediated by171
+self-cleavingpermutedgroupIcatalyticintronwhichwasseparatedinto5'-intron172
+and 3'-intronin the original sequence design as previously reported7, 20. In brief,173
+both ends of linear mRNA consisted of complementary homology arms174
+facilitating the folding of active ribozyme structure, thus undergoing two175
+constitutive transesterification reactions to form junction between two exon176
+fragments (E1 & E2). In this study, IRES from Coxsackievirus B3 (CVB3)23, 24177
+was adopted upstream of open reading frame (ORF) to drive the protein178
+translation process. As shown in the Fig. 1b, different ORF embedded in the179
+linear mRNA design could be incorporated in circular RNA via the same180
+circularizationreaction. Taking CR3 and CR-Novo as representative sequences,181
+the ORF of CR3 was designed with much lower MFE and less inter-region182
+interactionwithIRESmotifcomparedtoCR-Novo.Asshownin Fig. 1c,though183
+with the same backbone sequence and amino acid sequence, most of the amino184
+acid could be coded by different synonymous codons, resulting in numerous185
+sequence design space. The secondary structure of CR3 and CR-Novo was186
+predictedas Fig. 1d.ItwasclearthatthesameIRESregion(lightgreycolor)had187
+distinct folding in two circRNAs. The secondary structure folding prediction of188
+circRNA rabies sequences (see Extended Data. 1&2) demonstrated that189
+suboptimalORFs(TherandNovo)maydisruptthecorrectfoldingofIRES.And190
+thepairwisevisualizationofthesetwocircRNA(Fig. 1e)showedthatCR-Novo191
+had more inter-region base pairing (red connecting line) than that of CR3. The192
+base pairing in CR3 mainly led to intra-region folding (blue connecting line).193
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+Same results were obtained in other circDesign-basedsequences (see Extended194
+Data. 3&4).195
+196
+As a result of the difference in MFE, CAI value and ensemble diversity, the197
+circularization efficiency varied among these sequences. Considering a more198
+compact ORF region folding with less interference with the formation of active199
+intron, circDesign-generated sequences (CR1-6) had relatively higher200
+circularization efficiencies than those of CR-Novo and CR-Ther (Fig. 2a). To201
+remove impurities from the circularization reaction products, size-exclusion202
+column chromatography was used to obtain purified circRNA (see Extended203
+Data. 5a)whichinducedminimizedinnateimmunogenicity(see Extended Data.204
+5b-c). To characterize the circRNA, non-denaturing agarose gel electrophoresis205
+was performed at room temperature. As shown in Fig. 2b, it's intriguing to find206
+that the gel mobility of circRNAs was well correlated with their MFE values207
+given their same nucleotide length. CR-Novo sequence, with the highest MFE,208
+exhibitedthe slowest mobilityin the gel matrix possiblydue to its less compact209
+structure, while circDesign-generated sequences especially CR1-5 had faster210
+migrationasaresultoftheirhighlycompactfoldingstructure.Thissuggestedthe211
+potential of optimizing ORF sequences of circRNA in regulating their folding212
+paradigm.213
+214
+Optimized circRNA exhibited enhanced in vitro stability215
+216
+Asthesecondarystructuredictatesthefunctionallyhalf-lifeofmRNA5,wethen217
+extensively evaluated the in vitro stability of circRNAs in terms of218
+thermodynamicfolding,in-solutiondegradationaswellasintracellulardecay.By219
+heatingthecircRNAinsolutiontograduallyunfolditsstructure,thefluorescence220
+intensity from RNA bound RiboGreen® reagent attenuated accordingly. We221
+calculatedthemeltingtemperature(Tm)ofcircRNAfromthefluorescentintensity222
+curve as Fig. 2c. CR1-3 had slightly higher Tm than CR4-6, with an obviously223
+increased thermodynamic stability compared to CR-Novo and CR-Ther. The224
+meltingcurveresultswasassociatedwithMFEvalues.225
+226
+Like linear mRNA, the chemical instability of circRNA originated mainly from227
+hydrolysisreactiondespiteofitsendlessstructure25-27.Toexaminethein-solution228
+stabilityofallcircRNAs,RNAsampleswereincubatedinPBSbuffercontaining229
+10mMMg2+at37°Cmimickingthephysiologicalbufferingsystemoveratime230
+course of 60 h. At different time points, the integrity of circRNA was assessed.231
+ThedegradationofcircRNAasafunctionoftimewasfittedtoaone-phasedecay232
+curve, suggesting different degradation kinetics. circRNAs with higher MFE233
+values (CR-Novo & CR-Ther) underwent faster degradation kinetics with234
+half-life (t1/2) of 9.14h and 9.68h respectively, while CR1-3 had considerably235
+extendedt1/2rangingfrom15.56to20.62h(Fig. 2d).236
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+237
+Apartfromchemicaldegradation,theintracellulardecayofexogenouscircRNA238
+isalsoregulatedbydifferentpathwaysin relatedto itstranslationalactivity28, 29.239
+To assess the in-cell half-life of circRNA, the abundance of circRNA extracted240
+from cells was quantifiedusing reverse transcriptionquantitative real-time PCR241
+(RT-qPCR) method at various time points (3, 12, 24, 48 and 72h)242
+post-transfection into Human Skeletal Muscle Cells (HSkMC). As illustrated in243
+Fig 2e,aslightlydifferentdecaypatternofalltestedcircRNAwasobserved.CR1244
+andCR3hadaprolongedintracellularhalf-life(24.34hand19.31h,respectively)245
+while CR-Novo and CR5 showed a faster in-cell decay (10.21 h and 9.18 h,246
+respectively).As the biological fate of transfected circRNA is associated with a247
+plethora of factors including translation status and nuclease resistance30, 31, the248
+in-cell degradation of artificially synthesized circRNA could possibly be249
+controlled by tuning its secondary structure and translation efficiency. We250
+reasoned that CR3 sequence had decent stability in conjunction with high251
+translation efficiency, enabling its resistance against chemical degradation and252
+biologicaldecay.253
+254
+circDesign improved the protein coding capacity of circRNA255
+SincethestabilityandtranslationefficiencyofcircRNAco-regulatestheprotein256
+outputlevel,weevaluatedtheRABV-GexpressionfromtransfectedcircRNAin257
+HSkMC using flow cytometry (Fig. 2f). To gain thorough comparison, we258
+included conventional chemically modified linear mRNA harboring Novo ORF259
+encodingRABV-Gasacontrolgroupaswell.At24hpost-transfection,antigen260
+was highly expressed in CR3 group as suggested by the mean fluorescent261
+intensity (MFI). CR1-5 had a remarkably higher protein output level than CR6262
+and CR-Ther, largely attributed to the relatively instable structure of CR6 and263
+CR-Ther. However,it's interesting to find that benchmarkCR-Novoexhibiteda264
+decent protein coding capacity despite of its lower CAI value compared to265
+CR-Ther.Thisevidenceemphasizedtheimportanceoftakingmultipleinfluential266
+factorsintoconsiderationotherthanCAItostratifythemRNAcodingpotentials.267
+Moreover, we found that the circular form (CR-Novo) outcompeted its linear268
+counterpart(LR-Novo)inproteintranslationlevel(Fig. 2f),wherestabilityfactor269
+might be the major contributing factor as these two forms of RNA shared the270
+same CAI of ORF. The correlation analysis of in-solution and in-cell half-life271
+with MFE (Fig. 2g) showed the importance of MFE parameter in improving272
+circRNA half-life. Predicted half-life correlated well with the observed273
+experimentaldata(Fig. 2h).274
+275
+Toelucidatetheunderlyingmechanismofenhancedproteinexpressioninrelation276
+to structure (Fig. 3a&b), we performed ribosome profiling32 and polysome277
+profiling33analysisofCR3andCR-Novoforside-by-sidecomparison.Following278
+the standard workflow (Fig. 3c) after transfection into cells, the ribosome279
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+footprints were aligned to the full-length CR3 and CR-Novo, respectively. The280
+ultracentrifugation fractions were quantified to determine the fractional281
+composition of circRNA. In both RNA direct sequencing counts and ribosome282
+sequencingcounts(Fig. 3d),theCR3hadhigherfpkm(fragmentperkilobaseof283
+transcript per million mapped reads) of RNA-seq and ribo-seq than that of284
+CR-Novo at the time of cell being harvested, indicating a higher circRNA285
+abundance and ribosome footprints of CR3. Footprint abundance relative to286
+mRNAabundancedictatestheTE(translationefficiency) 34ofcircularRNA.The287
+TEofCR3(233.7)wascalculatedas1.5-foldofCR-Novo(159.9),suggestinga288
+markedly higher translation efficiency from circDesign optimized CR3. After289
+alignment of the ribosome footprints on circRNA, it's clear that the290
+cap-independent translation mechanism of circRNA driven by CVB3 IRES291
+efficientlyrecruitsribosomeontocircularRNAtoinitiatetheproteintranslation.292
+MostoftheribosomeprotectedfragmentswereidentifiedinORFregioninboth293
+CR3and CR-Novo,thoughthereadcountanddistributionvariedbetweenthese294
+two groups. As suggested in Fig. 3e, the ribosomal footprints were mapped and295
+distributed more evenly throughout the ORF region while CR-Novo had more296
+distinctfootprintaccumulationpeaks.Thefullyalignedribosomalfootprintswere297
+plotted on circular CR3 and CR-Novo annotated with each functional regions,298
+respectively (Extended Data. 6). In addition, several major peaks upstream of299
+ORF indicated the recruitment of ribosome for translation initiation. Taking a300
+closerlookatthesecondarystructureandpairwisevisualization(Extended Data.301
+7), it's highly possible that the disrupted IRES motif in CR-Novo impeded the302
+translational machinery recruitment, thus resulting in a much lower ribosome303
+footprintabundance.304
+305
+Inaddition,polysomeprofilingwasperformedonCR3andCR-Novotocompare306
+the ribosome loading capacity. Ultracentrifugation of both CR3 and CR-Novo307
+was successful as shown in Fig. 3f, which quantified the total RNA in each308
+fractionalposition.80Sfractionreferredtomonosomeandlaterpeaksreferredto309
+polysome-boundcircRNA.By further quantifyingthe CR3 or CR-Novoin each310
+collected fractions,we observeda higher ribosomeloading in CR3 comparedto311
+CR-Novo(Fig. 3g).312
+313
+LPP delivery system efficiently delivered circRNA in vitro and in vivo314
+To investigate the performance of circRNA in vivo, a proprietary lipopolyplex315
+(LPP)deliverysystem35,36wasusedtoformulatethecircularRNA.Asshownin316
+Fig. 4a, following a two-step microfluidic mixing process, cationic polymer317
+complexed circRNA could be encapsulated in a bilayer liposome-like318
+nanoparticlewitha"core-shell"structure.Previousstudieshavedemonstratedthe319
+efficiencyandsafetyofusingthisLPPdeliverysystemtodeliverlinearmRNA37,320
+38. Herewith circRNA encoding GFP (CR-GFP) or firefly luciferase (CR-FLuc)321
+was formulated into LPP to study its in vitro cell expression and in vivo322
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+biodistributioncomparedto itschemicallymodifiedlinearcounterpart(LR-GFP323
+or LR-FLuc), respectively. Flow cytometry analysis of cells treated with LPP324
+formulatedCR-GFPshoweda dosage-dependenttranslationfrom50ng,200 ng325
+to500ngperwellina6-wellplate.Strongerexpressionwasobservedincircular326
+RNA group than that of LR-GFP (Fig. 4b). Besides, the protection of327
+encapsulated circRNA against RNase digestion was evaluated in LPP and lipid328
+nanoparticle(LNP),awidelyusedmRNAdeliverysystem.TheresidualcircRNA329
+was quantified at 30 min post-treatment and the results suggested a higher330
+protectionefficacyagainstnucleasedigestionusingLPPformulation.331
+332
+UponintramuscularadministrationofLPPformulatedCR-FLucandLR-FLucin333
+mice, in vivo imaging system (IVIS) captured the whole-body in vivo334
+luminescenceactivitiesatdifferenttimepoints(6,24,48,72,96and168h)(Fig.335
+4d),reflectingtheexpressionkineticsofluciferasefromCR-FLucorLR-FLuc.It336
+turnedoutthatcircularRNAproducedluciferaseinamoredurablemannerwith337
+higher accumulated expression as shown in Fig. 4e. Though with similar338
+physicochemicalproperties of LPP formulation(Extended Data. 8a) and lower339
+onset expression as seen at 6 h post administration, CR-FLuc showed extended340
+expressionoverthecourseofoneweekwhileluminescencefromLR-FLucgroup341
+descended to background level within a relatively shorter time (2 days342
+post-dosing). A gross estimation of accumulated expression was conducted343
+simplybycalculatingthearea-under-curve(AUC)oftotalfluxofluminescence.344
+CR-FLuc group led to approximately 5.3-fold of total luciferase expression345
+compared to its linear counterpart over the course of 8 days (Fig. 4f). Indeed,346
+othergrouphasreportedsimilartranslationkineticsofcircularRNAcomparedto347
+linear mRNA12, thus rendering circRNA a promising therapeutic or vaccine348
+platform for sustained protein supplement or enduring protection against349
+pathogens. These results suggested the feasibility of using LPP for efficient in350
+vivodeliveryofcircRNAdespiteofitsclosedloopfeature.351
+352
+circDesign optimized circRNA rabies vaccine demonstrated superior in vitro353
+stability and in vivo performance354
+355
+It has been reported that linear mRNA encapsulated in lipid nanoparticles still356
+underwent slow transesterification hydrolysis25. In this study, the stability of357
+LPP-circRNA nanoparticles was evaluated to simulate the vaccine storage358
+conditionundertheformulatedsituation.Henceforth,thesamelipidcomposition359
+was adopted to encapsulate circDesign-optimized CR1-6 and benchmark360
+circRNAencodingRABV-Gtoruleouttheimpactfromdeliverysystemontheir361
+in vitro and in vivo performance. The in vitro characterization of formulated362
+circRNAsshowedthatLPPnanoparticleshadsimilarsizeofaround110nm(Fig.363
+4g)andpositivezetapotentials(intherangeof20-35mV)(Fig. 4h)regardlessof364
+theencapsulatedcircRNA.However,theimportanceofoptimizingthestabilityof365
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+circRNAs was manifested in their storage stability in lipid formulation. We366
+examined the mRNA content of LPP-circRNA complex on day 30 at room367
+temperaturetoassesstheintegrityofRNAcomponent.AfasterRNAdegradation368
+in LPP formulated CR-Novo and CR-Ther was observed (Fig. 4i) with 15-20%369
+circRNAlossonday 30whilecircDesignoptimizedcircRNAs(CR1-5)showed370
+little degradation over tested period. Moreover, the in vitro innate371
+immunogenicity and cell cytotoxicity was evaluated with LPP formulated372
+circRNAs compared to linear RNA (Extended Data. 8b&c). Minimal in vitro373
+innateimmunogenicityandcelltoxicitywasobservedforSECpurifiedcircRNAs374
+formulatedbyLPP.375
+376
+We then evaluated the in vivo immunogenicity of RABV-G encoded RNA377
+vaccines. By intramuscular injection into mice, it's proposed that the378
+circRNA-LPP nanoparticles entered antigen-presenting cells via endocytic379
+pathway and circRNA got released from endosome into cytoplasm for antigen380
+translation. The translated antigens were then processed to elicit humoral and381
+cellularimmuneresponsesasillustratedin Fig. 5a.Twodosesofrabiesvaccines382
+were i.m.administeredatanintervaloftwoweeksinbalb/cmice(n=5pergroup).383
+Micewere weighted afterfirst dosingand noweight losswas observedfor both384
+circRNAandlinearRNAgroup(Extended Data. 8d).Miceserawerecollected385
+on day 10, 14, 21 & 28 to assess the pseudovirus neutralizing antibody titer386
+(pVNT) and spleens were extracted for cellular immunity assessment on day 28387
+(Fig. 5a). As neutralizing antibodies (nAbs) play a critical role in protection388
+againstrabiesvirus39,monitoringthegeometrictiter(GMT)nAblevelgaveusa389
+hinton the efficacyof rabiesvaccines.In thisstudy, linearmRNA encodingthe390
+sameORF(LR-Novo)asCR-Novowasusedforcomparisonaswell.Onday10391
+post-primingdose, LR-Novoelicitedaslightlyhigherantibodytitercomparedto392
+allcircRNAgroupspossiblyduetorelativelyfasteronsetexpressionofantigens,393
+though overall titers remained low (Fig. 5b). Slower but durable antigen394
+expressioninducedcomparableimmuneresponsesamongcircRNAgroupswhile395
+CR1, with the lowest MFE, had 2-fold pVNT of LR-Novo and 4-fold pVNT of396
+CR-Novo (Fig.5c). One week after booster (day 21), circDesign-optimized397
+sequencegroups(CR1-4)elicitedmuchstrongerhumoralimmuneresponsesthan398
+therestofgroups(CR5-6,CR-Novo,CR-TherandLR-Novo)(Fig. 5d).Ofnote,399
+all circular RNA groups exhibited continued increase in pVNTs on day 28,400
+whereaslinearRNAhadnofurtherenhancementin antibodytiter(Fig. 5e).The401
+geometricincrease(GMI)ofpVNTwascalculatedbasedontheGMTonday10402
+asbaselinetoshowthetrendofhumoralimmuneresponseinduction.Asplotted403
+in Fig. 5f, LR-Novo had the least GMI trend while CR1&3 showed durable404
+inductionofimmuneresponses.ThepVNTkineticsofeachgroupasafunctionof405
+time were summarized as Fig. 5h, suggesting the great potentials of406
+circDesign-enabled vaccine design in triggering strong antibody responses. It's407
+worth noting that cellular immune responses induced by circDesign optimized408
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+sequences (CR1-4) especially CR3 are more prominent than other groups (Fig.409
+5g).AhigherfrequencyofRABV-GspecificTcellssecretinginterferonγ(IFN-γ)410
+was observed in CR3 group with a mean value of 280.1 spots counted using411
+Enzyme-linked immunosorbent spot (ELISpot) assay (Extended Data. 9).412
+Thoughthepracticalsignificanceof higherRABV-Gspecificcellularimmunity413
+in rabies prevention remains elusive40, 41, we speculate the improved T cell414
+immuneresponses fromcircDesign optimizedvaccine may play importantroles415
+in rabies virus clearance from the host40. Taking a closer look at the cellular416
+immune activation profile, flow cytometry analysis of the RABV-G peptide417
+stimulated T cells was performed. Following a stepwise gating of the cell418
+population(Extended Data. 10), the ratioof CD4+ and CD8+ T cells producing419
+IFN-γ,TNF-α,IL-2andIL-4werecomputed,respectively.Theresultsindicated420
+the strong RABV-G specific CD4+ and CD8+ T cell responses elicited by421
+circDesign generated vaccines (Extended Data. 11). We observedhigher ratios422
+of IFN-γ, TNF-α and IL-2 secreting T cells but minimal IL-4 producing423
+population in both CD4+ and CD8+ T cells (Extended Data. 11), suggesting a424
+Th1-biasedimmuneresponsesinducedbycircRNArabiesvaccines.425
+426
+Combined with the in-solution and in-cell stability results of naked or LPP427
+formulated circRNA, these results convincingly demonstrated the improved428
+potency from circDesign-optimized sequences owing to their well-defined429
+structureand enhanced stability during storage and intracellular trafficking. The430
+correlationanalysisof in vivopVNTandELISpotonday28showedtherelation431
+toMFEofcircRNA(Extended Data. 12).432
+433
+The durable humoral immune response may be related to the in vivo stability434
+of CR3435
+436
+The abovementioned in vitro and in vivo evaluation of circRNAs implicated the437
+importance of circRNA stability as well as translation efficiency in achieving438
+optimal performance. Therefore, balancing the optimization of CAI (translation439
+efficiency) and MFE (stability) with a well-defined circRNA folding structure440
+might synergistically contribute to a top performer sequence, thus leading to441
+maximized in vivo outcomes. Of all circDesign optimized sequences, CR3442
+showed superior stability, protein translation output, along with in vivo443
+immunogenicity (See Extended Data Table 1 for summarized assessment444
+results). Compared to CR-Novo, it's intriguing to find that another benchmark445
+sequence CR-Ther had lower protein translation and induced relatively weaker446
+immune responses despite its higher CAI. Consequently, we further compared447
+CR-NovowithCR3regardingtheir in vivostabilitytoexplaintheadvantagesof448
+circDesign-generated CR3 over CR-Novo in their potency and durability. To449
+study the in vivo stability, LPP formulated CR3 and CR-Novo were i.m.450
+administered into balb/c mice (n=5 per group). At 6, 24, 48, 72 and 168 h451
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+post-dosing,mice were sacrificed and total RNAs were extracted from different452
+organs including muscle (injection site), lymph node, spleen, liver, lung, heart,453
+kidney, brain and small intestine (sm. int.). A standard plasmid containing the454
+target sequence was used as internal standard control to quantify the circRNA455
+copies per µg of total RNA using qPCR analysis. The biodistribution results456
+revealed the good safety profile of LPP delivery system, as major injected dose457
+accumulated at the injection site without significant retention in liver both for458
+CR3(Fig. 6b)andCR-Novo(Fig. 6a).Moreover,astimewentby,morefractions459
+ofcircRNAweredetectedinspleenandlymphnodewheretheimmuneactivation460
+mainly occurs. It's noted that CR3 had extended muscle retention proportion461
+(88.5%,70%and29.4%at24h,48hand72h,respectively)comparedtoCR-Novo462
+(74.5%, 25.4% and 7.4% at 24h, 48h and 72h, respectively) (Fig. 6c). The463
+comprehensivequantificationdataweresummarizedin Extended Data Table 2.464
+It'shypothesizedthathigher in vivostabilityofCR3benefitedthelongerretention465
+atinjectionsitegiventhesamedosageasCR-Novo.Within72hofadministration,466
+the circRNA quantification data of muscle at injection site suggested the higher467
+abundance of CR3 (Fig. 6d). This potentially contributed to a sustained lymphatic468
+migration of antigen presenting cells (APCs) to peripheral immune organs such as469
+draininglymphnodesandspleen,leadingtorobustimmuneactivation.470
+471
+The long-lasting humoral immune response induced by circDesign472
+optimized rabies vaccine473
+474
+Above findings rendered CR3-LPP a more potent rabies vaccine candidate475
+potentiallyinducinglong-lastingadaptiveimmunityagainstrabiesvirus.Tostudy476
+thelongevityofimmuneresponses,balb/cmice(n=5pergroup)wereimmunized477
+with LPP formulated CR3 and CR-Novo with the same dosage (2 µg per478
+immunization for prime and boost at an interval of two weeks). The mice sera479
+were collected over a much longer period during which the nAb titer was480
+monitored(Fig. 6e).Asshownin Fig. 6f,CR3inducedastrongerhumoralimmune481
+responsefollowingprimeandbooster. 14daysafterboosterdose(onday35),the482
+pVNT of CR3 group remained 1.7-fold of CR-Novo (Fig. 6f). With a relatively483
+slower waning rate of pVNT, CR3 group exhibited 2.1-fold and 3.2-fold pVNT484
+over CR-Novo group on day 90 and 163, respectively. According to the485
+guidelines of rabies vaccine released by World Health Organization (WHO), a486
+second booster was recommended when re-exposure to rabies virus occurred 3487
+monthsafterthelastbooster42.Thus,weadministeredthesecondboosterinmice488
+onday163toevaluatetheimmuneresponsesafterre-boost.Thesecondbooster489
+inducedmuchstrongerimmuneresponseinCR3groupwith4.6-foldand3.9-fold490
+pVNTofCR-Novooneweek(day170)andtwoweeks(day177)afterre-boosterdose491
+(Fig. 6f). Besides, the cellular immune responses were assessed by ELISpot on492
+day170usingmicespleenocytes.CR3immunizedmicehadshownsignificantly493
+strongerantigen-specificIFN-γandTNF-αsecretion,potentiallyleadingtobetter494
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+clinicoutcome.495
+496
+Second antigen demonstrating the robustness of circDesign in optimizing497
+circRNA for improved performance498
+499
+The in vitroand in vivoresultsofcircRNAencodingRABV-Gdemonstratedthe500
+usefulnessofcircDesignalgorithmincircularRNAsequencedesign.Considering501
+the potential applicability of circDesign for different circRNA design and502
+optimization,wevalidatedtherobustnessofthisalgorithmusingvaricella-zoster503
+virus(VZV)glycoproteinE(gE)asasecondantigento developcircRNA-based504
+vaccine. At the same time, a new self-cleaving ribozyme from Azoarcus505
+pre-tRNA was adopted to mediate the circularization reaction (See506
+Supplementarymaterialsforsequencedetails).507
+508
+Thoughwithadifferentintronsplicing,thecircularizationofcircRNAsharboring509
+circDesign optimized VZV gE sequences was still highly efficient. In this510
+comparison,we includedthree controlsequences:CV-Pokawhichstemsfrom a511
+CAI-maximized sequence (CAI = 1); CV-Ther from a public optimization tool512
+supportedbyThermoFisher;CV-Orireferstotheoriginalwild-typeVZVstrain513
+sequence without optimization (Extended Data Fig. 13a). Non-denaturing514
+agarosegelelectrophoresisofcircRNAsshowedsimilarcorrelationofmigration515
+rate with structural compactness (Extended Data Fig. 13b). Circularization516
+efficiency, thermodynamic stability and in-solution stability analysis of all517
+circRNAs encoding VZV gE revealed a good correlation with MFE value and518
+ensemblestructurediversity(Extended Data Fig. 13c,d&e).Asrevealedbythe519
+secondary structure prediction and pairwise visualization (Extended Data Fig.520
+14-17),CV1-5hadwell-definedstructureandlessIRESfoldinginterruption.The521
+proteintranslationlevel assessedbyflow cytometryindicatedthe importanceof522
+stability factor in durable protein expression, highlighted by the MFI at 48 h523
+post-transfectionintoHSkMCcells(Extended Data Fig. 13f).Furthermore,the524
+in vivo immuneresponses triggeredby LPP formulatedcircRNA VZV vaccines525
+wereevaluatedinbalb/cmice(n=5). CV1-5elicitedsignificantlyhigherbinding526
+antibodytitersthanbenchmarkcircRNAsonday21and28(Extended Data Fig.527
+18). It was noteworthy that CV-Poka had compromised in vitro and in vivo528
+performancedespiteofamaximizedcodonpreference,inthatitssusceptibilityto529
+degradationasaresultofhighMFEvalue.Studieshavesuggestedthatelicitinga530
+strong cellular mediated immune response is a key determinant for the vaccine531
+protective efficacy against herpes zoster43. Therefore, we assessed the cellular532
+immune response using ELIspot. It was inspiring to find that circDesign533
+optimizedsequencesCV1-5inducedstrongerVZVgE-specificTcells,whichisa534
+keydeterminantofVZVvaccineefficacy(Extended Data Fig. 18d).535
+536
+Takentogether,wesuccessfullyexploitedthecircDesignonthedesignofsecond537
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+antigenandvalidatedtheoutstandingdesignstrategy in vitroand in vivo.538
+539
+Discussions540
+541
+Inthisstudy,wedevisedanovelalgorithmtool,calledcircDesign,forsimplified542
+circular RNA design to improve its stability as well as translatability. The543
+usefulnessofthiscircDesignplatformwasvalidatedusingRABV-GandVZVgE544
+antigens against the benchmark designs which were designed via conventional545
+CAI-oriented method. Here we present evidence supporting the enhanced546
+stability and translation efficiency of circDesign optimized sequence which547
+contributed to considerably stronger in vivo immune responses. We speculated548
+that the sustained expression of antigens at high efficiency achieved greater549
+antigen-specific immune activations, leading to distinguished vaccine-elicited550
+humoral and cellular immune responses. Overall, these data demonstrated an551
+approachfor rationalcircRNA design in supportof next generationvaccine and552
+therapeuticdevelopment.553
+554
+The major limitation of this study lies in the fact that we performed extensive555
+search on specific ORF sequences without further optimization of other556
+functionalregionsofcircRNAsuchasIRESmotif.Tothebestofourknowledge,557
+thedenovodesignofanefficientIRESmotifremainschallengingasthesevirally558
+orcellularlyderivedIRESmotifsareusuallysensitivetosequencemanipulation559
+including deletion, mutation, or insertion. The different domains of IRES560
+sequence cohesively function to recruit PIC and assemble the intact ribosome561
+complex only when these domains are well-folded. Therefore, we did not562
+incorporate the modulation of IRES region in the circDesign at current stage.563
+Providedthatthestructure-to-activityofIRESwereelucidatedatmolecularlevel,564
+it might be possible to realized bottom-up search or optimization of IRES565
+sequenceincircDesignalgorithm.566
+567
+Other than IRES-driven translation from circRNA, N6-methyladenosine (m6A)568
+modification upstream of ORF has been reported to facilitate the translation as569
+well as the stability44, 45. If chemically modified nucleotides were incorporated570
+into circRNA, it would pose difficulties on our circDesign algorithm as the571
+structure prediction based on unmodified nucleotides is not reliable. Given that572
+the energy model of chemically modified nucleotide is available, we would be573
+abletodoextensivestructurecomparisonforoptimalsequencedesign.574
+575
+Materials & Methods576
+Ensemble diversity calculation577
+Ensemble diversity (ED) measures the complexity of the structural ensemble,578
+whichcanbecomputedfrompairprobabilities.579
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+580
+ED =
+�,�
+���  × 1 − ���
+581
+Positional entropy calculation582
+Positionalentropy(PE)isametricthatmeasureswhetheraspecificnucleotideat583
+position kpredominantlyoccursinthesameconfiguration,pairedorunpaired.584
+585
+PE(�) = −
+�
+���  ln ���
+PositionalentropyoftheIRESregionisdefinedas:586
+PE IRES = � PE �  ,where kisintheregionofIRES.Thepositionalentropy587
+is0foranucleotidethatisalwaysunpairedoralwayspairedwiththesamepartner.588
+Thus,positionswithlowentropyarepredictedwithhighconfidence.589
+590
+591
+circRNA secondary structure prediction592
+ThecircRNAsecondarystructurewasmodeledbyViennaRNA46withparameters593
+forcircular(-p-d2-c)RNAs.AndthestructurewasvisualizedbyRiboGraphViz594
+withthecirRNAsecondarystructurefromRNAfold.595
+596
+Vector and plasmid construction597
+To construct a vector for circRNA synthesis, T7 promoter, homology arm,598
+elements from permuted intron-exon (PIE) construct, spacer, IRES, and coding599
+sequences were synthesized by General Biol and cloned into pUC57-mini600
+plasmid. For linear RNA synthesis, the pUC57 plasmid vector containing T7601
+promoter, 5’ UTR, Kozak sequence, coding region, 3’ UTR and polyA tail was602
+synthesizedbyGeneralBiol.AllthesequencescodingFireflyLuciferase(FLuc),603
+RABV-GandVZV-gEaresuppliedinsupplementalmaterials.604
+605
+Plasmid DNA synthesis and linearization606
+pDNAwastransformedinto E. coli(TsingkeBiotechnology)andculturedin100607
+mL of Luria Broth (LB) with 100 mg/mL Ampicillin (Sangon Biotech, CN).608
+Plasmid was purified using a NucleoBond Xtra Midi kit (MN) and the609
+concentration and purity was measured on a NanoDrop One (Thermo Fisher).610
+pDNAwaslinearizedusingSapIrestrictionenzymefor3hat37°Candpurified611
+astemplate.Aftersequencingverification,theproductswerestoredat-20°Cand612
+wereusedastemplatesfor in vitrotranscription(IVT).613
+614
+In vitro transcription and circularization of RNA615
+For the chemically modified linear mRNA synthesis, in vitro transcription616
+reactionwith100%N1-methylpseudouridine(HongeneBiotech)substitutionwas617
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+conducted at 30 °C for 16 hours. mRNA was co-transcriptionally capped using618
+m7(3’OMeG)(5’)ppp(5’)(2’OMeA)pG capping reagent (Hongene Biotech) in a619
+“one-pot” reaction followed by digestion with DNase I (Thermo Fisher). Linear620
+mRNA was purified using Dynabeads MyOne Carboxylic Acid beads (Thermo621
+Fisher).622
+623
+For the circular RNA synthesis, The linear RNA precursor transcripts were624
+produced using 1 μg of linearized DNA template in a MEGAScript™ reaction625
+(Ambion)for16hat30°C,accordingtothemanufacturer’sprotocol.ThenRNA626
+was treated with DNase I (Thermo Fisher) for 60 min at 30 °C, followed by627
+lithiumchlorideprecipitation.To obtaincircularizedRNA, GTPwas addedto a628
+final concentration of 2 mM along with a buffer including magnesium (50 mM629
+Tris-HCl,(pH8.0),10mMMgCl2,1mMDTT;ThermoFisher).RNAwasthen630
+heatedto55°Candheldfor45minbeforepurificationusingDynabeadsMyOne631
+CarboxylicAcidbeads(ThermoFisher).632
+633
+Liquid chromatography purification of circRNA634
+Circular RNA products were further purified via liquid chromatography to635
+remove spliced introns and precursor linear mRNA using a 21.2×300 mm636
+size-exclusioncolumn(SEC)withaparticlesizeof5μmandporesizeof1000Å637
+(Sepax Technologies). RNA was run on an AKTA avant 150 purifier system in638
+RNase-free 150 mM phosphate buffer (pH = 6.0). Purified circRNA products639
+were concentrated by lithium chloride precipitation and analyzed using Agilent640
+2100bioanalyzer.641
+642
+CircRNA sequence identification643
+To validate the circularization of RNA, the SEC purified RNA was reverse644
+transcribed into cDNA using a HiScript III All-in-one RT SuperMix Perfect kit645
+(Vazyme),followedbyPCRwithprimersthatcanamplifytranscriptsacrossthe646
+splicing junction site. The PCR products were sequenced using Sanger647
+sequencingtovalidatetheback-splicingjunctionofthecircularRNA.648
+649
+Circularization efficiency comparison650
+TocomparethecircularizationefficiencyaftercircularizingreactionbeforeSEC651
+purification,two sets ofprimerswereusedin qPCRmethod.One set of primers652
+was designed at 3 'intron, representingthe part of RNAs that without successful653
+circularization ; the other set of primers was designed at the junction site,654
+representing the circRNAs formed by successful circularization. Therefore, the655
+circularizationefficiencyofdifferentRNAswasobtainedbycomparison,andthe656
+sequenceofprimerswasasfollows：657
+circ-Rabies-F(5'-3'):ACAAACGGCTATTATGCGTTACC;658
+circ-Rabies-R(5'-3'):GACTTGAACCCACACGACCG;659
+Linear-Rabies-F(5'-3'):AACGTCAAGACGAGGGTAAAGAGAG660
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+Linear-Rabies-R(5'-3'):GACTTGAACCCACACGACC661
+circ-VZV-F(5'-3'):TAGCTCATGCTTGGTTAGAGCAG;662
+circ-VZV-R(5'-3'):CCCCCTGGGAGTCGAACC;663
+Linear-VZV-F(5'-3'):CGGCACCCACCTAAGGCAAAC;664
+Linear-VZV-R(5'-3'):CGAACCCAGCACCAACGGATTC;665
+TocalculatetheCircularizationefficiencyofeachsequence:666
+power[2,-(x-y)]×100%667
+power[2,-(x-y)]+1668
+x:CtofcircularRNA,y:CtoflinearRNA669
+670
+Cell culture & circRNA transfection671
+Human embryonickidney 293 (HEK293,ATCC)/HumanSkeletal Muscle Cells672
+(HSkMC,ATCC)andBabyhamsterkidney21(BHK-21,ATCC)werecultured673
+in complete Dulbecco’s Modified Eagle’s Medium (DMEM, Gibco) containing674
+10% fetal bovine serum (FBS, Gibco) and 1% penicillin-streptomycin (Thermo675
+Fisher).Cellswereseededina6-wellplateatadensityof5×106cells/well24h676
+priortotransfection.LipofectamineMessengerMAX(ThermoFisher)wasused677
+accordingtothemanufacturer’sinstructionsforthetransfectionofcircRNA.678
+679
+Agarose gel electrophoresis of circRNA680
+To study the electrophoretic mobility profile of circRNA, RNA samples681
+suspended in Ambion® RNA storage buffer (Thermo Fisher) were denatured at682
+75 °C for 5 minutes and snap –cooled on ice before loaded onto 1% agrose gel683
+(130Vfor1hatroomtemperature).DL5000DNAmarker(Vazyme)wasusedin684
+the gel. Gel image was taken by Gel Doc XR+ Gel Documentation System685
+(Bio-Rad).686
+687
+In-solution stability assay of circRNA688
+To assess the In-solution stability of mRNA, samples were incubated in PBS689
+buffercontaining10mMMg2+.Samplingwasconductedatdifferenttimepoints690
+(0, 1, 2, 4, 8, 12, 16, 24, 32, 48 and 60 hours). RNA integrity was analyzed by691
+Qsep100TM Capillary Electrophoresis System (BiOptic Inc). The integrity was692
+represented as the proportion of full-length mRNA calculated on693
+electropherogram.Thedatawerenormalizedtotimepoint0h.694
+Toextrapolatethehalf-lifeofeachsequence,one-phasedecayequation:695
+Y=(Y0−Plateau)⋅e−KX+Plateau696
+wasusedtofitthecurve.TheY0andPlateauweresetas100and0,respectively.697
+Half-lifewascomputedasln(2)/K,whereKreferstodecayrateconstant.698
+699
+Thermodynamic stability assay of circular RNA700
+Equal volume of circRNA (1mg/mL) and diluted Quant-iT™ RiboGreen®701
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+(ThermoFisher)reagentwasmixedin1×TEbuffer.Atotalof20µLmixturewas702
+loadedinto384-wellplateandcentrifugedat1000rpmfor1minbeforerunning703
+the Melting Curve programon QuantStudio5 Real-Time PCR System (Applied704
+Biosystems).circRNAunderwenta denaturingprocessat95°C for5min with a705
+ramprateof0.05°C/sstartingfrom25°C.Thenthetemperaturesteppeddownto706
+25°C with a rate of 1.6°C/s for annealing. The fluorescent intensity data at707
+different temperatures were normalized to the initial value and plotted in708
+GraphPadPrism10.0.Sigmoidalcurvewasusedtofitthedatatoextrapolatethe709
+meltingtemperature(Tm)ofeachcircRNA.710
+711
+In-cell stability assay of circular RNA712
+HSkMCcellswereseededina6-wellplateatadensityof5×106cellsperwell24713
+hpriortotransfection.LipofectamineMessengerMAX(ThermoFisherScientific)714
+was used according to the manufacturer’s instructions for the transfection of715
+circRNA.CellswerecollectedandandRNAwasharvestedandpurifiedat3,12,716
+24, 48 and 72 h after transfection using an RNeasy Mini Plus kit (QIAGEN).717
+Synthesis of first-strand cDNA from total RNA was performed with718
+HiScript® III All-in-one RT SuperMix Perfect for qPCR (Vazyme). Gene719
+specific TaqMan primers (TsingKe) amplifying the circRNA junction site were720
+synthesized asbelow:721
+circ-tzF(5'-3'):ACAAACGGCTATTATGCGTTACC;722
+circ-tzR(5'-3'):GACTTGAACCCACACGACCG;723
+circ-Probe(5'-3'):FAM-ACGGACTTAAAATCCGTTGAC-MGB724
+Targetamplificationsequencewasinsertedintoplasmidasaninternalstandardto725
+obtaintheabsolutecircRNAcopiesfromRNAextracts.TheqPCRreactionwas726
+carriedoutusingProbeqPCRMixkit(Takara).Foreachsample,thresholdcycle727
+values (Ct) were processed according to the comparative Ct method. Gene728
+expressionlevelswerepresentedrelativetoStandardcurve.729
+730
+In vitro innate immunogenicity assay731
+24 hours post transfection of circRNA into C2C12 cells (ATCC), cell culture732
+supernatant was collected. Interferon Beta level in supernatant was assayed by733
+VeriKine TM Mouse IFN Beta ELISA Kit (PBL assay science) according to734
+manufacurer's instruction. Optical density (OD) was measured at 450 nm using735
+Bio-Tek Synergy I plate reader. The concentration of IFN-β was deduced from736
+thestandardcurve.737
+738
+Flow cytometry739
+24 hours post transfection of circRNA, HSkMC cells were harvested and740
+resuspendedin1mLofPBSbufferataconcentrationof1×107cells/mL.100µL741
+of the resuspended cells was added to a FACS tube and stained with 100 µL of742
+Live/Dead Fixable Aqua Dead Cell Stain (Thermo Fisher Scientific) at a 1:100743
+dilutionandhumanFcRblockingreagent(MiltenyiBiotec)ata1:20dilutionon744
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+ice for 30 min. Cells were then washed with 2.5 mL of FACS buffer and745
+centrifugedat1500rpmfor5min.Aftercentrifugation,cellswerestainedwith1746
+µg(1:100dilution)ofaanti-RabiesVirusCVS-11antibody(Merck)oranti-VZV747
+gEmouseantibody(Abcam)at4°Cfor30minindarkbeforewashingwith2.5748
+mL of FACS buffer and centrifuging at 1500 rpm for 5 min. Cells were then749
+stainedwith100µLofGoatPE-anti-mouseIgG(1:100dilution)(Abcam)at4°C750
+for 30 min in dark. After incubation, cells were washed with 2.5 mL of FACS751
+buffer,centrifugedat1500rpmfor5minandresuspendedwith250µLofPBS.752
+Sampleswere analyzedon BD Canto II (BD Biosciences). Data were processed753
+usingFlowJoV10.1(TreeStar).754
+755
+RNA sequencing and ribosome profiling of circular RNA756
+At6hpost-transfectionofCR-NovoandCR3intoHEK293 cells,cycloheximide757
+(Sigma)wasaddedtocellculturemediumtoafinalconcentrationof100μg/mlto758
+arrestproteinsynthesisandpreserveribosome-mRNAinteraction. Aftera2-min759
+incubation at 4 °C and lysis, the cell lysate was centrifuged at 3,000×g and the760
+supernatant containing free polysomes was decanted. To prepare ribosome761
+footprints (RFs), RNase I (NEB) and DNase I (NEB) were added to lysate and762
+was then incubatedat roomtemperatureon a Nutatormixer.Nuclease digestion763
+was stopped by adding SUPERase·In RNase inhibitor (Ambion)followed by764
+purification using size exclusion columns (GE Healthcare). Next, 10% (wt/vol)765
+SDSwasaddedtotheelution,andRFswithasizegreaterthan17ntwasisolated766
+according to the RNA Clean and Concentrator-25 kit (Zymo Research). After767
+obtaining ribosome footprints, Ribo-seq libraries were constructed using768
+NEBNext® Multiple Small RNA Library Prep Set for Illumina® (catalog769
+no.E7300S,E7300L).Briefly,adapterswereaddedtobothendsofRFs,followed770
+by reverse transcription and PCR amplification. The 140-160bp size PCR771
+productswereenrichedtogenerateacDNAlibraryandsequencedusingIllumina772
+HiSeqTMX10byGeneDenovoBiotechnologyCo.(Guangzhou,China).773
+774
+Ribosome footprint data processing and alignment775
+Low quality reads were filtered by fastp. Raw reads containing over 50% of776
+low-qualitybasesorover10%ofNbaseswereremoved.Adaptersequenceswere777
+trimmed. Reads with length between 20-40 bp were retained for subsequent778
+analysis. Short reads alignment tool Bowtie2 was used for mapping reads to779
+ribosomeRNA(rRNA)database,GenBank,Rfamdatabase.Thereadsmappedto780
+rRNAs, transfer RNAs (tRNA), small nuclear RNAs (snRNA), small nucleolar781
+RNAs (snoRNA), and miRNA were removed. Processed RNA-seq reads were782
+aligned to the circular RNA using sequence alignment by STAR with 2-pass783
+setting enabled. The reads were assigned to different functional regions (IRES,784
+CDS, spacer, homology arm and exon) based on the position of the alignment.785
+Translation efficiency (TE) was calculated as the base 2 logarithmic ratio of786
+normalizedRPFsoverthenormalizedinputforeachORF.787
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+788
+Pause sites analysis789
+BecausethetranslocationofribosomesoccursalongthemRNAonecodonata790
+time,thepotentialofsingle-codonresolutionpauseswereinvestigated.Using791
+PausePred(https://pausepred.ucc.ie/)whichinfersthelocationsofribosome792
+pauses,globalsinglecodonpauseswereanalyzed.793
+794
+Quantification of read abundance795
+ReadscountsinthedifferentregionsofcircularRNAwascalculatedbysoftware796
+RSEM,and the levelwas normalizedby usingFPKM (fragmentper kilobaseof797
+transcript per million mapped reads) method, and the formula is shown as798
+follows:799
+FPKM=106C/(NL/103)800
+Given FPKM (A) to be the abundance of sequence A, C to be number of801
+fragmentsmappedtosequenceA,Ntobetotalnumberoffragmentsthatmapped802
+toreferencesequences,and LtobenumberofbasesonsequenceA. Therefore,803
+the calculated FPKM can be directly used for comparing the difference of804
+abundanceamongsamples.Theribosomefootprintdepthwasplottedinacircular805
+formwitheachfunctionalregiondenotedindifferentcolor.806
+807
+Polysome profiling of circRNA808
+At6hpost-transfectionofCR-NovoandCR3intoHEK293cells,cycloheximide809
+(Sigma)wasaddedtocellculturemediumtoafinalconcentrationof100μg/mlto810
+arrest protein synthesis and preserve ribosome-mRNA interaction, and the cells811
+wereincubatedat37°Cfor15minutes. Aftertrypsindigestion(0.25%),harvest812
+andwashcellswithice-coldPBSsupplementedwith100mg/mLcycloheximide.813
+Thefrozentubeswereflashfrozeninliquidnitrogenandthenstoredat-80℃for814
+later use. Samples were sent to NKY-GuangZhou Gene reader Bio-Medical815
+Technologies Co., Ltd. (Guangzhou, China) for isolation. In brief, cells were816
+lysedinlysisbuffer(10mMTris-HClpH7.4,150mMNaCl,5mMMgCl2,1%817
+Triton X-100, 0.5% deoxycholate, 2 mM DTT) supplemented with 4 U/mL818
+RNase inhibitor, 100 μg/mL cycloheximide, and proteinase inhibitor cocktail819
+(Roche,Basel,Switzerland)onicefor20min.Aftercentrifugationat13,000gfor820
+10 min, the supernatant was then taken and loaded into a 10% to 45% sucrose821
+gradient solution and centrifuged at 360000 rpm for 3 h (Beckman Optima822
+XE-100). 18 fractions from each sample were collected using a piston gradient823
+fractionator(Biocomp,Fredericton,Canada)equippedwithaBio-RadEconoUV824
+monitor, followed by total RNA extraction from each fraction for RT-qPCR825
+analysis.826
+827
+Preparation of LPP-circRNA828
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+LPPnanoparticleswerepreparedbyatwo-stepmethodaspreviouslydescribed35.829
+Briefly, a cationic polymer compound (PbAE) was dissolved in PBS buffer830
+solution(pH=5.2)andcircRNAwasdilutedwithcitratebuffer（pH4,5mM ）and831
+RNase-free water. mRNA/PbAE complexes were prepared by a microfluidic832
+mixer (Inano D, Micro&Nano Technology Inc, China) at a volume ratio of 5:1833
+(mRNA: PbAE). After that, lipids were dissolved in ethanol at molar ratios of834
+40:15:43.5:1.5 (ionizable lipid: 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine835
+(DOPE):Cholesterol: PEG-lipid). The lipid mixture was combined with836
+mRNA/PbAEcomplexesataratioof3:1(aqueous:ethanol)usingamicrofluidic837
+mixer. Formulations were concentrated using Amicon ultra centrifugal filters838
+(EMD Millipore) in sodium acetate with 10% sucrose buffer, passed through a839
+0.22-mmfilter,andstoredat4℃.840
+841
+Nanoparticle characterization842
+The size, polydispersity index (PDI) and zeta potential of LPP formulated843
+circRNAwere measuredby dynamiclight scattering (DLS) (Malvern, Zetasizer844
+Nano ZS). Briefly, LPP-circRNA samples were diluted in sodium acetate with845
+10% sucrose buffer at a concentration of 0.1 mg/mL. The measurement was846
+performedintriplicatewith8runsineachmeasurement.847
+848
+In vitro storage stability assay of LPP formulated circRNA849
+LPPformulatedcircRNAwasstored insodiumacetatewith 10%sucrosebuffer850
+at 4°C over a time course of 60 days. At Day 0, 30 & 60, LPP-circRNA was851
+sampled for physicochemical characterization including mRNA content,852
+hydrodynamicsizeandPDI.853
+854
+Cell count Kit-8 (CCK-8) assay of LPP formulated circRNA855
+CellproliferationcapacitywasevaluatedusingCCK-8assaykit(SigmaAldrich)856
+accordingto the manufacturer’s instructions.Briefly,HSkMCcellswereseeded857
+into 96-well plates at a density of 5×105 cells/well. On the other day, 100 ng of858
+LPP formulated circRNA was added into cell culture directly. At 48 h859
+post-transfection,10 µL CCK-8 solution was added to each well and cells were860
+incubatedforafurther2hat37°C.Opticaldensity(OD)wasmeasuredat450nm861
+usingBio-TekSynergyIplatereader.862
+863
+mRNA concentration and encapsulation efficiency of LPP-mRNA864
+LPPformulatedcircRNAwasdilutedwith1×TEbufferfollowedbymixingwith865
+anequalvolumeof2%TritonX-100andincubatedatRTfor20mintoreleasethe866
+encapsulatedmRNA-circRNAcore.100µLofeachsamplewasthentransferred867
+to the wells of a 96-well plate, to which 100 µL of 200 × diluted RiboGreen™868
+RNA Reagent (Thermo Scientific) was added. The plate was shaken and869
+incubatedatRTfor10min.Afterthat,thefluorescenceoftheplatewasreadbya870
+Bio-TekSynergyIplatereader(BioTek).Aseriesofdilutedstandardswerealso871
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+prepared corresponding to 0.1–2.0 µg/mL mRNA. A standard curve of872
+fluorescence as a function of mRNA concentration was plotted by linear873
+regression,fromwhichthemRNAconcentrationsofthesampleswerecalculated.874
+EncapsulationefficiencywascalculatedasEncapsulationefficiency(%)=[(total875
+mRNA-freemRNA)/totalmRNA]×100%.876
+877
+LPP formulated circRNA protection assay878
+Content analysis was performed to evaluate the integrity of the RNA after the879
+formulation process and to assess RNase protection of the encapsulated RNA.880
+For the RNase protection assay, 1 mAU of RNase A (Thermo Scientific) per881
+microgramofRNAwereaddedtotheLPP/LNP/RNAformulationfor30minat882
+room temperature. RNase was then inactivated by incubating the sample with883
+1.68 mAU/μg RNA of proteinase K (Thermo Scientific) at 55 °C for 10 min.884
+AfterRNaseinactivation,residualRNA was detected from formulations (as885
+describedinthe mRNA concentration and encapsulation efficiency of LPP-mRNA886
+above).887
+888
+Fluorescent microscopy imaging of circRNA expression889
+For the experimentswhere eGFP-mRNAwas transfected,5 × 105 HSkMCcells890
+were incubated with 2 μg of eGFP-mRNA packaged in LPP or lipofectamine891
+(ThermoScientific)for24hin6-wellplate,andeGFPexpressionwasvisualized892
+using an Eclipse DMi8 fluorescent microscope (Leica). Frequency of893
+eGFP-expressingcellswasdeterminedusingflowcytometry(BDFACSCantoII,894
+BectonDickinson).Theexcitationandemissionwassetat488nmand 525nm,895
+respectively.896
+897
+In vivo biodistribution of FLuc encoded LPP-circRNAs in mice898
+Female balb/c mice aged 6-8 weeks were purchased from Shanghai Model899
+Organisms Center. 5 µg of LPP formulated circRNA or linear RNA encoding900
+Firefly Luciferase (FLuc) in PBS were administrated into mice (n=3 for each901
+group) intramuscularly with 3/10 insulin syringes (BD biosciences). Mice were902
+then anesthetized for whole-body bioluminescence imaging with an IVIS903
+Spectrum(Roper Scientific)at differenttime points (6h,24h, 48h, 72h,96h and904
+192h).905
+906
+Administration of LPP circRNA vaccine in mice907
+For immunogenicity studies, female balb/c mice (Shanghai Model Organisms908
+Center) aged 6-8 weeks old (n=5 for each group) were used. 2 µg of LPP909
+formulated circRNA vaccines were diluted in 50µL 1×PBS buffer and910
+intramuscularly administrated into the mice’s same hind leg for both prime and911
+boostshotsatanintervaloftwoweeks.MiceinthecontrolgroupsreceivedPBS.912
+The blood samples were collected on Day 10, 14, 21 & 28 post prime dosing.913
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+Mice spleens were also harvested at the endpoint (D28) for ELISpot and flow914
+cytometry.915
+916
+pVNT measurement917
+A pseudovirus neutralization assay was performed to evaluate the neutralizing918
+ability of sera collected from immunized mice as described previously[ref]. In919
+brief, serially diluted antibodies were first incubated with pseudotyped virus920
+(Beijing Tiantan Biological) for 1 h, and the mixture was then incubated with921
+BHK-21 cells. After a 24-h incubation in an incubator at 37 °C, cells were922
+collected and lysed with luciferase substrate (PerkinElmer), then underwent923
+luminescence intensity measurement by BioTek microplate reader. The IC50924
+valuewascalculatedusing4parameterlogisticnon-linearregression.925
+926
+Enzyme-Linked ImmunoSorbent Assays (ELISA)927
+Briefly, recombinant VZV gE protein (Genscript) diluted in coating buffer928
+(Biolegend) were used to coat 96-well EIA/RIA plates (Greiner Bio-one, 100929
+ng/well) at 4°C overnight. The plates were then washed with 1× PBS-T (0.05%930
+Tween-20) and blocked with 2% BSA in PBS-T for 2 hours at RT. Mice sera931
+samples with serial dilutions were addedand incubated for 2 hoursat RT. After932
+washing, HRP-conjugated goat anti-mouse IgG Ab (1:10,000) was added and933
+incubated for 1 hour. TMB substrate (Invitrogen) was then used for color934
+development and the absorbance was read at 450 nm using BioTek microplate935
+reader. Endpoint titers were calculated as the largest sample dilution factor936
+yieldingasignalthatexceeds2.1-foldvalueofthebackground.937
+938
+In vivo mouse cytokine analysis939
+AserialdosageofLPPformulatedCR3,CR-NovoandLR-Novo(0.02µg,0.2µg,940
+2µg)wereintramuscularlyadministeredintofemaleBalb/cmice(n=5,Shanghai941
+Model Organisms Center) aged 6-8 weeks old. Mice sera were collected942
+retro-orbitally at 4 h and 7 days post administration and subjected to cytokine943
+analysis (Cytometric Bead Array Mouse Inflammation Kit, BD) using flow944
+cytometryfollowing the manufacturer'sinstructions.Data were presented as the945
+percentagechangerelativetobaselinemicegroupadministeredwithPBS.946
+947
+IFN-γ ELISpots948
+Assessmentof the IFN-γ T cell responsewas performedusing the MouseIFN-γ949
+ELISpotPLUS kit (Mabtech) following the manufacturer’s instructions. Briefly,950
+anti-IFN-γpre-coatedplateswereblockedwithDMEM+10%FBSforatleast30951
+min, then cells were added at 3 × 105 cells per well for negative control (media952
+only) and RABV-G or VZV-gE peptide pools (15-mers overlapping by 11;953
+Genscript)(1µg/mL)in200µLfinalvolumeperwell.Thepositivecontrolwells954
+contained5×104cellsperwellin200µLfinalvolumeperwellwith5µg/mLof955
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+ConA. Plates were incubated overnight at 5% CO2, 37 °C incubator and956
+developedasperthemanufacturer’sprotocol.Afterovernightstimulation,plates957
+were washed and sequentially incubated with biotinylated IFN-γ detection958
+antibody (R4-6A2), streptavidin-ALP, and finally BCIP/NBT. Plates were959
+imagedwithImmunoSpotAnalyzerandquantifiedwithImmunoSpotsoftware.960
+961
+Biodistribution of LPP-circRNA962
+Themiceweredividedintotwogroups,and5μgCR-Novo-LPPorCR3-LPPwas963
+injectedintothehindlegs,respectively.5micesineachgroupwereeuthanizedat964
+2h, 6h, 24h, 48h, 72h and 168h after administration. Tissue samples including965
+heart,liver,spleen,lung,kidney,smallintestine,brain,muscleattheinjectionsite,966
+and lymph node were collected and rapidly frozen in liquid nitrogen, and RNA967
+was extracted using trizol method. The levels of CR-Novo or CR3 in tissue968
+sampleswereanalyzedbyRT-qPCR.GraphPadPrism8andOrigin2021software969
+wereusedfordataprocessing.970
+Gene specific TaqMan primers amplifying the circRNA junction site were971
+synthesized(TsingKe)asbelow:972
+circ-tzF(5'-3'):ACAAACGGCTATTATGCGTTACC;973
+circ-tzR(5'-3'):GACTTGAACCCACACGACCG;974
+circ-Probe(5'-3'):FAM-ACGGACTTAAAATCCGTTGAC-MGB975
+Targetamplificationsequencewasinsertedintoplasmidasaninternalstandardto976
+obtaintheabsolutecircRNAcopiesfromRNAextracts.TheqPCRreactionwas977
+carriedoutusingProbeqPCRMixkit(Takara).Foreachsample,thresholdcycle978
+values (Ct) were processed according to the comparative Ct method. Gene979
+expressionlevelswerepresentedrelativetoStandardcurve.980
+981
+Correlation analysis982
+The Pearson correlation coefficient was calculated to assess the relationship983
+betweencontinuousvariables,forexample,experimenthalf-lifeandMFE.984
+985
+Statistical Analyses986
+Two-tailed Student t test was used to determine statistical significance for data987
+comparisons at a single time point. One-way ANOVA was used to determine988
+statistical significance for data comparisons with multiple time points. Prism989
+version8.0(GraphPad)orOrigin10.0wereusedforgenerationofallgraphsand990
+performance of statistical analyses. Statistical significance is denoted as ns, not991
+significant,*p<0.05,**p<0.01,and***p<0.001.992
+993
+Data Availability994
+The RNA sequences and DNA primer sequences used in the biological995
+experimentsareincludedintheSupplementarySequenceInformationsection(at996
+the end of the manuscript).and are also uploaded in the submissionsystem.We997
+willreleasedataatapermanentlocationuponacceptanceandtheaccessioncodes998
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+willbeavailablebeforepublication.999
+1000
+Code Availability1001
+Thecodehasbeensubmittedaspartofthissubmissionandwillbereleasedata1002
+permanentlocationuponacceptance.1003
+1004
+Conflict of Interest1005
+L.H.isthefounderofCoderna.ai.C.X.,W.W.,Y.T.,H.S.,Y.Y.,Q.W.,H.S.,and1006
+H.L.areemployeesofStemiRNATherapeutics.C.X.,W.W.,Y.T.,H.S.,andH.L.1007
+havefiledprovisionalpatentsforthecircRNArabiesandVZVvaccines.1008
+1009
+Author Contributions1010
+H.L.conceivedanddirectedtheproject.H.L.,H.S.andC.X.supervisedallthe in1011
+vitroand in vivoexperiments.L.Z.andL.H.developedthecircDesignalgorithm1012
+todesigncircRNAsequences.C.X.,W.W.,X.W.andJ.A.performedthemRNA1013
+synthesis and gel electrophoresis experiments. H.X., X.Q. and M.S. performed1014
+theliquidchromatographyanalysisandpurification.C.X.,W.W.,J.A.,X.S.,Y.Y.1015
+and H.S. performed the protein expression and in vivo assays, and Q.W.1016
+conducted LPP formulation and chemical stability assays. Y.T. performed the1017
+ribo-seq experiments. H.Z. and Y.G. performed the animal study including1018
+injectionand in vivoimaging.C.X.,L.Z.,H.L.,H.S.,W.W.,Y.T.,Q.W.,andL.H.1019
+wrotethemanuscript.1020
+1021
+Acknowledgements1022
+WethanktheassistancefromcolleaguesincludingXinxinSu,MingyangLiu,and1023
+Kun Xie at StemiRNA Therapeutics in animal experiments. Congcong Xu is1024
+sponsoredbyShanghaiPujiangTalentProgram(22PJ1423100).Thefundsfrom1025
+StemiRNA Therapeutics were supported by the Science and Technology1026
+Commission of Shanghai Municipality, China (20S11909100, 22S11902300;1027
+ShanghaiStrategicEmergingIndustryDevelopmentspecialfund(ZJ640070216)1028
+andtheprojectofmRNAInnovationandTranslationCenter,Shanghai,China.1029
+1030
+Figure Legends1031
+Figure 1. circDesign approach overview and design of circular RNA molecules1032
+encodingRABV-G.a,circDesignworkflowillustrationfromlibraryscreeningto1033
+structure-basedanalysis.Givenaspecificaminoacidsequence,mRNAsequence1034
+poolwasgeneratedfollowedbycandidatescreeningbasedonMFEandCAI.By1035
+incorporation of ORF into circRNA backbone, the circRNA folding, ensemble1036
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+diversityandcross-regioninteractionwasassessed.ThedesignedcircRNAswere1037
+thenevaluatedinvitroandinvivo.b,DistributionofcircDesign-generatedORFs1038
+(R1-R6)andbenchmarksequences(Ther&Novo)inatwo-dimensionalplot.The1039
+color darkness indicates the ensemble diversity. Schematic illustration of1040
+circRNA sequence designs composed of different functional regions for1041
+circularization. Homo arm refers to homology arm for 5’- & 3’- end pairing. c,1042
+RepresentativecircularizeddiagramshowingtheCR3andCR-Novosequence.d,1043
+Secondary structure of CR3 and CR-Novo (uncolored: IRES motif; red: loop1044
+structure; blue: stem structure). e, Pairwise visualization of CR3 and CR-Novo1045
+showingtheintra-andinter-regioninteraction(red:inter-regioninteraction;blue:1046
+inter-regioninteraction).Eachregionwascoloredasindicated.1047
+Figure 2. Characterization of circular RNA molecules encoding RABV-G. a,1048
+Comparison of the circularization efficiency of different circRNA using qPCR1049
+method. Data in triplicate were presented as mean ± s.d. b, Native agarose gel1050
+characterization of the circRNA showing the correlation of gel mobility with1051
+circRNA folding compactness. c, Thermodynamic stability of circRNA1052
+moleculessuggestinga correlationofMFEwithmeltingtemperature.The mean1053
+valuesofthreeindependentmeasurementdatawerefittedwithsigmoidalcurveto1054
+extrapolatethemeltingtemperature.d,In-solutiondegradationcurveofcircRNA1055
+uponincubationin PBSbuffercontaining10mMMg2+at37°C.Triplicatedata1056
+were presented as mean ± s.d. and fitted with one-phase decay curve to obtain1057
+half-life and decay constant. e, In-cell degradation of all circRNAs within 72 h1058
+post-transfectioninHSkMCcells.Triplicatedatapointswerepresentedasmean1059
+±s.d.followedbynon-linearone-phasedecayfitting.Theoriginalvalueatthe0h1060
+was set as 125% with a final plateau valueat 0%.f, Flow cytometryanalysis of1061
+circRNA in comparison with linear RNA in HSkMC cells at 24 h1062
+post-transfection. Mean fluorescent intensity (MFI) of protein expression level1063
+from cells transfected circRNA or linear mRNA was calculated. Three1064
+independent measurement data were plotted as mean ± s.d. One-way ANOVA1065
+with multiple comparisons to LR-Novo group was performed for statistical1066
+analysis.g, Correlationanalysisof MFEwith experimentin-solutionand in-cell1067
+half-life.h,Correlationanalysisofpredictedhalf-lifewithexperimenthalf-life.1068
+Figure 3. Translation efficiency comparison of CR3 and CR-Novo. Predicted1069
+secondarystructureofa)CR3andb)CR-Novo.c,Simplifiedworkflowdiagram1070
+of ribosome profiling and polysome profiling of circRNA. d, Abundance of1071
+Ribo-seqandRNA-seqcountsofcircRNA(CR3&CR-Novo)intransfectedcells1072
+showingthehighertranslationefficiencyofCR3.d,TotalRNA-seqandRibo-seq1073
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+fpkm of CR-Novo and CR3 showing the relatively higher RNA abundance and1074
+higher ribosome footprint counts in cellular context. e, circular barplot showing1075
+the ribosome footprints of CR3 and CR-Novo. h, Polysome profiling results of1076
+CR3andCR-Novo.f,TotalpolysomeprofilingofCR3(black)andCR-Novo(red)1077
+transfected cells. g, RT-qPCR quantification of CR3 (black) and CR-Novo in1078
+collected ultracentrifuge fractions. The colored region refers to different major1079
+fractions from 40S, 60S, 80S (monosome) to polysomes. Data in triplicate1080
+measurementwerepresentedasmean±s.e.m.1081
+Figure 4.Characterizationof LPPformulatedcircRNAs. a,Schemeoftwo-step1082
+manufacturingofLPPformulatedcircRNA.Thelipidmixturecontainsionizable1083
+lipid,PEGylatedlipid,cholesterolandhelperlipid.b,Thehydrodynamicsizeand1084
+polydispersityindex(PDI)ofLPPformulatedlinearRNA(LR-Fluc)andcircular1085
+RNA (CR-FLuc). Zeta potential of LPP formulated circRNA and linear RNA.1086
+Three independent measurement data were plotted as mean ± s.e.m. d,1087
+Representativewhole-bodyIVIS imagesof mice administeredLPP CR-FLuc or1088
+LR-FLucatdifferenttimepoints(6h,24h,48h,72h,96hand168h).e.Totalflux1089
+curve of luminescence as a function of time in balb/c mice (n=3; Green:1090
+CR-FLuc-LPP;Pink:LR-FLuc-LPP;Grey:PBS).f,Areaunderthecurve(AUC)1091
+calculation of three groups from 6 h to 168 h suggesting the accumulated1092
+luciferaseactivityoverthetimecourse.Eachdotrepresentedthemean±s.e.m.of1093
+data from three mice. Statistical significance was determined by One-way1094
+ANOVA multiple comparisons with LR-FLuc, ***p < 0.001; **p < 0.01; *p <1095
+0.05; ns, not significant. g, Hydrodynamic size and PDI of LPP formulated1096
+circRNAand linearRNA. Three independentmeasurement data were plotted as1097
+mean ± s.e.m. h, Zeta potential of LPP formulated circRNA and linear RNA.1098
+Three independent measurement data were plotted as mean ± s.e.m. i, Storage1099
+stability of LPP formulated circRNA and linear RNA at 4°C implying the shelf1100
+lifeofcircRNAvaccines.Samplesintriplicateweretreatedandtested.Thedata1101
+toeachsamplewerenormalizedtoitsD0as1andplottedasmean±s.e.m.1102
+Figure 5. In vivo immune responses induced by circRNA rabies vaccine. a,1103
+Balb/cmice(n=5)immunizationscheduleandproposedmechanismofactionof1104
+LPPcircRNArabiesvaccines.Pseudovirusneutralizingtiter(pVNT)ofmicesera1105
+immunizedwithtwodosesofLPPformulatedRNAvaccinesonb)D10,c)D14,d)1106
+D21ande)D28.pVNTdatawerepresentedasgeometricmean±geometrics.d.f,1107
+The geometric increase (GMI) of pVNT from mice vaccinated with different1108
+RNA vaccines using D10 pVNT as the baseline. GMI data were plotted with1109
+geometrics.d.g,IFN-γELISpotanalysisofmicesplenocytesonDay28showing1110
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+robust cellular immune responses triggered by circDesign optimized sequences.1111
+Data in graph represented as s.f.c. per 3*10^5 cells. Each point on violin plot1112
+represents a single mouse. Bold black line represents the median. The1113
+significance between groups was determined using a one-way ANOVA with1114
+Dunn’s multiple comparison test, ***p < 0.001; **p < 0.01; *p < 0.05; ns, not1115
+significant. s.f.c., spot-forming cells. h, Summary of pVNT results from D10 to1116
+D28ofallvaccinatedbalb/cmice(n=5)Datawerepresentedasgeometricmean±1117
+geometrics.d.1118
+Figure 6.InvivobiodistributionandimmuneresponselongevityanalysisofLPP1119
+formulatedrabies vaccines. In vivobiodistributionof LPP formulatedcircRNA.1120
+RT-qPCR quantification of a) CR-Novo and b) CR3 in different tissues at1121
+differenttimepoints(6h,24h,48h,72hand168h)inbalb/cmice(n=5pergroup1122
+ateachtimepoint).c,PieplotshowingthetissuedistributionofcircularRNAat1123
+various time points. d, Parallel comparison of circRNA abundance in muscle1124
+tissue as a function of time. Statistical significance was determined by multiple1125
+Mann-Whitneyutests***p<0.001;**p<0.01;*p<0.05;ns,notsignificant.e,1126
+Scheme of immunization schedule in balb/c mice study (n=5). f, Pseudovirus1127
+neutralizingantibodytiterkineticsofCR3andCR-Novo.Datawerepresentedas1128
+geometric mean ± geometric s.d. Statistical significance was determined by1129
+multiple Mann-Whitney u tests ***p < 0.001; **p < 0.01; *p < 0.05; ns, not1130
+significant.g,IFN-γandTNF-αELISpotanalysisofmicesplenocytesonDay281131
+showing robust cellular immune responses triggered by CR3. Data in graph1132
+representedass.f.c.per3*10^5cells.Eachpointonviolinplotrepresentsasingle1133
+mouse. Bold black line represents the median. The significance between groups1134
+wasdeterminedusingaone-wayANOVAwithDunn’smultiplecomparisontest,1135
+***p<0.001;**p<0.01;*p<0.05;ns,notsignificant.s.f.c.,spot-formingcells.1136
+1137
+1138
+1139
+1140
+1141
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+1142
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+1143
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+1144
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+1145
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+1146
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+1147
+1148
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+References1149
+1. Leppek,K.etal.CombinatorialoptimizationofmRNAstructure,stability,1150
+andtranslationforRNA-basedtherapeutics. Nat Commun 13,1536(2022).1151
+2. Trepotec, Z. et al. Maximizing the Translational Yield of mRNA1152
+TherapeuticsbyMinimizing5'-UTRs. Tissue Eng Part A 25,69-79(2019).1153
+3. Orlandini von Niessen, A.G. et al. Improving mRNA-Based Therapeutic1154
+GeneDeliverybyExpression-Augmenting3'UTRsIdentifiedbyCellular1155
+LibraryScreening. Mol Ther 27,824-836(2019).1156
+4. Xia,X.DetailedDissectionandCriticalEvaluationofthePfizer/BioNTech1157
+andModernamRNAVaccines. Vaccines (Basel) 9(2021).1158
+5. Mauger,D.M.etal.mRNAstructureregulatesproteinexpressionthrough1159
+changesinfunctionalhalf-life. Proc Natl Acad Sci U S A 116,24075-240831160
+(2019).1161
+6. Zhang, H. et al. Algorithm for Optimized mRNA Design Improves1162
+StabilityandImmunogenicity. Nature(2023).1163
+7. Meganck, R.M. et al. Engineering highly efficient backsplicing and1164
+translation of synthetic circRNAs. Mol Ther Nucleic Acids 23, 821-8341165
+(2021).1166
+8. Katrekar, D. et al. Efficient in vitro and in vivo RNA editing via1167
+recruitment of endogenous ADARs using circular guide RNAs. Nat1168
+Biotechnol 40,938-945(2022).1169
+9. Qu, L. et al. CircularRNA Vaccines against SARS-CoV-2and Emerging1170
+Variants. Cell(2022).1171
+10. Wen,S.Y.,Qadir,J.&Yang,B.B.CircularRNAtranslation:novelprotein1172
+isoformsandclinicalsignificance. Trends Mol Med 28,405-420(2022).1173
+11. Chen, C.K. et al. Structured elements drive extensive circular RNA1174
+translation. Mol Cell 81,4300-4318e4313(2021).1175
+12. Chen,R.etal.EngineeringcircularRNAforenhancedproteinproduction.1176
+Nat Biotechnol 41,262-272(2023).1177
+13. Hofacker, I.L. RNA secondary structure analysis using the Vienna RNA1178
+package. Curr Protoc Bioinformatics Chapter 12,Unit1212(2004).1179
+14. Garcia-Martin,J.A.&Clote,P.RNAThermodynamicStructuralEntropy.1180
+PLoS One 10,e0137859(2015).1181
+15. Xia, X. An improved implementation of codon adaptation index. Evol1182
+Bioinform Online 3,53-58(2007).1183
+16. Schnee,M.etal.AnmRNAVaccineEncodingRabiesVirusGlycoprotein1184
+Induces Protection against Lethal Infection in Mice and Correlates of1185
+ProtectioninAdultandNewbornPigs. PLoS Negl Trop Dis 10,e00047461186
+(2016).1187
+17. Hellgren, F. et al. Unmodified rabies mRNA vaccine elicits high1188
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+cross-neutralizing antibody titers and diverse B cell memory responses.1189
+Nat Commun 14,3713(2023).1190
+18. Yang, J. et al. Intratumoral delivered novel circular mRNA encoding1191
+cytokines for immune modulation and cancer therapy. Mol Ther Nucleic1192
+Acids 30,184-197(2022).1193
+19. Amaya, L. et al. Circular RNA vaccine induces potent T cell responses.1194
+Proc Natl Acad Sci U S A 120,e2302191120(2023).1195
+20. Wesselhoeft,R.A.,Kowalski,P.S.&Anderson,D.G.Engineeringcircular1196
+RNAfor potentand stabletranslation in eukaryoticcells. Nat Commun 9,1197
+2629(2018).1198
+21. Hofacker, I.L. Energy-directed RNA structure prediction. Methods Mol1199
+Biol 1097,71-84(2014).1200
+22. Mathews,D.H.RevolutionsinRNAsecondarystructureprediction. J Mol1201
+Biol 359,526-532(2006).1202
+23. Souii, A., Ben M'hadheb-Gharbi,M. & Gharbi, J. Role of RNA structure1203
+motifs in IRES-dependent translation initiation of the coxsackievirus B3:1204
+new insights for developing live-attenuated strains for vaccines and gene1205
+therapy. Mol Biotechnol 55,179-202(2013).1206
+24. Bhattacharyya, S., Verma, B., Pandey, G. & Das, S. The structure and1207
+function of a cis-acting element located upstream of the IRES that1208
+influences Coxsackievirus B3 RNA translation. Virology 377, 345-3541209
+(2008).1210
+25. Packer, M., Gyawali, D., Yerabolu, R., Schariter, J. & White, P. A novel1211
+mechanism for the loss of mRNA activity in lipid nanoparticle delivery1212
+systems. Nat Commun 12,6777(2021).1213
+26. Crommelin, D.J.A., Anchordoquy, T.J., Volkin, D.B., Jiskoot, W. &1214
+Mastrobattista,E.AddressingtheColdRealityofmRNAVaccineStability.1215
+J Pharm Sci 110,997-1001(2021).1216
+27. Jeck,W.R.&Sharpless,N.E.DetectingandcharacterizingcircularRNAs.1217
+Nat Biotechnol 32,453-461(2014).1218
+28. Garneau, N.L., Wilusz, J. & Wilusz, C.J. The highways and byways of1219
+mRNAdecay. Nat Rev Mol Cell Biol 8,113-126(2007).1220
+29. Guo, Y., Wei, X. & Peng, Y. Structure-Mediated Degradation of1221
+CircRNAs. Trends Cell Biol 30,501-503(2020).1222
+30. Labno, A., Tomecki, R. & Dziembowski, A. Cytoplasmic RNA decay1223
+pathways - Enzymes and mechanisms. Biochim Biophys Acta 1863,1224
+3125-3147(2016).1225
+31. Chen,L.L.Theexpandingregulatorymechanismsandcellularfunctionsof1226
+circularRNAs. Nat Rev Mol Cell Biol 21,475-490(2020).1227
+32. Ingolia,N.T.,Brar,G.A.,Rouskin,S.,McGeachy,A.M.&Weissman,J.S.1228
+Theribosomeprofilingstrategyformonitoringtranslationinvivobydeep1229
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+sequencing of ribosome-protected mRNA fragments. Nat Protoc 7,1230
+1534-1550(2012).1231
+33. Pringle,E.S.,McCormick,C.&Cheng,Z.PolysomeProfilingAnalysisof1232
+mRNAandAssociatedProteinsEngagedinTranslation. Curr Protoc Mol1233
+Biol 125,e79(2019).1234
+34. Brar, G.A. & Weissman, J.S. Ribosome profiling reveals the what, when,1235
+where and how of protein synthesis. Nat Rev Mol Cell Biol 16, 651-6641236
+(2015).1237
+35. Yang, R. et al. A core-shell structured COVID-19 mRNA vaccine with1238
+favorable biodistribution pattern and promising immunity. Signal1239
+Transduct Target Ther 6,213(2021).1240
+36. Meng, C. et al. Virus-Mimic mRNA Vaccine for Cancer Treatment. Adv1241
+Ther (Weinh) 4,2100144(2021).1242
+37. Tan, Y. et al. Single-cell transcriptome atlas reveals protective1243
+characteristics of COVID-19 mRNA vaccine. J Med Virol 95, e281611244
+(2023).1245
+38. Gui, Y.Z. et al. Safety and immunogenicity of a modified COVID-191246
+mRNAvaccine,SW-BIC-213,asaheterologousboosterinhealthyadults:1247
+an open-labeled, two-centered and multi-arm randomised, phase 1 trial.1248
+EBioMedicine 91,104586(2023).1249
+39. Johnson, N., Cunningham, A.F. & Fooks, A.R. The immune response to1250
+rabiesvirusinfectionandvaccination. Vaccine 28,3896-3901(2010).1251
+40. Venkataswamy, M.M. et al. Cellular immune response following1252
+pre-exposure and postexposure rabies vaccination by intradermal and1253
+intramuscularroutes. Clin Exp Vaccine Res 4,68-74(2015).1254
+41. Overduin,L.A., van Dongen,J.J.M. & Visser,L.G. The Cellular Immune1255
+ResponsetoRabiesVaccination:ASystematicReview. Vaccines (Basel) 71256
+(2019).1257
+42. Mills, D.J., Lau, C.L., Mills, C. & Furuya-Kanamori, L. Long-term1258
+persistence of antibodies and boostability after rabies intradermal1259
+pre-exposureprophylaxis. J Travel Med 29(2022).1260
+43. Arvin, A.M. Humoral and cellular immunity to varicella-zoster virus: an1261
+overview. J Infect Dis 197 Suppl 2,S58-60(2008).1262
+44. Zhang,L.etal.TheroleofN(6)-methyladenosine(m(6)A)modificationin1263
+theregulationofcircRNAs. Mol Cancer 19,105(2020).1264
+45. Meyer,K.D.etal.5'UTRm(6)APromotesCap-IndependentTranslation.1265
+Cell 163,999-1010(2015).1266
+46. Lorenz, R. et al. ViennaRNA Package 2.0. Algorithms Mol Biol 6, 261267
+(2011).1268
+1269
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 
+ 
+preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. 
+The copyright holder for thisthis version posted October 29, 2023. ; https://doi.org/10.1101/2023.07.09.548293doi: bioRxiv preprint 

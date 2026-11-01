@@ -1,15 +1,21 @@
 {
   "schema_version": "1.0",
   "purpose": "retrospective circRNA constraint benchmark manifest",
-  "status": "phase_1A_audit_complete; qualifying_construct_set_empty",
+  "status": "phase_1A_extraction_complete; qualifying_construct_set_available",
   "policy": "do_not_infer_good_or_bad_labels_without_primary_construct_data; record_NOT_FOUND_when_sequence_or_outcome_is_unverified",
   "harvest_artifacts": {
     "constructs": "circdesign_data/benchmark/constructs.csv",
+    "preprint_2023_audit": "circdesign_data/benchmark/preprint_2023_construct_audit.csv",
+    "preprint_2023_outcome_audit": "circdesign_data/benchmark/2023_outcome_extraction_audit.csv",
     "provenance_ledger": "circdesign_data/benchmark/provenance_ledger.json",
     "ires_reference": "circdesign_data/ires/ires_reference.csv",
+    "cite_reference": "circdesign_data/ires/cite_reference.csv",
+    "ires_fasta": "circdesign_data/ires/All_IRES.fa",
+    "cite_h2sl_fasta": "circdesign_data/ires/CITE_H2SL.fa",
+    "ires_activity_benchmark": "circdesign_data/ires/ires_benchmark.csv",
     "software_versions": "circdesign_data/software_versions.txt"
   },
-  "phase_1A_result": "No construct currently satisfies both independently retrievable full nucleotide sequence and quantitative construct-level outcome.",
+  "phase_1A_result": "Fourteen explicit 2025 sequence-table records were extracted, plus six 2023 CR1-CR6 full-length DNA sequences from the supplied anie74170-sup-0002-suppmat.xlsx workbook. Three of these CR constructs have exact construct-level in-cell half-life outcomes. Thirty-two IRES and 31 CITE/H2SL records were extracted from the supplied 2026 supplement.",
   "planned_sources": [
     {
       "source_id": "scarless_circularization_2025",

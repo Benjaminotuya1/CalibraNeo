@@ -1,2 +1,33 @@
-ires_id,sequence_fasta,source,known_efficiency,notes
-IRESite_All_IRES_v1.1.0,NOT_FOUND,http://iresite.org/IRESite_web.php?page=faq,NOT_FOUND,Official FAQ was reachable; the requested FASTA download was not independently retrieved in this environment and license terms require confirmation
+sequence_id,source_doi,sequence_fasta,sequence_alphabet,length_nt,known_efficiency,notes
+EchoV-E11,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,751,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+CVA20,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,744,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Aichi_Virus,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,744,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+SwineVesicular,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,743,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+EV107,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,743,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+CVA3,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,742,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+PV1,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,742,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+CVB5,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,742,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+CVB1,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,741,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+CVB3,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,741,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Enterovirus_J,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,737,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Salivirus_FHB,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,730,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+EV-D94,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,714,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Salivirus_NG-J1,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,709,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Salivirus_A_strain_GUT,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,699,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+EMCV,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,697,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Human_echovirus_11,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,684,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+SimianV4,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,666,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Salivirus_A_SZ1,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,650,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Phopivirus,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,638,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRV-B37,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,630,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRVB93,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,628,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRV-A1,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,626,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRVB3,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,626,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRVB4,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,625,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRV-A89,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,618,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HRV-C54,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,607,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Crohivirus_B,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,508,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Sapelovirus,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,433,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+HCV,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,383,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+Covid19,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,265,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.
+CrPV,10.1038/s41551-026-01725-4,All_IRES.fa,RNA,232,NOT_FOUND,Explicit sequence text extracted; measured efficiency not assigned.

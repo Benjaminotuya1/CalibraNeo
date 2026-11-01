@@ -1,0 +1,1254 @@
+Peer Review File
+A single-dose circular RNA vaccine prevents Zika virus
+infection without enhancing dengue severity in mice
+Corresponding Author: Professor Liqiang Feng
+This file contains all reviewer reports in order by version, followed by all author rebuttals in order by version.
+ 
+Version 0: 
+Reviewer comments: 
+Reviewer #1 
+(Remarks to the Author) 
+This manuscript by Liu and colleagues reports a preclinical study into a circular RNA vaccine to prevent Zika virus (ZIKV)
+infection. The authors compared 3 different constructs of circRNA to identify one that fused EDIII of ZIKV with a human IgG1
+Fc fragment to form a EDIII dimer. They show that circRNA expressing EDIII-Fc produced superior immunogenicity
+compared to the other 2 constructs in adult female mice, and this superior immunogenicity translated to better protection
+against lethal ZIKV infection in pups from the vaccinated females. They also showed the the antibody response produced
+from vaccination cross-reacted minimally with DENVs and did not enhance DENV infection to levels seen with antisera
+against ZIKV. Finally, they showed that with additional modification, such as the use of IRES of iHRV-B3, the vaccine had
+the potential of being a single dose application with even better protection compared to their original construct. They
+concluded that their findings set a foundation for developing circRNA flavivirus vaccines. 
+This is an interesting study although there are several concerns that need to be addressed. These are: 
+1. Congenital Zika syndrome (CZS) is caused by ZIKV infection in expectant mothers, where transplacental transmission to
+the developing fetus dysregulates normal CNS development. In this study, ZIKV is inoculated to pups from vaccinated dams.
+Although I do not think the study design makes the findings less robust, a discussion on the differences in infection route
+between the experimental approach and real-world infection, along with their implication on vaccine-mediated protection
+against CZS should be clearly discussed. 
+2. Although the authors argued for the merits of circRNA, the dose used in this study – 20 microgram – is high. Conventional
+COVID-19 nucleoside-modified linear mRNA vaccines were showed efficacy against lethal SARS-CoV-2 infection in mice
+at a dose of 5 micrograms. The higher dose would mean not only higher cost, it could also lead to more adverse events and
+increase the risk of severe adverse events. Moreover, there is no comparison between circRNA and linear, nucleoside
+modified mRNA that express the same 3 different EDIII constructs. Thus, while the authors argued for the merits of circRNA,
+there is no data to show that circRNA is a better system to deliver the EDIII-Fc transgene. 
+3. Lines 56-57. This statement is not true. There are Zika vaccine candidates that have completed phase I clinical trial with
+useful safety outcomes. Their development has been stalled by the global low incidence of Zika cases. Please correct this
+statement. 
+4. Lines 58-59. Zika vaccine development has not been impeded by the concern of ADE of DENV infection. Please see
+explanation in comment #3. 
+5. Line 74. It is not helpful to mix the pathology of dengue with that of Zika. Coagulopathy and vascular leakage is more
+pertinent to dengue than Zika. 
+6. Line 122. Description of results in this line and elsewhere should be described as objectively as possible. Please avoid
+superlatives, such as “greatly”. 
+7. Lines 144-147 and Figure 1K. Although the differences in CD8+ T cell response to the different vaccine constructs raises
+interesting questions on the expression or processing of the different EDIII constructs for MHC class I presentation, it raises
+concern for EDIII-Fc as a human vaccine. Human CD8+ T cell epitopes are found mostly elsewhere in the ZIKV and
+flaviviral proteome. If the protection seen in subsequent experiments, particularly those on adult IFNAR-/- mice were to be
+mediated, even in parts, by CD8+ T cells, then the vaccine efficacy seen in this mouse model may over-estimate the efficacy
+that can be expected in humans. Indeed, this possibility is raised by the data in Figures 4h and 5k, where the neutralising
+antibody titers produced after vaccination were not at levels sufficient for sterilizing immunity, as evidenced by detectable
+viremia even for the most optimal construct. Control of infection at later time points could thus have been mediated by
+cellular immunity, given that we now know anamnestic T cell response is faster than B cell response (Painter et al, Nat
+Immunol 2023; 24:1711-1724). 
+8. Line 248 and 384-392. Please specify the strain of mouse-adapted DENV-2 used in this study. What was the parental
+strain of this mouse-adapted DENV-2? Moreover, it is puzzling that the authors generated this strain by inoculating C57Bl/6
+mice subcutaneously and could then harvest the virus from the brains of these animals. The reference they cited (Orozco et
+al, J Gen Virol 2012) used AG129 mice and passaged the virus for 11 cycles and not just 3 passages. Is this correct? 
+9. Lines 250-260. These statements misrepresent the findings in Figures 4d, 4e and 4g. Even sera from vaccinated animals
+led mortality and viremia in this model. Moreover, p=0.9179 in the survival curve for EN(LNP) vaccinated mice vs uninfected
+controls is simply unbelievable given that over 50% of the mice died from infection. 
+10. Figure 4a and Lines 914-916. This set of data cannot be shown in such a way. The IgG titers were measured using
+different approaches. Those for ZIKV and DENV1 used only EDIII whereas those against the other DENVs used whole E
+proteins. The E proteins are larger and hence the amount of antigens on the coated plates would have fewer antigens than
+those coated with EDIII. The data from the ELISAs are not comparable. Showing this set of data in such a way is misleading.
+11. There are several grammatical and typographical errors that need to be corrected. 
+Reviewer #2 
+(Remarks to the Author) 
+This manuscript described the development of a circular RNA vaccine to prevent ZIKV infection with reduced risk of causing
+ADE of subsequent DENV infection. The authors tested multiple circRNA constructs expressing Zika EDIII in monomer,
+dimer, or trimer conformation and determined the EDIII-Fc dimer is the most superior confirmation. The addition of NS1 into
+the vaccine formulation (EN) further improved maternal passive protection to neonatal mice from brain damage/inflammation
+than vaccine with EDIII-Fc or NS1 circRNA alone. The EN circRNA molecules encapsulated in LNP separately (EN(LNP))
+or together (EN(RNA)) resulted in similar immunogenicity and protection outcomes. However, 2 doses of maternal
+immunization were required to provide complete protection from detectable ZIKV infection in neonatal mouse brains. Using
+an adult INFAR-/- mouse model, they also demonstrated both EN formulations elicited rapid protection (12 days) against
+illness and reduced viremic RNA post ZIKV infection. 
+To further optimize the EN(LNP) vaccine candidate, the PIE elements of the plasmid were modified. The optimization
+improved translation of EDIII, NS1, and Gluc in transfected cells and the optimized (opt) EN(LNP) provided better
+immunogenicity and protection than the prototype EN(LNP). A single high (20-ug) dose of the opt-EN(LNP) provided
+complete protection in both passive and active immunization mouse models. A longer protection duration was observed in
+neonatal mice born 11 weeks after maternal immunization with a high dose of the opt vaccine. 
+Most of the study results
+supported the conclusion that a single dose of the opt-EN(LNP) ZIKV vaccine afforded high protection efficacy against ZIKV
+in the 2 tested mouse models. The manuscript detailed the steps from selecting an optimal EDIII conformation, rationale of
+including NS1, and optimization of the vaccine to be effective with a single dose. Overall, the study is very interesting and
+provides new knowledge in use of the circRNA platform for ZIKV vaccine development. However, there is a major concern
+related to the ADE evaluation of the vaccine and the strong conclusions regarding the vaccine ADE potential in the
+manuscript. 
+Based on the rationale of the viral antigens used for the vaccine, it is reasonable to speculate that the vaccine would induce
+less ADE-prone cross-reactive Abs to DENVs than other vaccine using prM-E or whole E. However, the in vitro and in vivo
+ADE evaluation conducted in the study had some significant flaws and limitations to really support their strong conclusion
+that the vaccine would be ADE-free. The title, abstract, and many areas of the manuscript all emphasized that the vaccine
+has proven to be: “without enhancing dengue severity”, “without DENV ADE”, and “ADE-free”, but I have questions
+regarding the ADE experimental data used to support such conclusion. 
+List of the specific concerns/comments: 
+1. The manuscript writing is fairly clear and understandable but seems somewhat choppy in some areas. Some minor
+editorial modification can be useful to make the manuscript more concise with smoother flow and connection, while
+providing more clarification in some areas to improve the reading experience. 
+2. In vitro ADE evaluation (Fig 4b and 6g-i): should the y-axis be expressed in percent (%)? Below are questions in the data
+presented in the graphs. 
+a. The “relative infectivity” normalized to “peak of ZIKV infection” in the Fig 4 and 6 did not make sense for presenting the
+DENV ADE curves. The relative infectivity should be calculated against infectivity of each virus without Ab treatment (base
+line infectivity for each specific virus in the graph). E.g., DENV-1 infectivity (without sera) would be the 100% for the DENV-1
+graph. In our experience, ZIKV typically replicates much faster than DENVs in mammalian cells, so using the peak ADE
+ZIKV infectivity by diluted Zika sera to normalize the graph for all viruses would result in very low DENV infectivity curves as
+shown in 4b. Due to its slower replication kinetics than ZIKV, there would be less DENV-positive cells than the ZIKV-
+positive cells detected by flow cytometry from samples collected at the same time point (2 days pi). Also, Line 636 indicated
+the moi used for ZIKV and DENV-3 was 5-fold higher (at 1) than other DENVs (at 0.2). The higher moi used for ZIKV
+infection would further skew the results for a much higher ZIKV infectivity than those DENVs infected at lower moi. The
+skewed graph scale made the interpretation of the DENV ADE curves difficult. 
+b. Even with the flawed ADE curve presentation, these graphs suggested that there were DENV ADE effects at the lowest
+dilutions of the vaccine sera. The full DENV ADE curves were not captured from the tested vaccination sera dilution range,
+and there is no standard Ab quantity (e.g. protein mass) to be used for X-axis. Therefore, it is difficult for an accurate ADE
+potential assessment or comparison from the graphs. 
+On a good note, Fig 4a demonstrated that the IgG elicited by vaccine candidates had significantly less proportion of DENV
+cross-reactive Ab than the ZIKV control (using anti-Zika IgG as the total IgG). Therefore, Fig 4a could support the notion that
+the vaccine candidates elicited significantly less DENV ADE-prone Abs than the live ZIKV infection. Unfortunately, similar
+anti-ZIKV and anti-DENV IgG were not measured for the final optimized EN(LNP). Would suggest to also conduct this
+analysis for the opt vaccine in Fig 6. 
+3. Fig 4 c-h: The in vivo ADE evaluation of the prototype vaccine candidates. The data was used to suggest passive transfer
+of vaccination sera or Ab elicited by vaccination did not enhance the severity of illness or enhance viremic RNA after DENV-
+2 challenge. In my opinion, the results could only suggest the single dose of the Ab in the 20ul sera (Fig.4c) or the Ab on 14
+days after immunization of the vaccine (Fig 4f) did not cause ADE illness by DENV-2 challenge. Since the Ab concentration
+is an important factor for ADE, the single passive-transferred sera dose (4c) or the single DENV2 challenge time point (4f)
+may not be suitable for ADE evaluation of the vaccines. It might be better to use another non-replicative Zika vaccine with
+ADE-prone antigens (e.g. inactivated ZIKV, recombinant E, or VLP) as a positive ADE control for the ADE study. 
+The blood Ab titers to ZIKV and DENV2 at time (2wks) of challenge might enable better interpretation, but they were not
+measured in the study. However, based on the Fig 2g study, only 1 animal has measurable ZIKV nAb 2wks after 1st
+immunization of EDIII-Fc which suggests the 2wks time point for the DENV2 ADE evaluation might be too early (e.g. Ab
+levels were below the required threshold for ADE at the time of DENV2 infection). Interestingly, the in vivo ADE evaluation
+was not conducted for the final optimized vaccine candidate. Therefore, there is no animal ADE data to support the
+conclusion that the single-dose opt-EN(LNP) would not cause severe DENV illness as suggested in the manuscript title.
+Mouse models are not very good for DENV or flavivirus ADE evaluation in general. Many flaviviruses without any evidence
+of causing ADE in humans would cause ADE in mouse models. Many biological components involved in ADE are very
+different between mouse and human, so caution should be exercised in using mice or in vitro ADE outcomes for human
+vaccine candidates. Discussions in the limitations of the ADE models should at least be included. Suggest removing or
+significantly toning down statements, such as “without DENV ADE”, “ADE-free”, and other similar claims throughout the
+manuscript. 
+4. The title: Suggest removing “without enhancement of dengue severity” and add “in mice” at the end or “prevents mice
+from” Zika virus infection. 
+5. Line 94: Need more background and citation of the IgG1 FC fusion to form EDIII dimer. Would there be any other
+immunogenic effect from the fusion Fc? 
+6. Line 104-110: please provide more background/introduction regarding the T4 ferritin for EDIII trimer formation, PIE
+method, and the reasons for the specific PIE element choice in the prototype plasmid Ana (e.g., why iCVB3 IRES was
+chosen, what are the spacer sequences used in this plasmid). 
+7. Line 118: Suggest adding a brief summary of the encapsulation efficiency and sizes of the circRNA-LNP, as they were
+mentioned in the Methods (line 483-486). 
+8. Lines 150 and 166: Suggest specifying what protective effects are being tested at the beginning of each section, such as
+protection of neonatal mice through passive maternal immunity (line 150) versus protection adult mice by active
+immunization (line 166). 
+9. Line 153, 553, and Fig 2a: Line 153 states mice were mated 3 weeks after immunization but indicated 2 weeks in Fig 2a
+and line 553. 
+10. Line 263-269 and 339-342: More background and discussion of the optimized PIE elements in the construct should be
+provided. What is the rationale to change to these element sequences (e.g., reason of change the IRES to iHV-B3 with Apt-
+elF4G, change of spacer UTRs, etc.)? 
+11. Line 273: Why was the EN(RNA) vaccine taken out of contention against the EN(LNP) vaccine at this point? Both
+vaccines provided similar immunogenicity and protection, so it would be helpful to provide the reason of the EN(LNP)
+selection for further optimization development. Is the selection based on certain advantage (e.g., higher LNP encapsulation
+rate, easier vaccine formulation) or just by chance? 
+12. Line 562: should define FNT. 
+13. Line 588: change “teasing” to “passing”? 
+14. Line 865, Fig 2a: Line 865 states IFNAR -/- mice were challenged 2 weeks after 2nd immunization. Figure 2a says they
+were challenged 3 weeks after immunization. 
+15. Figure 3A: The mating schedule is a little unclear from this image. Suggest changing the branch out point immediately
+after 1st immunization (before 2wks). Based on where the two lines branch out at the current scheme, it looks like two rounds
+of mating occurred in the 2-dose study line. 
+16. Sup Fig 1a and 9a: what is the meaning of “optional” indicated in both plasmid figures? 
+17. Sup Fig 1h and 9e: It would be useful to provide a purpose of the junction site PCR and sequence validation. 
+18. nAb was measured after immunization, but was never measured after virus challenging from the survivors. The post
+challenge nAb titers would be useful to determine whether the vaccine provided a solid sterile immunity (no boost effect of
+the post challenge nAb titer). It is somewhat surprising that it was not done for the vaccine study. 
+Reviewer #3 
+(Remarks to the Author) 
+Nature manuscript # 492562_0 
+In the manuscript entitled “ A single dose circular RNA vaccine completely prevents Zika virus infection without enhancing
+dengue severity” by Liu et al., the authors developed ZIKV vaccines in a form of circular RNA encoding the envelop protein
+domain III 
+and NS1 and reported the efficacy of the vaccine candidates using C57BL/6 and IFNAR-/- mouse strains. 
+The
+study results showed that maternal immunity elicited by circRNA encoding dimeric EDIII, fused to human IgG1 Fc fragment
+(EDIII-Fc) were superior to circRNA encoding monomeric or trimeric EDII in terms of 
+activation of germinal center reactions,
+facilitating high neutralizing antibody production and induction of CD4/CD8 T cells producing cytokines. 
+One-day-old
+neonates born from dams immunized with either one- or two dose vaccines survived after lethal challenge but do not prevent
+viral infection and morbidity. CircRNA encoding either ZIKV EDIII-Fc or NS1 alone provides partial protection against ZIKV
+infection and developmental retardation. Further, optimized circRNA EN(LNP), which increases stability and protein
+translation, reduced viral RNA burden in the neonatal brains and increase protective efficacy 
+that was durable up to 12
+weeks. The authors concluded that 
+two-dose immunizations of circRNA EN (LNP) provide full protection against ZIKV
+infection while avoiding ADE of DENV, but not by a single dose immunization. The results highlight that circRNA could be a
+platform for a safe and effective flavivirus vaccine. 
+Major comments: 
+Overall, the manuscript is well-written. The studies were well- designed with proper controls. The authors made thorough
+efforts to improve the efficacy of LNP encapsulated optimized circRNA vaccine encoding EDIII and NS1. The study results
+showed promising outcomes of protection of adult and neonate C57BL/6 and IFANR-/- mice against ZIKV infection while
+avoiding possible ADE of DENV, which is a significant risk factor of flavivirus infection. However, I have a few concerns
+regarding data presentation, and the conclusion in the discussion was overstated and not fully supported by the data
+presented in the current version of manuscript. I suggest that the authors revise the conclusion to adhere to the results. 
+See
+below the specific comment below. 
+Additional comments: 
+Figure 1f. 
+Virus-binding antibody titers (d) were measured by one (ELISA) and neutralization antibody titers were measured
+by the other assay (FNT). Although the readouts of antibody response are reciprocal serum dilutions, it doesn’t justify
+presenting the ratios of neutralizing antibodies to virus-binding antibodies (f). Virus-neutralizing antibodies are not
+exclusively IgG isotypes. IgA and IgM can be neutralizing yet virus-binding antibodies in this study measured 
+IgG only not
+total antibodies. 
+I doubt that the simple mathematical calculation of the ratio of serum titers is accurate and acceptable in the
+field. Without a thorough investigation using a method/platform to bridge two assays with well-established standard controls,
+the current form of data presentation can be misleading and inaccurate. If there are references supporting such data
+presentation, please add them or provide justifications. 
+Otherwise, I suggest deleting 
+Fig 1f. However, the authors may
+discuss the result and point out that EDIII-Fd induced robust anti-ZIKV antibody response but poorly neutralizing relative to
+antibody response induced by EDIII-Fc. 
+Lines 163-165: the authors stated that “…, including paralysis of limbs and tails, retardation of brain growth, meningeal
+thickening….” 
+and presented brain mass and viral titers in tissues (Suppl. Fig3) 
+but the evidence/data to support limb & tail
+paralysis and meningeal thickness are missing. 
+According to histology in Figures 2f, 
+3f, and 4f, the immunized groups show
+less cellular infiltration in the brain tissue and possibly less necrosis than in the brain of the PBS group, in which dura
+membrane blebbing and cellular infiltration seem to be pronounced. It is difficult to know whether ZIKV induces changes in
+meningeal thickness in the representative image of each of the groups. No measurable data supporting meningeal
+thickening in the brain, nor the paralysis scores of limbs and tails were presented. 
+Either provide the supporting data or
+revise. 
+Line 207-208/Fig 2d, “ EDIII-Fc… prevented ZIKV-caused growth delay and mortality, alleviated neurological disorders,….”
+For clarification, indicate the score of 14 is the maximum severity of limb and tail paralyses per mouse either in figure legend
+or in the main body. 
+In Fig 2, add a line with “C57BL/6” above the panel of Fig2b-e and a line with “IFNAR-/-” above the panel of g-j. 
+Line 232, clarify what do the authors meant by “more than half showed”; does this mean more than half of the mice within the
+EDIII-Fc group? 
+In Fig 5h and other figures (2f, 3f and 3h), the presentation of compact images side-by-side is difficult to identify the point of
+the interest other than the increase of cellular infiltration possibly also cellular necrosis, no localization of viral proteins-
+particularly to readers with no pathological background. Add a short description of the point of interest indicated with boxes,
+arrows, or arrowheads that would be helpful to understand the presence or absence of pathology caused by viral infection
+and protection, respectively. 
+To make it easy to follow, add a line with the indication of “ IFNAR-/-“ 
+below Fig 5h and above the panel of i-k in order to
+separate data from C57BL/6 mice and IFNAR-/- mice. 
+Line 304/ Fig6 e: 
+At 15 dpi, 2 out of 13 pups (15%) after optEN(LNP) and 6 out of 7 pups (86%) 
+after 20ug pEN(LNP) still
+showed substantially high levels (~10^8 copies) of viral RNA (Fig6e) with measurable neurological score (Fig 6d). Although
+the results presented “promising potential” of Opt EN(LNP) but did not support full nor complete protection against ZIKV
+infection at 13 weeks post-vaccination. The author shouldn’t ignore these unprotected outliers and may discuss the result. 
+Line 307-8, the authors state that 
+“Optimized circRNA vaccine has the potential to trigger…”, which is likely, but data present
+the duration of protective immunity up to 12 weeks, which is relatively short. Consider revising “Optimized circRNA vaccine
+induced protective immunity lasting at least up to 12 weeks” 
+to adhere the results presented. 
+Line 314, 
+The statement 
+“….the combination of ED
+Ⅲ
+-Fc and NS1 circRNAs confers complete protection in two mouse
+models (Fig. 3, 5).” is not correct. In Figure 3e, 3 out of 7 
+C57BL/6 mice (41%) 
+after single dose immunization with EN(LNP)
+showed substantially high levels (108 copies/gram) of viral RNA. Only after two-dose immunizations with EN(LNP), mice
+were protected against infection but not after EN(RNA) immunization. 
+In IFNAR-/-, viral RNA was also detected in all mice
+after single dose immunization (suppl. Fig 6g). I agree that the results presented are promising but, in the discussion, 
+the
+conclusion remarks are overstated. Revise the conclusive statement adhering to the results presented in this manuscript. 
+Line 328, “our circRNA vaccine is quite promising …” 
+sounds colloquial. I suggest revising “our circRNA vaccine produces
+promising results…” 
+Line 
+356, “.., but barely lymphocytes, can be vertically…” 
+“barely” is not correct. In healthy conditions, maternal lymphocytes
+are not on the fetal side. 
+Please revise. 
+Line 383-392, 
+the authors described that the mouse adaptive DENV2 generation from the parental 16681 strain was
+obtained after 3 passages in the neonatal brain. 
+This is relatively low passages compared with the mouse adaption
+achieved 10 passages of a parental strain, PL0468 
+in AG129 mice (DOI: 10.1128/JVI.00062-06). Relative to the old method,
+3 passages in B6 neonates seem to be a huge improvement. Provide GenBank accession no. of the mouse-adaptive DENV.
+In addition to sequence analysis for identification of site mutations (supplementary Figure 8a), the authors should provide
+supplementary results showing productive DENV infection in immunocompetent or IFNAR-/- mice. If the characterization
+and pathogenesis of the current mouse-adapted DENV 2 were already published, 
+please provide references. The citation 46
+alone is insufficient. 
+Line 562, spell out “FNT” as it appears the first time in the main body of the manuscript. 
+Line 641, provide the source/vendor of 
+DENV monoclonal antibody clone 8-4, I am not sure if the clone is correct. 
+Reviewer #4 
+(Remarks to the Author) 
+I co-reviewed this manuscript with one of the reviewers who provided the listed reports. This is part of the Nature
+Communications initiative to facilitate training in peer review and to provide appropriate recognition for Early Career
+Researchers who co-review manuscripts. 
+Version 1: 
+Reviewer comments: 
+Reviewer #1 
+(Remarks to the Author) 
+The authors have addressed all the major concerns raised on their original manuscript. This revised version now reads well
+and provides a balanced interpretation of the data. 
+Reviewer #2 
+(Remarks to the Author) 
+We (primary reviewer and co-reviewer) thank the authors for the thorough responses including new experiment data and
+revision of the manuscript. All our concerns have been adequately addressed, and the revised manuscript has been greatly
+improved in clarity and provides significant findings in developing and optimizing a circular RNA ZIKV vaccine. Below are 2
+minor comments of the revised manuscript: 
+1. Fig 8a and b: Missing the ZIKV sera data in Fig 8a or b. Since the ZIKV sera was used in Fig 8c as the in vitro ADE
+positive control, it would be better to include its overall IgG titers to various viral E antigens in Fig 8a and/or 8b (as shown in
+Fig 5a). 
+2. Figure legends for all brain H&E staining images: Shouldn’t black arrows indicate cortex laminar necrosis, and cyan blue
+arrows lymphocyte infiltration? All legends for these figures indicated opposite. 
+Reviewer #3 
+(Remarks to the Author) 
+The authors have addressed the reviewers' comments made on the previous submission. Additionally, the authors have
+made an extensive revision that improved clarity and provided additional supporting information. The results presented in
+this manuscript strongly support the conclusions. 
+I have a few minor suggestions and corrections for citations as indicated below: 
+line 159, 
+“ .. plasma cells were significantly detected…” sounds awkward and I suggest revising ‘significantly high’ or
+‘..significantly higher… than in the mice immunized with EDIII-Fd or the others’. 
+line 167, instead of 
+“but”, use either ‘and’ or 
+‘while these were…’ 
+lines 297 and 310, in the description of passive ZIKV-immune sera transfer, there is a discrepancy in the volume of serum
+samples, “20 uL” on line 297 ‘ 200 uL of diluted serum” on line 310 and Figure legend 5C. Please be consistent. 
+line 449, 
+‘favorable’ may be better than “promising” 
+line 547, Vero cells is CCL-81 not "NCCL-81" 
+line 562, "1x10^4 FFUs of DENV2", delete 's' in FFUs 
+line 813, change from "qRT-qPCR" to "qRT-PCR" consistent with line 812 
+Comments on citations: 
+line 52, 
+Amaya et al., 2023 is inappropriate. Please correct. 
+line 515, 
+the statement 
+“…. the pregnancy mouse models used in other studies 61, 62” 
+including citation 62 is incorrect.
+Reference 62 used a litter-bearing non-human primate, marmoset pregnancy model not a mouse model. 
+Authors may
+replace reference 62 with another immunocompetent mouse pregnancy model, human Stat2 knock-in (hSTAT2KI) mouse
+(PMID: 38360793). hSTAT2KI mouse model recapitulates vertical transmission of ZIKV during pregnancy while ZIKV
+causes fetal demise in pregnant C57BL/6 mouse model (reference 61). Alternatively, authors may revise the statement from
+“…the pregnancy mouse models…” to “the preclinical pregnancy models” referring mouse and marmoset models. 
+Reviewer #4 
+(Remarks to the Author) 
+I co-reviewed this manuscript with one of the reviewers who provided the listed reports. This is part of the Nature
+Communications initiative to facilitate training in peer review and to provide appropriate recognition for Early Career
+Researchers who co-review manuscripts. 
+Open Access
+ This Peer Review File is licensed under a Creative Commons Attribution 4.0 International License, which
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate
+credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were
+made.
+In cases where reviewers are anonymous, credit should be given to 'Anonymous Referee' and the source.
+The images or other third party material in this Peer Review File are included in the article’s Creative Commons license,
+unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons
+license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain
+permission directly from the copyright holder.
+To view a copy of this license, visit 
+https://creativecommons.org/licenses/by/4.0/
+Reviewer #1 (Remarks to the Author): 
+This manuscript by Liu and colleagues reports a preclinical study into a circular RNA 
+vaccine to prevent Zika virus (ZIKV) infection. The authors compared 3 different 
+constructs of circRNA to identify one that fused EDIII of ZIKV with a human IgG1 Fc 
+fragment to form a n EDIII dimer. They show that circRNA expressing EDIII -Fc 
+produced superior immunogenicity compared to the other 2 constructs in adul t female 
+mice, and this superior immunogenicity translated to better protection against lethal 
+ZIKV infection in pups from the vaccinated females. They also showed th at the 
+antibody response produced from vaccination cross -reacted minimally with DENVs 
+and did not enhance DENV infection to levels seen with antisera against ZIKV . Finally, 
+they showed that with additional modification, such as the use of IRES of iHRV -B3, 
+the vaccine had the potential of being a single dose application with even better 
+protection compared to their original construct. They concluded that their findings set 
+a foundation for developing circRNA flavivirus vaccines. 
+This is an interesting study although there are several concerns that need to be addressed.  
+These are: 
+1. Congenital Zika syndrome (CZS) is caused by ZIKV infection in expectant mothers, 
+where transplacental transmission to the developing fetus dysregulates normal CNS 
+development. In this study, ZIKV is inoculated to pups from vaccinated dams. Although 
+I do not think the study design makes the findings less robust, a discussion on the 
+differences in infection route between the experimental approach and real -world 
+infection, along with their implication on vaccine -mediated protection against CZS 
+should be clearly discussed. 
+Response: We agree with the notion that ZIKV infection in pregnant animals, such 
+as immunocompetent mice and marmosets, are more relevant to  the CZS observed in 
+real world (Kim IJ et al., NPJ Vaccines 2022; Kim IJ et al., NPJ Vaccines 2024). Though 
+our study's model of maternal immunization and neonatal challenge doesn't mimic 
+human CZS as closely as pregnancy models in other studies (Kim IJ et al., NPJ Vaccines 
+2022; Kim IJ et al., NPJ Vaccines 2024 ), it may represent a stringent model for 
+evaluating the protective efficacy of maternal immunity. Unlike the pregnan t mice 
+models wherein both nAbs and T cell responses contribute to restricting the inoculated 
+ZIKV from crossing the placental barriers ( Kim IJ et al., NPJ Vaccines 2024; Ngono 
+AE et al., Sci Adv 2020), in the challenged pups only the nAbs inherited from the dams 
+can confer protection. In addition, it has been reported that in pregnant mice, the 
+monocytes or macrophages in the placenta play significant roles in inhibiting ZIKV 
+transmission to the fetus, another barrier absent in the challenged pups (Winkler CW et 
+al., J Immunol 2020). In this respect, our results support that EN(LNP), especially the 
+optimized version, gives rise to protective immun ity of high magnitude and quality, 
+thereby conferring complete protection against ZIKV infection in this stringent model  
+(Revised Fig. 6 and Fig. 7 ). We have added this discussion to the revised manuscript 
+(lines 514-526), following your insightful suggestion. 
+ 
+2. Although the authors argued for the merits of circRNA, the dose used in this study – 
+20 microgram – is high. Conventional COVID -19 nucleoside-modified linear mRNA 
+vaccines were showed efficacy against lethal SARS-CoV-2 infection in mice at a dose 
+of 5 micrograms. The higher dose woul d mean not only higher cost, it could also lead 
+to more adverse events and increase the risk of severe adverse events. Moreover, there 
+is no comparison between circRNA and linear, nucleoside modified mRNA that express 
+the same 3 different EDIII constructs. Thus, while the authors argued for the merits of 
+circRNA, there is no data to show that circRNA is a better system to deliver the EDIII-
+Fc transgene. 
+Response: Our initial purpose is to determine whether the combination of EDIII-Fc 
+and NS1 encoded by circRNA, an emerging RNA technology with enhanced stability 
+over linear mRNA (Ren L et al., Commun Biol 2022), can confer protection against 
+ZIKV infection. Starting from this, we initially focused on the design and evaluation of 
+circRNA vaccine s but not their linear mRNA counterpart s. Nevertheless, we have 
+performed a direct comparison between the optimized circRNAs and their linear mRNA 
+counterparts in both the translational level in cell cultures and the immunogenicity in 
+immunized mice. Optimized circRNAs encoding either EDIII -Fc or NS1 appeared to 
+have lower translation levels compared to their respective m1ψ-modified mRNA 
+counterparts ( Revised Supplementary Fig. 10). At 2 weeks after  a single -dose 
+immunization, optimized circRNAs elicited lower titers of anti-E IgG (1.8- to 2.4-fold), 
+anti-NS1 IgG (3.4- to 3.9-fold), and anti-ZIKV nAbs (2.0- to 3.5-fold) compared to the 
+same dose of each  respective mRNAs (Supplementary Fig. 1 0). These results, along 
+with those shown in revised Fig. 6 and Fig. 7, suggest that the optimization effectively 
+enhances the antigen production and immunogenicity of circRNAs, albeit still being 
+weaker than that of m1ψ-modified mRNAs at the tested doses and timeframe. We have 
+added these results in the revised manuscript (l ines 331-342, revised Supplementary 
+Fig. 1 0), and discussed the drawbacks that need to be resolved as well as the 
+modifications that may further improve the immunogenicity and protective efficacy of 
+current circRNA vaccines (lines 469-477 in the revised manuscript).  
+ 
+3. Lines 56-57. This statement is not true. There are Zika vaccine candidates that have 
+completed phase I clinical trial with useful safety outcomes. Their development has 
+been stalled by the global low incidence of Zika cases. Please correct this statement. 
+Response: We have corrected this statement as “Currently, there are still no ZIKV 
+vaccines approved for clinical use” (line 58 in the revised manuscript), following your 
+valuable suggestion. 
+ 
+4. Lines 58-59. Zika vaccine development has not been impeded by the concern of ADE 
+of DENV infection. Please see explanation in comment #3. 
+Response: We have revised this sentence as “An important safety concern for 
+vaccine development against ZIKV is the antibody -dependent enhancement (ADE) of 
+infection between ZIKV and DENV” (lines 59-60 in the revised manuscript), following 
+your valuable suggestion. 
+ 
+5. Line 74. It is not helpful to mix the pathology of dengue with that of Zika. 
+Coagulopathy and vascular leakage is more pertinent to dengue than Zika. 
+Response: We have described the pathogenic effects of ZIKV NS1 more specifically, 
+as the following: “Secreted NS1 increases the permeability of umbilical vein and brain 
+endothelial cells, and thus causes vascular leakage in the placentas and brains” (lines 
+78-79 in the revised manuscript). We also provided new references  to support this 
+description (Puerta-Guardo H et al., Cell Rep 2019). 
+ 
+6. Line 122. Description of results in this line and elsewhere should be described as 
+objectively as possible. Please avoid superlatives, such as “greatly”. 
+Response: Following your kind suggestion, we have more objectively described this 
+result, as the following: “IgG titers increased by 3.7-fold in EDⅢ-Fc-immunized mice, 
+by 1.7-fold in EDⅢ -Fd-immunized mice” (lines 145-148 in the revised manuscript ). 
+We have revised all the similar descriptions throughout the manuscript.  
+ 
+7. Lines 144-147 and Figure 1K. Although the differences in CD8 + T cell response to 
+the different vaccine constructs raises interesting questions on the expression or 
+processing of the different EDIII constructs for MHC class I presentation, it raises 
+concern for EDIII -Fc as a human vaccine. Human CD8 + T cell epitopes are found 
+mostly elsewhere in the ZIKV and flaviviral proteome. If the protection seen in 
+subsequent experiments, particularly those on adult IFNAR-/- mice were to be mediated, 
+even in parts, by CD8+ T cells, then the vaccine efficacy seen in this mouse model may 
+over-estimate the efficacy that can be expected in humans. Indeed, this possibility is 
+raised by the data in Figures 4h and 5k, where the neutralizing antibody titers produced 
+after vaccination were not at levels sufficient for sterilizing immunity, as evidenced by 
+detectable viremia even for the most optimal construct. Control of infection at later time 
+points could thus have been mediated by cellular immunity, given that we now know 
+anamnestic T cell response is faster than B cell response (Painte r et al, Nat Immunol 
+2023; 24:1711-1724). 
+Response: We agree with your opinion that CD8+ T cell response contributes to the 
+protective effects observed in the  adult IFNAR -/- mouse model . However, the over 
+estimation of the vaccine efficacy in humans might be minimal. In the adult IFNAR-/- 
+mouse model, the protective immunity elicited by EN(LNP) or the optimized version 
+are primarily comprised  of four parts: EDIII -specific neutralizing antibodies, N S1-
+specific protective antibodies (Wessel AW, et al., Nat Commun, 2020; Yu L et al., mBio, 
+2021; Bailey MJ, et al., Nat Commun, 2018), EDIII-specific CD8+ T cells (revised Fig. 
+1j), and NS1-specific CD8+ T cells (Grubor-Bauk B, et al., Sci Adv, 2019; Brault AC, 
+et al., Sci Rep, 2017). Actually, the EDIII and NS1 used in this study contains several 
+human HLA class I restricted epitopes, e.g., peptides “GPCKVPAQMA V” (named FSS-
+E337–347), “ ELDPPFGDSY” (named FSS/MR-E377–386), “ GPQRLPVPV” (named 
+FSS/MR-NS199–107), and “DVEAWRDRY” (named FSS/MR-NS123–31). CD8+ T cells 
+specific for FSS-E337–347 and FSS/MR-NS199–107, restricted by human HLA-B*0702, 
+could be detected in HLA-B*0702 transgenic mice infected by ZIKV . Similarly, CD8+ 
+T cells specific for FSS/MR-E377–386 and FSS/MR-NS123–31, restricted by human HLA-
+A*0101, could be detected in HLA-A*0101 transgenic mice infected by ZIKV (Wen J, 
+et al., Nat Microbiol, 2017). Th ese results imply that EN(LNP) , or the optimized 
+version, has the potential to trigger EDIII -specific and NS1 -specific CD8 + T cell 
+responses in humans, at least in individuals carrying the HLA-A*0101 or HLA-B*0702 
+allele. We noted that the strength of the CD8+ T cell response elicited by EDIII and NS1 
+in human might be distinct to that in mice, but the protective antibody responses could 
+partially bridge the gap. The results in neonatal challenge model indicate that antibody 
+responses are sufficient to suppress ZIKV infection in the brains and the occurrence of 
+ZIKV diseases (Revised Fig. 4 and Revised Fig. 6). We have discussed this point in the 
+revised manuscript (lines 527-543). 
+ 
+8. Line 248 and 384-392. Please specify the strain of mouse -adapted DENV-2 used in 
+this study. What was the parental strain of this mouse -adapted DENV-2? Moreover, it 
+is puzzling that the authors generated this strain by inoculating C57Bl/6 mice 
+subcutaneously and could then harvest the virus from the brains of these animals. The 
+reference they cited (Orozco et al, J Gen Virol 2012) used AG129 mice and passaged 
+the virus for 11 cycles and not just 3 passages. Is this correct? 
+Response: In this study, we generated mouse-adapted DENV2 from DENV2 strain 
+16681 (GenBank No. U87411), which was derived from a dengue haemorrhagic fever 
+patient. The passage were performed in 1-day-old C57BL/6 mice and Vero cells for 3 
+cycles. We have submitted the genomic sequences of the mouse -adapted DENV-2 in 
+GeneBank (No. PQ008452).   
+It has been reported that a subcutaneous inoculation with DENV2 (NGC strain) led 
+to lethal brain infection in 1-day-old C57BL/6 mice (https://www.fda.gov/media/16879 
+1/download). Another study showed that an intranasal inoculation with DENV2 also 
+led to severe brain infection in 3 -day-old suckling BALB/c mice , and l ive DENV2 
+virions could be isolated from the brain tissues and passaged on Vero cells (Qiu M et 
+al., Viruses, 2022). The rapid occurrence of the mouse -adapted variant in our model 
+might be attributed to the following reasons: i. The genome of DENV2 appeared to be 
+less s table in Vero cells than in C6/36 cells (Chen WJ, et al., Intervirology, 2003), 
+leading to a variety of quasi -species populations that can be se lected in the infected 
+mice; ii. The higher culture temperature of Vero cells (37 ℃) relative to C6/36 cells 
+(usually 28 ℃) maybe also contribute to the occurrence of quasi -species population 
+harboring virulence -imparting mutations (Modak A, et al., FASEB J, 2023); iii. 
+Establishment of infection by DENV2 in neonatal brains need to break through more 
+barriers compared to  the method used by Orozco S et al  (intravascular inoculation 
+followed by viral isolation from the sera) (Orozco S et al., J Gen Virol, 2012; Shresta S 
+et al., J Virol, 2006), thereby exerting stronger selective pressure. 
+We identified three amino acid substitutions in the mouse-adapted variant compared 
+to the parental DENV2: NS1 K174N, NS2A L181V , and NS5 A196T. Although the 
+exact contribution of each mutation to the virulence remains to be determined,  an 
+intracerebral injection of the adapted variant led to more rapid mortality in 1-day-old 
+ICR mice compared the parental DENV-2 (Revised Supplementary Fig. 8b, c). We have 
+added this result to the revised manuscript (lines 292-298). 
+ 
+9. Lines 250-260. These statements misrepresent the findings in Figures 4d, 4e and 4g. 
+Even sera from vaccinated animals led mortality and viremia in this model. Moreover, 
+p=0.9179 in the survival curve for EN(LNP) vaccinated mice vs uninfected controls is 
+simply unbelievable given that over 50% of the mice died from infection. 
+Response: Actually, original Fig. 4d, 4e, 4g and 4h (revised Fig. 5d, 5e, 5g, and 5h) 
+showed that ZIKV sera, but not circRNA immune sera or active circRNA immunization, 
+could enhance the infection and diseases of DENV2. We have revised Fig . 4c and 4f 
+(corresponding to revised Fig. 5c and 5f) to more clearly describe the experiment design. 
+Please note that the challenge assays here in were performed using mouse-adapted 
+DENV2. Given that immunization with EN(LNP) or EDIII -Fc elicited only residual 
+cross-reactive antibodies against DENV2 ( revised Fig. 5a), it is reasonable that either 
+the immune sera or active circRNA immunization showed no significant enhancement 
+of or protection against DENV2 infection. We have revised the related statements to 
+present the findings more clearly (lines 300-306 in the revised manuscript). 
+In the original Fig . 4d and 4g  (corresponding to revised Fig. 5d and 5g) , the 
+comparisons were conducted between the PBS group (revised Fig. 5d) or the LNP group 
+(revised Fig. 5g) and the rest groups. Th us, the “p = 0.9179” here indicates that there 
+was no difference in the survival rates between EN(LNP) -immunized mice and LNP -
+immunized mice after DENV2 challenge. We have these figures and the related legends 
+to present the statistical analysis more clearly (line 1216 in the revised manuscript).  
+ 
+10. Figure 4a and Lines 914-916. This set of data cannot be shown in such a way. The 
+IgG titers were measured using different approaches. Those for ZIKV and DENV1 used 
+only EDIII whereas those against the other DENVs used whole E proteins. The E 
+proteins are larger and hence the amount of antigens on the coated plates would have 
+fewer antigens than those coated with EDIII. The data from the ELISAs are not 
+comparable. Showing this set of data in such a way is misleading. 
+Response: We have noted that the original Fig. 4a is somewhat misleading. We have 
+revised this figure by showing the IgG titers against different antigens separately. Please 
+refer to the revised Fig. 5a. 
+ 
+11. There are several grammatical and typographical errors that need to be corrected. 
+  Response: We have tried our best to correct the grammatical and typographical errors 
+in the revised manuscript.  
+Reviewer #2 (Remarks to the Author): 
+This manuscript described the development of a circular RNA vaccine to prevent ZIKV 
+infection with reduced risk of causing ADE of subsequent DENV infection. The authors 
+tested multiple circRNA constructs expressing Zika EDIII in monomer, dimer, or trimer 
+conformation and determined the EDIII -Fc dimer is the mos t superior confirmation. 
+The addition of NS1 into the vaccine formulation (EN) further improved maternal 
+passive protection to neonatal mice from brain damage/inflammation than vaccine with 
+EDIII-Fc or NS1 circRNA alone. The EN circRNA molecules encapsulat ed in LNP 
+separately (EN(LNP)) or together (EN(RNA)) resulted in similar immunogenicity and 
+protection outcomes. However, 2 doses of maternal immunization were required to 
+provide complete protection from detectable ZIKV infection in neonatal mouse brains. 
+Using an adult INFAR-/- mouse model, they also demonstrated both EN formulations 
+elicited rapid protection (12 days) against illness and reduced viremic RNA post ZIKV 
+infection. 
+To further optimize the EN(LNP) vaccine candidate, the PIE elements of the plasmid 
+were modified. The optimization improved translation of EDIII, NS1, and Gluc in 
+transfected cells and the optimized (opt) EN(LNP) provided better immunogenicity and 
+protection than the prototype EN(LNP). A single high (20-ug) dose of the opt-EN(LNP) 
+provided complete protection in both passive and active immunization mouse models. 
+A longer protection duration was observed in neonatal mice born 11 weeks after 
+maternal immunization with a high dose of the opt vaccine. Most of the study results 
+supported the conclusion that a single dose of the opt-EN(LNP) ZIKV vaccine afforded 
+high protection efficacy against ZIKV in the 2 tested mouse models. The manuscript 
+detailed the steps from selecting an optimal EDIII conformation, rationale of including 
+NS1, and optimization of the vaccine to be effective with a single dose. Overall, the 
+study is very interesting and provides new knowledge in use of the circRNA platform 
+for ZIKV vaccine development. However, there is a major concern related to the ADE 
+evaluation o f the vaccine and the strong conclusions regarding the vaccine ADE 
+potential in the manuscript. 
+Based on the rationale of the viral antigens used for the vaccine, it is reasonable to 
+speculate that the vaccine would induce less ADE-prone cross-reactive Abs to DENVs 
+than other vaccine using prM -E or whole E. However, the  in vitro and in vivo ADE 
+evaluation conducted in the study had some significant flaws and limitations to really 
+support their strong conclusion that the vaccine would be ADE-free. The title, abstract, 
+and many areas of the manuscript all emphasized that the vaccine has proven to be: 
+“without enhancing dengue severity ”, “without DENV ADE”, and “ADE-free”, but I 
+have questions regarding the ADE experimental data used to support such conclusion. 
+Response: We appreciate your insightful comments and suggestions. We have noted 
+that there are several over  statements in the original manuscript. We thus performed 
+additional experiments, mainly regarding the ADE risks associated with the optimized 
+EN(LNP), to provide more evidence supporting the reduced ADE risks of the vaccine 
+design, please refer to the revised Fig. 8. The immune sera of optimized EN(LNP) 
+collected at  either 2 or 8 wee ks after immunization  contain only residual DENV -
+reactive antibodies (revised Fig. 8a , b ). Similar to the observations regarding the 
+prototype EN(LNP), n either the immune sera of optimized EN(LNP) nor the active 
+immunization showed any signs of ADE effects on DENV2 infection (revised Fig. 8c-
+h). Nevertheless, considering the difference between the pathogenesis of ADE in 
+humans and that in mice models, we t oned down  the conclusion by specifying the 
+settings of the detection. Please see our point-by-point responses to your comments, as 
+listed below.   
+ 
+List of the specific concerns/comments: 
+1. The manuscript writing is fairly clear and understandable but seems somewhat 
+choppy in some areas. Some minor editorial modification can be useful to make the 
+manuscript more concise with smoother flow and connection, while providing more 
+clarification in some areas to improve the reading experience. 
+Response: We are grateful for your kind suggestions. We have carefully revised the 
+manuscript to improve the clarity, coherence, and flow. 
+ 
+2. In vitro ADE evaluation (Fig 4b and 6g-i): should the y-axis be expressed in percent 
+(%)? Below are questions in the data presented in the graphs. 
+a. The “relative infectivity” normalized to “peak of ZIKV infection” in the Fig 4 and 6 
+did not make sense for presenting the DENV ADE curves. The relative infectivity 
+should be calculated against infectivity of each virus without Ab treatment (base line 
+infectivity for each specific virus in the graph). E.g., DENV-1 infectivity (without sera) 
+would be the 100% for the DENV-1 graph. In our experience, ZIKV typically replicates 
+much faster than DENVs in mammalian cells, so using the peak ADE ZIKV infectivity 
+by diluted Zika sera to normalize the graph for all viruses would result in ve ry low 
+DENV infectivity curves as shown in 4b. Due to its slower replication kinetics than 
+ZIKV , there would be less DENV-positive cells than the ZIKV-positive cells detected 
+by flow cytometry from samples collected at the same time point (2 days pi). Also, Line 
+636 indicated the moi used for ZIKV and DENV-3 was 5-fold higher (at 1) than other 
+DENVs (at 0.2). The higher moi used for ZIKV infection would further skew the results 
+for a much higher ZIKV infectivity than those DENVs infected at lower moi. The 
+skewed graph scale made the interpretation of the DENV ADE curves difficult. 
+Response: We have noted that the normalization method used in the original Fig. 4 
+and Fig. 6 is inappropriate. In the revised Fig. 5b and Fig. 8c, we present the frequencies 
+of infected cells at each sera dilution alternatively, as did by multiple previous studies 
+(Goncalvez AP et al., Proc Natl Acad Sci U S A, 2007; Durham ND et al., eLife, 2019; 
+Garg H et al., BMC Immunol, 2021).  
+ 
+b. Even with the flawed ADE curve presentation, these graphs suggested that there were 
+DENV ADE effects at the lowest dilutions of the vaccine sera. The  full DENV ADE 
+curves were not captured from the tested vaccination sera dilution range, and there is 
+no standard Ab quantity (e.g. protein mass) to be used for X -axis. Therefore, it is 
+difficult for an accurate ADE potential assessment or comparison from the graphs. 
+On a good note, Fig 4a demonstrated that the IgG elicited by vaccine candidates had 
+significantly less proportion of DENV cross-reactive Ab than the ZIKV control (using 
+anti-Zika IgG as the total IgG). Therefore, Fig 4a could support the notion  that the 
+vaccine candidates elicited significantly less DENV ADE-prone Abs than the live ZIKV 
+infection. Unfortunately, similar anti-ZIKV and anti-DENV IgG were not measured for 
+the final optimized EN(LNP). Would suggest to also conduct this analysis for the opt 
+vaccine in Fig 6. 
+Response: We agree with the notion that quantifying antibody (Ab) concentration is 
+important for an accurate assessment of the ADE risks. However, directly comparing 
+the concentrations of E-specific IgG in ZIKV sera and immune sera presents challenges. 
+This is because ZIKV infection induces a distinct IgG profile compared to those elicited 
+by EDIII immunization. The variety of IgG clones may differ in epitope recognition 
+and binding activities. Hence, we utilized ser a dilutions as a surrogate to compare the 
+ADE effects between different sera, akin to the methods employed in several previous 
+studies (Alwis R et al., Plos Pathog, 2014; Dai L et al., Nat Immunol, 2021; Yen LC et 
+al., J Biomed Sci, 2023). 
+Following your valuable suggestion, we have tested the titers of DENV-reactive IgG 
+in the optimized EN(LNP) immune sera collected at 2 or 8 weeks after immunization . 
+The results have been illustrated in the revised Fig. 8a and 8b. Because ZIKV sera 
+showed robust cross -reactivity at this timeframe (revised Fig. 5a and Supplementary 
+Fig. 7), these results suggest that similar to prototype EN(LNP), optimized EN(LNP) 
+also elicits significantly lower titers of DENV-reactive antibodies compared to ZIKV 
+infection. These outcomes, combined with the revised Fig. 8d-f that demonstrated the 
+absence of DENV2 ADE  associated with optimized EN(LNP) sera , support that 
+optimized EN(LNP) elicits only residual ADE-prone antibodies, which are insufficient 
+to enhance dengue severity in m ice models. We have added these results and a brief 
+discussion in the revised manuscript (lines 404-419 and 495-503, respectively). 
+ 
+3. Fig 4 c-h: The in vivo ADE evaluation of the prototype vaccine candidates. The data 
+was used to suggest passive transfer of vaccination sera or Ab elicited by vaccination 
+did not enhance the severity of illness or enhance viremic RNA after DENV-2 challenge. 
+In my opinion, the results could only suggest the single dose of the Ab in the 20ul sera 
+(Fig.4c) or the Ab on 14 days after immunization of the vaccine (Fig 4f) did not cause 
+ADE illness by DENV-2 challenge. Since the Ab concentration is an important factor 
+for ADE, the single passive-transferred sera dose (4c) or the single DENV2 challenge 
+time point (4f) may not be suitable for ADE evaluation of the vaccines. It might be 
+better to use another non -replicative Zika vaccine with ADE -prone antigens (e.g. 
+inactivated ZIKV , recombinant E, or VLP) as a positive ADE control for the ADE study. 
+The blood Ab titers to ZIKV and DENV2 at time (2wks) of challenge might enable 
+better interpretation, but they were not measured in the study. However, based on the 
+Fig 2g study, only 1 animal has measurable ZIKV nAb 2wks after 1st immunization of 
+EDIII-Fc which suggests the 2wks time point for the DENV2 ADE evaluation might be 
+too early (e.g. Ab levels were below the required threshold for ADE at the time of 
+DENV2 infection). Interestingly, the in vivo ADE evaluation was not conducted for the 
+final optimized vaccine candidate. Therefore, there is no animal ADE data to support 
+the conclusion that the single-dose opt-EN(LNP) would not cause severe DENV illness 
+as suggested in the manuscript title. Mouse models are not very good for DENV or 
+flavivirus ADE evaluation in general. Many flaviviruses without any evidence of 
+causing ADE in humans would cause ADE in mouse models. Many biological 
+components involved in ADE are very different between mouse and human, so caution 
+should be exercised in using mice or in vitro ADE outcomes for human vaccine 
+candidates. Discussions in the limitations of the ADE models should at least be included. 
+Suggest removing or significantly toning down statements, such as “without DENV 
+ADE”, “ADE-free”, and other similar claims throughout the manuscript. 
+Response: We concur with your insights that the results depicted in the original Fig. 
+4c-h demonstrate the absence of DENV ADE under th e particular conditions tested. 
+However, these findings, along with the additional data presented in revised Fig. 8d-i, 
+demonstrated the significantly reduced ADE risks associated with circRNA vaccines. 
+In the passive transfer study, our utilization of 20 μl of immune sera aimed to replicate 
+the in vitro conditions presented in the revised Fig. 5b and Fig. 8c. Given that an adult 
+mouse typically has 1.5-2 ml of blood, the infusion of 20 μl of immune sera results in 
+an approximate dilution at 1:100. At this dilution, the immune sera seemed to promote 
+DENV infection in K562 cells, albeit to a lesser degree than ZIKV sera. Given that the 
+transfer of such a volume of immune sera does not cause DENV2 ADE in mice, the 
+residual cross-reactive antibodies elicited by EDIII -Fc or EN(LNP), at l east at this 
+timeframe, are insufficient to induce ADE in vivo. Following your insightful suggestion, 
+we tested the ADE risks of the immune  sera of optimized EN(LNP) , which were 
+collected at 2 or 8 weeks after immunization and contained high titers of anti -ZIKV 
+nAbs (revised Fig. 6d and Fig. 7b), as shown in the revised Fig. 8a-f. These sera, similar 
+to the immune sera of prototype EN(LNP), contained residual cross-reactive antibodies 
+and demonstrated ADE effects on DENV infection in K562 cells at dilutions  below 
+1:2500. However, the infusion of 20 μl of these sera still did not cause obvious DENV2 
+ADE in mice. These findings further support that the antibody responses elicited by the 
+circRNA vaccine pose minimal, if any, ADE risks in mice.  
+Regarding the active immunization experiment, we have noted that the evaluation at 
+a single time point would give limited information, although E-specific IgG antibodies 
+have become detectable at 2 weeks after immunization (revised Supplementary Fig. 3c 
+and Supplementary Fig. 11f). We thus examined the ADE risks of active immunization 
+with optimized EN(LNP) at 3 weeks after immunization . Herein, we used mice 
+immunized twice with inactivated ZIKV as controls (treated with 0.2% β-propiolactone, 
+combined with Aluminum adjuvant, and administered at 1  × 105 FFUs per mouse ), 
+according to your kind suggestion s. Following the challenge with mouse-adapted 
+DENV2, we observed no signs of DENV2  ADE in mice immunized with optimized 
+EN(LNP) ( revised Fig. 8g-i). In contrast , mice immunized with inactivated ZIKV 
+exhibited more severe symptoms and increased vir emia, compared to those receiving 
+empty LNPs (revised Fig. 8g-i). These findings underscore that, under the conditions 
+tested, immunization with optimized EN(LNP) unlikely induces DENV2 ADE in mice. 
+Although immunocompromised mice models have been employed to explore the 
+ADE risks of antibodies and immune sera (Reviewed in Yang X et al., Viruses 2022), 
+current mouse models, including those with a humanized immune system, fail to  fully 
+replicate the hallmark features of severe dengue in human s. There are s ignificant 
+differences between human and mouse immune responses, such as antibody response 
+profiles, expression and distribution of Fc γRs, as well as  inflammatory pathways. 
+Consequently, we acknowledge that a comprehensive evaluation of the ADE risks of 
+circRNA vaccines necessitates an appropriate animal model that closely mirrors human 
+antibody responses and DENV pathogenesis. Such evaluation should be conducted 
+across multiple dosages over an extended period to ensure cross-reactive antibody titers 
+reach the threshold necessary for the occurrence of ADE. Accordingly, we have toned 
+down certain claims and specified the assay conditions in the revised manuscript. We 
+have also inclu ded a discussion section to outline the limitations of the ADE models 
+used in this study (lines 506-513). 
+ 
+4. The title: Suggest removing “without enhancement of dengue severity” and add “in 
+mice” at the end or “prevents mice from” Zika virus infection. 
+Response: Thank you for your valuable suggestion regarding the manuscript title. 
+We agree that the addition of “in mice” helps to accurately reflect the scope of the study. 
+Given that we have provided additional data to support the absence of DENV2 ADE in 
+mice in the context of either passive transfer of optimized EN(LNP) sera or active 
+immunization with optimized EN(LNP) (revised Fig.  8, see also our response to your 
+comment 3), we revised the title as “A single-dose circular RNA vaccine prevents Zika 
+virus infection without enhancing dengue severity in mice”. We believe this title has 
+summarized the main findings of this study clearly and precisely. 
+ 
+5. Line 94: Need more background and citation of the IgG1 FC fusion to form EDIII 
+dimer. Would there be any other immunogenic effect from the fusion Fc? 
+Response: In addition to facilitate the dimerization of EDIII, which may enhance its 
+avidity for B cell receptors (Hinke DM et al., Cell Rep 2022), the IgG1 FC fusion may 
+extend the half-life of EDIII through neonatal Fc receptor (FcRn) recycling mechanisms 
+(Suzuki T et al., J Immunol 2010; Kim MY et al., Trend Biotechnol 2024). Furthermore, 
+this fusion also potentially improves the uptake and presentation of EDIII by Fc γRs-
+bearing antigen presenting cells (APCs) in draining lymph nodes (Junker F et al., Front 
+Immunol 2020; Kim MY et al., Trend Biotechnol 2024 ), thereby augmenting the 
+immunogenicity. Following your insightful suggestion, w e have incorporated this 
+explanation, as well as the related references to the revised manuscript (lines 99-103). 
+6. Line 104-110: please provide more background/introduction regarding the T4 ferritin 
+for EDIII trimer formation, PIE method, and the reasons for the specific PIE element 
+choice in the prototype plasmid Ana (e.g., why iCVB3 IRES was chosen, what are the 
+spacer sequences used in this plasmid). 
+Response: We have provided more details regarding the foldon domain and the PIE 
+method in the revised manuscript ( lines 116-121), in response to  your valuable 
+suggestion. Initially, our choice of the PIE method based on the group I catalytic intron 
+from Anabaena pre-tRNA was influenced by its prominent effectiveness  (over 95% 
+circularization rate), as detailed in the study by Wesselhoeft RA et al (Nat Commun 
+2018). Their research highlighted that introducing permissive spacers between the 3’ 
+intron-exon juncture and the IRES, as well as between the coding sequence and the 
+exon-5’ intron junction, was critical to preserving the catalytic secondary s tructure of 
+the intron. Furthermore, we opted for the iCVB3 IRES over the commonly used EMCV 
+IRES based on its superior efficacy in facilitating cap -independent translation within 
+circRNAs (Wesselhoeft RA et al ., Nat Commun 2018 ). We added a very brief 
+description about the IRES and spacers in the main text (lines 124-126). The sequences 
+of the spacers have been added in the Methods section (lines 591-593). 
+ 
+7. Line 118: Suggest adding a brief summary of the encapsulation efficiency and sizes 
+of the circRNA-LNP, as they were mentioned in the Methods (line 483-486). 
+Response: We have provided the encapsulation efficiency and sizes of the circRNA-
+LNPs used in this study, please see the revised manuscript (lines 141-143) and 
+Supplementary Table 1. 
+ 
+8. Lines 150 and 166: Suggest specifying what protective effects are being tested at the 
+beginning of each section, such as protection of neonatal mice through passive maternal 
+immunity (line 150) versus protection adult mice by active immunization (line 166). 
+Response: We have  added the specific purpose of the challenge assays at the 
+beginning of each section in the revised manuscript (lines 177-178 and 196-197), akin 
+to your kind suggestion.  We also added a brief description of the purpose or specific 
+conditions at the beginning of several other sections to improve the coherence.  
+ 
+9. Line 153, 553, and Fig 2a: Line 153 states mice were mated 3 weeks after 
+immunization but indicated 2 weeks in Fig 2a and line 553. 
+Response: Herein the mice were mated at 2 weeks after the final immunization. We 
+have re-drawn the schematic diagram for each animal experiments in the revised 
+Figures, to avoid any misleading information. We have also corrected the discrepancies 
+in the revised manuscript. 
+ 
+10. Line 263-269 and 339-342: More background and discussion of the optimized PIE 
+elements in the construct should be provided. What is the rationale to change to these 
+element sequences (e.g., reason of change the IRES to iHV-B3 with Apt-elF4G, change 
+of spacer UTRs, etc.)? 
+Response: During the progress of this study, Chen R et al reported a refined design 
+of circRNAs  which exhibits high translational activity  (Nat Biotech 2022). In their 
+research, they illustrated that the replacing of iCVB3 with iHRV -B3, incorporating a 
+RNA-binding motif for poly(A)-binding proteins (PABPs) in the 5’ upstream of iHRV-
+B3, inserting an eIF4G-recruiting aptamer (Apt-eIF4G) into the IRES, and adding the 
+3′ UTR of human α-globin 1 (HBA1) could dramatically enhance the translation of a 
+variety of proteins by circRNAs. iHRV-B3 showed superior potency than iCVB3, and 
+the inclusion of  Apt-eIF4G, along with  the 5’ and 3’ UTRs, may assist in recruiting 
+eukaryotic initiation factors (eIFs) and other RNA-binding proteins, thus improving the 
+initiation and strength of translation (Chen R et al., Nat Biotech 2022; Jeeva S et al., 
+Vaccines (Basel) 2021). These studies informed our approach  to optimizing circRNA 
+vaccines. In the revised manuscript, we have expanded the background information on 
+these optimization strategies (lines 319-326), and discussed the effectiveness of these 
+enhanced elements further (lines 463-468).  
+ 
+11. Line 273: Why was the EN(RNA) vaccine taken out of contention against the 
+EN(LNP) vaccine at this point? Both vaccines provided similar immunogenicity and 
+protection, so it would be helpful to provide the reason of the EN(LNP) selection for 
+further opt imization development. Is the selection based on certain advantage (e.g., 
+higher LNP encapsulation rate, easier vaccine formulation) or just by chance? 
+Response: We chose EN(LNP) for further evaluation because of its simpler 
+formulation process. Unlike EN(RNA), which requires multiple encapsulation steps for 
+each specific ratio, EN(LNP) allows for flexible adjustments between the ratios of 
+EDIII-Fc circRNA and NS1 circRNA wi th just two encapsulation ste ps. Although in 
+this study we evaluated only one ratio, 1:1, in future studies we plan to test different 
+ratios to achieve a further optimization . This is especially important for a multivalent 
+vaccine, for instance, tetravalent DENV vaccine which is undergoing exploration in our 
+lab. We have added an explanation in the revised manuscript (lines 342-345).  
+ 
+12. Line 562: should define FNT. 
+  Response: We have defined “FNT” in the revised manuscript (line 750). 
+ 
+13. Line 588: change “teasing” to “passing”? 
+Response: We have corrected this error in the revised manuscript (lines 764 and 775). 
+ 
+14. Line 865, Fig 2a: Line 865 states IFNAR -/- mice were challenged 2 weeks after 
+2nd immunization. Figure 2a says they were challenged 3 weeks after immunization. 
+Response: We have rectified this inconsistency in the main text, the methods, the 
+figures and the figure legends in the revised manuscript. All the ZIKV challenge assays 
+regarding IFNAR-/- mice, except that shown in the revised Supplementary Fig. 6, were 
+performed at 3 weeks after the final immunization, one week apart from the bleeding. 
+ 
+15. Figure 3A: The mating schedule is a little unclear from this image. Suggest changing 
+the branch out point immediately after 1st immunization (before 2wks). Based on where 
+the two lines branch out at the current scheme, it looks like two rounds of mating 
+occurred in the 2-dose study line. 
+Response: We have re -drawn the schematic  diagrams of animal experiments, as 
+shown in the revised Fig. 2a, 2h, 3a, 4a, to more clearly depict the timeline. 
+  
+16. Sup Fig 1a and 9a: what is the meaning of “optional” indicated in both plasmid 
+figures? 
+Response: The “optional” in the original Supplementary Fig. 1a and 9a indicated the 
+presence of signal peptide in the antigen constructs while absence in the reporter 
+constructs. We have deleted this confusing mark in the revised Supplementary Fig. 1a 
+and 9a. Alternatively, we expounded this point in the figure legends. 
+ 
+17. Sup Fig 1h and 9e: It would be useful to provide a purpose of the junction site PCR 
+and sequence validation. 
+Response: Following your valuable suggestion, we have revised the section 
+regarding the junction site PCR and sequencing , in order to clarify that the purpose of 
+this assay was to confirm the success ful and precis e circularization of the  RNA 
+constructs (lines 130-132 in the revised manuscript). 
+ 
+18. nAb was measured after immunization, but was never measured after virus 
+challenging from the survivors. The post challenge nAb titers would be useful to 
+determine whether the vaccine provided a solid sterile immunity (no boost effect of the 
+post challenge nAb titer). It is somewhat surprising that it was not done for the vaccine 
+study. 
+Response: Following your insightful suggestion, we have tested the nAb titers in the 
+immunized IFNAR-/- mice at 7 days after challenge. This new data has been presented 
+in the revised Supplementary Fig. 11i (lines 379-383 in the revised manuscript). 
+The post-challenge nAb titers increased approximately 2.8-fold in mice receiving 20 
+μg of prototype EN(LNP), and 4.2-fold in those receiving 5 μg of optimized EN(LNP). 
+Interestingly, in mice receiving 20 μg of optimized EN(LNP), the increase of nAb titers 
+was more moderate, at about 1.6 -fold. These findings indicate that , although a single 
+dose of optimized circRNA vaccine may not achieve sterilizing immunity, it effectively 
+suppresses viral replication and spread following the challenge.  
+Reviewer #3 (Remarks to the Author): 
+In the manuscript entitled “A single dose circular RNA vaccine completely prevents 
+Zika virus infection without enhancing dengue severity ” by Liu et al., the authors 
+developed ZIKV vaccines in a form of circular RNA encoding the envelop protein 
+domain III and NS1 and reported the efficacy of the vaccine candidates using C57BL/6 
+and IFNAR-/- mouse strains. The study results showed that maternal immunity elicited 
+by circRNA encoding dimeric EDIII, fused to human IgG1 Fc fragment (EDIII -Fc) 
+were superior to circRNA encoding monomeric or trimeric EDII in terms of activation 
+of germinal center reactions, facilitating high neutralizing antibody production and 
+induction of CD4/CD8 T cells producing cytokines. One -day-old neonates born from 
+dams immunized with either one- or two dose vaccines survived after lethal challenge 
+but do not prevent viral infection and morbidity. CircRNA encoding either ZIKV EDIII-
+Fc or NS1 alone provides partial protection against ZIKV infection and developmental 
+retardation. Further, optimized circRNA EN(LNP), which increases stability and 
+protein translation, reduced viral RNA burden in the neonatal brains and increase 
+protective efficacy that was durable up to 12 weeks. The authors concluded that two -
+dose immunizations  of circRNA EN (LNP) provide full protection against ZIKV 
+infection while avoiding ADE of DENV , but not by a single dose immunization. The 
+results highlight that circRNA could be a platform for a safe and effective flavivirus 
+vaccine. 
+ 
+Major comments: 
+Overall, the manuscript is well -written. The studies were well -designed with proper 
+controls. The authors made thorough efforts to improve the efficacy of LNP 
+encapsulated optimized circRNA vaccine encoding EDIII and NS1. The study results 
+showed promising outcomes of protection of adult and neonate C57BL/6 and IFANR-/- 
+mice against ZIKV infection while avoiding possible ADE of DENV , which is a 
+significant risk factor of flavivirus infection. However, I have a few concerns regarding 
+data presentation, and the c onclusion in the discussion was overstated and not fully 
+supported by the data presented in the current version of manuscript. I suggest that the 
+authors revise the conclusion to adhere to the results. See below the specific comment 
+below. 
+Response: We app reciate your  valuable comments and suggestions, which are 
+important for improving the quality of our manuscript. We have revised the Figures to 
+present the design and data more clearly and precisely, provided new data regarding the 
+infection of mouse-adapted DENV2 in neonatal mice, and corrected the overstatements 
+and misleading descriptions. We believe the revised manuscript has addressed all your 
+concerns. Please see our point-by-point responses to your specific comments, as listed 
+below. 
+ 
+Additional comments: 
+Figure 1f. Virus -binding antibody titers (d) were measured by one (ELISA) and 
+neutralization antibody titers were measured by the other assay (FNT). Although the 
+readouts of antibody response are reciprocal serum dilutions, it doesn ’t justify 
+presenting the ratios of neutralizing antibodies to virus -binding antibodies (f). Virus -
+neutralizing antibodies are not exclusively IgG isotypes. IgA and IgM can be 
+neutralizing yet virus -binding antibodies in this study measured IgG only not total 
+antibodies. I doubt that the simple mathematical calculation of the ratio of serum titers 
+is accurate and acceptable in the field. Without a thorough investigation using a 
+method/platform to bridge two assays with well -established standard controls, the 
+current form  of data presentation can be misleading and inaccurate. If there are 
+references supporting such data presentation, please add them or provide justifications. 
+Otherwise, I suggest deleting Fig 1f. However, the authors may discuss the result and 
+point out th at EDIII -Fd induced robust anti -ZIKV antibody response but poorly 
+neutralizing relative to antibody response induced by EDIII-Fc. 
+Response: We agree with your notion that nAbs are not exclusively IgG isotypes, 
+and IgA and IgM can be neutralizing. We originally calculated the ratios of nAb titers 
+to IgG titers because the concentration of IgG antibodies in the peripheral blood of adult 
+mice is significantly higher than that of IgM (by about 10-fold) and IgA (by about 30-
+fold) (Klein-Schneegans AS, et al., J Autoimmun., 1989). In the context of vaccination 
+or natural ZIKV infection, IgM may be robustly induced within 2 weeks and contributes 
+significantly to the neutralizing activities of immune sera (Calvert AE, et al., J Clin 
+Microbiol., 2021; Singh T, et al., Cell, 2022). IgA can also be induced, although its titers 
+in immune sera are generally lower than those of IgG (Li Y , et al., EBioMedicine, 2023). 
+Two recent studies evaluated the ratio of binding (IgG) versus nAbs as an indicator of 
+the quality of antibody responses against SARS-CoV-2 (Karron RA et al., JCI Insight, 
+2022; Qu L, et al., Cell, 2022). 
+Nonetheless, to avoid any misleading or inaccurate presentation, we decided to 
+remove the original Fig. 1f. We also c orrected the conclusion of thi s section as 
+“suggesting that EDIII-Fc circRNA elicits higher titers of IgG and nAbs than EDIII-Fd 
+and EDIII circRNAs” (lines 150-151 in the revised manuscript). 
+ 
+Lines 163 -165: the authors stated that “…, including paralysis of limbs and tails, 
+retardation of brain growth, meningeal thickening ….” and presented brain mass and 
+viral titers in tissues (Suppl. Fig3) but the evidence/data to support limb & tail paralysis 
+and meningeal thickness are missing. According to histology in Figures 2f, 3f, an d 4f, 
+the immunized groups show less cellular infiltration in the brain tissue and possibly less 
+necrosis than in the brain of the PBS group, in which dura membrane blebbing and 
+cellular infiltration seem to be pronounced. It is difficult to know whether ZIKV induces 
+changes in meningeal thickness in the representative image of each of the groups. No 
+measurable data supporting meningeal thickening in the brain, nor the paralysis scores 
+of limbs and tails were presented. Either provide the supporting data or revise. 
+Response: Regarding the limb & tail paralysis, we had recorded these symptoms as 
+neurological scores and presented them in the original manuscript, actually. The 
+neurological scores, shown in the revised Fig. 2d, 3e, 4e, 6f, and 7e,  encompassed the 
+cumulative scores reflecting paralysis in both the four limbs and the tail. To address any 
+confusion, we have provided more extensive interpretations in the main text and figure 
+legends in the revised manuscript (lines 189-190, 1129-1130). 
+Regarding the meningeal thickness and inflammation, we have noted that it was 
+difficult to accurately measure the meningeal thickness using the obtained brain tissue 
+sections. Alternatively, we opted to score the severity of the lymphocyte infiltration in 
+meninges and the cortex laminar necrosis, using a single-blinded manner. In the revised 
+Fig. 2f, 3g, 4g, 6h, and 7h, we have marked the meningeal lymphocyte infiltration and 
+cortex laminar necrosis in the representative images . We have also provided the 
+pathological scores, encompassing the severity of meningeal inflammation and cortex 
+laminar necrosis, to quantify the brain damage caused by ZIKV infection as well as 
+protective effects of circRNA immunization, as shown in the revised Fig. 2g, 3h, 4h, 7i, 
+and Supplementary Fig. 11e. 
+ 
+Line 207-208/Fig 2d, “ EDIII-Fc… prevented ZIKV-caused growth delay and mortality, 
+alleviated neurological disorders, ….” For clarification, indicate the score of 14 is the 
+maximum severity of limb and tail paralyses per mouse either in figure legend or in the 
+main body. 
+Response: Following your valuable suggestion, we have  indicated the maximum 
+score of limb and tail paralyses per mouse  is 14 in the figure legend ( lines 1129-1130 
+in the revised manuscript). 
+ 
+In Fig 2, add a line with “C57BL/6” above the panel of Fig2b-e and a line with “IFNAR-
+/-” above the panel of g-j. 
+Response: In accordance with your suggestion, we have split the original Fig. 2a 
+into the revised Fig. 2a and 2h, in order to depict the timeline of each mouse experiment 
+more clearly. We also split the original Fig. 3 into the revised Fig. 3 and Fig. 4 to present 
+the data of single-dose and two-dose immunization models separately. Similar changes 
+have been applied to the original Fig. 5c to enhance the clarity . In addition, in the 
+revised Supplementary Fig 3, 5 and 11, we have added lines and annotations to specify 
+the animal models from which the data were obtained. 
+ 
+Line 232, clarify what do the authors meant by “more than half showed ”; does this 
+mean more than half of the mice within the EDIII-Fc group? 
+Response: Indeed, this phrase means more than half of the mice within the EDIII-Fc 
+group. We have refined this confusing rephrase, as  “more than half of EDI II-Fc sera” 
+(line 276 in the revised manuscript).  
+ 
+In Fig 5h and other figures (2f, 3f and 3h), the presentation of compact images side-by-
+side is difficult to identify the point of the interest other than the increase of cellular 
+infiltration possibly also cellular necrosis, no localization of viral proteins- particularly 
+to readers with no pathological background. Add a short description of the point of 
+interest indicated with boxes, arrows, or arrowheads that would be helpful to understand 
+the presence or absence of pathology caused by viral infection a nd protection, 
+respectively. 
+Response: To address the concern regarding the difficulty of identifying points of 
+interest, we have marked the meningeal lymphocyte infiltration and cortex laminar 
+necrosis in the representative images , as shown in the revised Fig. 2f, 3g, 4g, 6h, and 
+7h. In addition, we have conducted pathological assessments, with the results presented 
+in the revised Fig. 2g, 3h, 4h, 7i, and Supplementary Fig. 1 1e. Statistical analysis  
+confirms that immunization with circRNA vaccines  significantly mitigates the brain 
+damage caused by ZIKV infection, underscoring the protective efficacy of our approach.  
+ 
+To make it easy to follow, add a line with the indication of “ IFNAR-/-“ below Fig 5h 
+and above the panel of i-k in order to separate data from C57BL/6 mice and IFNAR-/- 
+mice. 
+Response: We have split the original Fig. 5c into the revised Fig. 6c and 6i to 
+separately present the data from C57BL/6 mice and IFNAR -/- mice. We think this will 
+clearly differentiate the animal models used. 
+ 
+Line 304/ Fig6 e: At 15 dpi, 2 out of 13 pups (15%) after optEN(LNP) and 6 out of 7 
+pups (86%) after 20ug pEN(LNP) still showed substantially high levels (~10^8 copies) 
+of viral RNA (Fig6e) with measurable neurological score (Fig 6d). Although the results 
+presented “promising potential” of Opt EN(LNP) but did not support full nor complete 
+protection against ZIKV infection at 13 weeks post -vaccination. The author shouldn’t 
+ignore these unprotected outliers and may discuss the result. 
+Response: We acknowledge that a single dose of EN(LNP), even with optimization, 
+cannot confer complete protection in the neonates challenged at 11 weeks after maternal 
+immunization. This outcome can be attributed to the diminished levels of nAbs and 
+anti-NS1 antibodies at this time point, both of which are pivotal for the protection. In 
+the revised manuscript, we described the short-term and long-term protective effects in 
+two separate sections. The titles of these sections have been revised as “A single dose 
+of optimized circRNA vaccine confers potent protection ” and "Protective immunity 
+elicited by optimized circRNA vaccine is durable " (lines 317 and 386 in the revised 
+manuscript, respectively). We believe that these amendments more precisely 
+summarize the key findings in each respective section.  
+ 
+Line 307 -8, the authors state that “Optimized circRNA vaccine has the potential to 
+trigger…”, which is likely, but data present the duration of protective immunity up to 
+12 weeks, which is relatively short. Consider revising “Optimized circRNA vaccine 
+induced protective immunity lasting at least up to 12 weeks ” to adhere the results 
+presented. 
+Response: Following your insightful suggestion, we have revised this statement as 
+“Optimized circRNA vaccine, therefore, induces protective immunity lasting at least up 
+to 11 weeks in mice” to adhere the results shown in the revised Fig. 7 (lines 401-402 in 
+the revised manuscript). 
+ 
+Line 314, The statement “….the combination of EDⅢ-Fc and NS1 circRNAs confers 
+complete protection in two mouse models (Fig. 3, 5).” is not correct. In Figure 3e, 3 out 
+of 7 C57BL/6 mice (41%) after single dose immunization with EN(LNP) showed 
+substantially high levels (108 copies/gram) of viral RNA. Only after two -dose 
+immunizations with EN(LNP), mice were protected against infection but not after 
+EN(RNA) immunization. In IFNAR -/-, viral RNA was also detected in all mice after 
+single dose immunization (supp l. Fig 6g). I agree that the results presented are 
+promising but, in the discussion, the conclusion remarks are overstated. Revise the 
+conclusive statement adhering to the results presented in this manuscript. 
+  Response: To avoid the overstatement as you mentioned, we have replaced the 
+“complete” with “effective” in the revised manuscript (line 435). 
+ 
+Line 328, “our circRNA vaccine is quite promising …” sounds colloquial. I suggest 
+revising “our circRNA vaccine produces promising results…” 
+Response: We have revised this sentence to avoid the colloquial expression, 
+following your kind suggestion (line 450 in the revised manuscript). 
+ 
+Line 356, “.., but barely lymphocytes, can be vertically …” “barely” is not correct. In 
+healthy conditions, maternal lymphocytes are not on the fetal side. Please revise. 
+Response: We have revised this incorrect description as “but not lymphocytes” (line 
+488 in the revised manuscript). 
+ 
+Line 383-392, the authors described that the mouse adaptive DENV2 generation from 
+the parental 16681 strain was obtained after 3 passages in the neonatal brain. This is 
+relatively low passages compared with the mouse adaption achieved 10 passages of a 
+parental strain, PL0468 in AG129 mice (DOI: 10.1128/JVI.00062 -06). Relative to the 
+old me thod, 3 passages in B6 neonates seem to be a huge improvement. Provide 
+GenBank accession no. of the mouse-adaptive DENV . In addition to sequence analysis 
+for identification of site mutations (supplementary Figure 8a), the authors should 
+provide supplementa ry results showing productive DENV infection in 
+immunocompetent or IFNAR -/- mice. If the characterization and pathogenesis of the 
+current mouse-adapted DENV 2 were already published, please provide references. The 
+citation 46 alone is insufficient. 
+Response: Please see also our response to Reviewer 1’s comment 8. 
+We have submitted the genomic sequences of the mouse -adapted DENV2 in 
+GeneBank (No. PQ008452).   
+We generated mouse -adapted DENV2 from DENV2 strain 16681 (GenBank No. 
+U87411), through alternatively passaging in 1 -day-old C57BL/6 mice and Vero cells 
+for 3 cycles. It has been r eported that a subcutaneous injection with DENV2 (NGC 
+strain) led to lethal brain infection in 1 -day-old C57BL/6 mice ( https://www.fda.gov/ 
+media/168791/download). Another study showed that an intranasal inoculation with 
+DENV2 also led to severe brain infection in 3-day-old suckling BALB/c mice (Qiu M 
+et al., Viruses, 2022). Live DENV-2 virions could be isolated from the brain tissues and 
+passaged on Vero cells (Qiu M et al., Viruses, 2022). The rapid occurrence of the mouse-
+adapted variant in our model might be attributed to the following  reasons: i. The 
+genome of DENV2 appeared to be less stable in Vero cells th an in C6/36 cells (Chen 
+WJ, et al., Intervirology, 2003), leading to a variety of quasi -species populations that 
+can be selected in infected mice; ii. The higher culture temperature of Vero cells (37 ℃) 
+relative to C6/36 cells (usually 28 ℃) maybe also contribute to the occurrence of quasi-
+species population harboring virulence -imparting mutations (Modak A, et al., FASEB 
+J, 2023); iii. The successful establishment of infection by DENV2 in neonatal brains 
+need to break through more barriers in comparison with the method adopted by Orozco 
+S et al (intravascular inoculation followed by viral isolation from the sera) (Orozco S 
+et al., J Gen Virol, 2012; Shresta S et al., J Virol, 2006), thereby exerting stronger 
+selective pressure. 
+We identified three amino acid substitutions in the mouse-adapted variant compared 
+to the parental DENV 2: NS1 K174N, NS2A L181V , and NS5 A196T. Although the 
+exact contribution of each mutation to the virulence remains to be determined, an 
+intracerebral injection of the adapted variant led to faster mortality in 1 -day-old ICR 
+mice in comparison with the parental DENV2 ( revised Supplementary Fig. 8b, c). We 
+have added this result to the revised manuscript (lines 292-298). 
+ 
+Line 562, spell out “FNT” as it appears the first time in the main body of the manuscript. 
+Response: We have spelled out “FNT” ( line 750 in the revised manuscript) , 
+following your kind suggestion. 
+ 
+Line 641, provide the source/vendor of DENV monoclonal antibody clone 8 -4, I am 
+not sure if the clone is correct. 
+Response: The monoclonal antibody (mAb) in question was originally isolated from 
+a ZIKV-infected patient and was found to have binding activities to the EDI/II of both 
+ZIKV and DENV (Yu L et al., JCI Insight, 2017). It was designated as mAb ZK8-4 in 
+the literature. To maintain consistency with the existing literature and avoid confusion, 
+we retained the original clone designation mAb ZK8 -4 and provided a brief 
+introduction of this mAb (line 836 in the revised manuscript). 
+ 
+Reviewer #4 (Remarks to the Author): 
+I co-reviewed this manuscript with one of the reviewers who provided the listed reports. 
+This is part of the Nature Communications initiative to facilitate training in peer review 
+and to provide appropriate recognition for Early Career Researchers who co -review 
+manuscripts. 
+Response: We appreciate your valuable review work. We believe that the quality of 
+this manuscript will be  substantially improved by addressing your comments and 
+concerns. 
+ 
+Reviewer #1 (Remarks to the Author): 
+The authors have addressed all the major concerns raised on their original manuscript. 
+This revised version now reads well and provides a balanced interpretation of the data. 
+  Response: We greatly appreciate your efforts and suggestions, which significantly 
+helped us to improve the quality of this manuscript.  
+ 
+Reviewer #2 (Remarks to the Author): 
+We (primary reviewer and co-reviewer) thank the authors for the thorough responses 
+including new experiment data and revision of the manuscript. All our concerns have 
+been adequately addressed, and the revised manuscript has been greatly improved in 
+clarity and provides significant findings in developin g and optimizing a circular RNA 
+ZIKV vaccine. Below are 2 minor comments of the revised manuscript: 
+Response: We greatly appreciate your valuable suggestions, which are significantly 
+helpful for improving the quality of our manuscript. 
+1. Fig 8a and b: Missing the ZIKV sera data in Fig 8a or b. Since the ZIKV sera was 
+used in Fig 8c as the in vitro ADE positive control, it would be better to include its 
+overall IgG titers to various viral E antigens in Fig 8a and/or 8b (as shown in Fig 5a). 
+Response: We did not included the data regarding ZIKV sera in to Fig 8a and b 
+because the cross-reactivity of ZIKV sera, collected at 2 to 12 weeks after infection, 
+have been presented in Supplementary Fig. 7. The inclusion of these data here is 
+somewhat redundant. Please note that the ZIKV sera used in Fig. 8c and 8d were 
+derived from the same mice as those in Supplementary Fig. 7. 
+ 
+2. Figure legends for all brain H&E staining images: Shouldn’t black arrows indicate 
+cortex laminar necrosis, and cyan blue arrows lymphocyte infiltration? All legends for 
+these figures indicated opposite. 
+Response: Actually, black  arrows indicate l ymphocyte infiltration of meninges , 
+whereas cyan arrows indicate necrotic cells in cerebral cortex. We have revised the 
+relevant legends to more clearly describe this point, as “Black arrows, meningeal 
+lymphocyte infiltration. Cyan arrows, necrotic cells in cortex. ” Similar pathological 
+observations in the context of ZIKV infection have been reported ( Dowall SD et al., 
+PLoS Negl Trop Dis., 2016)  
+ 
+Reviewer #3 (Remarks to the Author): 
+The authors have addressed the reviewers' comments made on the previous 
+submission. Additionally, the authors have made an extensive revision that improved 
+clarity and provided additional supporting information. The res ults presented in this 
+manuscript strongly support the conclusions. 
+Response: We greatly appreciate your valuable suggestions. We have revised all the 
+incorrect or misleading words or sentences, following your kind suggestions, as listed 
+below. 
+I have a few minor suggestions and corrections for citations as indicated below: 
+line 159, “ .. plasma cells were significantly detected …” sounds awkward and I 
+suggest revising ‘significantly high ’ or ‘..significantly higher … than in the mice 
+immunized with EDIII-Fd or the others’. 
+Response: We have revised this sentence as “plasma cells were significantly higher 
+in EDⅢ-Fc-immunized mice than in the mice immunized with EDⅢ -Fd or EDⅢ ”, 
+following your kind suggestion. 
+ 
+line 167, instead of “but”, use either ‘and’ or ‘while these were…’ 
+Response: We have replaced “but” with “and”, following your kind suggestion. 
+ 
+lines 297 and 310, in the description of passive ZIKV-immune sera transfer, there is 
+a discrepancy in the volume of serum samples, “20 uL” on line 297 ‘ 200 uL of diluted 
+serum” on line 310 and Figure legend 5C. Please be consistent. 
+Response: We have described this point more clearly with “200 μl tenfold diluted 
+ZIKV sera or immune sera” in line 298 in the revised manuscript. 
+ 
+line 449, ‘favorable’ may be better than “promising” 
+Response: We have replaced “promising” with “favorable”, following your kind 
+suggestion. 
+ 
+line 547, Vero cells is CCL-81 not "NCCL-81" 
+Response: We have corrected this typo in the revised manuscript. 
+ 
+line 562, "1x10^4 FFUs of DENV2", delete 's' in FFUs 
+Response: we have deleted “s” in FFUs herein and throughout the manuscript.  
+ 
+line 813, change from "qRT-qPCR" to "qRT-PCR" consistent with line 812 
+Response: We have corrected this typo in the revised manuscript. 
+ 
+Comments on citations: 
+line 52, Amaya et al., 2023 is inappropriate. Please correct. 
+Response: we have replaced this citation with “https://www.who.int/publications/ 
+m/item/zika-epidemiology-update-may-2024” in the revised manuscri pt. We also 
+updated the number of countries with current or previous Zika virus transmission. 
+ 
+line 515, the statement “…. the pregnancy mouse models used in other studies 61, 
+62” including citation 62 is incorrect. Reference 62 used a litter -bearing non-human 
+primate, marmoset pregnancy model not a mouse model. Authors may replace reference 
+62 with another immunocompetent mouse pregnancy model, human Stat2 knock -in 
+(hSTAT2KI) mouse (PMID: 38360793). hSTAT2KI mouse model recapitulates vertical 
+transmission of ZIKV during pregnancy while ZIKV causes fetal demise in pregnant 
+C57BL/6 mouse model (reference 61). Alternatively, authors may revise the statement 
+from “…the pregnancy mouse models …” to “the preclinical pregnancy models ” 
+referring mouse and marmoset models. 
+Response: We have revised the statement from “the pregnancy mouse models ” to 
+“the preclinical pregnancy models ”. We also added this reference (PMID: 38360793) 
+in the revised manuscript. 
+ 
+Reviewer #4 (Remarks to the Author): 
+I co -reviewed this manuscript with one of the reviewers who provided the listed 
+reports. This is part of the Nature Communications initiative to facilitate training in 
+peer review and to provide appropriate recognition for Early Career Researchers who 
+co-review manuscripts. 
+Response: We greatly appreciate your valuable suggestions, which are significantly 
+helpful for improving the quality of our manuscript. 
+ 

@@ -1,0 +1,1950 @@
+Exploration
+REVIEW
+ExploringthePotentialandAdvancementsofCircularRNA
+Therapeutics
+LeiWang1,2,3 LianqingWang4 ChunboDong1,2,5 JialongLiu2,3 GuoxinCui6 ShanGao1,7 ZhidaLiu1,2,5
+1ShanxiAcademyofAdvancedResearchandInnovation,Taiyuan,China 2MOEKeyLaboratoryofCoalEnvironmentalPathogenicityandPrevention,Shanxi
+MedicalUniversity,Taiyuan,China 3DepartmentofBiochemistryandMolecularBiology,ShanxiKeyLaboratoryofBirthDefectandCellRegeneration,
+CollegeofBasicMedicalSciences,ShanxiMedicalUniversity,Taiyuan,China 4CenterofTranslationalMedicine,ZiboCentralHospital,Zibo,China
+5CollegeofVeterinaryMedicine,ShanxiAgriculturalUniversity,Jinzhong,China 6RedSeaResearchCenter,BiologicalandEnvironmentalScienceand
+EngineeringDivision,KingAbdullahUniversityofScienceandTechnology(KAUST),Thuwal,SaudiArabia 7ZhongdaHospital,SchoolofLifeSciencesand
+Technology,AdvancedInstituteforLifeandHealth,SoutheastUniversity,Nanjing,China
+Correspondence:ShanGao( gaos@sibet.ac.cn) ZhidaLiu( Zhida_Liu@saari.org.cn)
+Received:20February2024 Revised:30May2024 Accepted:11August2024
+Funding:ThisworkwassupportedbyGrantsfromtheNationalKeyResearchandDevelopmentProgramofChina(2023YFC2307800),ShanxiProvincial
+ScienceandTechnologyInnovationYoungtalentteamProgram(202204051001029),FundProgramfortheScientificActivitiesofSelectedReturnedOv erseas
+ProfessionalsinShanxiProvince(20210014and20210015),CentralGovernmentGuidesLocalFundsforScienceandTechnologyDevelopment
+(YDZJSX2021A046),ShanxiProvincialKeyResearchandDevelopmentProgram(202102140601020),andNationalNaturalScienceFoundationofChina
+(32200069and82172726).
+Keywords:back-splicing|circRNA|IRES|mRNA|ribozyme|therapeutics
+ABSTRACT
+Messenger RNA (mRNA) technology is revolutionizing the pharmaceutical industry owing to its superior safety profile,
+manufacturingcapabilities,andpotentialapplicationsinpreviouslyundruggabletherapeutictargets.InadditiontolinearmRNA,
+suchasconventionalmRNA,self-amplifyingmRNA,andtrans-amplifyingmRNA,circularmRNAhasemergedasapromising
+candidate.CircularRNA(circRNA)isaclassofsingle-strandedRNAwithacovalentlyclosedloopstructurethatoffersenhanced
+stabilitycomparedtolinearRNAbyresistingdegradationfromRNases.Recentstudieshaverevolutionizedourunderstandingof
+theirbiologicalfunctions,surpassingthenotionthattheyaremerelybyproductsofaberrantsplicingevents.Giventheremarkable
+success achieved in cancer and SARS-CoV-2/monkeypox virus (MPXV) vaccines, circRNA is being intensively investigated
+for gene and cell therapies. In this review, we provide an overview of circRNA biogenesis mechanisms in vivo, along with
+synthesisstrategiesinvitro,whilediscussingtranslationregulationmechanismsandqualitycontrolprocessesinvolvedincircRNA
+production.Furthermore,weexplorethepotentialapplicationscenariosforcircRNAs.
+1 Introduction
+Over the past few decades, with the rapid advancements and
+progressinmolecularbiology,RNAtechnology,nanotechnology,
+and other related techniques, mRNA-based therapeutics have
+revolutionized the pharmaceutical industry. This is primarily
+due to their ability to harness the human body as a factory
+for producing a wide range of therapeutic proteins or peptides
+that target various diseases, including previously undruggable
+targets.Furthermore,mRNAcanbeefficientlyproducedthrough
+IVT, which is cost-effective, faster, and more flexible in design.
+Another significant advantage of mRNA therapeutics is that
+LeiWangandLianqingWangcontributedequallytothisstudy.
+Thisisanopenaccessarticleunderthetermsofthe CreativeCommonsAttribution License,whichpermitsuse,distributionandreproductioninanymedium,providedtheoriginalworkisproperly
+cited.
+©2025TheAuthor(s). ExplorationpublishedbyHenanUniversityandJohnWiley&SonsAustralia,Ltd.
+Exploration,2025;5:e20240044
+https://doi.org/10.1002/EXP.20240044
+1of23
+
+they do not require nuclear entry for functionality and pose no
+potentialriskofgenomicinsertion.Giventheseinherentbenefits,
+mRNAemergesasanidealplatformnotonlyforvaccinedevelop-
+mentduringlarge-scaleoutbreaksofemerginginfectiousdiseases
+(such as the COVID-19 pandemic), but also for readily available
+off-the-shelftherapeuticsandevenpersonalizedmedications[ 1].
+However, there are still technical challenges that need to be
+addressed regarding the stability, immunogenicity, translation
+efficiency, and delivery system of mRNA [2]. Extensive efforts
+have been made to overcome these pivotal issues. Nucleoside-
+chemical modification and sequence optimization techniques
+haveshownpromiseinreducingimmunogenicityandimproving
+translation efficiency [3]. Numerous lipid nanoparticle (LNP)-
+based packaging systems have been developed to enhance the
+stability and enable effective organ/cell selective delivery of
+mRNA molecules [4]. What is more, novel types of mRNA,
+such as self-amplifying mRNA [5], trans-amplifying mRNA [6],
+andcircularmRNA[ 7],weredevelopedtoincreaseandprolong
+therapeutic protein production. Among these, circRNA, also
+termed mRNA 2.0, is increasingly favored owing to its superior
+stability, sustained expression profile, and low immunogenicity
+[8].
+CircRNAsarebiologicallyactivesingle-strandedRNAmolecules
+that adopt closed-loop structures and lack 5’ caps and 3’
+polyadenylatedtails,distinguishingthemfromlinearmRNAs[ 9].
+The discovery of circRNAs dates back to the 1970s when they
+were first identified in plant viroids [10]. Over the subsequent
+decades,extensiveresearchhasdispelledthemisconceptionthat
+circRNAs are mere byproducts of aberrant RNA splicing [11].
+Meanwhile, the dominant formation mechanism of circRNAs
+has been elucidated as back-splicing, wherein a downstream 5’
+splice-donor site attacks an upstream 3’ splice-acceptor site and
+generates the 3’,5’ phosphodiester bond [12]. In recent years,
+advancements in high-throughput RNA-seq technology have
+unveiled the abundance and diversity of circRNAs [13]. The
+majority of circRNAs are localized in the cytoplasm, with only
+aminorityfoundinthenucleus[ 14].Numerousstudieshavepro-
+videdcompellingevidencethatcircRNAsfunctionasmicroRNA
+(miRNA) sponges, protein sponges or scaffolds, regulators of
+gene expression, and biomarkers in cells [15]. Consequently,
+native circRNAs themselves can serve as potential targets for
+disease treatment [16]. However, our current understanding of
+circRNA is merely scratching the surface, and a comprehensive
+elucidationoftheirbiologicalfunctionsandmechanismsremains
+quitedistant.
+By 2017, the identification of two protein-coding circRNAs ini-
+tiated investigations into the protein translation functions of
+circRNAs [17]. Furthermore, several circRNA databases were
+established to document circRNA information [18], and algo-
+rithms were developed to explore their translational potential
+[19].Despitelackinga5’capand3’polyadenylatedtailessential
+formRNAtranslation,circRNAscaninitiatetranslationthrough
+cap-independent mechanisms [12a]. Consequently, there is an
+expectationthatmRNA-basedtherapiescouldbetranslatedinto
+circRNA-based therapies. In 2018, the circRNAs synthesized via
+the permuted intron-exon (PIE) strategy in vitro were demon-
+strated to possess a strong and durable translation ability in
+eukaryoticcells[ 20].SimilartolinearmRNA,circRNAscanalso
+be efficiently delivered and translated both in vitro and in vivo
+when packaged with LNP [7a, 21]. The successful development
+of circRNA-based vaccines against SARS-CoV-2, MPXV, and
+malignant tumors has marked the great potential for circRNA
+therapeutics, especially in the pharmaceutical industry [7a, 22].
+The circRNA therapeutics not only inherit the advantages of
+mRNA-based therapeutics, but also display better stability and
+durable expression than mRNAs in cells due to they are more
+resistanttoRNases,whichisattributedtotheircovalentlyclosed
+loopstructure.Moreover,invitropreparationproceduresforcir-
+cRNAsarecharacterizedbysimplicityandcost-effectiveness,as
+theyobviatetheneedformodificationprocessesinvolving5’cap
+and3’polyadenylatedtail.However,numerouschallengespersist
+inthedevelopmentofsyntheticcircRNAsastherapeuticagents,
+includingenhancingthetranslationalefficiencyofcircRNAsand
+establishing large-scale manufacturing processes for producing
+highlypurifiedcircRNAs.
+Thisreviewwillprimarilyfocusonthecurrentadvancementsin
+circRNAresearch,encompassingbiogenesis,synthesisstrategies
+invitro,translationregulation,qualitycontrol,andpotentialther-
+apeuticapplications.Thesecomprehensiveinsightsareexpected
+to contribute significantly toward the development of circRNAs
+aspromisingtherapeutics.
+2 BiogenesisofcircRNAs
+CircRNAs exhibit diverse functional roles in various biological
+processesandcanbeclassifiedintothreeprimarygroupsbasedon
+their components: exon-intron circRNAs (EIcircRNAs), exonic
+circRNAs (EcircRNAs), and intron-derived circRNAs (IcircR-
+NAs) [23]. The group of intron-derived circRNA encompasses
+both intronic circRNAs (CiRNAs) derived from pre-mRNA
+splicing and tRNA intronic circRNAs (TricRNAs) [24]. Despite
+initiallybeingconsideredasbyproductsofaberrantRNAsplicing,
+extensive research conducted over the past few decades has
+refuted this misconception and proposed their mechanisms of
+formation[11].
+2.1 Back-SplicingModel
+The available research indicates that the majority of circRNAs
+in eukaryotes are generated through back-splicing of exonic
+and/orintronicsequencesfrompre-mRNA,whichcompeteswith
+canonical mRNA splicing [8, 23, 25]. Despite being less efficient
+than linear splicing [26], circRNAs can still accumulate in cells
+duetotheirresistancetoRNases.Itisimportanttonotethatback-
+splicing differs from canonical splicing, which produces linear
+mRNA. Initially, DNA is transcribed into primary transcripts
+containingbothexonsandintrons.Duringthecanonicalsplicing
+process, introns are excised while exons are ligated together
+to form a mature mRNA molecule [27]. However, in the case
+of circRNAs, back-splicing involves one or more exons. This
+process occurs when a downstream splice donor site joins with
+an upstream splice acceptor site, resulting in the formation of a
+covalently closed circRNA structure with a 3’,5’ phosphodiester
+bond at the back-splicing junction site [26b, 28]. The presence
+of specificcis-acting elements within introns flanking the back-
+splicedexonsiscrucialforRNAcircularization.Theseelements
+can form a hairpin structure through base-pairing, bringing the
+2of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+downstream 5’ splice site and the upstream 3’ splice site into
+closeproximity[ 29].Additionally,certainRNA-bindingproteins
+(RBPs) recognize and bind to specific motifs within flanking
+introns, facilitating the interaction between the two splice sites
+[30].Insomecases,EIcircRNAgeneratedthroughback-splicing
+can exclude the intron from the final circRNA product via
+canonicalsplicing,resultinginEcircRNAsynthesis[ 26a].
+2.2 Non-Back-SplicingModel
+AnothermechanismforcircRNAsbiogenesisisthelariat-driven
+model, which occurs during exon-skipping events or intron
+splicing of pre-mRNAs. In exon-skipping events, specific exonic
+andintronicsequencesareexcisedfrompre-mRNAbycanonical
+splicing, resulting in the formation of a lariat structure. Sub-
+sequently, internal back-splicing takes place within the lariat
+structure, leading to the removal of intronic sequences and
+the generation of EcircRNAs [26a, 31]. Similarly, during intron
+splicing of pre-mRNA, an intronic lariat escapes debranching,
+andits3’taildownstreambranchpointsiteistrimmedtogenerate
+CiRNAs(Figure 1A)[24a,32].
+ApartfromcircRNAsgeneratedthroughspliceosome-dependent
+processes from pre-mRNA, a small subset of intron-derived
+circRNAs originates from pre-tRNA, whose post-transcriptional
+processing occurs independently of the spliceosome. In certain
+cases of pre-tRNA maturation, the tRNA splicing endonuclease
+complex cleaves the intron of pre-tRNA and ligates the intron
+termini together to form a tRNA intronic circRNA known as
+TricRNA (Figure1B)[ 33]. Additionally, other types of intronic
+circRNAs can be produced by self-splicing intron systems, such
+as group I and group II introns [34]. Moreover, circRNAs are
+found in viroids, viroid-like satellite RNAs, and hepatitis delta
+virus (HDV). These specific circRNAs originate from a rolling-
+circle replication process where a circular template is utilized
+forreiterativetranscriptionfollowedbycleavageoftheproduced
+oligomeric RNA molecule into monomeric RNA units that
+subsequentlyligatetoformcircRNAstructures[ 35].
+Followingtheirformationinthenucleus,asubstantialproportion
+ofcircRNAsundergotransportationintothecytoplasmtofulfill
+diverse physiological functions (Figure1)[ 23]. Consequently,
+these inherent mechanisms governing circRNA generation are
+currently adapted and employed for both in vitro and in vivo
+production of circRNAs, facilitating research endeavors and
+potentialapplications.
+3 StrategiesforcircRNASynthesis
+Due to the diverse physiological functions in vivo, circRNAs
+have been deliberately designed and synthesized in vitro or in
+vivoastherapeuticagentsfordiseasetreatmentandprevention.
+However, the current in vivo production of circRNAs still relies
+on plasmids as transcriptional templates, which poses a risk
+of integration into the genome upon delivery into cells [33,
+36]. Therefore, in vitro synthesis of circRNAs is the preferred
+method in circRNA therapeutics. Here, we aim to summarize
+thestrategiesforinvitrocircRNAsynthesis.Forcomprehensive
+information on in vivo strategies for circRNA synthesis, we
+recommend referring to the excellent content reviewed by Obi
+etal.[ 37].
+To synthesize circRNA in vitro, a linear RNA precursor is
+indispensable. Chemical synthesis and enzymatic strategies are
+thetwoprimarymethodsemployedforthepreparationoflinear
+RNA precursor [37]. However, chemical synthesis can only
+produce small RNA and requires costly purification, making
+it less preferable. On the other hand, the enzymatic strategy
+is favored for synthesizing the linear RNA precursors [38].
+In this approach, IVT is performed using the DNA template,
+reactionbuffer,andphageRNApolymerase.T7RNApolymerase,
+being the most used phage RNA polymerase for IVT reactions,
+facilitates more efficient synthesis of longer RNA molecules.
+Various methods have been developed for ligating linear RNA
+precursors in vitro, including chemical ligation, enzymatic liga-
+tion,andribozyme-basedapproaches.Eachtechniquepossesses
+distinctcharacteristics,offeringresearchersarangeofoptionsto
+ligate linear RNA precursors and generate circRNAs for diverse
+researchapplicationsefficientlyandaccurately.
+3.1 ChemicalLigation
+The chemical ligation of 5’ and 3’ ends from a single-
+strandedRNA(ssRNA)togeneratecircRNAisachievedthrough
+the utilization of cyanogen bromide (BrCN) or 1-ethyl-3-(3’-
+dimethylaminopropyl) carbodiimide (EDC) (Figure 2A)[ 39].
+However, this approach presents certain challenges, including
+low ligating efficiency and significant side reactions. The com-
+petition between intermolecular and intramolecular reactions
+of RNA often results in the formation of tandem linear RNA
+products [40]. Additionally, chemical ligation generates 2’,5’-
+phosphodiesterbondsinsteadofthenatural3’,5’-phosphodiester
+bonds, leading to a heterogeneous mixture of circRNAs [34].
+Despite extensive efforts to address these limitations, chemical
+ligation remains less competitive compared to alternative circu-
+larizationmethods,suchasenzymaticligationandtheribozyme
+method [34]. Furthermore, the utilization of chemical reagents
+in the strategy of chemical ligation raises biosafety concerns
+and presents technological challenges for circRNA purification.
+Consequently, it is not favored for the in vitro synthesis of
+circRNA.
+3.2 EnzymaticLigation
+To date, several enzymatic ligation strategies have been devel-
+oped for the in vitro circularization of linear RNA precursor.
+These strategies employ three enzymes (T4 DNA ligase, T4
+RNA ligase 1, and T4 RNA ligase 2) derived from the bacte-
+riophage T4 to catalyze ligation reactions (Figure2B–D). The
+enzymatic process involves catalyzing the formation of a 3’,5’-
+phosphodiester bond between the 3’-OH of the RNA strand tail
+and the 5’-monophosphate of the RNA strand head in an ATP-
+dependent manner. For a chemically synthesized linear RNA
+precursor, the 5’-monophosphate can be incorporated during
+the synthesis or added subsequently using T4 polynucleotide
+kinase. However, linear RNA precursors produced via IVT
+typically begin with a 5’-pppG moiety due to inherent tran-
+scriptional features. Consequently, prior to ligation reaction,
+3of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 1 ModelsofcircRNAbiogenesis.(A)Pre-mRNAcanundergoinefficientback-splicing,resultinginthegenerationofcircRNAs.Inthe
+back-splicing model, a hairpin structure can be organized either through base-pairing or with the assistance of RBPs, bringing two splice sites close
+proximity.TheintronsequencescanbeexcludedorretainedinthefinalRNAproducts,generatingEcircRNAsorEIcircRNAs,respectively.Alternati vely,
+thelariat-drivenmodelinvolvestheformationofalariatstructureviacanonicalsplicingduringbothexon-skippingandintronsplicingofpre-mR NA.
+Inexon-skippingevents,thelariatstructurefurtherundergoesinternalback-splicingtogenerateanEcircRNA.Inthecaseofintronsplicing,the lariat
+structureescapesdebranchingandistrimmedtoproduceCiRNAs.(B)Pre-tRNAcontaininganintroniscleavedintotheexonandintronhalves.The
+exonhalvesandintronhalvesarethenjoinedtogethertoformamaturetRNAandaTricRNA,respectively.
+the 5’-terminus requires dephosphorylation using phosphatases
+andsubsequentmonophosphorylation[ 41].Alternatively,GMP-
+primedIVTprovidesaviableapproachfordirectlyobtaining5’-
+monophosphorylated linear RNA precursors that can be readily
+utilizedforcircularization[ 42].
+T4 DNA ligase exhibits the ability to join nicks in double-
+strandedduplexes,includingDNA/DNAandDNA/RNAhybrids.
+To ensure efficient ligation, it is crucial to have a comple-
+mentary DNA bridge with a minimum of ten nucleotides
+on each side of the ligation junction [41]. Furthermore, T4
+DNA ligase demonstrates limited tolerance for mismatches
+at the ligation junction. Therefore, incorporating a perfectly
+complementary DNA splint for the RNA sequence can sig-
+nificantly enhance ligation efficiency [43]. Despite these opti-
+mizations, the turnover efficiency of T4 DNA ligase on RNA
+substrates remains low, making it less suitable for circRNA
+preparation.
+T4RNAligase1iscommonlyutilizedforRNAligationduetoits
+directcatalyticabilityinjoiningthe3’-OHofanRNAstrandtail
+withthe5’-monophosphateofanRNAstrandhead.Theaddition
+of an imperfect complementary RNA splint into the reaction
+system facilitates circRNA synthesis [34, 37]. This approach
+reduces the distance between 3’-OH and 5’-monophosphate,
+whilealsopreventingunfavorablefoldingpatternsattheligation
+junction that could hinder the ligation reaction. To achieve
+efficientcircRNAsynthesiswithoutasplint,anoptimizeddesign
+4of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 2 RNAcircularizationthroughchemicalandenzymaticligation.(A)Chemicalligationinvolvesthejoiningofdistalendsofthelinear
+RNA precursor using the chemical reagent BrCN or EDC. (B–D) Three T4 ligation enzymes are employed for ssRNA circularization. T4 DNA ligase
+exhibitsproficiencyinligatingnicksinDNA/RNAhybrids(B).T4RNAligase1catalyzesendligationofssRNA,formingacovalent3’,5’-phosphodies ter
+bondeitherwithorwithoutasplintcomposedofaprogrammaticRNA.Incertaininstances,theintrinsicsecondarystructurecanobviatethenecessit y
+forasplintbyoptimizingtheligationendsequences,therebyfacilitatingRNAcircularization(C).However,T4RNAligase2demonstratesenhanced
+activityinjoiningRNAnickswithdouble-strandedstructuresratherthanssRNAends.Consequently,successfulRNAcircularizationmediatedbyT4
+RNAligase2typicallynecessitateseithertheassistanceofaDNAorRNAsplintorthedesignofinternalsecondarystructuresatreactionendsofssRN A
+tobringthe5’-monophosphateand3’-OHintoproximity(D).
+ensuringanappropriatesecondarystructureofthelinearRNAat
+reactionendscanexpeditethessRNAligation[ 44].Byemploying
+this method, Carmona et al. successfully accomplished efficient
+RNA circularization up to 4 kb in size [44]. Additionally, the
+choice of terminal nucleotides for ligation also influences the
+efficiency,withcytidineandadenosineexhibitingpreferencesat
+the5’and3’ends,respectively[ 45].
+The activity of T4 RNA ligase 2 in joining RNA nicks with a
+double-stranded structure is higher compared to the ends of
+ssRNA, as reported by previous studies [46]. This distinctive
+property has been effectively harnessed in vitro to circularize
+RNAsubstrates,whichareheldtogetherthroughtheutilization
+of DNA/RNA splint or facilitated by meticulously designed
+internal secondary structures at the reaction ends [40–42, 47].
+Nevertheless, irrespective of whether the reaction is catalyzed
+by T4 RNA ligase 1 or T4 RNA ligase 2, the ligation process
+dependent on secondary structure will be influenced by dis-
+tinct RNA sequences. Moreover, all these enzymatic ligation
+strategies are susceptible to significant intermolecular end-
+joining side reactions, thereby complicating the acquisition of
+pure circRNAs [41]. To minimize intermolecular ligation, it is
+generally preferable to maintain a linear precursor RNA in a
+relatively large reaction volume, thereby enhancing the yield
+of desired circRNA products and mitigating unwanted side
+reactions[40,43,47b ].
+3.3 RibozymeTechnology
+Ribozymes are a class of RNAs that possess the remark-
+able ability to catalyze specific biochemical reactions. The
+discovery of ribozymes challenges the conventional notion of
+protein-based enzymes, as they demonstrate that RNA can
+5of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3 HPR-mediated self-splicing scheme. The HPR can adopt two alternative conformations in its initial state, and different desired
+sequences can be inserted into variable regions. In the final splice products, the 5’ exon and 3’ exon are ligated, resulting in cyclization of the HPR.
+EachreactionstepinHPR-mediatedself-splicingisreversible.
+also exhibit inherent catalytic properties. These catalytic RNA
+molecules have been identified in diverse organisms, includ-
+ing viruses, bacteria, archaea, and eukaryotes [34]. Based on
+their size and catalytic mechanisms, ribozymes can be clas-
+sified into two distinct categories: large ribozymes, such as
+RNase P, group I introns, and group II introns; and small
+ribozymes,includinghairpinribozymes(HPRs),HDVribozymes,
+hammerhead ribozymes (HHRs), Neurospora Varkud satel-
+lite (VS) ribozymes, glucosamine-6-phosphate synthase (glmS)
+ribozymes, among others [48]. Among these ribozymes, the
+group I intron, group II intron, and hairpin ribozyme have
+been utilized as engineering tools to facilitate RNA circular-
+ization on a preparative scale in vitro [20, 49]. Compared
+to chemical and enzymatic ligation methods, the utilization
+of ribozyme technology offers several advantages, including
+enhancedcircularizationefficiencyforlargerlinearRNAprecur-
+sors, simplified reaction conditions, and purification methods.
+Incorporating ribozymes into circulation procedures can thus
+yield improved outcomes with increased efficiency and ease of
+implementation.
+3.3.1 HairpinRibozyme
+Aspreviouslymentioned,therolling-circlemechanismemployed
+by circRNA genomes of subviral agents has served as an inspi-
+ration for in vitro circRNA synthesis. In this model, HPRs that
+catalyze RNA processing reactions are integrated into specific
+circRNA genomes. Upon transcription, the local RNA sequence
+containingHPRcanadopttwoalternativeactiveconformations,
+resulting in excision of the 5’ and 3’-ends and generation of
+multiple 5’-OH and 2’,3’-cyclic phosphate (cP) intermediates
+from the precursor RNA concatemer. These intermediates are
+subsequentlycircularizedthroughanHPR-mediatedself-ligation
+reaction(Figure 3)[45,50].
+In 1998, Kool and Diegelman proposed a technique for gen-
+erating circRNAs through an in vitro rolling-circle reaction,
+utilizing the intrinsic cleavage and ligation activities of the
+HPR [51]. This approach involves employing RNA polymerase
+to perform rolling circle transcription from a circular single-
+stranded DNA template, resulting in a linear RNA concate-
+mer containing the HPR element. Subsequently, the linear
+RNA undergoes spontaneous cleavage and ligation processes,
+leading to the production of circRNAs [51]. Moreover, com-
+prehensive investigations have been undertaken to investi-
+gate the influence of diverse factors, including temperature,
+ions, and supplementary cofactors, in order to enhance HPR
+activity[52].
+Currently, HPR strategies are primarily utilized for the prepara-
+tionofsmallcircRNAs,althoughthereispotentialforexpanding
+its application to larger circRNAs by manipulating variable
+regions[45,47a].IncomparisontootherRNAcircularizationsys-
+tems,theHRPsystemdoespossesscertainlimitationsthatneed
+to be addressed in future applications. Notably, the sequence of
+theHPRribozymeremainsembeddedwithinthefinalgenerated
+circRNAs,resultingintheretentionofactiveribozymaticactivity
+in these circRNAs [45]. Consequently, a dynamic equilibrium
+betweencleavedandligatedconformationsismaintainedinthese
+circRNAs.
+3.3.2 GroupIIntron
+Group I intron ribozymes have been identified in various
+organisms, including viruses, bacteria, and certain eukaryotes,
+particularly within mitochondrial, chloroplast, and rRNA genes
+[53]. These ribozymes exhibit self-splicing activity that relies
+on GTP and Mg2+ as cofactors [20]. The consensus secondary
+structure of the group I introns comprises ten conserved paired
+regions denoted as P1–P10 (Figure4A)[54]. The intron internal
+guidesequence(IGS)recognizesthe5’exonsequenceviaa4 ∼6nt
+base pairing, thereby forming the P1 region that initiates the
+two-stepsplicingmechanismforgroupIintronexcisionfrompre-
+RNA[55].TheGTPcofactorbindstotheG-bindingsiteintheP7
+helix and functions as a nucleophile, initiating an attack on the
+5’ splice site [56]. This attack leads to cleavage of the phosphate
+bondthatconnectstheintronwiththe5’exon.Subsequently,the
+released3’-OHgroupofthe5’exonundergoesanattackonthe3’
+splicesitelocatedintheP10region,whichisformedthroughbase
+pairingbetweenIGSandthesequenceofthe3’exon,resultingin
+exonligationandintronrelease[ 55].
+6of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 4 RibozymetechnologyappliedforRNAcircularization.(A)TheconsensussecondarystructureofgroupIintrons,includingconserved
+(P1–P10) base pairing, is sequentially numbered and indicated. Exon sequences are visually highlighted. (B) A schematic diagram illustrating the
+engineeredgroupIPIEsystemispresented,whereincustomsequencesarestrategicallyincorporatedbetweenE1andE2,whiletheT7promoterlocated
+atthe5’-endrespondstoRNApolymerase,therebygeneratinglinearprecursorRNA.(C)ProposedsplicingpathwayofgroupIPIEbasedonthenative
+splicingmechanismispresented.(D)ThesecondarystructureofgroupIIintronsconsistsofsixdomains(I–VI)arrangedaroundacentralwheel,with the
+exonsequencesrepresentedbyboldlines.ConservedtertiarybasepairinginteractionsareobservedbetweenIBS1-EBS1,IBS2-EBS2,andIBS3-EBS3/ δ.
+Additionally,domainVIcontainstheconservedadenosineresidueresponsibleforinitiatingthesplicingreaction.(E)TheengineeredgroupIIPIE system
+isillustratedinaschematicdiagram,wherecustomsequencesareinsertedbetweenIBS1andIBS3.TheT7promoterisutilizedforIVT.(F)Aproposed
+splicingpathwayofgroupIIPIEispresentedbasedonthenativesplicingmechanism.
+7of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Basedonthismechanism,researchershavedevelopedamodified
+self-splicing system called PIE for the in vitro preparation of
+circRNAs (Figure4B,C)[ 20, 57]. In 1992, Puttaraju and Been
+demonstrated the adaptability of group I intron system derived
+from Anabaena PCC7120 pre-tRNALeu and Tetrahymena pre-
+rRNA in generating circRNAs from linear intron-containing
+precursors[58].Followingthat,in1994,FordandAresemployeda
+permutedintronderivedfromthethymidylatesynthase( td)gene
+of T4 bacteriophage to achieve RNA circularization, marking a
+significant milestone in this field [59]. As a result, permuted
+T4 td and Anabaena pre-tRNALeu genes have become widely
+adoptedasessentialframeworksforcircularizingdiverseexonic
+sequences. By utilizing the PIE system derived fromAnabaena
+pre-tRNALeu, researchers have successfully generated circRNAs
+upto5kbinlength[ 20],surpassingthecircularizationcapacity
+achievedbychemicalandenzymaticligationstrategies.However,
+it is essential to note that the employment of the group I PIE
+system typically leads to the introduction of a scar sequence,
+whichconsistsofasmallnumberofnucleotidesfromthe5’exon
+(E1)and3’exon(E2),intothefinalcircRNAproducts[ 20].
+3.3.3 GroupIIIntron
+Group II introns, mobile genetic elements mainly found in
+bacterial and organellar genomes, are considered ancestors of
+retrotransposons and spliceosomal introns in eukaryotes [60].
+These typical group II introns exhibit six secondary structural
+domains (domain I–VI) with highly conserved sequence and
+shareanarchitecturallyconservedtertiarystructure(Figure 4D)
+[61]. The majority of group II introns in bacteria, as well as
+approximately half in mitochondria and chloroplasts, encode
+an intron-encoded protein (IEP) located within the loop of
+domain IV. This IEP plays a crucial role in splicing by sta-
+bilizing the structure of catalytically active intron RNA [60].
+In vitro experiments have demonstrated that self-splicing of
+group II introns can occur with correct folding of intronic
+RNA structure and Mg2+ [62], albeit at a slow rate and under
+non-physiological conditions involving high concentrations of
+monovalentsaltand/orMg 2+ [49].Theseexperimentalconditions
+suggestthatIEPisindispensableforfacilitatingsplicingactivity
+in group II intron RNA. Moreover, a multitude of organellar
+group II introns display structural anomalies that hinder the
+activity of ribozymes, thereby restricting their utility in RNA
+circularization[63].
+Group II intron-mediated self-splicing involves two transester-
+ification reactions to excise themselves from pre-RNA. In the
+initial step, a bulged adenosine residue in domain VI acts as a
+nucleophile, utilizing its 2’-OH to attack the 5’ splice site and
+form a lariat structure. Subsequently, the free 3’-OH of the 5’
+exon initiates an attack on the 3’ splice site, resulting in exon
+ligationandremovalofthelariatRNA[ 64].Additionally,awater
+molecule can also serve as a nucleophile, initiating the initial
+transesterification reaction by attacking the 5’ splice site [62]. A
+group II intron self-splicing system designed in a PIE manner
+exhibits efficient RNA circularization in vitro (Figure4E-F).
+Similarly to group I PIE system, it still retains a scar sequence
+derived from the 5’ exon (IBS1) and 3’ exon (IBS3) in the final
+circRNAproducts[ 49].
+4 TranslationalMechanismofcircRNAs
+In eukaryotes, pre-mRNAs undergo essential modifications,
+including 5’ capping, 3’ polyadenylation, and intron splicing, to
+form mature and functional mRNA molecules. The process of
+5’ capping is crucial for the translation of mRNAs to proteins
+by ribosomes. However, covalently closed circRNAs lack this
+modification, necessitating the utilization of cap-independent
+mechanisms for their translation initiation primarily. Despite
+the identification of numerous circRNAs in eukaryotic cells,
+there remains a lack of understanding regarding the extent and
+functions of circRNA translation. Currently, four mechanisms
+have been confirmed for circRNA translation: (a) rolling circle
+translation;(b)N 6-methyladenosine(m6A)-mediatedtranslation;
+(c) internal ribosome entry site (IRES)-driven translation; (d)
+Artificiallydesignedcap-dependenttranslation.
+4.1 RollingCircleTranslation
+In 1998, Perriman and Ares demonstrated the translatability
+of circRNA molecules in vivo inEscherichia coli, pioneering a
+significant advancement in the field. Their findings revealed
+that circRNA exhibited lower translation efficiency compared
+to linear RNA due to less efficient translation initiation [65].
+Considering that translation initiation is the rate-limiting step
+in protein expression, Abe et al. devised a novel circRNA
+translation system devoid of stop codons by mimicking the
+rollingcircleamplification(RCA)processobservedduringDNA
+replication (Figure 5A). Consequently, this system effectively
+achievestranslationbysignificantlyreducingthefrequencyofre-
+initiation processes in both prokaryotic and eukaryotic systems
+[66]. Recent studies have revealed that approximately 50% of
+translatable endogenous circRNAs undergo rolling circle trans-
+lation, as evidenced by further systematic assays demonstrating
+a significant enrichment of IRES-like short elements in these
+endogenouscircRNAs[ 67].IRES-likeelementscanberecognized
+by trans-acting factors to facilitate the translation of circRNAs
+[67], thereby providing novel insights into both natural and
+artificialcircRNAtranslationregulation.However,concernsarise
+regarding the rolling circle translation method employed for
+circRNA synthesis. First, this approach may result in proteins
+containingconcatemericrepeats,potentiallycompromisingtheir
+folding and stability. Additionally, the presence of diverse alter-
+nativeORFswithincircRNAscouldbetranslatedindependently
+through IRES-like elements, resulting in a complex protein
+mixture.
+4.2 m6A-MediatedTranslationInitiation
+The m6A modification is the predominant internal mRNA
+modificationobservedineukaryotes[ 68],widelypresentwithin
+the RRACH (R= Go rA ;H = A, C, or U) consensus motif
+[69].Thisdynamicmodificationprocessinvolveswriterproteins
+primarily represented by the METTL3/METTL14 complex and
+eraserproteinssuchasFTOandALKBH5[ 70].
+A study conducted by Yangetal. revealed that he translation of
+circRNA driven by m6A is cell type-independent, and a single
+m6A site is sufficient to initiate translation [71]. YTH domain
+8of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 5 CircRNAsundergotranslationthroughthecap-dependent/independentpathway.(A)Rollingcircletranslationofarepeatingpeptide
+onacircRNAtemplate.(B)Theprocessofm 6AmodificationincircRNAsinvolvestheMETTL3/METTL14complexforadditionandFTOforremoval
+ofthem 6Amark.YTHDF3facilitatesm 6Arecognition,recruitingelF4G2tom 6Asite,therebyinitiatingtranslation.(C)FourtypesofIRES-mediated
+translation have been identified. Type I and II IRESs directly interact with 40S ribosome, while Type III and IV IRESs indirectly interact with 40S
+ribosome through the assistance from eIFs and ITAFs. Several representative viral IRESs are listed as examples. (D) Cap-dependent translation of
+circRNAisachievedbyintroducinganm 7Gcapthroughcovalentornon-covalentattachment.
+family protein 3 (YTHDF3) has been identified as a crucial
+factorinrecognizingm 6AandrecruitingeIF4G2tothem 6Asite,
+therebyinitiatingtranslation(Figure 5B)[71a,72].Furthermore,
+incorporation of artificial m6A modifications in circRNAs has
+been shown to enhance their resistance to nucleases, indicating
+that this modification confers improved stability and sustained
+translationofcircRNAs[ 73].Thesefindingsunderscorethecrit-
+ical role of m6A modification in regulating circRNA translation
+and stability, with potential implications for various cellular
+processes and immune responses [74]. Notably, the initiation of
+m6A-dependenttranslationappearstobefinelyregulatedunder
+certain stress conditions such as heat shock [71a]. However, the
+mechanismunderlyingm 6A-initiatedtranslationremainspoorly
+understood,presentingchallengessuchasdeterminingtheopti-
+mal initial position for translation and addressing potential
+frameshiftmutations.
+9of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+4.3 IRES-DrivenTranslationInitiation
+The IRES is a cis-acting RNA motif originally discovered in
+thePicornaviridaefamilyviruses,suchasencephalomyocarditis
+virus (EMCV) and poliovirus (PV) [75], initiating translation
+via a cap-independent pathway. Despite lacking a 5’-cap struc-
+ture like mRNA, IRES is capable of directly interaction with
+ribosomesorindirectlyinteractionwithribosomesthroughIRES-
+transactingfactors(ITAFs)inordertofacilitateproteinsynthesis
+inconjunctionwithcanonicalinitiationfactors.Inrecentyears,
+extensive efforts have been devoted by researchers to identify
+and characterize the IRES elements within viral genomes and
+cellular mRNA [76], thus highlighting the significance of cap-
+independent RNA translation as an essential aspect of protein
+synthesis.Ineukaryotes,theinitiationofproteintranslationvia
+thecap-dependentmechanismnecessitatesasubstantialamount
+of energy due to the involvement of numerous initiation factors
+andmultiplesteps[ 77].Consequently,inresponsetounfavorable
+cellular stress conditions, there is a universal cessation of the
+standardproteinsynthesisprocesstoensurecellsurvival[ 78].As
+a consequence, the cap-independent translation driven by IRES
+is deemed to be an alternative mechanism for protein synthesis
+understressconditionswhencap-dependentproteintranslation
+is inhibited [79]. The insertion of IRES elements derived from
+virusessuchascoxsackievirusB3(CVB3)andechovirus29(EV29)
+intoartificiallydesignedcircRNAshasemergedasthepreferred
+strategytoenablecap-independentinitiationineukaryotes[ 22a,
+73]. However, the detrimental effects of these viral sequences
+on host cells have received limited attention thus far. In this
+regard,employinghumanizedIRESwithrobustandstabletrans-
+lationcapabilitiespresentsasuperiorapproachthatcircumvents
+the import of viral nucleotide sequences. Notably, in certain
+instances, IRES engineering has been implemented to enhance
+their translational efficiency by strategically incorporating Apt-
+eIF4G, an aptamer that recruits eIF4G and thereby improves
+translationwheninsertedwithinthedesignatedIRESregion[ 73,
+80].
+Basedontheirstructuralcharacteristicsandtranslationinitiation
+mechanisms, viral IRESs can be classified into four types [76b,
+79a]. Among these types, type I IRESs (e.g., Cricket paralysis
+virus, CrPV; Plautia stali intestine virus, PSIV; Taura syndrome
+virus,TSV)possessauniquefeatureastheyarecapableofdirectly
+interacting with the 40S ribosome without requiring additional
+cofactors. Notably, they demonstrate an exceptional ability to
+initiate translation independently of any proteins, even from
+non-AUG start codons [79a]. However, translation initiation at
+non-AUGpositionsmayresultinundesiredframeshiftmutations.
+Type I IRESs are typically characterized by a compact structure
+comprisingthreeessentialpseudoknots(PKI,PKII,andIII)and
+twoconservedstemloops[ 81].Itisnoteworthythatthestructure
+oftheIRES-ribosomecomplexrevealsthatPKImimicsacodon-
+anticodon interaction, facilitating its independent loading into
+the A site of the ribosome without relying on initiator Met-
+tRNAi[82].Onthecontrary,typeIIIRESs(e.g.,HepatitisCvirus,
+HCV; Classical swine fever virus, CSFV; Porcine teschovirus 1,
+PTV-1)arecapableofinteractingwiththe40Ssubunit;however,
+their translation initiation activities predominantly depend on
+canonical eukaryotic initiation factors (eIFs), including eIF2,
+eIF3, and Met-tRNAi, to ensure efficient translation initiation
+[79a,83].
+In contrast to type I and type II IRESs, both type III (e.g.,
+EMCV; Foot-and-mouth disease virus, FMDV; Theiler’s mouse
+encephalomyelitis virus, TMEV) and IV IRESs (e.g., Poliovirus,
+PV; CVB3; Human rhinovirus, HRV) do not directly interact
+with 40S ribosome. Instead, they depend on specific canoni-
+cal initiation factors and ITAFs to recruit the 40S ribosome
+for translational initiation [79a]. The key distinction between
+them lies in their translational initiation mechanisms. Type IV
+IRESs initiate translation at the AUG codon through a 40S
+ribosome scanning process within the 5’ untranslated region.
+In contrast, type III IRESs do not require this scanning process
+(Figure5C)[84].Notably,duetotheribosomescanningofType
+IV IRESs, there exists an opportunity to introduce additional
+nucleotides, such as a Kozak sequence between the IRES and
+AUG codon to enhance protein expression. Hence, Type IV
+IRESsareextensivelyemployedforthedesignofprotein-coding
+circRNAs. Despite significant advancements, the intricacies of
+IRES-mediated translation continue to be a subject of ongoing
+investigation, necessitating further research to comprehensively
+elucidateitsunderlyingmechanisms[ 73].
+4.4 ArtificiallyDesignedCap-Dependent
+Translation
+Ineukaryotes,the5’endoflinearmRNApossessesanm 7Gcap
+structure and utilizes its interaction with eIFs, among which
+thedirectcap-bindingeIF4Eproteinisincluded,fortranslation.
+Consideringthatthetranslationinitiationefficiencymediatedby
+IRES is lower than that of cap-dependent translation initiation
+[85], in an effort to enhance the protein translation ability of
+circRNA, Chen et al. introduced a modified cap into circRNA
+lackingIRES,achievingefficienttranslationofcircRNAthrough
+eIF4E-dependent mechanisms [86]. Although the unnatural
+triazole linkage between the branched cap and the circRNA
+substitutes the phosphodiester bonds, this seemingly does not
+affect the translation of circRNA. These findings provide addi-
+tionalinsightsintocurrenttranslationinitiationmodels.Fukuchi
+et al. recently not only replicated the research results of Chen
+et al. but also accomplished the translation of circRNA through
+t h en o n - c o v a l e n ta t t a c h m e n to fa nm7Gc a pt ot h ec i r c R N A
+by hybridization with an m7G cap-containing oligonucleotide.
+Further studies have demonstratedthatcircRNA synthesizedin
+vitrocanbetranslatedwiththeassistanceofintracellularmRNA
+or long non-coding RNA through interaction after transfection,
+allowing circRNA to act as a reporter for detecting the presence
+oftheseRNAmoleculesincellsandsignificantlyexpandingthe
+applicationscopeofcircRNA(Figure 5D)[87].
+5 EngineeredPlatformsforcircRNAPreparation
+StrategiesforinvitrocircRNAsynthesishavebeendevelopedand
+applied for analytical scientific studies, the large-scale prepara-
+tion of circRNA still remains a bottleneck due to its high cost
+forindustrialapplications[ 88].Inordertoaddressthischallenge,
+10of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+several engineered platforms have been devised with the aim of
+minimizingcostsbyoptimizingcircRNAtechnologies.
+5.1 ORNASystem
+In 2018, Aderson et al. pioneered the development of an ORNA
+system utilizing Anabaena group I PIE for efficient RNA cir-
+cularization, thereby enabling the production and translation
+of circRNAs up to 5 kb in length (Figure6A)[ 20]. During the
+ASGCT (American Society of Gene & Cell Therapy) conference
+in 2022, they presented their groundbreaking achievement of
+successfully generating circRNA exceeding 10 kb using the
+ORNA system [89]. Their optimized ORNA system involved the
+simultaneous incorporation of external and internal homology
+arms at engineered 3’ and 5’ intron halves, resulting in a
+significantly augmented circularization efficiency. Moreover, to
+ensure stable circRNA expression across diverse cell types, a
+ploy(A)orploy(AC)spacerwasintroducedintothefinalcircRNA
+products[20].
+The incorporation of a poly(A) or poly(AC) sequence holds
+the potential to enhance translation initiation efficiency by
+potentially facilitating the recruitment of polyadenylate bind-
+ing proteins, like their role in linear mRNA translation [90].
+Additionally, the unstructured spacer effectively segregates the
+IRES from other elements, such as paired internal homology
+armsandexon–exonsplicejunctions,therebyminimizingsteric
+hindrance that may impede eIF binding to IRES [20]. However,
+it is imperative to consider that the utilization of this system
+may inevitably lead to the presence of additional nucleotide
+sequences in the circRNA products, which could potentially
+raise concerns regarding their immunogenicity upon delivery
+into cells. Thorough assessment and further investigations are
+warranted to evaluate and address this aspect for ensuring safe
+andefficacioustherapeuticapplications.
+5.2 CircPureLigation
+In 2020, Liang et al. introduced a preparative-scale method,
+later named CircPure by Geneseed company, for the synthesis
+circRNAs utilizing T4 RNA ligase 2 (Figure6B)[ 47b]. This
+approach commences with the utilization of artificial intelli-
+gence (AI) technology to predict the secondary structure of
+the target circRNA, encompassing both the IRES and encod-
+ing region. Consequently, a strategically designed precursor
+RNA was employed to facilitate preferential intramolecular
+base pairing that aligns precisely with the catalytic kinetics
+of T4 RNA ligase 2. As a result of this innovative approach,
+the authors successfully achieved exceptional circRNA yields
+(>90%) while minimizing the formation of polymeric by-
+products.
+Following this successful approach, the researchers further
+expanded their methodology to encompass the group I PIE sys-
+tem,knownasCircPrecise,whicheffectivelyfacilitatescircRNA
+preparation (Figure 6B)[ 47b]. Notably, circRNAs generated
+through both the CircPure and CircPrecise methods exhibit
+precisecompositiondevoidofanyadditionalresidues.However,
+limitedinformationiscurrentlyavailableregardingtheirexpres-
+sionpatternsandimmunogenicityresultingfromintramolecular
+base pairing. Furthermore, it is imperative to acknowledge
+that this system may manifest variations attributable to the
+diverse structural characteristics of targeted sequences, which
+could potentially impact overall efficacy and outcomes. Fur-
+ther investigation is warranted to gain a more comprehensive
+understanding of the expression profiles and immunogenic
+properties of circRNAs generated through these innovative
+methodologies.
+5.3 Clean-PIEStrategy
+In order to address concerns regarding potential immunogenic-
+ity and optimize efficient protein translation from circRNA
+molecules, Qiu et al. developed a novel and sophisticated
+approach known as the clean-PIE strategy. This innovative
+method involves concealing the splice site of T4td PIE within
+eitheranORForIRESsequenceusingascoringsystem,resulting
+in the generation of a circRNA molecule devoid of any other
+intronandexonsequences(Figure 6C)[91].
+Interestingly, circRNAs derived from concealing the splice site
+within the ORF exhibited a propensity for reduced protein
+expression. However, this concern was effectively addressed by
+incorporating a moderate poly(AC) motif into the circRNAs,
+resultinginsignificantlyenhancedlevelsofproteinexpression.In
+contrast,circRNAsgeneratedbyconcealingthesplicesitewithin
+theIRESdemonstratedrobustproteinexpressioncapabilityeven
+without any additional sequences [91]. While these approaches
+reducepotentialsideeffectsresultingfromextranucleotides,they
+impose more stringent requirements for accurately analyzing
+RNAsecondarystructuresanddesigningprecursorRNAs.Even
+so, these findings underscore the significance of employing the
+Clean-PIE strategy to optimize circRNA-based therapeutics and
+present a promising avenue for future research in molecular
+biologyandbiotechnology.
+5.4 CirCodeTechnology
+In 2022, Chen et al. introduced an innovative platform named
+CirCode,whichutilizesagroupIIintronderivedfromthesurface
+layer protein ofClostridiumtetani (ctSLP) (Figure6D)[49]. The
+researchteammeticulouslyengineeredandsynthesizedthePIE
+sequencebystrategicallysplittingtheintronattheloopregionof
+D4followingextensiveexperimentation.
+The CirCode platform incorporates a customized exon flanked
+by two half-introns split at the D4 loop region. This precise
+arrangement ensures the formation of a well-paired structure,
+thereby maintaining proper folding and activity of the intron.
+Furthermore, to minimize potential interference from the scar
+sequence (IBS1 and IBS3), modifications were made to the
+PIE system. These modifications involve establishing base pairs
+betweenEBS1andtheupstreamsequenceofEBS1( δ)withthe3’
+endofthecustomizedsequenceand5’endofIRES,respectively
+[49,62].
+Thesedesignoptimizationsfacilitatedthegenerationofscarless
+circRNAs,albeitwithaninitiallylowercircularizationefficiency
+11of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 6 Engineered precursor RNA design and circularization process (A) ORNA: The group I intron is divided into two halves and
+systematicallyassembledwithIRES,codingregion,externalandinternalhomologyarms,E1andE2motifs,aswellasspacerstogenerateaprecursor
+RNAforsubsequentcircularization.HomologyarmsplayacrucialroleinenhancingtheefficiencyoflinearRNAcircularization,whilespacersfaci litate
+thetranslationofcircRNAs.(B)CirPureandCirPrecisesystem:UtilizingAItechnologytopredictthesecondarystructureofselectedcircRNAandg uide
+thedesignofprecursorRNAforintramolecularbasepairsformation,preferablyemployedbyT4RNAligase2orPIEsystem.(C)Clean-PIE:Acustomized
+sequencecomprisingbothIRESand coding regionisdesigned usingascoringsystemtomakethesplicesiteofthegroupIPIEsystemwithin either
+thecodingregionorIRESsequence.(D)CirCode:Theself-splicinggroupIIintronofctSLPisdividedintotwofragments,withacustomizedsequence
+comprisinganIRESandthecodingregionofatargetgeneseamlesslyinsertedbetweenthesplitintrons.Toachievescarlessligation,modifications are
+introducedtooptimizetheIBS1-EBS1and δ-EBS3pairs.Furthermore,spacersarethoughtfullyincorporatedtoenhancecircularizationefficiencyand
+translationactivities.(E)STS:AlinearRNAprecursorisgeneratedwhereinacustomizedsequencefollowstheintronribozyme;importantly,atits 3’
+end,thiscustomizedsequencecanformanintactP1helixthroughpairingwiththeIGSoftheintronribozymeduringtheRNAcircularizationprocess.
+(F)RzLligation:Acis-actingligaseribozyme(RzL)isusedtogeneratecircRNAthroughdirectligationof5’-pppand3’-OH.
+12of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+compared to group I PIE. To enhance circularization efficiency,
+the researchers introduced spacers containing IRES-like short
+elements[49,67].Thisstrategicadditionresultedinaremarkable
+increase in circularization efficiency, reaching up to 83%, and
+significantly improved the translation activities of the gener-
+ated circRNAs. The CirCode platform represents a pioneering
+advancement in the field, showcasing its potential for shap-
+ing future research in circRNA manipulation and therapeutic
+applications.
+5.5 STSReaction
+In a recent study, Lee et al. developed a novel in vitro cir-
+cRNAengineeringmethodthroughend-to-endself-targetingand
+splicing (STS) reaction employingTetrahymena group I intron
+ribozyme(Figure 6E)[92].Intheirapproach,anoptimalsequence
+withinthegeneofinterest(GOI)wasmeticulouslyselectedasthe
+targetsitetopairwiththeIGSoftheintronribozyme,facilitating
+theformationofanintactP1helix.Importantly,thisSTSreaction
+no longer relies on the presence of the P10 helix. Furthermore,
+this end-to-end STS reaction avoids introducing any extraneous
+fragments,suchasintronicscarsthatmaybegeneratedbyother
+systems, like ORNA, into the final circRNA products. These
+scar sequences are considered potential triggers for undesired
+innate immune responses in cells, a finding that has been
+confirmed [93]. The RNA circularization efficiency of the STS
+reaction was found to be comparable to that of the PIE reaction
+method[92].
+Qi et al. designed a cis-splicing system similar to STS and also
+verified this point [94]. Notably, these systems obviate the need
+for additional spacer elements that are crucial for ensuring the
+correctribozymestructureinthePIEsystem.Thismightmainly
+be ascribed to an intact ribozyme core situated at one end of
+theprecursor,ratherthanrelyingonthecorrectlyreconstructed
+ribozyme structure with the aid of homology arms and spacer
+elements.
+5.6 RzL-MediatedLigation
+Intheaforesaidribozyme-mediatedRNAcircularizationprocess,
+the splicing activity of the ribozyme is mainly utilized to obtain
+circRNA.Incontrast,Suetal.developedanovelcircRNAsynthe-
+sisapproachbyexploitingtheligaseactivityoftheribozyme[ 95].
+Inthisstrategy,anRNAprecursorcontainingacis-actingligase
+ribozyme(RzL)andsubstratesequencewastranscribed.TheRzL
+enables the 5’-triphosphate (ppp)-bearing RzL to directly and
+autonomouslyjoin the3’-end correspondingsubstratesequence
+during IVT (Figure 6F). Evidently, the RzL strategy highly
+depends on the ribozyme-substrate RNA pairing to generate
+circRNA, and simultaneously, there will be no byproduct RNA
+in the product. This is similar to RNA circularization mediated
+byT4RNAligase,butitisnotfeasibleinthecircRNAsynthesis
+processmediatedbythePIEsystem.Nevertheless,RzL-mediated
+RNA ligation will undoubtedly incorporate RzL itself into the
+finalsynthesizedcircRNA,whichmightraiseconcernsaboutthe
+immunogenicity of circRNA obtained by this method, and this
+requiresdetailedresearchinfuturestudies.
+6 QualityControlandCharacterizationof
+circRNAs
+Regardless of the method employed for circRNAs production,
+such as permuted autocatalytic introns or enzyme-mediated
+ligation, the final reaction products often exhibit a variety of
+impurities.Thiscanpotentiallyresultinunsatisfactoryoutcomes
+or conflicting conclusions regarding the immunogenicity of
+synthetic circRNAs upon cellular delivery [21, 74, 93], possibly
+attributable to suboptimal quality of circRNA products [49, 96].
+In addition, the intricate composition of custom sequences may
+occasionallygiverisetounexpectedsplicingreactions.Toensure
+theintegrityandsuitabilityofcircRNAsforcellularapplications,
+a variety of specialized techniques have been developed to
+facilitatecomprehensivequalitycontrolandcharacterization.
+6.1 CircRNAAnalysisandIdentification
+Methodologies
+Polyacrylamide and agarose gel electrophoresis are commonly
+employed techniques for the analysis of circRNA reaction
+mixtures. High-resolution separation can be achieved through
+polyacrylamide gel electrophoresis with a high concentration
+of urea (Urea-PAGE), allowing for the discrimination of base-
+level differences [44, 58]. However, this method may not be
+suitable for large circRNA analysis. In recent studies, agarose
+gel electrophoresis has gained popularity due to its effective
+capability in separating RNA across a wide range. While self-
+cast standard agarose gels can separate the final products from
+ribozyme-catalyzed splicing reactions, they may present chal-
+lengesindistinguishingnickedRNAbandsfromcircRNAbands
+of identical molecular weight [97]. To address this issue, E-Gel
+EX agarose gel electrophoresis was developed by Aderson et al.
+[20],enablingprecisediscriminationbetweencircularandnicked
+RNA components during circularization reactions. However,
+it is important to note that the interpretation of migration
+patternsunderspecificconditionsrequirescarefulconsideration
+(Figure7A)[97].
+RNase digestion assays are routinely employed to identify the
+circular products in the splicing reaction. CircRNAs exhibit
+higherresistancetoRNaseRdigestioncomparedtolinearRNA,
+enabling their retention in RNase R-treated splicing reactions
+[73]. Further digestion of the RNase R-treated splicing reaction
+witholigonucleotide-targetedRNaseHgeneratesadistinctsingle
+band, distinguishing it from the two bands produced by RNase
+H-digestedlinearprecursor[ 20].
+In addition, the detection of circRNA presence in the reaction
+mixture and validation of their circular nature are performed
+usingspecificprimersinRT-qPCRassays.Toconfirmthesplice
+junctionsofcircRNAs,itiscrucialtoconductSangersequencing
+onoutward-orientedPCRproducts(Figure 7B)[44].
+6.2 CircRNAPurificationandQualityEvaluation
+Following preliminary data validation, RNA purification is per-
+formed using column extraction or HPLC (high performance
+liquid chromatography) to obtain highly purified circRNAs
+13of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 7 Multiple technologies are developed to analyze and purify circRNAs from the reaction mixtures. (A) Gel electrophoresis analysis of
+the entire reaction products with or without RNase R treatment. (B) RT-qPCR is used to validate the existence of circRNA, while Sanger sequencing
+isutilizedtoconfirmtheoccurrenceofligationattheintendedposition.(C)ForcircRNApurification,eithercolumnextractionorHPLCmethodwas
+employed.(D)ThepurityofcircRNAwasassessedusingcapillaryelectrophoresis.
+(Figure7C)[ 91, 97]. The standard procedure for column extrac-
+tion involves the enzymatic digestion of other impurities in
+reaction samples using RNase R and the excision of the gel
+bandcorrespondingtocircRNAs,followedbyitsdissolution.The
+RNaseR-digestedreactionmixturecanalsobedirectlyseparated
+byusingHPLCmethods,suchassizeexclusionchromatography
+(SEC) and reversed-phase HPLC (RP-HPLC). Sometimes, phos-
+phataseisalsorequiredtoremove5’-PPP.Recently,Zhangetal.
+developed a novel multi-step purification process that employs
+RNase R and phosphatase treatments to eliminate linear RNA
+and 5’-PPP, as well as cellulose-based filtration to selectively
+removedsRNA[ 98].Thesepurificationmethodsaimtominimize
+the activation of natural immune responses [49]. However, it is
+inevitablethatachievinghighpuritywillpotentiallyincreasethe
+overallpreparationcostofcircRNAs.Afterpurification,thepurity
+of circRNAs is further assessed using capillary electrophoresis
+or other suitable techniques to meet the standards required for
+subsequentapplications(Figure 7D)[91].Overall,theimplemen-
+tationofthesequalitycontrolandanalysistechniquesensuresthe
+reliabilityandefficacyofcircRNAfordiverseapplications.
+7 PotentialApplicationsofCodingcircRNAs
+Advancements in technology have partially addressed the chal-
+lenges associated with circRNA identification and physiological
+functioncharacterization,therebyfacilitatingamorecomprehen-
+siveunderstandingoftheircellularroles[ 99].Thisincludeseluci-
+datingtheirintrinsicfunctionssuchasactingasmiRNAsponges,
+serving as anchors for circRNA binding proteins (cRBPs), reg-
+ulating transcriptional processes, functioning as translational
+template,andoperatingasmolecularswitchesindiversecellular
+processes [100]. Based on these insights, endogenous circRNAs
+have emerged as promising targets for disease diagnosis and
+treatment,whichhasbeencomprehensivelyreviewedelsewhere
+[101]. Moreover, synthetic circRNAs in vitro have been devel-
+oped and utilized within the biomedical field, particularly as a
+substitute for mRNA therapeutics. Herein, we highlight several
+representativetherapeuticapplicationsofcircRNAsandelucidate
+theadvantagesandchallengesthatnecessitateresolutioninorder
+tooptimizetheirpotentialastherapeutics.
+7.1 Vaccines
+Vaccines are the most extensively investigated and clinically
+acceptedapplicationofmRNA-basedtherapeutics.Followingthe
+remarkable efficacy demonstrated by mRNA vaccines against
+SARS-CoV-2duringtheCOVID-19pandemic[ 102],variousnew
+mRNA vaccine candidates are currently under development,
+encompassing influenza, cytomegalovirus (CMV), respiratory
+syncytial virus (RSV), varicella zoster virus (VZV), malaria, and
+14of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+cancer,etc.[ 103].Comparedtotraditionalvaccines,linearmRNA
+vaccines offer several advantages: (1) enhanced specificity and
+efficacy of immune responses mediated by B cells and T cells
+[103b]. (2) IVT enables facile large-scale production in a cell-
+free environment, facilitating rapid development, streamlined
+manufacturingprocesses,andcost-effectiveproductionmethods
+[104]. Moreover, for most emerging viral vaccines, the primary
+challengeliesnotintheeffectivenessofconventionalapproaches
+but rather in the need for expedited development and large-
+scale deployment. The mRNA technology presents a promising
+avenuetoaddressthisnewdemand.(3)Safetyadvantagesinclude
+no need for integration with the host genome and no DNA
+interaction, which eliminates risks associated with mutations
+within hosts [105]. However, in clinical practice, the frequency
+of systemic adverse events such as fever and fatigue is compar-
+atively higher with COVID-19 mRNA vaccines when compared
+toproteinsubunitvaccinesandinactivatedvirusvaccines[ 106].
+Therefore,itisimperativetoconductlong-termsafetymonitoring
+forCOVID-19mRNAvaccines.Furthermore,duetotheinherent
+instabilityoflinearmRNAmolecules,thesevaccinesnecessitate
+ultra-low temperature storage and cold chain transportation
+[107]. Even in high-income countries, numerous clinics and
+vaccination sites struggle to meet the requirements for certain
+mRNA vaccines that mandate low-temperature refrigeration.
+This challenge will be even more pronounced in low-income
+countries.Consequently,thereexistsanurgentneedformaking
+improvementsoftheseconcerns.
+AsacaptivatingalternativetomRNA,circRNAexhibitssuperior
+resistancetoRNaseandpossessessignificantlyenhancedstability
+compared to mRNA. Previous studies have demonstrated that
+even after being stored at room temperature for a duration of 2
+weeks, circRNA maintains both cell transfection efficiency and
+proteinexpressionwithoutanydetrimentaleffects[ 7].Moreover,
+circRNAslackthe5’-Capand3’-polyAstructureswhileobviating
+the need for modified bases during preparation. This simplifies
+the production process and reduces costs. These advantages
+underscore the potential application of circRNAs in vaccine
+development for emerging infectious diseases and cancers. A
+recent study by Qu et al. pioneered the development of a
+circRNA vaccine encoding the RNA-binding domain (RBD) of
+the Spike protein against SARS-CoV-2 [7]. The authors demon-
+strated that, in comparison to the mRNA vaccine, this vaccine
+exhibited enhanced levels of antigen expression and prolonged
+antigen persistence, resulting in the generation of high titers
+of the neutralizing antibodies, Th1-biased immune responses,
+and more efficacious preventive effects (Figure8A)[ 7]. Similar
+researchfindingswerealsodiscoveredinthestudyoftheMPXV
+circRNA vaccine [108, 22b]. Another study conducted by Li
+et al. showcased that circRNAs-based cancer vaccines could
+elicit robust T cell immune responses and effectively suppress
+tumor progression across various tumor models [22]. Notably,
+throughsynergisticeffectswithadoptivecelltransfertherapy,the
+circRNAsvaccineevenachievedcompleteregressionoftumorsin
+alate-stagemodel[ 22].
+These findings suggest that circRNA vaccines not only inherit
+the advantages of mRNA vaccine, but also have the potential
+to overcome the limitations associated with mRNA-based vac-
+cines.However,circRNAvaccinesarestillinthedevelopmental
+stage, and prior to their successful clinical application, several
+key challenges need to be addressed. These include enhancing
+circularization efficiency, improving translation potency, and
+optimizing delivery systems for efficient and secure adminis-
+tration. For instance, a fundamental concern emerges as most
+RNA-based vaccines mainly induce neutralizing IgG antibodies
+thatprovideprotectionagainstlowerrespiratorytractinfections
+throughsystemicimmunity.However,theinductionofIgAanti-
+bodies, which are crucial for mucosal disinfection and immune
+defenseintheupperrespiratorytract,remainsundeterminedin
+current clinical or preclinical trials. Hence, there is an urgent
+need to develop novel delivery systems for effective mucosal
+vaccinationagainstrespiratorypathogens.
+7.2 ProteinReplacementTherapy
+Following the tremendous success of RNA-based vaccines, the
+explorationofutilizingmRNAtoexpresstherapeuticproteinshas
+emerged as a pivotal objective in this field. Protein replacement
+therapies that are developed to reinstate the function of the
+absent or defective endogenous proteins stand out as a promi-
+nent avenue. The mRNAs encoding for functional endogenous
+proteins have been explored for several diseases, including car-
+diacinjury,methylmalonicacidemia,hemophilia,cysticfibrosis
+and so on [109]. In contrast to mRNA vaccines, RNA-based
+protein replacement therapies require overcoming additional
+obstacles. Particularly in enhancing protein expression levels
+and extending the durability of the therapy. Previous studies
+havedemonstratedthatmRNAproteinreplacementtherapeutics
+require much higher (maybe 10-1000-fold) protein expression
+and more frequent dosing than vaccines for efficacy [2], while
+circRNAs which have higher cumulative protein production
+and sustained protein expression levels, should be a promising
+alternative (Figure8B). Another advantage that makes circRNA
+more suitable for protein replacement therapies is its lower
+immunogenicitywithhigherredosingpotential[ 21].OrnaTher-
+apeutics company, established by Aderson et al., has reported
+their recent progress in treating Duchenne Muscular Dystrophy
+(DMD)atASGCT2022throughcircRNA-mediatedexpressionof
+dystrophin,addressingachallengeposedbyproteintherapydue
+to the relatively high molecular weight of dystrophin. However,
+circRNA also faces similar challenges to linear mRNA, such
+as the need for precise delivery to target tissues beyond the
+liver.Addressingthisissuenecessitatesfurtherdevelopmentand
+optimization of lipid nanoparticles and other delivery systems.
+AnotherconcernisthepreciseregulationofcircRNAexpression
+levelstomaintainappropriatefunctionallevelswithoutinducing
+toxicity due to overexpression. Additionally, although circRNAs
+exhibit lower immunogenicity, they can still activate the innate
+immunesystem.FurtherresearchshouldbeconductedoncircR-
+NAstoenhanceorregulateproteintranslationwhileminimizing
+theimmunogenicitythatcausedadverseeffects.
+7.3 CancerTherapy
+Due to its remarkable flexibility and versatility, RNA-based
+therapy has emerged as a potent modality for cancer treat-
+ment. RNA can be harnessed to encode tumor suppressors,
+genome editing proteins for precise tumor control, cancer
+neoantigens or tumor-associated antigens (TAAs) as vaccines,
+15of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 8 Potentialapplicationscenariosofprotein-codingcircRNAs.(A)ThecircRNAvaccineisdeliveredintocellsthroughLNPencapsulated
+orotherstrategiestoinducebothcytotoxicTcell(CTL)andBcellrespons es.(B)CircRNAtherapyisanalternativemethodofproteotherapytotreat
+diseases through rescuing the absent or defective endogenous proteins. (C) CircRNAs are utilized to develop cancer therapeutics, such as encoding
+tumorsuppressors(p53orKDM6A),TAAs,immunostimulatorycytokines(IL-2andIL-7),immunoregulatoryantibodies(anti-PD-1/PD-L1orBiTE),or
+CARsforengineeredT/NK/macrophagecelltherapy.(D)ThecircRNAformatofCas9isemployedinthetreatmentofgeneticdiseases(e.g.,ATTRand
+HAE)bycorrectingthecausativemutations.
+immunostimulatory cytokines, immunoregulatory antibodies,
+bispecific T cell engager antibodies (BiTE) or chimeric antigen
+receptors (CAR) for engineered T/NK/macrophage cell therapy
+[109i, 110]. Many of these therapeutic approaches have demon-
+strated promising efficacy in preclinical studies, with several
+progressingintoclinicaltrials.ThemRNA-basedcancertherapy
+has been comprehensively reviewed elsewhere [109i]. Here, we
+focus on circRNAs and highlight their advantages and exist-
+ing crucial problems for cancer therapy. Several studies have
+shown that the expression of cytokines by circRNAs effectively
+modulates the intratumoral and systemic anti-tumor immune
+responses, leading to significant tumor suppression (Figure8C)
+[111].IncomparisontomRNA,circRNAexhibitsremarkablesta-
+bility, ensuring the prolonged expression of cytokines, resulting
+ineffectiverecruitmentandactivationofimmunecellsintumor
+tissues. Li et al. reported that circRNAs-based cancer vaccines
+could elicit robust T cell immune responses and effectively
+suppress tumor progression across various tumor models [22a].
+CircRNA-basedcancervaccinesensuretheconsistentexpression
+of antigens, promoting the prolonged antigen presentation and
+elicitingenhancedTcellimmuneresponses[ 112].Previousstud-
+ieshavealsoindicatedthatthelowerimmunogenicityofcircRNA
+providesanadvantagefortherapeuticproteinexpressionwithin
+tumors[8].Additionally,comparedwithcap-dependenttransla-
+tion, IRES-based circRNA translation is less affected by cancer
+cell state and types, ensuring relatively consistent therapeutic
+proteinexpressionandefficacyacrossdifferentcancers[ 113].
+Engineered immune cells, such as CAR-T cells, CAR-NK cells,
+andCAR-macrophages,holdgreatpromiseastherapeuticmodal-
+ities for cancer treatment [114]. Traditional manufacturing of
+immune cells has involved a complex and time-consuming
+process encompassing the extraction of immune cells from the
+patient’s blood, viral vector-mediated transduction, and subse-
+quent expansion to achieve sufficient cell numbers for infusion
+[115]. Alternatively, the utilization of mRNAs for the generation
+ofCARcellsinvitroorinvivothroughtargeteddeliveryappears
+to be both feasible and effective [116]. For example, Rurik et al.
+demonstratedthatanti-FAPCARTcellsgeneratedinvivousing
+CD5-targeting lipid nanoparticles could efficiently eliminate
+16of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+fibrotic cells in the heart for the treatment of cardiac fibrosis
+[116a].Otherstudieshavealsoreportedsuccessfulengineeringof
+CAR-TcellsinvitrobyelectroporatingmRNAforeffectivecancer
+treatment[116b,117].However,itisimportanttonotethatmRNA
+translation reaches its peak within 24 h with a rapid decline
+thereafter [20]; therefore, these transient CAR cells must be
+administeredordeliveredquicklytoensureoptimalCARactivity.
+WhilecircRNAsholdgreatpromiseinCARcellengineeringdue
+totheirpotentandstableproteinexpressionabilities(Figure 8C)
+[89].
+For RNA-based cancer therapies, achieving optimal safety and
+efficacynecessitatesthepreciseregulationoftherapeuticprotein
+expressionandtheirtargeteddeliverytomalignanttissues/cells,
+while minimizing potential off-target effects on normal tis-
+sues/cells. For instance, prolonged production or excessive
+expression of immunostimulatory cytokines or immunoregula-
+tory antibodies in circRNA therapeutics may heighten the risk
+of adverse side effects. The investigation of circRNA platforms
+incorporating on-off or cell-specific switches should be further
+pursued.
+7.4 GeneEditingTherapy
+Engineerednuclease-basedgeneeditingholdssignificantpoten-
+tial in the treatment of genetic diseases by correcting the
+causative mutations. Several nucleases have been adopted for
+gene editing therapy, including zinc finger nucleases (ZFNs),
+transcription activator-like effector nucleases (TALENs), and
+RNA-guided clustered regularly interspaced short palindromic
+repeats(CRISPR)/CRISPR-associated(Cas)endonucleases[ 118].
+Among these, CRISPR/Cas9 stands out as one of the most
+widelyemployedandstraightforwardsystemsfortreatinghuman
+genetic diseases, including cardiovascular diseases, neuro disor-
+ders,andcancers(Figure 8D)[119].Additionally,CRISPR/Cas9-
+derived base editing systems, prime editing systems, CRISPRi
+systems, and CRISPRa systems also show potential in treat-
+ing diseases caused by abnormal gene expression [119b, 120].
+However, sustained expression of nucleases enhances the gene
+editing capabilities, while it also raises concerns about off-
+targeteffects[ 121].Alternatively,RNA-encodednucleasesappear
+to be favorable options due to their transient expression and
+consequentlyresultinginlessoff-targeteffects[ 122].
+In 2022, Intellia Therapeutics reported the mid-term clinical
+trial findings of its first in vivo CRISPR-mRNA gene editing
+therapy,NTLA-2001,fortransthyretinamyloidosis(ATTR)[ 123].
+The direct administration of CRISPR-mRNA enables efficient
+intrabody gene editing, and a single dose resulted in sustained
+reduction of serum TTR protein levels for up to 12 months
+[124]. Additionally, Intellia Therapeutics disclosed positive mid-
+term data from a phase 1/2 clinical trial of its second in
+vivo CRISPR-mRNA gene editing therapy, NTLA-2002, for the
+treatment of hereditary angioedema (HAE). Patients exhibited
+a significant decrease in disease frequency following a single
+intervention [125]. However, significant challenges also remain
+before CRISPR-mRNA technology can be routinely employed
+in the clinic for treating genetic diseases. RNA and its encoded
+CRISPR/Cascomponentscanelicitanimmuneresponse,leading
+to the elimination of edited cells [126]; hence, it is crucial for
+geneeditingtherapiesutilizingRNAsystemstopossessminimal
+immunogenicity [127]. Consequently, circRNA with reduced
+immunogenicityemergesasamoresuitablecandidatecompared
+to mRNA for gene editing therapy. While circRNA extends
+protein expression duration and enhances editing efficiency,
+it may also contribute to elevated off-target effects. Moreover,
+CRISPR/Cas-basedgeneeditingproteinsexhibitsubstantialsize,
+with Cas9 itself reaching a size of 4 kb. However, current
+circulationmethodologiesstillfacegreatchallengesinefficiently
+synthesizingcircRNAsmorethan5kb.Therefore,furtherinves-
+tigations are warranted to optimize the circulation strategy for
+large circRNA and mitigate off-target risks while concurrently
+augmentingcircRNAgeneeditingefficiency.
+In addition to encoding nucleases, circRNA can also serve as
+a guide RNA (gRNA) to recruit Cas or its derived protein to
+enablemoreefficientprogrammableDNAorRNAediting.Thisis
+particularlyadvantageoussincelineargRNAishighlysusceptible
+to degradation by nucleases. Several studies have demonstrated
+thatcircularizedgRNAscouldsignificantlyenhancebothinvitro
+andinvivoDNAorRNAeditingefficiency[ 128].
+Compared to other RNA-based therapies, gene editing therapy
+requires enhanced precision in targeted delivery, necessitating
+theprecisedeliveryofgeneeditingcomponentstospecifictissues
+andcellsfortherapeuticefficacy[ 129].Whilenon-viralvectorsfor
+mRNAandcircRNAonlyenablelimitedtissuetargeting,further
+advancements in delivery systems are imperative to precisely
+targetspecificorgansandcells,therebyexpandingtheapplication
+rangeofRNA-basedgeneeditingtherapy.
+8 ConclusionandFuturePerspectives
+With the remarkable success of mRNA vaccines against SARS-
+CoV-2 during the COVID-19 pandemic, mRNA therapeutics
+based on linear mRNA platform has emerged as a burgeoning
+field, witnessing a rapid surge in the number of clinical devel-
+opments.Theprofoundinsightsgainedfromthecomprehensive
+development of COVID-19 mRNA vaccine will be leveraged to
+optimizeitsapplicationindiversediseasecontexts,includingcan-
+cer, autoimmunity, and genetic disorders. However, the clinical
+utilityoflinearmRNAtherapeuticsisstillconstrainedbycertain
+limitations. Linear mRNA necessitates extensive modifications
+to withstand RNases degradation and prevent innate immune
+stimulation[3],posingchallengesinefficientmanufacturingand
+incorporationintolipidnanoparticlecarriers,therebyrendering
+the process costly. Despite these extensive modifications, linear
+mRNA remains relatively short-lived, thereby restricting the
+productionoftherapeuticproteinsperdeliveredmolecule.
+CircRNAs with covalently closed structures have emerged as
+a captivating alternative. In comparison to their linear mRNA
+counterparts, circRNAs exhibit prolonged half-lives and sta-
+bility, ameliorating the rigorous conditions for their storage
+and transportation [107]. In addition, prior investigations have
+demonstrated that unmodified circRNA is less immunogenic
+than unmodified linear mRNA within cellular systems [21].
+Notably,transfectionofcircRNAresultedinsignificantlyreduced
+releaseofcytokines,alongwithenhancedinvivotranslationeffi-
+ciency[21].Theseimprovedpharmacokineticprofilesultimately
+17of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+augment the in vivo production of therapeutic proteins, leading
+to a more potent therapeutic effect. Due to these advantages,
+the number of circRNA therapeutics under clinical develop-
+mentisgrowingrapidly,includingvaccines,immunomodulatory
+antibodies, or cytokines for cancer, and in situ CAR-T cell
+generation etc. However, several significant challenges remain
+unaddressed and necessitate further investigations in order to
+advance circRNA through all stages of pharmaceutical drug
+developmenttowardscommercializationforclinicalapplications
+infutureresearches.
+Firstly,achievingsufficientlyoptimizedcircularizationefficiency
+is crucial for circRNA synthesis,and it is imperative to dedicate
+moreeffortstowardsdevelopingstrategiesforthispurpose.Group
+I intron-based PIE systems have been extensively investigated,
+leading to the identification of multiple high-efficiency circu-
+larization strategies at the lab-scale. However, the successful
+scalability of these methods, particularly in large fragment
+RNA circularization while maintaining optimal circularization
+efficiency, requires further validation. Relying on our practi-
+cal expertise, several factors including mRNA size, nucleotide
+sequences, and compositionof thecircularization buffer system
+should be meticulously considered and optimized to ensure
+enhancedRNAcircularizationefficiency.
+The second potential concern arises from the possibility of an
+immuneresponsetriggeredbycircRNAs,potentiallylimitingits
+translation. The immunogenicity of circRNAs remains contro-
+versial to date. Autocatalytic splicing reactions during circRNA
+synthesis generate non-circular byproducts, including linear
+RNAandbaroqueintronRNA.Therefore,oneargumentsuggests
+that rigorous purification could render the immunogenicity
+negligible[21].However,othersarguethatpurificationalonemay
+notbesufficienttoaddressthisissueadequately.Theyemphasize
+that uncertainty regarding the ability of circRNA to trigger an
+immune response may stem from specific RNA sequences or
+structures, regardless of whether they are present in circRNAs
+or linear forms; both can still induce immunogenicity [44, 93].
+Given this, drawing accurate conclusions may depend on the
+purity of circRNA samples, making it essential to minimize
+impuritiesincircRNAs.TheHPLCmethodisrelativelyeffective
+forcircRNAseparationinourlab-scalestudies;however,thereis
+stillroomforimprovementintermsofitsprecisionandrepeata-
+bility. Some novel separation technologies targeting circRNA
+purificationrepresentsacrucialdirectioninthefieldofcircRNA
+therapeutics.
+Additionally, the incorporation of poly(A), poly(AC) or other
+spacers in circRNAs to enhance their expression contradicts
+the diligent avoidance of introducing additional nucleotides at
+splicingjunctions.Despitethefrequentoccurrenceofploy(A)in
+intracellularmaturemRNA,thepotentialimmunogenicityasso-
+ciatedwiththesespacersincircRNAsremainslargelyunknown,
+as does their mechanism for enhancing circRNA translation.
+Therefore, it is beneficial to develop innovative alternative
+strategies, such as engineering or screening humanized IRES
+or IRES-like elements with high-activity [73], that can promote
+circRNAtranslationwhileminimizingimmunogenicity.
+Finally, developing safe and efficacious delivery vehicles poses
+a significant challenge in expanding the clinical application
+of RNA therapy. Currently, LNP serve as the most clinically
+advanced RNA delivery vehicles. However, emerging clinical
+studies have revealed that the presence of polyethylene glycol
+(PEG)-modified lipids (key components of LNPs) can induce
+specificantibodiesincirculation,potentiallycompromisingther-
+apeutic efficacy and leading to severe anaphylaxis and infusion
+reactions[130].Arecentstudyreportedthatpre-existinganti-PEG
+antibodiesweredetectableinplasmafrom71%ofsubjectspriorto
+mRNAvaccination[ 131].TheextensiveutilizationofPEGylated-
+LNP based mRNA vaccines or RNA therapeutics exacerbates
+the situation, thereby necessitating the optimization of PEG-
+modifiedlipidsorexplorationofalternativelipidsasaprominent
+area of the next researches. Additionally, innovative delivery
+systemssuchascell-basedapproaches,extracellularvesicles,and
+bionic vesicles are currently undergoing preclinical studies for
+validation, potentially offering alternative methods of circRNA
+delivery.
+In summary, circRNAs represent a burgeoning class of RNA
+therapeutics and we stand on the cusp of a new era in circRNA
+researchandapplications.Advancedtechniquesforsynthesizing,
+purifying, and delivering circRNAs will be developed in the
+forthcomingyearstoexpeditetheprogressofcircRNAtherapeu-
+tics.Despiteexistingchallenges,circRNAswillcomprehensively
+surpassmRNAsduetotheirunparalleledadvantagesingeneand
+celltherapy.
+Acknowledgments
+This work was supported by Grants from the National Key Research
+and Development Program of China (2023YFC2307800), Shanxi Provin-
+cial Science and Technology Innovation Young talent team Program
+(202204051001029),FundProgramfortheScientificActivitiesofSelected
+Returned Overseas Professionals in Shanxi Province (20210014 and
+20210015), Central Government Guides Local Funds for Science and
+Technology Development (YDZJSX2021A046), Shanxi Provincial Key
+Research and Development Program (202102140601020), and National
+Natural Science Foundation of China (32200069 and 82172726). Pictures
+arecreatedwithBiorender.com.
+ConflictsofInterest
+Theauthorsdeclarenoconflictsofinterest.
+References
+1.S. Qin, X. Tang, Y. Chen, et al., “mRNA-Based Therapeutics: Power-
+ful and Versatile Tools to Combat Diseases,”Signal Transduction and
+TargetedTherapy 7(2022):166.
+2.E.Rohner,R.Yang,K.S.Foo,A.Goedel,andK.R.Chien,“Unlocking
+the Promise of mRNA Therapeutics,”Nature Biotechnology40 (2022):
+1586–1600.
+3.S.C.Kim,S.S.Sekhon,W.R.Shin,etal.,“ModificationsofmRNAVac-
+cineStructuralElementsforImprovingmRNAStabilityandTranslation
+Efficiency,”MolecularandCellularToxicology 18(2022):1–8.
+4.a) Y. Zong, Y. Lin, T. Wei, and Q. Cheng, “Lipid Nanoparticle (LNP)
+EnablesmRNADeliveryforCancerTherapy,” AdvancedMaterials 35,no.
+51(2023):e2303261.b)J.Chen,Z.Ye,C.Huang,etal.,“LipidNanoparticle-
+mediated Lymph Node–Targeting Delivery of mRNA Cancer Vaccine
+Elicits Robust CD8+ T Cell Response,”PNAS 119 (2022): e2207841119.
+c) M. P. Lokugamage, D. Vanover, J. Beyersdorf, et al., “Optimization of
+Lipid Nanoparticles for the Delivery of Nebulized Therapeutic mRNA
+18of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+to the Lungs,”Nature Biomedical Engineering5 (2021): 1059–1068. d) L.
+J. Kubiatowicz, A. Mohapatra, N. Krishnan, R. H. Fang, and L. Zhang,
+“mRNA Nanomedicine: Design and Recent Applications,”Exploration
+(Beijing)2(2022):20210217.
+5.C.SchmidtandB.S.Schnierle,“Self-AmplifyingRNAVaccineCandi-
+dates:AlternativePlatformsformRNAVaccineDevelopment,” Pathogens
+12(2023):138.
+6.T. Beissert, M. Perkovic, A. Vogel, et al., “A Trans-amplifying RNA
+VaccineStrategyforInductionofPotentProtectiveImmunity,” Molecular
+Therapy28(2020):119–128.
+7.a)L.Qu,Z.Yi,Y.Shen,etal.,“CircularRNAVaccinesAgainstSARS-
+CoV-2 and Emerging Variants,”Cell 185 (2022): 1728–1744. b) P. Su, L.
+Zhang, F. Zhou, and L. Zhang, “Circular RNA Vaccine, a Novel mRNA
+Vaccine Design Strategy for SARS-CoV-2 and Variants,”MedComm 3
+(2022):e153.
+8.T.LoanYoung,K.ChangWang,A.JamesVarley,and B.Li, “Clinical
+Delivery of Circular RNA: Lessons Learned From RNA Drug Develop-
+ment,”AdvancedDrugDeliveryReviews 197(2023):114826.
+9.X. Li, L. Yang, and L. L. Chen, “The Biogenesis, Functions, and
+ChallengesofCircularRNAs,” MolecularCell 71(2018):428–442.
+10.H.L.Sanger,G.Klotz,D.Riesner,H.J.Gross,andA.K.Kleinschmidt,
+“ViroidsareSingle-StrandedCovalentlyClosedCircularRNAMolecules
+Existing as Highly Base-paired Rod-Like Structures,”PNAS 73 (1976):
+3852.
+11.a) W. Y. Zhou, Z. R. Cai, J. Liu, D. S. Wang, H. Q. Ju, and R. H. Xu,
+“CircularRNA:Metabolism,FunctionsandInteractionsWithProteins,”
+Molecular Cancer19 (2020): 172. b) P. Zhang and M. Dai, “CircRNA: A
+RisingStarinPlantBiology,” JournalofGeneticsandGenomics 49(2022):
+1081–1092.
+12.a)M.Lei,G.Zheng,Q.Ning,J.Zheng,andD.Dong,“Translationand
+FunctionalRolesofCircularRNAsinHumanCancer,” MolecularCancer
+19(2020):30.b)I.L.Patop,S.Wust,andS.Kadener,“Past,Present,and
+FutureofCircRNAs,” EmboJournal 38(2019):e100836.
+13.J. O. Westholm, P. Miura, S. Olson, et al., “Genome-wide Analysis
+of Drosophila Circular RNAs Reveals Their Structural and Sequence
+Properties and Age-Dependent Neural Accumulation,”Cell Reports9
+(2014):1966–1980.
+14.A.Ivanov,S.Memczak,E.Wyler,etal.,“AnalysisofIntronSequences
+RevealsHallmarksofCircularRNABiogenesisinAnimals,” CellReports
+10(2015):170–177.
+15.a)L.L.Chen,“TheExpandingRegulatoryMechanismsandCellular
+Functions of Circular RNAs,”Nature Reviews Molecular Cell Biology21
+(2020): 475–490. b) S. Wang, K. Zhang, S. Tan, et al., “Circular RNAs in
+BodyFluidsasCancerBiomarkers:TheNewFrontierofLiquidBiopsies,”
+Molecular Cancer20 (2021): 13. c) Q. Zhang, W. Wang, Q. Zhou, et al.,
+“RolesofcircRNAsintheTumourMicroenvironment,” MolecularCancer
+19(2020):14.
+16.a) A. T. He, J. Liu, F. Li, and B. B. Yang, “Targeting Circular RNAs
+as a Therapeutic Approach: Current Strategies and Challenges,”Signal
+Transduction and Targeted Therapy6 (2021): 185. b) T. Tian, Y. Zhao,
+J. Zheng, S. Jin, Z. Liu, and T. Wang, “Circular RNA: A Potential
+Diagnostic, Prognostic, and Therapeutic Biomarker for Human Triple-
+Negative Breast Cancer,”Molecular Therapy Nucleic Acids26 (2021):
+63–80.
+17.a)I.Legnini,G.DiTimoteo,F.Rossi,etal.,“Circ-ZNF609IsaCircular
+RNA That Can Be Translated and Functions in Myogenesis,”Molecular
+Cell 66 (2017): 22–37. b) N. R. Pamudurti, O. Bartok, M. Jens, et al.,
+“TranslationofCircRNAs,” MolecularCell 66(2017):9–21.
+18.a) B. D. Lee, U. Neri, S. Roux, et al., “Mining Metatranscriptomes
+RevealsaVastWorldofViroid-LikeCircularRNAs,” Cell186(2023):646–
+661.b)L.Chen,C.Wang,H.Sun,etal.,“TheBioinformaticsToolboxfor
+circRNA Discovery and Analysis,”Briefings in Bioinformatics22 (2021):
+1706–1728.
+19.a) J. Cheng, G. Li, W. Wang, D. B. Stovall, G. Sui, and D. Li,
+“CircularRNAsWithProtein-CodingAbilityinOncogenesis,” Biochimica
+et Biophysica Acta: Reviews on Cancer1 8 7 8( 2 0 2 3 ) :1 8 8 9 0 9 .b )C .X u ,L .
+Zhang,W.Wang,etal.,ImprovingtheCircularizationEfficiency,Stability
+and Translatability of Circular RNA by circDesign, preprint, bioRxiv
+548293,July10,2023, https://doi.org/10.1101/2023.07.09.548293.
+20.R.A.Wesselhoeft,P.S.Kowalski,andD.G.Anderson,“Engineering
+Circular RNA for Potent and Stable Translation in Eukaryotic Cells,”
+NatureCommunications 9(2018):2629.
+21.R. A. Wesselhoeft, P. S. Kowalski, F. C. Parker-Hale, Y. Huang, N.
+Bisaria,andD.G.Anderson,“RNACircularizationDiminishesImmuno-
+genicityandcanExtendTranslationDurationInVivo,” MolecularCell 74
+(2019):508–520.
+22.a)H.Li,K.Peng,K.Yang,etal.,“CircularRNACancerVaccinesDrive
+ImmunityinHard-To-TreatMalignancies,” Theranostics12(2022):6422–
+6436. b) J. Zhou, T. Ye, Y. Yang, et al., “Circular RNA Vaccines Against
+Monkeypox Virus Provide Potent Protection Against Vaccinia Virus
+Infection in Mice,”Molecular Therapy32(2024): 1779–1789. c) L. Wang,
+C.Dong,W.Zhang,etal.,“DevelopinganEnhancedChimericPermuted
+Intron-Exon System for Circular RNA Therapeutics,”Theranostics 14
+(2024):5869–5882.
+23.J.Li,D.Sun,W.Pu,J.Wang,andY.Peng,“CircularRNAsinCancer:
+Biogenesis, Function, and Clinical Significance,”Trends in Cancer6
+(2020):319–336.
+24.a) Y. Zhang, X. O. Zhang, T. Chen, et al., “Circular Intronic Long
+Noncoding RNAs,”Molecular Cell5 1( 2 0 1 3 ) :7 9 2 – 8 0 6 .b )C .A .S c h m i d t ,
+J. D. Giusto, A. Bao, A. K. Hopper, and A. G. Matera, “Molecular
+Determinants of Metazoan tricRNA Biogenesis,”NucleicAcidsResearch
+47(2019):6452–6465.
+25.J. U. Guo, V. Agarwal, H. Guo, and D. P. Bartel, “Expanded Identi-
+fication and Characterization of Mammalian Circular RNAs,”Genome
+Biology15(2014):409.
+26.a)L.L.ChenandL.Yang,“RegulationofcircRNABiogenesis,” RNA
+Biology 12 (2015): 381–388. b) L. S. Kristensen, M. S. Andersen, L. V. W.
+Stagsted, K. K. Ebbesen, T. B. Hansen, and J. Kjems, “The Biogenesis,
+BiologyandCharacterizationofCircularRNAs,” NatureReviewsGenetics
+20(2019):675.
+27.C. Yan, R. Wan, and Y. Shi, “Molecular Mechanisms of Pre-mRNA
+Splicing Through Structural Biology of the Spliceosome,”Cold Spring
+HarborPerspectivesinBiology 11(2019):a032409.
+28.B. Xu, Y. Meng, and Y. Jin, “RNA Structures in Alternative Splicing
+andBack-Splicing,” WileyInterdisciplinaryReviews:RNA 12(2021):e1626.
+29.a)L.L.Chen,“TheBiogenesisandEmergingRolesofCircularRNAs,”
+NatureReviewsMolecularCellBiology 1 7(2016):205–21 1.b)X.O .Zhang,
+H.B.Wang,Y.Zhang,X.Lu,L.L.Chen,andL.Yang,“Complementary
+Sequence-MediatedExonCircularization,” Cell159(2014):134–147.
+30.a) R. Ashwal-Fluss, M. Meyer, N. R. Pamudurti, et al., “circRNA
+BiogenesisCompetesWithPre-mRNASplicing,” MolecularCell 56(2014):
+55–66. b) S. J. Conn, K. A. Pillman, J. Toubia, et al., “The RNA Binding
+Protein Quaking Regulates Formation of circRNAs,”Cell 160 (2015):
+1125–1134.
+31.S.P.Barrett,P.L.Wang,andJ.Salzman,“CircularRNABiogenesiscan
+Proceed Through an Exon-Containing Lariat Precursor,”Elife 4( 2 0 1 5 ) :
+e07540.
+32.A.RobicandC.Kuhn,“BeyondBackSplicing,aStillPoorlyExplored
+World:Non-CanonicalCircularRNAs,” Genes(Basel) 11(2020):1111.
+33.Z.Lu,G.S.Filonov,J.J.Noto,etal.,“MetazoantRNAIntronsGenerate
+StableCircularRNAsInVivo,” RNA21(2015):1554–1565.
+34.S.PetkovicandS.Muller,“RNACircularizationStrategiesInVivoand
+InVitro,” NucleicAcidsResearch 43(2015):2454–2465.
+35.R. Flores, D. Grubb, A. Elleuch, M. A. Nohales, S. Delgado, and S.
+Gago, “Rolling-Circle Replication of Viroids, Viroid-Like Satellite RNAs
+19of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+andHepatitisDeltaVirus:VariationsonaTheme,” RNABiology 8(2011):
+200–206.
+36.a)D.C.Tatomer,D.Liang,andJ.E.Wilusz,“InducibleExpressionof
+EukaryoticCircularRNAsFromPlasmids,” MethodsinMolecularBiology
+1648 (2017): 143–154. b) D. Liu, V. Conn, G. J. Goodall, and S. J. Conn,
+“A Highly Efficient Strategy for Overexpressing circRNAs,”Methods in
+Molecular Biology1724 (2018): 97–105. c) J. L. Litke and S. R. Jaffrey,
+“Highly Efficient Expression of Circular RNA Aptamers in Cells Using
+AutocatalyticTranscripts,” NatureBiotechnology 37(2019):667–675.
+37.P.ObiandY.G.Chen,“TheDesignandSynthesisofCircularRNAs,”
+Methods196(2021):85–103.
+38.B.BeckertandB.Masquida,“SynthesisofRNAbyInVitroTranscrip-
+tion,”MethodsinMolecularBiology 703(2011):29–41.
+39.a) N. G. Dolinnaya, N. I. Sokolova, D. T. Ashirbekova, and Z. A.
+Shabarova, “The Use of BrCN for Assembling Modified DNA Duplexes
+and DNA-RNA Hybrids; Comparison With Water-Soluble Carbodi-
+imide,” Nucleic Acids Research19 (1991): 3067–3072. b) K. Nakamoto,
+N. Abe, G. Tsuji, et al., “Chemically Synthesized Circular RNAs With
+PhosphoramidateLinkagesEnableRollingCircleTranslation,” Chemical
+Communications56(2020):6217–6220.
+40.S. Petkovic and S. Muller, “Synthesis and Engineering of Circular
+RNAs,”MethodsinMolecularBiology 1724(2018):167–180.
+41.X.ChenandY.Lu,“CircularRNA:BiosynthesisInVitro,” Frontiersin
+BioengineeringandBiotechnology 9(2021):787881.
+42.N. Abe, A. Kodama, and H. Abe, “Circular RNAs, methods and
+protocols–preparationofcircRNAinvitro,” MethodsinMolecularBiology
+1724(2018):181–192.
+43.M.J.MooreandC.C.Query,“JoiningofRNAsbySplintedLigation,”
+MethodsinEnzymology 317(2000):109–123.
+44.E. M. Carmona, “Circular RNA: Design Criteria for Optimal Thera-
+peuticalUtility”(PhDdiss.,HarvardUniversity,2019).
+45.S. Muller and B. Appel, “In Vitro Circularization of RNA,”RNA
+Biology14(2017):1018–1027.
+46.a) J. Nandakumar, C. K. Ho, C. D. Lima, and S. Shuman, “RNA
+Substrate Specificity and Structure-Guided Mutational Analysis of Bac-
+teriophageT4RNALigase2,” JournalofBiologicalChemistry 279(2004):
+31337–31347. b) D. R. Bullard and R. P. Bowater, “Direct Comparison of
+Nick-Joining Activity of the Nucleic Acid Ligases From Bacteriophage
+T4,”BiochemicalJournal 398(2006):135–144.
+47.a) S. Petkovic and S. Muller, “RNA Self-Processing: Formation of
+CyclicSpeciesandConcatemersFromaSmallEngineeredRNA,” FEBS
+Letters 587 (2013): 2435–2440. b) H. Chen, K. Cheng, X. Liu, R. An, M.
+Komiyama, and X. Liang, “Preferential Production of RNA Rings by T4
+RNALigase2WithoutAnySplintThroughRationalDesignofPrecursor
+Strand,”NucleicAcidsResearch 48(2020):e54.
+48.A. R. Ferre-D’Amare and W. G. Scott, “Small Self-Cleaving
+Ribozymes,” Cold Spring Harbor Perspectives in Biology 2( 2 0 1 0 ) :
+a003574.
+49.C.Chen,H.Wei,K.Zhang,etal.,“AFlexible,Efficient,andScalable
+Platform to Produce Circular RNAs as New Therapeutics,” preprint,
+bioRxiv494115,May31,2022, https://doi.org/10.1101/2022.05.31.494115.
+50.R.M.Jimenez,J.A.Polanco,andA.Luptak,“ChemistryandBiology
+of Self-Cleaving Ribozymes,”Trends in Biochemical Sciences40 (2015):
+648–661.
+51.A. M. Diegelman and E. T. Kool, “Generation of Circular RNAs and
+Trans-CleavingCatalyticRNAsbyRollingTranscriptionofCircularDNA
+Oligonucleotides Encoding Hairpin Ribozymes,”NucleicAcidsResearch
+26(1998):3235–3241.
+52.a)S.M.Nesbitt,H.A.Erlacher,andM.J.Fedor,“TheInternalEquilib-
+riumoftheHairpinRibozyme:Temperature,IonandpHEffects,” Journal
+ofMolecularBiology 286(1999):1009–1024.b)A.Dallas,S.V.Balatskaya,
+T. C. Kuo, et al., “Hairpin Ribozyme-Antisense RNA Constructs Can
+Act as Molecular Lassos,”Nucleic Acids Research36 (2008): 6752–6766.
+c)D.Strohbach,N.Novak,andS.Muller,“Redox-ActiveRiboswitching:
+Allosteric Regulation of Ribozyme Activity by Ligand-Shape Control,”
+AngewandteChemieInternationalEditioninEnglish 45(2006):2127–2129.
+d) S. A. Kazakov, S. V. Balatskaya, and B. H. Johnston, “Ligation of the
+HairpinRibozymeinCISInducedbyFreezingandDehydration,” RNA12
+(2006):446–456.
+53.P. Haugen, D. M. Simon, and D. Bhattacharya, “The Natural History
+ofGroupIIntrons,” TrendsinGenetics 21(2005):111–119.
+54.H. Nielsen and S. D. Johansen, “Group I Introns: Moving in New
+Directions,”RNABiology 6(2009):375–383.
+55.D.Bhattacharya,V.Reeb,D.M.Simon,andF.Lutzoni,“Phylogenetic
+Analyses Suggest Reverse Splicing Spread of Group I Introns in Fungal
+RibosomalDNA,” BMCEvolutionaryBiology 5(2005):68.
+56.M. Felletti and J. S. Hartig, “Ligand-Dependent Ribozymes,”Wiley
+InterdisciplinaryReviews:RNA 8(2017):e1395.
+57.J.W.Rausch,W.F.Heinz,M.J.Payea,C.Sherpa,M.Gorospe,andS.
+F.J.LeGrice,“CharacterizingandCircumventingSequenceRestrictions
+forSynthesisofCircularRNAInVitro,” NucleicAcidsResearch 49(2021):
+e35.
+58.M. Puttaraju and M. D. Been, “Group I Permuted Intron-exon (PIE)
+SequencesSelf-splicetoProduceCircularExons,” NucleicAcidsResearch
+20(1992):5357–5364.
+59.E.Ford,“SynthesisofCircularRNAinBacteriaandYeastUsingRNA
+CyclaseRibozymesDerivedFromaGroupIIntronofPhageT4,” PNAS
+91(1994):3117–3121.
+60.A. M. Lambowitz and S. Zimmerly, “Group II Introns: Mobile
+RibozymesThatInvadeDNA,” ColdSpringHarborPerspectivesinBiology
+3(2011):a003616.
+61.a)A.M.Pyle,“TheTertiaryStructureofGroupIIIntrons:Implications
+for Biological Function and Evolution,”Critical Reviews in Biochemistry
+andMolecularBiology 45(2010):215–232.b)A.R.Robart,R.T.Chan,J.K.
+Peters,K.R.Rajashankar,andN.Toor,“CrystalStructureofaEukaryotic
+Group II Intron Lariat,”Nature 514 (2014): 193–197. c) X. Ling, Y. Yao,
+andJ.Ma,“StructuresofaNaturalCircularlyPermutedGroupIIIntron
+Reveal Mechanisms of Branching and Backsplicing,”Nature Structural
+andMolecularBiology (2025):Onlineaheadofprint.
+62.A. M. Pyle, “Group II Intron Self-Splicing,” Annual Review of
+Biophysics45(2016):183.
+63.A. Barkan, Molecular Biology and Biotechnology of Plant Organelles:
+ChloroplastsandMitochondria .(Springer,2004).
+64.R.T.Chan,J.K.Peters,A.R.Robart,T.Wiryaman,K.R.Rajashankar,
+and N. Toor, “Structural Basis for the Second Step of Group II Intron
+Splicing,”NatureCommunications 9(2018):4676.
+65.R. Perriman and M. Ares, “Circular mRNA Can Direct Translation
+ofExtremelyLongRepeating-sequenceProteinsInVivo,” RNA4(1998):
+1047–1054.
+66.a) N. Abe, M. Hiroshima, H. Maruyama, et al., “Rolling Circle
+AmplificationinaProkaryoticTranslationSystemUsingSmallCircular
+RNA,” Angewandte Chemie International Edition in English52 (2013):
+7004–7008.b)N.Abe,K.Matsumoto,M.Nishihara,etal.,“RollingCircle
+TranslationofCircularRNAinLivingHumanCells,” ScientificReports 5
+(2015):16435.
+67.X.Fan,Y.Yang,C.Chen,andZ.Wang,“PervasiveTranslationofCircu-
+larRNAsDrivenbyShortIRES-LikeElements,” NatureCommunications
+13(2022):3751.
+68.a)L.J.Deng,W.Q.Deng,S.R.Fan,etal.,“m6AModification:Recent
+Advances,AnticancerTargetedDrugDiscoveryandBeyond,” Molecular
+Cancer21(2022):52.b)I.A.Roundtree,M.E.Evans,T.Pan,andC.He,
+“Dynamic RNA Modifications in Gene Expression Regulation,”Cell169
+(2017):1187–1200.
+69.M.Imanishi,“MechanismsandStrategiesforDeterminingm6ARNA
+Modification Sites by Natural and Engineered m6A Effector Proteins,”
+Chemistry-AnAsianJournal 17(2022):e202200367.
+20of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+70.a) J. Liu, Y. Yue, D. Han, et al., “A METTL3–METTL14 Complex
+MediatesMammalianNuclearRNAN6-AdenosineMethylation,” Nature
+ChemicalBiology 10(2014):93–95.b)X.Deng,R.Su,H.Weng,H.Huang,
+Z.Li,andJ.Chen,“RNAN6-MethyladenosineModificationinCancers:
+CurrentStatusandPerspectives,” CellResearch 28(2018):507–517.
+71.a) Y. Yang,X. Fan, M.Mao, et al., “Extensive Translation of Circular
+RNAsDrivenbyN6-Methyladenosine,” CellResearch 27(2017):626–641.
+b) A. C. Prats, F. David, L. H. Diallo, et al., “Circular RNA, the Key for
+Translation,”InternationalJournalofMolecularSciences 21,(2020):8591.
+72.Y.Shi,X.Jia,andJ.Xu,“TheNewFunctionofcircRNA:Translation,”
+ClinicalandTranslationalOncology 22(2020):2162–2169.
+73.R.Chen,S.K.Wang,J.A.Belk,etal.,“EngineeringCircularRNAfor
+EnhancedProteinProduction,” NatureBiotechnology 41(2023):262–272.
+74.a) Y. G. Chen, R. Chen, S. Ahmad, et al., “N6-Methyladenosine
+ModificationControlsCircularRNAImmunity,” MolecularCell 76(2019):
+96–109.b)Y.G.Chen,M.V.Kim,X.Chen,etal.,“SensingSelfandForeign
+CircularRNAsbyIntronIdentity,” MolecularCell 67(2017):228–238.
+7 5 .a )S .K .J a n g ,H .G .K r a u s s l i c h ,M .J .N i c k l i n ,G .M .D u k e ,A .C .
+Palmenberg,andE.Wimmer,“ASegmentofthe5’NontranslatedRegion
+ofEncephalomyocarditisVirusRNADirectsInternalEntryofRibosomes
+DuringinVitroTranslation,” JournalofVirology 62(1988):2636–2643.b)
+S.Agalarov,P.A.Sakharov,D.Fattakhova,E.A.Sogorin,andA.S.Spirin,
+“InternalTranslationInitiationandeIF4F/ATP-independentScanningof
+mRNA by Eukaryotic Ribosomal Particles,”Scientific Reports4( 2 0 1 4 ) :
+4438.
+76.a)S.D.Baird,M.Turcotte,R.G.Korneluk,andM.Holcik,“Searching
+for IRES,”RNA 12 (2006): 1755–1785. b) J. S. Kieft, “Viral IRES RNA
+Structures and Ribosome Interactions,”Trends in Biochemical Sciences
+33 (2008): 274–283. c) P. Kolekar, A. Pataskar, U. Kulkarni-Kale, J. Pal,
+and A. Kulkarni, “IRESPred: Web Server for Prediction of Cellular and
+Viral Internal Ribosome Entry Site (IRES),”Scientific Reports6( 2 0 1 6 ) :
+27436.d)S.Weingarten-Gabbay,S.Elias-Kirma,R.Nir,etal.,“Systematic
+Discovery of Cap-Independent Translation Sequences in Human and
+ViralGenomes,” Science351(2016):aad4939.
+77.F. Buttgereit and M. D. Brand, “A Hierarchy of ATP-Consuming
+ProcessesinMammalianCells,” BiochemicalJournal 312,(1995):163–167.
+78.a) A. Sriram,J.Bohlen, and A. A. Teleman,“Translation Acrobatics:
+How Cancer Cells Exploit Alternate Modes of Translational Initiation,”
+EMBOReports 19(2018):e45947.b)B.LiuandS.B.Qian,“Translational
+Reprogramming in Cellular Stress Response,”Wiley Interdisciplinary
+Reviews:RNA 5(2014):301–315.
+79.a) Y. Yang and Z. Wang, “IRES-Mediated Cap-Independent Trans-
+lation, A Path Leading to Hidden Proteome,”Journal of Molecular Cell
+Biology 11 (2019): 911–919. b) A. A. Komar and M. Hatzoglou, “Cellular
+IRES-MediatedTranslation,” CellCycle 10(2011):229–240.
+80.M.Tusup,T.Kundig,andS.Pascolo,“AneIF4G-RecruitingAptamer
+Increases the Functionality of In Vitro Transcribed mRNA,” EPH-
+InternationalJournalofMedicalandHealthScience 3(2017):20–25.
+81.a) Y. Kanamori and N. Nakashima, “A Tertiary Structure Model of
+the Internal Ribosome Entry Site (IRES) for Methionine-Independent
+Initiation of Translation,”RNA 7 (2001): 266–274. b) T. Nishiyama, H.
+Yamamoto, N. Shibuya, et al., “Structural Elements in the Internal
+Ribosome Entry Site of Plautia Stali Intestine Virus Responsible for
+BindingWithRibosomes,” NucleicAcidsResearch 31(2003):2434–2442.
+82.a) C. M. Spahn, E. Jan, A. Mulder, R. A. Grassucci, P. Sarnow, and
+J. Frank, “Cryo-EM Visualization of a Viral Internal Ribosome Entry
+SiteBoundtoHumanRibosomes,” Cell118(2004):465–475.b)M.Muhs,
+T. Hilal, T. Mielke, et al., “Cryo-EM of Ribosomal 80S Complexes With
+Termination Factors Reveals the Translocated Cricket Paralysis Virus
+IRES,”MolecularCell 57(2015):422–432.
+83.A.V.Pisarev,L.S.Chard,Y.Kaku,H.L.Johns,I.N.Shatsky,andG.
+J.Belsham,“FunctionalandStructuralSimilaritiesBetweentheInternal
+Ribosome Entry Sites of Hepatitis C Virus and Porcine Teschovirus, a
+Picornavirus,”JournalofVirology 78(2004):4487–4497.
+84.a)K.M.Lee,C.J.Chen,andS.R.Shih,“RegulationMechanismsof
+Viral IRES-Driven Translation,”Trends in Microbiology25 (2017): 546–
+561. b) T. R. Sweeney, I. S. Abaeva, T. V. Pestova, and C. U. Hellen,
+“TheMechanismofTranslationInitiationonType1PicornavirusIRESs,”
+EMBOJournal 33(2014):76–92.
+85.A. Koch, L. Aguilera, T. Morisaki, B. Munsky, and T. J. Stasevich,
+“Quantifying the Dynamics of IRES and Cap Translation With Single-
+Molecule Resolution in Live Cells,”Nature Structural and Molecular
+Biology27(2020):1095–1104.
+86.H. Chen, D. Liu, A. Aditham, et al., “Chemical and Topological
+Design of Multicapped mRNA and Capped Circular RNA to Augment
+Translation,”NatureBiotechnology,(2024):10.1038/s41587-024-02393-y.
+87.K. Fukuchi, Y. Nakashima, N. Abe, et al., “Internal Cap-Initiated
+Translation for Efficient Protein Production From Circular mRNA,”
+NatureBiotechnology (2025):10.1038/s41587-025-02561-8.
+88.X.Zhao,Y.Zhong,X.Wang,J.Shen,andW.An,“AdvancesinCircular
+RNA and Its Applications,”International Journal of Medical Sciences19
+(2022):975–985.
+89.K.Garber,“OrnaTherapeutics:CircularLogic,” NatureBiotechnology
+(2022):10.1038/d41587-022-00005-1.
+90.a)A.Aditham,H.Shi,J.Guo,etal.,“ChemicallyModifiedmocRNAs
+for Highly Efficient Protein Expression in Mammalian Cells,”ACS
+Chemical Biology17 (2022): 3352–3366. b) A. Kahvejian, Y. V. Svitkin, R.
+Sukarieh, M. N. M’Boutchou, and N. Sonenberg, “Mammalian Poly(A)-
+Binding Protein Is a Eukaryotic Translation Initiation Factor, Which
+ActsViaMultipleMechanisms,” GenesandDevelopment 19(2005):104–
+113.
+91.Z. Qiu, Q. Hou, Y. Zhao, et al., “Clean-PIE: A Novel Strategy for
+Efficiently Constructing Precise circRNA With Thoroughly Minimized
+Immunogenicity to Direct Potent and Durable Protein Expression”
+preprint, bioRxiv 496777, June 20, 2022,https://doi.org/10.1101/2022.06.
+20.496777.
+92.K.H.Lee,S.Kim,J.Song,S.R.Han,J.H.Kim,andS.-W.Lee,“Efficient
+Circular RNA Engineering by End-To-End Self-Targeting and Splicing
+Reaction Using Tetrahymena Group I Intron Ribozyme,”Molecular
+TherapyNucleicAcids 33(2023):587–598.
+93.C.X.Liu,S.K.Guo,F.Nan,Y.F.Xu,L.Yang,andL.L.Chen,“RNA
+Circles With Minimized Immunogenicity as Potent PKR Inhibitors,”
+MolecularCell 82(2022):420–434.
+94.S. Qi, H. Wang, G. Liu, Q. Qin, P. Gao, and B. Ying, “Efficient
+Circularization of Protein-Encoding RNAs Via a Novel Cis-Splicing
+System,”NucleicAcidsResearch 52(2024):10400–10415.
+95.C.I.Su,Z.S.Chuang,C.T.Shie,H.I.Wang,Y.T.Kao,andC.Y.Yu,“A
+Cis-ActingLigaseRibozymeGeneratesCircularRNAInVitroforEctopic
+ProteinFunctioning,” NatureCommunications 15(2024):6607.
+96.J.Breuer,P.Barth,Y.Noe,etal.,“WhatGoesAroundComesAround:
+ArtificialCircularRNAsBypassCellularAntiviralResponses,” Molecular
+TherapyNucleicAcids 28(2022):623–635.
+97.B. T. Abe, R. A. Wesselhoeft, R. Chen, D. G. Anderson, and H.
+Y. Chang, “Circular RNA Migration in Agarose Gel Electrophoresis,”
+MolecularCell 82(2022):1768–1777.
+98.Z. Zhang, W. Li, X. Ren, et al., “Mitigating Cellular Dysfunc-
+tion Through Contaminant Reduction in Synthetic circRNA for High-
+Efficiency mRNA-Based Cell Reprogramming,” Advanced Science 12
+(2025):e2416629.
+99.X. Meng, Q. Chen, P. Zhang, and M. Chen, “CircPro: An Integrated
+Tool for the Identification of circRNAs With Protein-Coding Potential,”
+Bioinformatics33(2017):3314–3316.
+100.M. Lu, “Circular RNA: Functions, Applications and Prospects,”
+ExRNA2(2020):1.
+101.C.X.LiuandL.L.Chen,“CircularRNAs:Characterization,Cellular
+Roles,andApplications,” Cell185(2022):2390.
+21of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+102.a) N. Khehra, I. Padda, U. Jaferi, H. Atwal, S. Narain, and M. S.
+Parmar,“Tozinameran(BNT162b2)Vaccine:TheJourneyFromPreclini-
+calResearchtoClinicalTrialsandAuthorization,” AapsPharmscitech 22
+(2021):172.b)P.Tang,M.R.Hasan,H.Chemaitelly,etal.,“BNT162b2and
+mRNA-1273 COVID-19 Vaccine Effectiveness Against the SARS-CoV-2
+DeltaVariantinQatar,” NatureMedicine 27(2021):2136–2143.
+103.a)J.A.Whitaker,H.M.E.Sahly,andC.M.Healy,“mRNAVaccines
+Against Respiratory Viruses,”Current Opinion in Infectious Diseases36
+(2023): 385–393. b) S. John, O. Yuzhakov, A. Woods, et al., “Multi-
+Antigenic Human Cytomegalovirus mRNA Vaccines That Elicit Potent
+Humoral and Cell-Mediated Immunity,”Vaccine 36 (2018): 1689–1699.
+c) M. Ganley, L. E. Holz, J. J. Minnell, et al., “mRNA Vaccine Against
+MalariaTailoredforLiver-ResidentMemoryTCells,” NatureImmunology
+24 (2023): 1487–1498. d) M. A. Monslow, S. Elbashir, N. L. Sullivan,
+etal.,“ImmunogenicityGeneratedbymRNAVaccineEncodingVZVgE
+AntigenIsComparabletoAdjuvantedSubunitVaccineandBetterThan
+Live Attenuated Vaccine in Nonhuman Primates,”Vaccine 38 (2020):
+5793–5802. e) C. L. Lorentzen, J. B. Haanen, O. Met, and I. M. Svane,
+“Clinical Advances and Ongoing Trials of mRNA Vaccines for Cancer
+Treatment,”LancetOncology 23(2022):e450-e458.
+104.P.Rzymski,A.Szuster-Ciesielska,T.Dzieciatkowski,W.Gwenzi,and
+A.Fal,“mRNAVaccines:TheFutureofPreventionofViralInfections?,”
+JournalofMedicalVirology 95(2023):e28572.
+105.F. Oguz and H. Atmaca, “mRNA as a Therapeutics: Understanding
+mRNAVaccines,” AdvancedPharmaceuticalBulletin 12(2022):274–282.
+106.Q.Wu,M.Z.Dudley,X.Chen,etal.,“EvaluationoftheSafetyProfile
+ofCOVID-19Vaccines:ARapidReview,” BMCMedicine 19(2021):173.
+107.M.N.UddinandM.A.Roni,“ChallengesofStorageandStabilityof
+mRNA-BasedCOVID-19Vaccines,” Vaccines(Basel) 9(2021):1033.
+108.Y. Sang, Z. Zhang, F. Liu, et al., “Monkeypox Virus Quadrivalent
+mRNAVaccineInducesImmuneResponseandProtectsAgainstVaccinia
+Virus,”SignalTransductionandTargetedTherapy 8(2023):172.
+109.a)A.Magadum,“ModifiedmRNATherapeuticsforHeartDiseases,”
+International Journal of Molecular Sciences23 (2022): 15514. b) D. An,
+A. Frassetto, E. Jacquinet, et al., “Long-Term Efficacy and Safety of
+mRNA Therapy in Two Murine Models of Methylmalonic Acidemia,”
+EBioMedicine 45 (2019): 519–528. c) D. An, J. L. Schneller, A. Frassetto,
+et al., “Systemic Messenger RNA Therapy as a Treatment for Methyl-
+malonic Acidemia,”Cell Reports24 (2018): 2520. d) C. Y. Chen, D. M.
+Tran, A. Cavedon, et al., “Treatment of Hemophilia a Using Factor VIII
+Messenger RNA Lipid Nanoparticles,”Molecular Therapy Nucleic Acids
+20(2020):534–544.e)F.DeRosa,B.Guild,S.Karve,etal.,“Therapeutic
+Efficacy in a Hemophilia B Model Using a Biosynthetic mRNA Liver
+Depot System,”Gene Therapy23 (2016): 699–707. f) S. Ramaswamy, N.
+Tonnu, K. Tachikawa, et al., “Systemic Delivery of Factor IX Messenger
+RNAforProteinReplacementTherapy,” PNAS114(2017):e1941-e1950.g)
+A.Haque,A.Dewerth,J.S.Antony,etal.,“ChemicallyModifiedhCFTR
+mRNAsRecuperateLungFunctioninaMouseModelofCysticFibrosis,”
+Scientific Reports 8 (2018): 16776. h) E. Robinson, K. D. MacDonald,
+K. Slaughter, et al., “Lipid Nanoparticle-Delivered Chemically Modified
+mRNARestoresChlorideSecretioninCysticFibrosis,” MolecularTherapy
+2 6( 2 0 1 8 ) :2 0 3 4 – 2 0 4 6 .i )C .L i u ,Q .S h i ,X .H u a n g ,S .K o o ,N .K o n g ,a n d
+W. Tao, “mRNA-Based Cancer Therapeutics,”NatureReviewsCancer 23
+(2023):526.
+110.a) X. Liu, D. M. Barrett, S. Jiang, et al., “Improved Anti-Leukemia
+ActivitiesofAdoptivelyTransferredTCellsExpressingBispecificT-Cell
+EngagerinMice,” BloodCancerJournal no.6(2016):e430.b)H.Meister,
+T. Look, P. Roth, et al., “Multifunctional mRNA-Based CAR T Cells
+Display Promising Antitumor Activity Against Glioblastoma,”Clinical
+CancerResearch 28(2022):4747–4756.c)C.R.Stadler,H.Bahr-Mahmud,
+L. Celik, et al., “Elimination of Large Tumors in Mice by mRNA-
+Encoded Bispecific Antibodies,”Nature Medicine23 (2017): 815–817. d)
+A.Cirella,E.Bolanos,C.Luri-Rey,etal.,“IntratumoralImmunotherapy
+With mRNAs Encoding Chimeric Protein Constructs Encompassing IL-
+12,CD137Agonists,andTGF- βAntagonists,”MolecularTherapyNucleic
+Acids33(2023):668–682.e)Y.Xiao,J.Chen,H.Zhou,etal.,“Combining
+p53 mRNA Nanotherapy With Immune Checkpoint Blockade Repro-
+grams the Immune Microenvironment for Effective Cancer Therapy,”
+NatureCommunications 13(2022):758.f)D.Zhang,G.Wang,X.Yu,etal.,
+“Enhancing CRISPR/Cas Gene Editing Through Modulating Cellular
+Mechanical Properties for Cancer Therapy,”Nature Nanotechnology17
+(2022): 777–787. g) J. Cai, Z. Liu, S. Chen, et al., “Engineered Circular
+RNA-BasedDLL3-TargetedCAR-TTherapyforSmallCellLungCancer,”
+ExperimentalHematologyandOncology 14(2025):35.
+111.a) J. Yang, J. Zhu, J. Sun, et al., “Intratumoral Delivered Novel
+CircularmRNAEncodingCytokinesforImmuneModulationandCancer
+Therapy,”MolecularTherapyNucleicAcids 30(2022):184–197.b)Y.Li,J.
+Gan,J.Lei,etal.,“CatalyticHybridLipidNanoparticlesPotentiateCircle
+RNA-BasedCytokineImmunotherapy,” ACS Nano19(2025):7864–7876.
+c) K. Yang, B. Bai, X. Li, et al., “Coordinating Interleukin-2 Encoding
+circRNA With Immunomodulatory Lipid Nanoparticles to Potentiate
+CancerImmunotherapy,” ScienceAdvances 11(2025):eadn7256.
+112.Y.Zhang,X.Liu,T.Shen,etal.,“SmallCircularRNAsasVaccinesfor
+Cancer Immunotherapy,”Nature Biomedical Engineering9 (2025): 249–
+267.
+113.N. Sonenberg and A. G. Hinnebusch, “Regulation of Translation
+Initiation in Eukaryotes: Mechanisms and Biological Targets,”Cell 136
+(2009):731–745.
+114.K. Pan, H. Farrukh, V. Chittepu, H. Xu, C. X. Pan, and Z. Zhu,
+“CAR Race to Cancer Immunotherapy: From CAR T, CAR NK to
+CARMacrophageTherapy,” JournalofExperimentalandClinicalCancer
+Research41(2022):119.
+115.M.P.Jogalekar,R.L.Rajendran,F.Khan,C.Dmello,P.Gangadaran,
+and B. C. Ahn, “CAR T-Cell-Based Gene Therapy for Cancers: New
+Perspectives, Challenges, and Clinical Developments,” Frontiers in
+Immunology13(2022):925985.
+116.a)J.G.Rurik,I.Tombacz,A.Yadegari,etal.,“CARTCellsProduced
+InVivotoTreatCardiacInjury,” Science375(2022):91–96.b)D.M.Barrett,
+Y. Zhao, X. Liu, et al., “Treatment of Advanced Leukemia in Mice With
+mRNAEngineeredTCells,” HumanGeneTherapy 22(2011):1575–1586.
+117.M.M.Billingsley,N.Singh,P.Ravikumar,R.Zhang,C.H.June,and
+M. J. Mitchell, “Ionizable Lipid Nanoparticle-Mediated mRNA Delivery
+forHumanCARTCellEngineering,” NanoLetters 20(2020):1578–1589.
+118.a) M. P. Hirakawa, R. Krishnakumar, J. A. Timlin, J. P. Carney,
+and K. S. Butler, “Gene Editing and CRISPR in the Clinic: Current and
+Future Perspectives,”Bioscience Reports40, (2020): BSR20200127. b) H.
+Li, Y. Yang, W. Hong, M. Huang, M. Wu, and X. Zhao, “Applications of
+GenomeEditingTechnologyintheTargetedTherapyofHumanDiseases:
+Mechanisms,AdvancesandProspects,” SignalTransductionandTargeted
+Therapy5,(2020):1.
+119.a)J.A.Doudna,“ThePromiseandChallengeofTherapeuticGenome
+Editing,” Nature 578 (2020): 229–236. b) B. Zhang, “CRISPR/Cas Gene
+Therapy,” Journal of Cellular Physiology236 (2021): 2459–2481. c) H.
+Zhang,C.Qin,C.An,etal.,“ApplicationoftheCRISPR/Cas9-BasedGene
+EditingTechniqueinBasicResearch,Diagnosis,andTherapyofCancer,”
+MolecularCancer 20(2021):126.
+120.a)L.S.Qi,M.H.Larson,L.A.Gilbert,etal.,“RepurposingCRISPR
+as an RNA-Guided Platform for Sequence-Specific Control of Gene
+Expression,” Cell 184 (2021): 844. b) L. A. Gilbert, M. H. Larson, L.
+Morsut, et al., “CRISPR-Mediated Modular RNA-Guided Regulation of
+Transcription in Eukaryotes,”Cell 154 (2013): 442–451. c) M. L. Maeder,
+S. J. Linder, V. M. Cascio, Y. Fu, Q. H. Ho, and J. K. Joung, “CRISPR
+RNA–GuidedActivationofEndogenousHumanGenes,” NatureMethods
+10(2013):977–979.d)L.Bendixen,T.I.Jensen,andR.O.Bak,“CRISPR-
+Cas-MediatedTranscriptionalModulation:TheTherapeuticPromisesof
+CRISPRa and CRISPRi,”Molecular Therapy31 (2023): 1920–1937. e) Y.
+Liu,C.Yu,T.P.Daley,etal.,“CRISPRActivationScreensSystematically
+Identify Factors That Drive Neuronal Fate and Reprogramming,”Cell
+Stem Cell23 (2018): 758–771. f) P. Liu, M. Chen, Y. Liu, L. S. Qi, and S.
+Ding, “CRISPR-Based Chromatin Remodeling of the Endogenous Oct4
+orSox2LocusEnablesReprogrammingtoPluripotency,” CellStemCell 22
+22of23 Exploration,2025
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+(2018):252–261.g)M.N.Hsu,K.L.Huang,F.J.Yu,etal.,“Coactivationof
+Endogenous Wnt10b and Foxc2 by CRISPR Activation Enhances BMSC
+Osteogenesis and Promotes Calvarial Bone Regeneration,”Molecular
+Therapy 28 (2020): 441–451. h) Z. Zhao, P. Shang, P. Mohanraju, and N.
+Geijsen,“PrimeEditing:AdvancesandTherapeuticApplications,” Trends
+inBiotechnology 41,(2023):1000–1012.
+121.a) M. Chen, A. Mao, M. Xu, Q. Weng, J. Mao, and J. Ji, “CRISPR-
+Cas9forCancerTherapy:OpportunitiesandChallenges,” CancerLetters
+447 (2019): 48–55. b) D. Kim, S. Bae, J. Park, et al., “Digenome-seq:
+Genome-Wide Profiling of CRISPR-Cas9 Off-Target Effects in Human
+Cells,”NatureMethods 12(2015):237–243.
+122.H. X. Zhang, Y. Zhang, and H. Yin, “Genome Editing With mRNA
+EncodingZFN,TALEN,andCas9,” MolecularTherapy 27(2019):735–746.
+123.K. Wood, M. Pink, and J. Seitzer, “Development of NTLA-2001, a
+CRISPR/Cas9GenomeEditingTherapeuticfortheTreatmentofATTR,”
+paperpresentedattheSecondEuropeanCongressforATTRAmyloidosis,
+Berlin,September1–3,2019.
+124.J.D.Gillmore,E.Gane,J.Taubel,etal.,“CRISPR-Cas9InVivoGene
+EditingforTransthyretinAmyloidosis,” NewEnglandJournalofMedicine
+385(2021):493–502.
+125.IntelliaTherapeutics:PressRelease (AnnualScientificMeetingofthe
+AmericanCollegeofAllergy,AsthmaandImmunology,2022).
+126.a)I.Hoerr,R.Obst,H.G.Rammensee,andG.Jung,“InVivoAppli-
+cation of RNA Leads to Induction of Specific Cytotoxic T Lymphocytes
+and Antibodies,”European Journal of Immunology30 (2000): 1–7. b) J.
+Devoldere,H.Dewitte,S.C.DeSmedt,andK.Remaut,“EvadingInnate
+ImmunityinNonviralmRNADelivery:Don’tShoottheMessenger,” Drug
+DiscoveryToday 21(2016):11–25.
+127.M. Tong, N. Palmer, A. Dailamy, et al., “Robust Genome and
+Cell Engineering via In Vitro and In Situ Circularized RNAs,”Nature
+BiomedicalEngineering 9(2025):109–126.
+128.a)Z.Yi,L.Qu,H.Tang,etal.,“EngineeredCircularADAR-Recruiting
+RNAs Increase the Efficiency and Fidelity of RNA Editing In Vitro and
+In Vivo,”Nature Biotechnology40 (2022): 946–955. b) D. Katrekar, J.
+Yen, Y. Xiang, et al., “Efficient In Vitro and In Vivo RNA Editing via
+RecruitmentofEndogenousADARsUsingCircularGuideRNAs,” Nature
+Biotechnology40(2022):938–945.c)X.Zhang,M.Li,K.Chen,etal.,“Engi-
+neered Circular Guide RNAs Enhance Miniature CRISPR/Cas12f-Based
+Gene Activation and Adenine Base Editing,”Nature Communications
+16 (2025): 3016. d) L. Liu, W. Li, J. Li, et al., “Circular Guide RNA for
+Improved Stability and CRISPR-Cas9 Editing Efficiency In Vitro and in
+Bacteria,”ACSSyntheticBiology 12(2023):350–359.e)X.Zhang,X.Wang,
+J. Lv, et al., “Engineered Circular Guide RNAs Boost CRISPR/Cas12a-
+and CRISPR/Cas13d-Based DNA and RNA Editing,”Genome Biology
+24 (2023): 145. f) R. Liang, Z. He, K. T. Zhao, et al., “Prime Editing
+Using CRISPR-Cas12a and Circular RNAs in Human Cells,”Nature
+Biotechnology42(2024):1867–1875.
+129.Z.Xu,Q.Wang,H.Zhong,etal.,“CarrierStrategiesBoosttheAppli-
+cation of CRISPR/Cas System in Gene Therapy,”Exploration (Beijing)2
+(2022):20210081.
+130.D. D. Kang, X. Hou, L. Wang, et al., “Engineering LNPs With
+Polysarcosine Lipids for mRNA Delivery,”Bioactive Materials37 (2024):
+86–93.
+131.Y.Ju,W.S.Lee,E.H.Pilkington,etal.,“Anti-PEGAntibodiesBoosted
+in Humans by SARS-CoV-2 Lipid Nanoparticle mRNA Vaccine,”ACS
+Nano16(2022):11769–11780.
+23of23
+ 27662098, 2025, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/EXP.20240044, Wiley Online Library on [01/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

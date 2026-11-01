@@ -1,0 +1,609 @@
+Lipid nanoparticle delivery of 
+circle RNA vaccine induces potent 
+immune responses
+Ruohan Yang, Lin Jia & Jiuwei Cui
+Circle RNA (circRNA) is a closed-loop nucleic acid resistant to exonuclease degradation. Their enhanced 
+stability and potential for efficient protein expression through circRNA modification render them 
+promising novel therapeutic agents for cancer treatment. In this study, we systematically investigated 
+the antitumor and anti-inflammatory activities of circRNA vaccines in mice, as well as their effects on 
+activating antigen-specific immune responses, through a meta-analysis. Subsequently, we further 
+validated the immune-activating effects of circRNA using monocytes and T cells isolated from human 
+peripheral blood mononuclear cells. We found that circRNA induces the activation and maturation 
+of dendritic cells, as well as the responses of CD4 + and CD8 + T cells. These findings demonstrate the 
+potential of circRNA to exert significant effects in therapeutic cancer vaccines.
+Keywords circRNA, Lipid nanoparticles, Immunotherapy, Malignant tumors, Antigen-presenting cells
+Circle RNA (circRNA) constitutes a distinct RNA subtype featuring a covalently closed single-stranded 
+structure1. circRNA exhibit non-coding functions such as transcriptional regulation, splicing regulation, signal 
+transduction, and molecular sponge activities. These regulatory roles enable them to promote the onset and 
+progression of various diseases, thereby influencing the intrinsic mechanisms of disease2–5.
+In recent years, the use of in vitro-synthesized RNA to express neoantigens for disease treatment has become 
+a focal point for many researchers6. This approach enables the precise and efficient expression of specific proteins 
+within cells and tissues7. Currently, the use of mRNA to encode COVID-19 antigens represents one of the most 
+prominent applications of this method. However, mRNA vaccines suffer from poor stability, imposing stringent 
+requirements on transport and storage conditions 8. Concurrently, mRNA faces the risk of rapid degradation, 
+resulting in short-lived neoantigen expression and necessitating repeated dosing for therapeutic efficacy 9. Our 
+prior research has demonstrated that, compared to mRNA, circRNA possesses a unique circular structure that 
+confers resistance to RNase R digestion, thereby enhancing its stability and positioning it as a novel vaccine 
+candidate10. Studies indicate that circRNA has a half-life approximately 2.5 times longer than mRNA, thereby 
+prolonging the duration of protein expression11. As illustrated in Fig. 1, circRNA can mediate ribosomal initiation 
+and protein translation via the internal ribosomal entry site (IRES) element, even in the absence of a free 5 ′ 
+end, thereby enabling efficient antigen presentation12. Moreover, unlike DNA vaccines, circular RNAs carry no 
+risk of host genome recombination13 and do not require endosomal processing and cleavage, which can reduce 
+antigen presentation efficiency in peptide vaccines14. Established research demonstrates that circRNAs can elicit 
+potent T- and B-cell responses, resulting in complete tumor regression in mouse models of melanoma15. Wei et 
+al. confirmed that circRNA vaccines provide robust protection against SARS-CoV-2 variants in both mice and 
+rhesus monkeys, exhibiting excellent tolerability with no significant adverse effects16.
+circRNA holds immense potential as a next-generation RNA vaccine platform. Its unique advantages of 
+efficient synthesis and stable high expression have demonstrated promise in vaccines, immunotherapies, and 
+protein replacement therapies, offering innovative and effective treatment prospects for human diseases 17. 
+Concurrently, integrating lipid nanoparticles (LNPs) with RNA vaccines significantly enhances their therapeutic 
+applications18. LNP efficiently encapsulates RNA, enabling large-scale and cost-effective production.
+Therefore, building upon these findings, this study investigates the extent to which LNP-encapsulated 
+circRNA induces immune responses in mice, thereby exerting antitumor and anti-inflammatory effects. This 
+research provides valuable insights and perspectives for future investigations.
+Cancer Center, the First Hospital of Jilin University, Changchun 130021, China. email: cuijw@jlu.edu.cn
+OPEN
+Scientific Reports |        (2026) 16:13268 1| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports
+
+Materials and methods
+Search strategy
+This systematic review and meta-analysis adhered to the Preferred Reporting Items for Systematic Reviews and 
+Meta-Analyses (PRISMA) guidelines19. Internet searches were conducted across the PubMed, Cochrane Library, 
+EMBASE, Springer, and ScienceDirect, and OVID databases to retrieve relevant publications from 2020 to the 
+present (October 2025). The following search terms were used to identify articles: ‘circle RNA ’ , ‘circRNA ’ , ’ circular 
+RNA ’ , and ‘vaccine’ . (PROSPERO ID: CRD420251242287).
+Inclusion criteria
+Inclusion criteria for meta-analysis studies: (1) circRNA therapy for tumors or infectious diseases delivered via 
+LNP; (2) Detailed documentation of intervention measures, experimental groupings, and dosage administration; 
+(3) Inclusion of at least one of the following metrics: tumor volume, mouse body weight, and immunological 
+parameters; (4) Full-text articles available.
+Exclusion criteria
+Exclusion criteria were as follows: (1) non-mouse animal models or in vitro studies; (2) Data failing to 
+demonstrate tumor changes in mice before and after treatment; (3) Reviews, communications, case reports, 
+presentations, letters, expert opinions, and editorials; (4) Relevant data unavailable for extraction; (5) Failure to 
+meet inclusion criteria.
+Data extraction and quality assessment
+The current studies primarily comprised preclinical research using animal models. We analyzed data on whether 
+mice with tumors or infectious diseases benefit from treatment with a circRNA vaccine. Extracted content 
+included: (a) basic study details, including first author and publication year; (b) study characteristics, including 
+tumor volume, weight, inhibition rate, mouse body weight, and adverse reactions; (c) elements relevant to risk 
+of bias assessment. Using tools developed by the SYRCLE 20, the authors assessed the methodological quality 
+and risk of bias in the included trials across domains: selection, performance, detection, attrition, reporting, and 
+other biases.
+Plasmid construction
+The vector was purchased from MIAOLING Biotech (IRES-Circ-GFP-FLAG). Immunofluorescence detection 
+was subsequently performed using an anti-Flag antibody (Sigma-Aldrich, F1804). circRNA was synthesized 
+using the HiScribe T7 High Yield RNA Synthesis Kit (NEB E2040S). IVT templates were amplified via PCR 
+before RNA synthesis (Q5 Hot Start High Fidelity 2x Master Mix). Each 20 µL IVT reaction utilized 1 µg of 
+circRNA PCR template. Reactions proceeded at 37 °C for 2 h. Subsequently, IVT templates were degraded by 
+incubating with 2 µL DNase I (NEB M0303S) at 37 °C for 20 min. Digestion was performed using 1 U RNase R 
+per µg RNA at 37 °C for 30 min, followed by RNase R inactivation at 70 °C for 10 min. Circularization efficiency 
+was assessed via RT-qPCR (forward primer:  T C T G A A C C A C A C A A A T G G T C; reverse primer:  A T G G T G G G G 
+T A C C C A T C C G C T).
+Fig. 1. Mechanism of action diagram for circRNA vaccines.
+ 
+Scientific Reports |        (2026) 16:13268 2| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Cell lines
+Healthy human peripheral blood mononuclear cells (PBMCs) were commercially purchased from Beijing 
+VITONLIVIA (D176368). Cell line origin: human. Gender: male. Source tissue: peripheral blood. The cell lines 
+used were not misidentified, and there was no contamination during the experiment.
+CD14 + magnetic beads (MicroBeads, Miltenyi, 130-050-201) were added at a ratio of 20 µl per 10⁷ PBMCs 
+and incubated at 4 °C in the dark for 15 min. Following incubation, peripheral blood mononuclear cells were 
+isolated using LS Columns (MASC, 130-042-401). Cells were cultured in 10% 1640 medium supplemented with 
+cytokines IL-4 (50 ng/ml) and GM-CSF (20 ng/ml) to induce dendritic cell differentiation.
+For in vitro T-cell activation assays, healthy PBMCs were also commercially purchased from Beijing 
+VITONLIVIA(D176368). CD3 + magnetic beads (MicroBeads, Miltenyi, 130-097-043). For every 10⁷ PBMCs, 
+add 10 µl CD14+ magnetic beads and incubate at 4 °C in the dark for 15 min. Subsequently, isolate CD3⁺ T cells 
+using an LS Column and culture them in 1640 medium, promptly adding activated dendritic cells to maintain 
+activity. The culture medium contains 10% foetal bovine serum (FBS; Gibco), 2% penicillin, 1% streptomycin, 
+and 1% levofloxacin, and cells are grown in a humidified environment at 37 °C with 5% CO₂. All cell lines are 
+monitored for mycoplasma infection using the Impact III PCR method.
+Flow cytometry analysis
+The following antibodies target surface markers: Human CD4 (FITC, BioLegend, 300505, 1:100); Human CD8 
+(APCy7, BioLegend, 300908, 1:100); human IFN-γ (BD, PE, 344117,1:100; human CD80 (APC, BioLegend, 
+305219, 1:100); human CD86 (FITC, BioLegend, 344704, 1:100).
+Immunofluorescence
+In immunofluorescence experiments, transfected dendritic cells were centrifuged and smeared onto microscope 
+slides. Sections were incubated overnight with monoclonal anti-FLAG M2 mouse antibody (Sigma, F1804, 1:500 
+dilution), followed by incubation with Alexa Fluor 647-labelled secondary antibody. DAPI was used for nuclear 
+counterstaining. Images were acquired using a laser scanning confocal microscope equipped with NIS-Elements 
+Viewer imaging software.
+RT-qpcr
+RT-qPCR analysis was performed in triplicate using Brilliant II SYBR Green qRT-PCR Master Mix (Agilent, 
+600825) and a LightCycler 480 (Roche). The relative RNA level was calculated by the ddCt method compared to 
+the B-Actin control.
+Primer sequences:
+IL-6 Forward:  A G G A G A C T T G C C T G G T G A A A
+Reverse:  C A G G G G T G G T T A T T G C A T C T.
+IL-Iβ Forward:  T G A C G G A C C C C A A A A G A T G A.
+Reverse:  A A A G A C A C A G G T A G C T G C C A.
+TNF-α Forward:  G A G G C C A A G C C C T G G T A T G.
+Reverse:  C G G G C C G A T T G A T C T C A G C.
+Preparation and purification of in vitro transcribed circRNA
+To eliminate double-stranded RNA (dsRNA) contaminants, the crude transcription reaction was directly treated 
+with RNase III at 37 °C for 30 min to specifically degrade dsRNA. The reaction was then purified using a silica-
+membrane-based RNA cleanup column to remove proteins, salts, and unincorporated nucleotides. And the 
+absence of dsRNA contamination was verified using a dsRNA-specific fluorometric quantification kit and ELISA 
+with a four-parameter logistic (4PL) standard curve. (Y esaen, 36717ES96).
+ELISpot
+As mentioned above, ELISpot T cells were collected from peripheral blood and then restimulated with dendritic 
+cells (DCs) transfected with circleRNA for 24  h. IFN-γ ELISpot assays were performed according to the 
+manufacturer’s instructions (Dakewe, 2110005, Human) to detect IFN-γ-secreting T cells, and the colored spots 
+were counted.
+Statistical analysis
+All data were analyzed using Review Manager 5.4 software. Forest plots displayed pooled risk ratios with their 
+respective 95% confidence intervals. Statistical heterogeneity was assessed using the inconsistency index (I 2). 
+Data exhibiting substantial heterogeneity were analyzed using random-effects models, whilst those with minimal 
+heterogeneity were evaluated using fixed-effects models.
+Prism software version 9.2.0 was used to perform statistical analyses. One-way and two-way ANOV A tests 
+and an unpaired two-sided Student’s t test were used to compare more than two groups, and differences between 
+groups with P-values below 0.05 were considered significant.
+Results
+Systematic screening
+The study screening process is illustrated in Fig. 2. A total of 427 articles met the inclusion criteria. Among these, 
+duplicate and irrelevant articles (e.g., studies with inconsistent subjects) were excluded following an abstract 
+review. Subsequently, articles with inconsistent methodologies (e.g., solely in vitro cellular experiments or the 
+absence of tumor-related endpoints) were excluded after full-text review. Ultimately, ten tumors 15,21–29 and 
+eleven infectious16,30–39 disease model preclinical studies were selected for meta-analysis.
+Scientific Reports |        (2026) 16:13268 3| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Basic demographic characteristics of included studies
+Data extracted from the included studies are presented in Table  1. All selected studies were randomized 
+controlled trials (RCTs) utilizing mice as experimental subjects. Overall, the animal strains employed were 
+predominantly BLAB/C or C57BL/6, with administration primarily via intramuscular or subcutaneous injection. 
+Notably, within infectious disease mouse models, three instances involved intranasal administration, and one 
+case employed tracheal instillation. Among animal tumor models, ovalbumin served as the neoantigen in four 
+instances, representing its most prevalent application.
+Risk of bias assessment
+A total of 10 studies reported the baseline characteristics of experimental mice, with no significant bias identified. 
+The summary of preliminary risk assessment results for selected articles is presented in Table 2.
+Body weight changes in all mice before and after treatment
+As shown in Fig.  3, we compared the body weight of mice before and after treatment according to different 
+administration routes. Subgroup analyses were performed for subcutaneous injection, intramuscular injection, 
+intranasal injection, intravenous injection, and other administration routes (including intraperitoneal injection, 
+intramuscular injection, and intratracheal instillation). Compared with the control group, there was no 
+statistically significant difference in body weight in the vaccine group across different administration routes 
+(overall standardized mean difference (SMD) = -0.05, 95% CI = -0.42 to 0.32, P = 0.80). Subgroup analyses 
+showed that the pooled effect sizes of different administration routes did not reach statistical significance, and 
+the overall between-study heterogeneity was low (I2 = 0%).
+Changes in T-cell proportion before and after treatment in all mice
+The results demonstrated that the vaccine group exhibited a significantly increased proportion of activated T cells 
+compared with the control group (overall SMD = 4.14, 95% CI = 2.67 to 5.61, P < 0.00001). Subgroup analyses 
+indicated that the vaccine conferred significantly superior effects relative to the control via subcutaneous, 
+intramuscular, and intravenous administration (all P < 0.05), whereas no statistically significant effect was 
+observed in the subgroup of other administration routes (Fig. 4).
+Assessment of tumor-related parameters in mice
+Subsequently, we conducted separate efficacy evaluations on mice within the tumor model, including 
+measurements of tumor volume changes. We also documented alterations in immune cells playing pivotal roles 
+in tumor treatment, such as macrophages and dendritic cells (DCs).
+Tumor volume changes
+Figure 5 summarizes tumor volume alterations in mice before and after circRNA treatment. Compared with the 
+control group, the vaccine immunization group exhibited a significantly reduced tumor volume in mice (overall 
+SMD = -5.36, 95% CI: -7.52 to -3.20, P < 0.00001), although high between-study heterogeneity was observed (I2 
+= 70%, P = 0.002). Subgroup analyses stratified by administration route showed statistically significant effects in 
+the subcutaneous injection subgroup (SMD = -6.22, 95% CI: -11.39 to -1.04, P = 0.02) and intravenous injection 
+subgroup (SMD = -7.90, 95% CI: -10.94 to -4.86, P < 0.00001). The intramuscular injection subgroup showed a 
+borderline statistical trend (SMD = -4.77, 95% CI: -9.70 to 0.15, P = 0.06), whereas no statistical significance was 
+Fig. 2. Literature screening process.
+ 
+Scientific Reports |        (2026) 16:13268 4| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Author Publication date Neoantigen Animal strains Cell line Method of administration Liposome composition
+Tumor
+ Alshehry et al.21 2025 Ovalbumin, human papillomavirus(HPV)-16 E7 antigen C57BL/6 NA Subcutaneous injection SM-102, cholesterol, DOPE, andDMG-PEG2000
+ Amaya et al.15 2023 ovalbumin C57BL/6 B16-F10-OV A Intraperitoneal injection Oleyl- (O) and nonenyl-substituted (N) carbonate subunits followed by a block of on average nine α-amino ester subunits 
+(A)
+ Cai et al.27 2024 FAPα and survivin C57BL/6 Panc02 Intramuscular injection NA
+ Huang et al.25 2023 Personalized Breast Cancer Vaccine circFAM53B (192–200) (ALFRLTNRA) or 
+circFAM53B (210–218) (RTAHYGTGR)
+NOD/SCID B16F10, 4T1 Intravenous injection NA
+ Jiang et al.29 2025 GPC3 B6-hHLA-A2.1/hB2M hepa1-6 cells Subcutaneous injection Cholesterol, DSPC, DMG-PEG2000, SM102
+ Li et al.24 2022 Ovalbumin C57BL/6 B16 Intramuscular injection PAMAM dendrimer G0 was mixed with 1,2-epoxytetradecane
+ Li et al.28 2025 Ovalbumin C57BL/6 B16-OV A Intranasal SM102, DSPC, DMG-PEG, and cholesterol.
+ Wang et al.23 2024 PTPN2 C57BL/6 Hepa1-6 Intravenous injection commercially available lipids (in vivo-jetRNA).
+ Wang et al.22 2025 Chimeric antigen receptor BALB/c CT26, 4T1, MC38-HER2 Intravenous injection Lipids including 18PA, DOPE, Cholesterol, DMG-PEG2000, and C12-200
+ Zhang et al.26 2025 Ovalbumin C57BL/6 EG7.OV A, MC38 Subcutaneous injection DOTAP , cholesterol, and DSPE-PEG2000
+Author Publication date Neoantigen Animal strains Virus types Method of administration Liposome composition
+Infectious disease
+ Huang et al.37 2024 Delta receptor binding domain BALB/c SARS-CoV-2 Intramuscular injection AX4, DSPC, DMG-PEG2000
+ Liu et al.31 2024 Dimeric EDIII C57BL/6 Zika virus Subcutaneous injection and intramuscularly SINOPEG, SM102/ DSPC/cholesterol/DMG-PEG 2000
+ Qu et al.16 2022 Trimeric RBD of the spike protein BALB/c SARS-CoV-2 Intramuscularly Commercial LNP
+ Swingle et al.34 2025 Anti-S receptor binding domain (RBD) C57BL/6 SARS- CoV- 2 Intramuscular injection 12D6.2
+ Wan et al.38 2024 Influenza virus haemagglutinin BALB/c influenza and SARS- CoV- 2 Intramuscular injection SM102, DSPE-PEG - Maleimide
+ Wan et al.39 2024 SAD-L16 glycoprotein (G), SARS-CoV-2 receptor-binding domain (RBD) C57BL/6 Rabies virus strain CVS-24 Intramuscular injection SM102, DSPC, cholesterol
+ Wu et al.32 2025 Chimeric immunogen of B6 and M1 BALB/c MPXV Intranasally An ethanol phase containing ionizable lipid, 1,2-distearoyl-sn-glycerol-3-phosphocholine, cholesterol, and lipid-
+polyethylene glycol
+ Yue et al.30 2024 Neuraminidas NA H1N1, H3N2, and influenza B 
+viruses
+Intramuscularly SM102, 1,2-Distearoyl-sn-glycero-3-phosphorylcholine (DSPC), cholesterol, and DMG-PEG2000
+ Zhang et al.35 2025 S1 region of the S protein BALB/c
+Porcine epidemic 
+diarrhea virus 
+and transmissible 
+gastroenteritis 
+virus
+Intranasally NA
+ Zhang et al.36 2025 M2e BALB/c Influenza A virus Intratracheal instillation Ionizable lipids, 1,2-Distearoyl-sn-glycero-3-phosphorylcholine (DSPC), 1,2- dimyristoyl-rac-glycero-3-
+methoxypolyethylene glycol-2000 (DMG- PEG2000)
+ Zhou et al.33 2024 A29L, A35R, B6R, and M1R, which are located on the EEVs or IMVs of MPXV BALB/c Vaccinia virus Intranasally ALC-0315, DSPC, cholesterol, ALC 0519
+Table 1. Basic characteristics of the included literature.
+ 
+Scientific Reports |        (2026) 16:13268 5| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+reached in the other administration routes subgroup (SMD = -1.67, 95% CI: -3.93 to 0.60, P = 0.15). Notably, 
+significant differences in effect size were detected among different administration route subgroups ( P = 0.01), 
+suggesting that administration route represents an important source of heterogeneity.
+Immunocellular changes
+As shown in Fig. 6, compared with the control group, intervention in the vaccine group significantly increased 
+the proportion of macrophages overall SMD = 4.88 (95% CI: 1.65 to 8.11, P = 0.003), with high between-study 
+heterogeneity (I2 = 79%, P = 0.0008). Subgroup analyses stratified by administration route revealed a statistically 
+significant effect in the subcutaneous injection subgroup (SMD = 5.35, 95% CI: 1.63 to 9.08, P = 0.005) with 
+moderate-to-high heterogeneity (I 2 = 63%). The effect in the intravenous injection subgroup did not reach 
+statistical significance (SMD = 4.37, 95% CI: -3.65 to 12.38, P = 0.29) and showed extremely high heterogeneity 
+(I2 = 89%). The other administration routes subgroup exhibited borderline statistical significance (SMD = 6.23, 
+95% CI: 0.00 to 12.45, P = 0.05). The effect in the intramuscular injection subgroup could not be estimated due 
+to missing data.
+Regarding dendritic cell expression levels, the vaccine group significantly elevated dendritic cell levels 
+overall, thereby enhancing antigen-presenting capacity (overall SMD = 8.02, 95% CI: 4.34 to 11.69, P < 0.0001), 
+with high between-study heterogeneity (I2 = 84%, P < 0.0001). All administration routes except the other routes 
+subgroup showed statistical significance: subcutaneous injection (SMD = 9.91, 95% CI: 1.00 to 19.81, P = 0.05) 
+with extremely high heterogeneity (I 2 = 90%); intramuscular injection (SMD = 13.94, 95% CI: 8.70 to 19.17, 
+P < 0.00001); and intravenous injection (SMD = 7.59, 95% CI: 4.65 to 10.53, P < 0.00001) with no heterogeneity 
+(I2 = 0%, Fig.  7). Significant differences in effect size were observed among subgroups ( P = 0.0004, I2 = 83.6%), 
+indicating that administration route is an important source of between-study heterogeneity.
+Items
+1 2 3 4 5 6 7 8 9 10
+Study-tumor
+ Alshehry et al. (2025) - - - - - - - + + +
+ Amaya et al.(2023) - ? - - - - - + + +
+ Cai et al. (2024) - - - - - - - + + +
+ Huang et al. (2023) - ? - - - - - + + +
+ Jiang et al. (2025) ? - - - - - - + + +
+ Li et al.(2022) ? + - + - - - ? + +
+ Li et al.(2025) - + ? - - - - + + +
+ Wang et al. (2023) - + ? - - - - ? + +
+ Wang et al. (2025) - ? - + - - - + + +
+ Zhang et al.(2024) + - + + - - - + + +
+Study-infectious disease
+ Huang et al.(2024) - ? - - - + - + + +
+ Liu et al. (2024) ? - - - + - - + + +
+ Qu et al. (2022) - ? - + - - - + + +
+ Swingle et al. (2025) - - - + - - - + + +
+ Wan et al. (2024) ? - - - - - - + + +
+ Wan et al. (2024) - - ? - - + - + + +
+ Wu et al. (2025) + - - + - + - + + +
+ Yue et al. (2024) ? + + - + - - + + +
+ Zhang et al.(2025) + + - + - + - + + +
+ Zhang et al.(2025) + - - - + - - + + +
+ Zhou et al. (2024) + - ? - + + - + + +
+Table 2. Evaluation of literature quality according to SYRCLE. Risk of bias with the SYRCLE tool. “+”: low 
+risk; “-“: high risk; ”?“: unclear risk. 1(Selection bias): Was the allocation sequence adequately generated and 
+applied? 2(Selection bias): Were the groups similar at baseline, or were they adjusted for confounders in the 
+analysis? 3(Selection bias): Was the allocation adequately concealed? 4(Performance bias): Were the animals 
+randomly housed during the experiment? 5(Performance bias): Were the caregivers and/or investigators 
+blinded from knowledge of which intervention each animal received during the experiment? 6(Detection 
+bias): Were animals randomly selected for outcome assessment? 7(Detection bias): Was the outcome assessed 
+or blinded? 8(Attrition bias): Were incomplete outcome data adequately addressed? 9(Reporting bias): Are 
+reports of the study free of selective outcome reporting? 10(Other): Was the study free of other problems that 
+could result in a high risk of bias?
+ 
+Scientific Reports |        (2026) 16:13268 6| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Detection of infectious disease-related indicators
+Concurrently, we placed significant emphasis on evaluating the therapeutic efficacy of our compounds in 
+infectious disease mouse models. Thus, serum antibody titers and viral load were selected to assess treatment 
+outcomes, while cytokines IFN-γ and IL-4 were chosen to evaluate the effects on the immune system response.
+Fig. 4. Subgroup analysis of T-cell proportions according to different administration routes. Forest plot 
+showing the standardized mean difference of the proportion of activated T cells between the vaccine and 
+control groups. Subgroup analyses were performed based on administration routes. The overall effect and 
+subgroup effects are presented with 95% confidence intervals (CIs). P < 0.05 was considered statistically 
+significant.
+ 
+Fig. 3. Subgroup analysis of mouse body weight according to different administration routes. Forest plot 
+showing the standardized mean difference of the mouse body weight between the vaccine and control groups. 
+Subgroup analyses were performed based on administration routes. The overall effect and subgroup effects are 
+presented with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Scientific Reports |        (2026) 16:13268 7| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Changes in serum antibody titres
+As illustrated in Fig. 8, serum antibody titres in mice with infectious diseases showed a marked increase following 
+circular RNA treatment. Compared with the control group, intervention in the experimental group significantly 
+increased serum antibody titres (overall SMD = 5.85, 95% CI: 3.69 to 8.02, P < 0.0001), with substantial between-
+study heterogeneity (I2 = 79%, P < 0.0001). Subgroup analyses stratified by administration route demonstrated 
+significant effects across all routes: subcutaneous injection (SMD = 5.93, 95% CI: 2.82 to 9.04, P = 0.0002); 
+intramuscular injection (SMD = 6.08, 95% CI: 1.86 to 10.29, P = 0.005); intranasal injection (SMD = 8.10, 95% 
+CI: 5.10 to 11.09, P < 0.00001); and other administration routes (SMD = 2.86, 95% CI: 0.24 to 5.79, P = 0.03). 
+Significant differences in effect size were detected among subgroups ( P = 0.004, I² = 63.2%), suggesting that 
+administration route serves as an important source of between-study heterogeneity.
+As shown in Fig.  9, intervention in the vaccine group significantly reduced pulmonary viral load overall 
+(overall SMD = -9.50, 95% CI: -14.70 to -4.30, P = 0.0003), accompanied by high between-study heterogeneity (I2 
+= 81%, P = 0.001). Subgroup analyses stratified by administration route revealed significant effects for all included 
+routes: subcutaneous injection (SMD = -5.13, 95% CI: -7.87 to -2.38, P = 0.0003); intramuscular injection (SMD 
+= -9.25, 95% CI: -17.30 to -1.19, P = 0.02); and intranasal injection (SMD = -15.14, 95% CI: -19.89 to -10.38, 
+P < 0.00001). The effect for the other administration routes subgroup could not be estimated due to insufficient 
+data. Significant differences in effect size were observed among subgroups (P = 0.002, I2 = 84.5%), indicating that 
+administration route represents a major source of between-study heterogeneity.
+Fig. 6. Subgroup analysis of macrophage changes according to different administration routes. Forest plot 
+of the standardized mean difference in macrophage proportion between the vaccine and control groups. 
+Subgroup analyses were performed based on administration routes. The overall effect and subgroup effects are 
+shown with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Fig. 5. Subgroup analysis of Tumor Volume Changes according to different administration routes. Forest 
+plot showing the standardized mean difference of the tumor volume changes between the vaccine and control 
+groups. Subgroup analyses were performed based on administration routes. The overall effect and subgroup 
+effects are presented with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Scientific Reports |        (2026) 16:13268 8| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Serum cytokine changes
+We also examined serum cytokine alterations. As shown in Fig.  10, the vaccine group exhibited significantly 
+elevated IFN-γ levels overall SMD = 3.11, 95% CI: 1.54 to 4.69, P = 0.0001), with high between-study heterogeneity 
+(I2 = 80%, P < 0.0001). Subgroup analyses stratified by administration route demonstrated significant effects 
+across all routes: subcutaneous injection (SMD = 1.69, 95% CI: 0.29 to 3.09, P = 0.02); intramuscular injection 
+(SMD = 2.59, 95% CI: 1.12 to 4.06, P = 0.0005); intranasal injection (SMD = 8.40, 95% CI: 0.50 to 16.30, P = 0.01); 
+and other administration routes (SMD = 2.49, 95% CI: 0.02 to 4.97, P = 0.04).
+Subsequently, we found that IL-4 levels were also significantly increased in the vaccine group (overall 
+SMD = 2.98, 95% CI: 1.54 to 4.43, P < 0.0001), with moderate-to-high between-study heterogeneity (I 2 = 65%, 
+P = 0.009). Subgroup analyses stratified by administration route showed significant effects: intramuscular 
+injection (SMD = 2.29, 95% CI: 1.05 to 3.53, P = 0.0003); intranasal injection (SMD = 9.10, 95% CI: 6.57 to 24.76, 
+P = 0.26); and other administration routes (SMD = 8.83, 95% CI: 3.71 to 13.96, P = 0.0007). The effect for the 
+subcutaneous injection subgroup could not be estimated due to unavailability of data. Significant differences in 
+effect size were detected among subgroups (P = 0.04, I2 = 69.5%), suggesting that administration route serves as 
+an important source of between-study heterogeneity (Fig. 11).
+In vitro experiments validate circRNA’s capacity to induce immune responses
+To further validate that circRNA can induce robust immune responses, we designed a circRNA vaccine capable 
+of expressing a FLAG tag and encoding GFP . Following circularization and digestion, circRNA constituted over 
+Fig. 8. Subgroup analysis of serum antibody titres according to different administration routes. Forest plot 
+of the standardized mean difference in serum antibody titres between the experimental and control groups. 
+Subgroup analyses were performed based on administration routes. The overall effect and subgroup effects are 
+presented with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Fig. 7. Subgroup analysis of dendritic cell Changes according to different administration routes. Forest plot 
+of the standardized mean difference (SMD) in dendritic cell levels between the vaccine and control groups. 
+Subgroup analyses were performed based on administration routes. The overall effect and subgroup effects are 
+shown with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Scientific Reports |        (2026) 16:13268 9| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+80% of the product (Fig. 12A). To minimize the immune-stimulatory effect of dsRNA contaminants generated 
+during in vitro transcription (IVT), we performed an additional digestion with RNase III, followed by silica 
+column purification. The dsRNA content in the circRNA preparation was then determined by ELISA. The 
+results showed that the dsRNA level was significantly reduced after digestion (Fig. 12B). Following transfection, 
+dendritic cells exhibited significant upregulation of the cytokines IL-6, IL-1β, and TNF-α (Fig.  12C). As 
+anticipated, immunofluorescence revealed that circRNA-transfected dendritic cells successfully expressed Flag 
+(Fig. 12D).
+Following circRNA delivery to dendritic cells via LNP the proportion of CD80.86-positive dendritic cells 
+markedly increased (Fig.  13C). Subsequently, we co-cultured activated mature DCs with T cells for 24 h, then 
+conduct flow cytometric test IFN-γ levels in CD8⁺ T and CD4+ T cells. Results demonstrated activation of both 
+effector CD8 + and CD4 + T cells (Fig. 13A, B).
+To investigate the antigen-specific T cells produced by circRNA, DCs were transfected with circRNA or LNP-
+circRNA, or without transfected, and then co-cultured with T cells. The number of IFN-γ-secreting T cells was 
+determined by ELISpot assay (Fig.  13D). LNP-circRNA DCs transfected with circRNA significantly increased 
+the number of IFN-γ-positive spot-forming cells (SFCs) in co-cultured T cells ( P < 0.0001). These results 
+demonstrated that LNP-circRNA has a potent capacity to trigger antigen-specific T cell immune responses in 
+vitro.
+Fig. 10. Subgroup analysis of serum IFN-γ levels according to different administration routes. Forest plot of 
+the standardized mean difference in serum IFN-γ levels between the vaccine and control groups. Subgroup 
+analyses were performed based on administration routes. The overall effect and subgroup effects are presented 
+with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Fig. 9. Subgroup analysis of pulmonary viral load according to different administration routes. Forest plot of 
+the standardized mean difference in pulmonary viral load between the vaccine and control groups. Subgroup 
+analyses were performed based on administration routes. The overall effect and subgroup effects are shown 
+with 95% confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Scientific Reports |        (2026) 16:13268 10| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Discussion
+circRNA is a covalently closed circular RNA molecule that has garnered significant attention due to its exceptional 
+durability and stability, offering promise as a stable platform for gene expression delivery 40,41. In this study, we 
+first performed a systematic meta-analysis to investigate the therapeutic efficacy of lipid nanoparticle (LNP)-
+delivered circRNA in mouse tumor models. Consistent and marked tumor regression was observed across 
+all included mouse models, and notably, no significant alterations in body weight were detected throughout 
+the treatment period. This finding not only confirms the potent antitumor activity of circRNA vaccines but 
+also indicates a favorable safety profile, supporting LNP-circRNA as a safe and effective therapeutic strategy 
+for tumor intervention. Accumulating evidence has established that the efficacy of therapeutic tumor vaccines 
+Fig. 12. (A) Proportion of circular and linear RNA following digestion of in vitro transcribed circRNA, 
+data were presented as mean ± SD, an unpaired two-sided Student’s t test was performed for comparison; 
+*p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001; ns, not significant. (B): dsRNA was quantified by ELISA 
+with a four-parameter logistic (4PL) standard curve. Data were presented as mean ± SD. An unpaired two-
+sided Student’s t test was performed for comparison; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001; ns, not 
+significant. (C)Transfected dendritic cells were analyzed for cytokine expression of IL-6, IL-1β, and TNF-α. 
+Repeated-measures ANOV A was applied in the figure. **P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001. (D): 
+Transfection of dendritic cells with circRNA enables expression of neoantigens.
+ 
+Fig. 11. Subgroup analysis of serum IL-4 levels according to different administration routes. Forest plot of the 
+standardized mean difference in serum IL-4 levels between the vaccine and control groups. Subgroup analyses 
+were performed based on administration routes. The overall effect and subgroup effects are shown with 95% 
+confidence intervals (CIs). P < 0.05 was considered statistically significant.
+ 
+Scientific Reports |        (2026) 16:13268 11| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+is predominantly dependent on efficient antigen presentation and the subsequent activation of dendritic cells 
+(DCs)—the key professional antigen-presenting cells in the immune system 42. Consequently, we analyzed 
+immune cell states to elucidate the mechanism by which circRNA vaccines exert their effects. Results revealed 
+marked proliferation and activation of T cells, DCs, and other immune cells following vaccination, suggesting 
+that circRNA exerts potent antitumor effects by modulating the innate immune system. These results collectively 
+suggest that circRNA vaccines exert their potent antitumor effects by modulating the immune system to initiate a 
+cascade of adaptive immune responses, ultimately eliminating tumor cells. Subsequently, we examined circRNA 
+vaccine efficacy against infectious diseases. Findings demonstrated a significantly reduced viral load in mouse 
+lungs post-vaccination, with sustained high antibody titers over extended periods The concurrent activation 
+of innate and adaptive immune cells in infectious disease models further corroborated the broad and potent 
+therapeutic efficacy of circRNA vaccines against both malignant tumors and infectious pathogens16.
+To further validate the potent anti-tumor and immune-activating effects of circRNA vaccines, we conducted 
+in vitro verification experiments. To prepare high-purity circRNA and exclude non-specific immune interference, 
+we combined RNase R-mediated digestion (to eliminate linear RNA precursors and fragments) with RNase III 
+treatment (to specifically degrade dsRNA impurities), followed by secondary purification using a general silica 
+column. Results demonstrated that purified circRNA successfully induced neoantigen expression in dendritic 
+cells (DCs), while promoting DC activation and maturation, consistent with the findings of Huang et al. 43. We 
+further confirmed that circRNA-primed mature DCs could effectively present antigens to T cells and mediate 
+the activation of antigen-specific T lymphocytes. These activated T cells subsequently secrete proinflammatory 
+cytokines, including IL-1β, TNF-α, IL-6, and IFN-γ. ELISpot experiments validate that antigen-specific T cells 
+can be generated, which in turn orchestrate a robust antitumor immune microenvironment and promote tumor 
+cell killing, consistent with the results of Amaya et al.15.
+Collectively, our systematic meta-analysis and in vitro experimental validation consistently demonstrate that 
+circRNA vaccines possess the capacity to elicit robust and sustained innate and adaptive immune responses, as 
+well as to shape a proinflammatory tumor microenvironment. Endowed with multiple inherent advantages—
+including a covalently closed circular structure conferring superior stability, sustained and efficient neoantigen 
+expression, and excellent in vivo tolerability—circRNA-encoded neoantigen vaccines represent a novel and 
+promising therapeutic approach for the treatment of both malignant tumors and infectious diseases.
+Fig. 13. (A, B) IFN-γ levels in CD8⁺ T and CD4⁺ T cells were detected by flow cytometry after 24 h of 
+co-culture between circRNA-transfected DCs and T cells. (C): DCs were transfected with circRNA or LNP-
+circRNA, or with no transfection. The expression levels of CD80 and CD86 in DCs were analyzed by flow 
+cytometry after 24-hour incubation. (D): DCs were transfected with circRNA or LNP-circRNA, or with no 
+transfection, then co-cultured with T cells. IFN-γ ELISpot assay was performed to detect the number of spot-
+forming cells (SFCs). Repeated-measures one-way ANOV A was applied in the figure. Data are presented as 
+mean ± SD. **P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001.
+ 
+Scientific Reports |        (2026) 16:13268 12| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Notwithstanding these promising findings, several notable limitations and sources of substantial statistical 
+heterogeneity must be acknowledged, which temper the interpretation and generalizability of our results. First, 
+the meta-analysis revealed extreme statistical heterogeneity across the included studies for key immune and 
+therapeutic outcome measures. Although we attempted to reduce heterogeneity through subgroup analysis, high 
+heterogeneity persisted in some datasets. Comprehensive subgroup analysis indicated that this variability was 
+primarily attributable to three interrelated factors: different routes of vaccine administration (e.g., intramuscular, 
+subcutaneous, intravenous, intranasal), heterogeneity of disease models (e.g., different solid tumor types, viral 
+pathogens), and diverse murine strains (C57BL/6, BALB/c, NOD/SCID) across the included studies. For instance, 
+intranasal administration was associated with more pronounced local mucosal immune responses but relatively 
+modest systemic immune effects, whereas intravenous injection elicited robust systemic immune activation.
+Second, the current study is predominantly based on preclinical murine models, and the meta-analysis was 
+restricted to animal experimental data due to the paucity of available clinical research on circRNA vaccines to 
+date. There are inherent biological differences between murine models and humans, including disparities in 
+immune system regulation (e.g., DC subsets, T cell receptor repertoires) and tumor microenvironment, which 
+may result in inconsistent efficacy and safety profiles when translating circRNA vaccines from preclinical models 
+to clinical applications. Although we supplemented our findings with in vitro validation using human PBMCs, 
+this simplified system cannot fully recapitulate the complex in vivo microenvironment of the human body.
+Finally, the detailed molecular mechanisms underlying the immune modulation of circRNA vaccines remain 
+incompletely elucidated. While our results confirm that circRNA vaccines activate DCs and initiate adaptive 
+immune responses, the specific molecular pathways by which LNP-circRNA is internalized by DCs and the 
+potential crosstalk between circRNA and other innate immune sensors require further in-depth mechanistic 
+investigation.
+Despite these limitations, this study provides comprehensive and rigorous preclinical evidence for the 
+therapeutic potential of LNP-delivered circRNA vaccines against both tumors and infectious diseases through 
+systematic meta-analysis and in vitro validation with high-purity circRNA. Future research should focus 
+on addressing the aforementioned limitations and heterogeneity to advance the development and clinical 
+translation of circRNA vaccines. Priority areas include: conducting in-depth mechanistic studies to elucidate 
+the molecular basis of circRNA uptake, cytoplasmic translation, and immune activation, thereby identifying 
+potential molecular targets for enhancing vaccine efficacy; establishing more clinically relevant humanized 
+mouse models to bridge the gap between preclinical and clinical research; and conducting large-scale, well-
+designed randomized controlled trials to validate the efficacy and safety of circRNA vaccines in human subjects. 
+In conclusion, our study highlights the great potential of circRNA vaccines as a novel next-generation RNA 
+vaccine platform, and with further optimization and in-depth validation, circRNA vaccines are expected to 
+provide innovative and effective therapeutic options for human diseases.
+Conclusion
+This article demonstrates that LNP-delivered circRNA vaccines exhibit potent anti-tumor and anti-inflammatory 
+effects, with minimal adverse reactions. Further experiments validate the capacity of circRNA to encode 
+neoantigens, promote dendritic cell maturation, activate T cells, and stimulate the secretion of inflammatory 
+cytokines, positioning it as a promising novel therapeutic approach for cancer treatment.
+Data availability
+The original contributions presented in the study are included in the article; further inquiries can be directed to 
+the corresponding author.
+Received: 1 December 2025; Accepted: 27 March 2026
+References
+ 1. Liu, C. X. & Chen, L. L. Circular RNAs: characterization, cellular roles, and applications. Cell 185 (12), 2016–2034 (2022).
+ 2. Memczak, S. et al. Circular RNAs are a large class of animal RNAs with regulatory potency . Nature 495 (7441), 333–338 (2013).
+ 3. Ashwal-Fluss, R. et al. circRNA biogenesis competes with pre-mRNA splicing . Mol. Cell. 56 (1), 55–66 (2014).
+ 4. Xia, P . et al. A circular RNA protects dormant hematopoietic stem cells from DNA sensor cGAS-mediated exhaustion. Immunity 
+48 (4), 688–701e7 (2018).
+ 5. Hansen, T. B. et al. Natural RNA circles function as efficient microRNA sponges. Nature 495 (7441), 384–388 (2013).
+ 6. Chen, C. K. et al. Structured elements drive extensive circular RNA translation. Mol. Cell. 81 (20), 4300–18e13 (2021).
+ 7. Wesselhoeft, R. A., Kowalski, P . S. & Anderson, D. G. Engineering circular RNA for potent and stable translation in eukaryotic 
+cells. Nat. Commun. 9 (1), 2629 (2018).
+ 8. Y an, Y . et al. Non-viral vectors for RNA delivery. J. Control Release. 342, 241–279 (2022).
+ 9. Foster, J. B. et al. Purification of mRNA encoding chimeric antigen receptor is critical for generation of a robust T-cell response. 
+Hum. Gene Ther. 30 (2), 168–178 (2019).
+ 10. Y ang, R. & Cui, J. Advances and applications of RNA vaccines in tumor treatment. Mol. Cancer 23, 1  (2024).
+ 11. Wesselhoeft, R. A. et al. RNA circularization diminishes immunogenicity and can extend translation duration in vivo. Mol. Cell. 
+74(3),  508 -20.e4 (2019).
+ 12. Chen, C. Y . & Sarnow, P . Initiation of protein synthesis by the eukaryotic translational apparatus on circular RNAs. Science 268 
+(5209), 415–417 (1995).
+ 13. Sun, J. et al. Anti-tumour effect of neo-antigen-reactive T cells induced by RNA mutanome vaccine in mouse lung cancer. J. Cancer 
+Res. Clin. Oncol. 147 (11), 3255–3268 (2021).
+ 14. Xie, Z. et al. Cathepsin B in programmed cell death machinery: mechanisms of execution and regulatory pathways. Cell. Death Dis. 
+14 (4), 255 (2023).
+ 15. Amaya, L. et al. Circular RNA vaccine induces potent T cell responses. Proc. Natl. Acad. Sci. U S A. 120 (20), e2302191120 (2023).
+ 16. Qu, L. et al. Circular RNA vaccines against SARS-CoV-2 and emerging variants. Cell 185 (10), 1728–44e16 (2022).
+Scientific Reports |        (2026) 16:13268 13| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+ 17. Li, H. circRNA: a promising all-around star in the future. Epigenomics 15 (12), 677–685 (2023).
+ 18. Ozpolat, B., Sood, A. K. & Lopez-Berestein, G. Liposomal siRNA nanocarriers for cancer therapy. Adv. Drug Deliv Rev. 66, 110–116 
+(2014).
+ 19. Moher, D. et al. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA Statement. Open. Med. 3 (3), 
+e123–e130 (2009).
+ 20. Hooijmans, C. R. et al. SYRCLE’s risk of bias tool for animal studies. BMC Med. Res. Methodol. 14, 43 (2014).
+ 21. Alshehry, Y . et al. Investigation of the impact of lipid nanoparticle compositions on the delivery and T cell response of circRNA 
+vaccine. J. Controlled Release 2025, 381  (2025).
+ 22. Wang, Y . et al. Synergically enhanced anti-tumor immunity of in vivo panCAR by circRNA vaccine boosting. Cell. Rep. Med. 6 (8), 
+102250 (2025).
+ 23. Wang, F . et al. Circular RNA-based neoantigen vaccine for hepatocellular carcinoma immunotherapy. MedComm   5 (8), e667 
+(2020).
+ 24. Li, H. et al. Circular RNA cancer vaccines drive immunity in hard-to-treat malignancies. Theranostics 12 (14), 6422–6436 (2022).
+ 25. Huang, D. et al. Tumour circular RNAs elicit anti-tumour immunity by encoding cryptic peptides. Nature 625 (7995), 593–602 
+(2024).
+ 26. Zhang, Y . et al. Small circular RNAs as vaccines for cancer immunotherapy. Nat. Biomed. Eng. 9 (2), 249–267 (2025).
+ 27. Cai, Z. et al. CircRNA-loaded DC vaccine in combination with low-dose gemcitabine induced potent anti-tumor immunity in 
+pancreatic cancer model. Cancer Immunol. Immunother. 74 (2), 68 (2025).
+ 28. Li, H. et al. Intranasal prime-boost RNA vaccination elicits potent T cell response for lung cancer therapy. Signal. Transduct. Target. 
+Ther. 10 (1), 101 (2025).
+ 29. Jiang, Y . et al. GPC3-based circular RNA vaccine suppresses hepatocellular carcinoma progression by activating adaptive immune 
+responses. Hepatology  (2025).
+ 30. Yue, X. et al. CircRNA based multivalent neuraminidase vaccine induces broad protection against influenza viruses in mice. NPJ 
+Vaccines. 9 (1), 170 (2024).
+ 31. Liu, X. et al. A single-dose circular RNA vaccine prevents Zika virus infection without enhancing dengue severity in mice. Nat. 
+Commun. 15 (1), 8932 (2024).
+ 32. Wu, J. et al. CircRNA vaccine encoding a chimeric immunogen of B6 and M1 demonstrates robust immune responses against 
+MPXV . Cell. Rep. 44 (10), 116432 (2025).
+ 33. Zhou, J. et al. Circular RNA vaccines against monkeypox virus provide potent protection against vaccinia virus infection in mice. 
+Mol. Ther. 32 (6), 1779–1789 (2024).
+ 34. Swingle, K. L. et al. Circular RNA lipid nanoparticle vaccine against SARS-CoV-2. Proc. Natl. Acad. Sci. U S A . 122 (38), 
+e2505718122 (2025).
+ 35. Zhang, W . et al. Bivalent circular RNA vaccines against porcine epidemic diarrhea virus and transmissible gastroenteritis virus. 
+Front. Immunol. 16, 1562865 (2025).
+ 36. Zhang, Y . et al. Pulmonary delivery of small circular RNA vaccines for influenza prevention. J. Control Release. 387, 114198 (2025).
+ 37. Huang, K. et al. Circular mRNA vaccine against SARS-COV-2 variants enabled by degradable lipid nanoparticles. ACS Appl. Mater. 
+Interfaces. 17 (3), 4699–4710 (2025).
+ 38. Wan, J. et al. CXCL13 promotes broad immune responses induced by circular RNA vaccines. Proc. Natl. Acad. Sci. U S A. 121 (44), 
+e2406434121 (2024).
+ 39. Wan, J. et al. Circular RNA vaccines with long-term lymph node-targeting delivery stability after lyophilization induce potent and 
+persistent immune responses. mBio 15 (1), e0177523 (2024).
+ 40. Katrekar, D. et al. Efficient in vitro and in vivo RNA editing via recruitment of endogenous ADARs using circular guide RNAs. Nat. 
+Biotechnol. 40 (6), 938–945 (2022).
+ 41. Yi, Z. et al. Engineered circular ADAR-recruiting RNAs increase the efficiency and fidelity of RNA editing in vitro and in vivo. Nat. 
+Biotechnol. 40 (6), 946–955 (2022).
+ 42. Bowen, W . S. et al. Current challenges for cancer vaccine adjuvant development. Expert Rev. Vaccines. 17 (3), 207–215 (2018).
+ 43. Huang, D. et al. Tumour circular RNAs elicit anti-tumour immunity by encoding cryptic peptides[J]. Nature 625 (7995), 593–602 
+(2023).
+Author contributions
+Ruohan Y ang: wrote the main manuscript text and prepared figures. Lin Jia: Formal analysis, revise the manu-
+script. Jiuwei Cui: Conceptualization and investigation, final review, and editing of this manuscript. All authors 
+reviewed the manuscript.
+Funding
+This research was funded by the Jilin Province Natural Science Foundation (grant number: 20210101311JC).
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary Information The online version contains supplementary material available at  h t t p s : / / d o i . o r g / 1 
+0 . 1 0 3 8 / s 4 1 5 9 8 - 0 2 6 - 4 6 8 7 1 - 6     .  
+Correspondence and requests for materials should be addressed to J.C.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and 
+institutional affiliations.
+Scientific Reports |        (2026) 16:13268 14| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/
+Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 
+4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in 
+any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide 
+a link to the Creative Commons licence, and indicate if you modified the licensed material. Y ou do not have 
+permission under this licence to share adapted material derived from this article or parts of it. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence 
+and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to 
+obtain permission directly from the copyright holder. To view a copy of this licence, visit  h t t p : / / c r e a t i v e c o m m o 
+n s . o r g / l i c e n s e s / b y - n c - n d / 4 . 0 /     .  
+© The Author(s) 2026 
+Scientific Reports |        (2026) 16:13268 15| https://doi.org/10.1038/s41598-026-46871-6
+www.nature.com/scientificreports/

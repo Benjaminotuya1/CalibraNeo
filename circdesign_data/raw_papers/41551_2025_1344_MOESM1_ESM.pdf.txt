@@ -1,0 +1,970 @@
+nature biomedical engineering
+https://doi.org/10.1038/s41551-025-01344-5
+Article
+Small circular RNAs as vaccines for cancer 
+immunotherapy
+In the format provided by the 
+authors and unedited
+Supplementary information
+ 
+Contents 
+ 
+Supplementary Fig. 1 | Validation of small circRNA synthesis.  
+Supplementary Fig. 2 | In vitro antigen presentation by DCs treated with small circRNA vaccine.  
+Supplementary Fig. 3 | High stability of small circRNA relative to long modified mRNA and large circRNA.  
+Supplementary Fig. 4 | Validation of circRNA-RBD synthesis.  
+Supplementary Fig. 5 | Serum concentrations of chemokines in mice immunized with nanoformulations of 
+circRNA-SIINFEKL and 5moU-mRNA-OVA. 
+Supplementary Fig. 6 | LNPs promoted the intracellular delivery of circRNA in DCs.  
+Supplementary Figs. 7–10 | Visualize KEGG pathways of TLR, RLR, CLR, and antigen processing and 
+presentation between circRNA-SIINFEKL and 5moU-mRNA-OVA by Pathview.  
+Supplementary Fig. 11 | Small circRNA elevated the expression of co-stimulatory factors on DCs and 
+reduced PKR activation.  
+Supplementary Fig. 12 | circRNA-OVA synthesis and PKR activation by 5moU-mRNA-OVA. 
+Supplementary Fig. 13 | Benchmarking small circRNA-SIINFEKL vaccine against multiple modified mRNA-
+SIINFEKL and modified mRNA-OVA vaccines at escalating doses in vitro.  
+Supplementary Fig. 14 | Benchmark T cell response studies of small circRNA vaccines vs three modified 
+mRNA vaccines at the corresponding molar doses. 
+Supplementary Fig. 15 | Mouse body weight changes after immunization with small circRNA-SIINFEKL as 
+well as modified mRNA-SIINFEKL and mRNA-OVA vaccines.  
+Supplementary Fig. 16 | Representative flow cytometry plots of PBMC SIINFEKL+CD8+ T cells on day 35 
+after three doses of circRNA-SIINFEKL and three modified mRNA at escalating doses, respectively.   
+Supplementary Fig. 17 | Representative flow cytometry plots for the analysis of CD8+ T cell memory elicited 
+by RNA vaccines (day 180) in mice.  
+Supplementary Fig. 18 | The kinetics of PD-1 expression levels on total PBMC CD8+ T cells in mice 
+immunized with circRNA-SIINFEKL and benchmark modified mRNA at escalating doses.   
+Supplementary Fig. 19 | Luminex results of the serum cytokines and chemokines from mice immunized with 
+circRNA-SIINFEKL, unmodified mRNA-OVA, 5moU-mRNA-OVA, and circRNA-OVA.  
+Supplementary Fig. 20 | Representative flow cytometry plots for the analysis of circRNA-SIINFEKL elicited 
+CD8+ T cell memory in aged mice (1 year).  
+Supplementary Fig. 21 | circRNA-Adpgk elicited potent neoantigen Adpgk-specific CD8+ T cell responses.  
+Supplementary Fig. 22 | circRNA-E7 elicited potent HPV E7-specific T cell responses.  
+Supplementary Fig. 23–29 | Representative gating trees used in flow cytometric analysis.  
+ 
+ 
+Supplementary Table 1 | RNA sequences.  
+Supplementary Table 2 | Structures of circRNA-SIINFEKL, circRNA-OVA, and OVA-/SIINFEKL- encoding 
+mRNA.  
+Supplementary Table 3 | A list of antibodies used in this study.  
+Supplementary Table 4 | Peptide sequences. 
+  
+ 
+ 
+ 
+Supplementary Fig. 1 | Validation of small circRNA synthesis. a, Schematic illustration of small circRNA 
+synthesis. b, HPLC and gel electrophoresis verified the purity of circRNA, which showed a different retention 
+time than that of linear RNA. The corresponding fractions of HPLC samples were collected and subject to 
+agarose gel electrophoresis. c, Agarose gel electrophoresis validated the synthesis of small circRNA. Even 
+though ligation-based circRNA synthesis could result in multimeric circRNA, such byproducts were not 
+detectable under this experiment condition. This is likely due to the relatively low concentration and the 
+favored intramolecular ligation relative to intermolecular ligation, the latter forming multimeric circRNA. 
+  
+“、
+c) DNAladder
+25 bp
+50 bp
+75 bp
+DNAsplints
+RNAprecursors
+T4 RNA ligase
+DNase I
+Exonuclease T
+a) Ligation Exonucleasetreatment+
+circRNA
+OH
+P
+P: phosphate
+Annealing with 
+DNA splints
+OligoRNA
+precursors
+liRNA
+circRNA
+Retentiontime(min)
+0 5101520253035
+Unpurified circ12 3
+b)
+23.8 min
+24.3 min
+24.8 min
+++++
+++++
++++
+++
++
+ 
+ 
+ 
+Supplementary Fig. 2 | In vitro antigen presentation by DCs treated with small circRNA vaccine. a, the 
+secondary structures (predicted by NUPACK) of IRES LINE1 and Rbm3 (left) and the corresponding 
+circRNA-SIINFEKL (right). Blue boxes indicate IRES domains. b, Flow cytometric analysis of SIINFEKL/H-
+2Kb complex level on DC2.4 cells. DC2.4 cells were transfected with various SIINFEKL or OVA vaccines for 
+24 h, and were then stained with an APC-conjugated H-2Kb/SIINFEKL antibody followed by flow cytometric 
+analysis. *p < 0.05, **p < 0.01, ***p < 0.001, by one-way ANOVA with Bonferroni post-test. 
+  
+“、
+b)
+Rbm3-circRNA
+Rbm3
+a)
+ LINE1-circRNA
+LINE1
+MFI of H-2Kb/SIINFEKL
+circRNA-SIINFEKL
+circRNA (no Kozak)
+circRNA (no IRES)
+mRNA-OVA
+PBS
+0 5×104 1×105
+PBS
+mRNAOVA
+circRNA (no IRES)
+circRNA (no Kozak)
+circRNA
+p = 0.0183
+***
+***
+ 
+ 
+ 
+Supplementary Fig. 3 | High stability of small circRNA relative to long modified mRNA and large 
+circRNA. a, confocal microscopy images (green: Broccoli-DFHBI-1T; blue: nuclei) of DC2.4 cells treated 
+with linear or circular Broccoli for 1-168 h, prior to adding DFHBI-1T before analysis. b, Representative 
+agarose gel electrophoresis images of small circRNA-SIINFEKL, liRNA-SIINFEKL, and 5moU-modified 
+CleanCap mRNA-OVA after storage in PBS for the indicated number of days. 
+ 
+ 
+  
+50μm
+Linear Broccoli
+circBroccoli
+1h 12h 24h 48h 72h 120h 168h
+circRNA-SIINFEKL
+5moU-mRNA-OVA
+25 ºC
+01 5 9131728M
+4 ºC
+0 7 21 35 49 63 70M
+-20 ºC
+071421496390120150M
+b)
+a) Incubation time in cells
+Storage time (days)
+M: marker
+01234567M
+M0123
+M 0123
+liRNA-SIINFEKL
+ 
+ 
+ 
+Supplementary Fig. 4 | Validation of circRNA-RBD synthesis. a, HPLC chromatogram of circRNA-RBD 
+product after column purification. b, an agarose gel electrophoresis image showing the successful synthesis 
+of circRNA-RBD (marked by arrow). circRNA-RBD product was treated with RNase R and column purified 
+before gel electrophoresis. The >3k-nt band is presumably dimeric circRNA. c, Sanger sequencing of 
+circRNA-RBD cDNA indicates the precise circularization circRNA-RBD. 
+
+ 
+ 
+ 
+Supplementary Fig. 5 | Serum concentrations of chemokines 12 h after administration of 5 µg circRNA-
+SIINFEKL and 5moU-mRNA-OVA, each of which was formulated in liposome, SM-102 LNPs, MC3 LNPs, 
+and KC2 LNPs, respectively (n = 5). Ns: non-significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, 
+by one-way ANOVA with Bonferroni post-test. 
+ 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 6 | LNPs promoted the intracellular delivery of circRNA in DCs. a, Confocal 
+microscopy images showing efficient LNP-circRNA-Cy5 delivery to DC2.4 cells (100 nM circRNA). Cy5 
+signal from circRNA not colocalized with Lysotracker indicates circRNA endosome escape. Blue: nuclei 
+stained with Hoechst33342. Green: endolysosome stained with LysoTracker Green DND-26. Red: Cy5-
+circRNA. b, Flow cytometric analysis (MFI) of DC2.4 cells incubated with free Cy5-circRNA or LNP-Cy5-
+circRNA showed that LNPs enhance circRNA delivery to DCs. LNPs were prepared using SM-102 as the 
+ionizable lipid. ****p < 0.0001, by t-test of the AUC. 
+ 
+ 
+  
+Cy5 MFI of DCs
+Incubation time (h)
+0 10 20 30
+0
+500
+1000
+1500 LNP-circRNA
+Free circRNA****
+a)
+b)
+Incubation time in cells
+0.5 h
+1 h
+3 h
+Hochest
+33342
+Lysotracker 
+Green
+Cy5-
+circRNA Merged
+50μM 
+Cy5
+ 
+We also studied circRNA delivery by liposome (lipo-circRNA) synthesized from 1,2-dioleoyl-3-
+trimethylammonium-propane (DOTAP), 1,2-distearoyl-sn-glycero-3-PE (DSPE)-PEG2000, and cholesterol 
+(molar ratio: 10: 1: 10)S1 that has great safety. Dynamic light scattering (DLS) showed the lipo-circRNA 
+diameter of ~120 nm in PBS, with only slight size increase in 1% FBS (Extended Data Fig. 1a), suggesting 
+good stability. We loaded SIINFEKL-encoding circRNA into liposomes at N:P ratios of 1:1, 3:1, and 10:1, 
+respectively, (Extended Data Fig. 1b) all of which had ~95% circRNA encapsulation efficiency (amine (N) in 
+liposome, phosphate (P) in RNA). As evaluated by the SIINFEKL presentation on DCs, N:P ratio of 3:1 and 
+10:1 resulted in most SIINFEKL presentation on DCs (Extended Data Fig. 1c-d). We chose 10:1 for further 
+study due to the similarity to Lipofectamine.  
+ 
+DCs are professional APCs that mediate antigen presentation to elicit adaptive immunity. To study 
+intracellular lipo-circRNA delivery to DCs, circRNA was labeled with a Cy5-complementary DNA (cDNA) for 
+fluorescence tracking of intracellular circRNA. After incubation of DCs with liposomal vs. free circRNA-Cy5 
+for a series of time up to 24 h, flow cytometric analysis revealed efficient cell uptake of lipo-circRNA within 1 
+h, in contrast to undetectable cell uptake of free circRNA (Extended Data Fig. 1f-g). To further explore 
+cellular localization of circRNA, the nuclei and endolysosomes of above-treated DCs were also stained with 
+Hoechst33342 and LysoTracker-Green, respectively. Fluorescence confocal laser scanning microscopy 
+(CLSM) verified the efficient cell uptake of lipo-circRNA into endolysosomes, and importantly, liposomes 
+mediated efficient escape of circRNA from the endolysosome to cytosol where peptide antigens are 
+translated (Extended Data Fig. 1e, h). 
+ 
+We then studied lipo-circRNA delivery in Balb/c mice using circRNA modified with near-infrared dye IR800, 
+which has great absorption and emission light penetration into tissues, especially superficial lymph nodes. 
+Lipo-circRNA and free circRNA were s.c. injected into the mouse footpad, followed by IVIS imaging and 
+quantification of fluorescence intensities at the same regions of interest including draining popliteal lymph 
+nodes. Impressively, the liposome significantly promoted circRNA delivery to and retention in popliteal lymph 
+nodes for up to 8 days when the experiments ended (Extended Data Fig. 2a-b). The long retention of lipo-
+circRNA in draining lymph nodes is attributed to the efficient delivery by liposomes as well as the excellent 
+stability of circRNA. The efficient circRNA delivery and prolonged circRNA retention are critical to the 
+sustained antigen expression in APCs, which is expected to promote adaptive immunomodulation. We then 
+dissected the intranodal cell distribution of Cy5-labeled lipo-circRNA upon s.c. injection at tail base, followed 
+by lymph node isolation 24 h later, single cell preparation, and flow cytometric analysis of circRNA-Cy5 
+signal in cells (Extended Data Fig. 2c-e). Administration of free circRNA resulted in minimal signal in 
+inguinal draining lymph nodes after 24 h (Extended Data  Fig. 2c). In contrast, administration of lipo-
+circRNA led to a significantly higher signal in inguinal draining lymph nodes compared with the free circRNA 
+group (Extended Data Fig. 2c). We studied the circRNA distribution kinetics in representative intranodal Ag-
+presenting DC subsets, including CD8+ T-cell-priming cDCs (CD11c+CD11b−CD8+), CD4+ T-cell-priming 
+cDCs (CD11c+CD11b+CD4+CD103−CD205+), migratory cDCs (CD11c+CD11b− CD8−CD4−CD103+), and 
+F4/80+ macrophages (Extended Data Fig. 2e). Consistent with the above results, Lipo-circRNA promoted 
+cellular uptake of antigen, significantly increasing the frequency of CD8+ T-cell-priming cDCs, CD4+ T-cell-
+priming cDCs, migratory cDCs, and F4/80+ macrophages. Taken together, these results showed that 
+liposomes efficiently deliver circRNA to draining lymph nodes and promote uptake by APCs in draining lymph 
+nodes, which are prerequisites for the induction of T cell responses. 
+ 
+ 
+ 
+Supplementary Fig. 7 | Visualize KEGG pathway of TLR signaling pathway between circRNA-
+SIINFEKL and 5moU-mRNA-OVA by Pathview (https://rdrr.io/bioc/pathview/man/pathview.html).  
+Gene expression values can be mapped to gradient color scale. Red indicates that circRNA-SIINFEKL 
+induces higher gene expression levels than does 5moU-mRNA-OVA. Green indicates that circRNA-
+SIINFEKL induces lower gene expression levels than does 5moU-mRNA-OVA. 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 8 | Visualize KEGG pathway of RLR signaling pathway between circRNA-
+SIINFEKL and 5moU-mRNA-OVA by Pathview (https://rdrr.io/bioc/pathview/man/pathview.html).  
+Gene expression values can be mapped to gradient color scale. Red indicates that circRNA-SIINFEKL 
+induces higher gene expression levels than does 5moU-mRNA-OVA. Green indicates that circRNA-
+SIINFEKL induces lower gene expression levels than does 5moU-mRNA-OVA. 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 9 | Visualize KEGG pathway of CLR signaling pathway between circRNA-
+SIINFEKL and 5moU-mRNA-OVA by Pathview (https://rdrr.io/bioc/pathview/man/pathview.html).  
+Gene expression values can be mapped to gradient color scale. Red indicates that circRNA-SIINFEKL 
+induces higher gene expression levels than does 5moU-mRNA-OVA. Green indicates that circRNA-
+SIINFEKL induces lower gene expression levels than does 5moU-mRNA-OVA. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 10 | Visualization of the KEGG pathway of antigen processing and presentation 
+between circRNA-SIINFEKL and 5moU-mRNA-OVA by Pathview.  Gene expression values can be 
+mapped to gradient color scale. Red indicates that circRNA-SIINFEKL induces higher gene expression 
+levels than does 5moU-mRNA-OVA. Green indicates that circRNA-SIINFEKL induces lower gene expression 
+levels than does 5moU-mRNA-OVA. 
+ 
+  
+
+ 
+ 
+Supplementary Fig. 11 | circRNA elevated the expression of DC co-stimulatory factors and reduced 
+PKR activation. DC2.4 cells were treated with PBS, CpG + OVA, 5moU-mRNA-OVA, and circRNA-
+SIINFEKL (24 h), respectively, followed by flow cytometric analysis. RNA was transfected with lipofectamine 
+3000. 
+ 
+ 
+  
+-103 0 103 104 105 -103 0 103 104 105
+CD86-PerCP CD80-AF647
+PBS
+CpG + OVA
+mRNA-OVA
+circRNA-SIINFEKL
+Fluorescenceintensity
+ 
+ 
+ 
+Supplementary Fig. 12 | circRNA-OVA synthesis and PKR activation by 5moU-mRNA-OVA. a-b, An 
+agarose gel electrophoresis image (a) and their Sanger sequencing results of the cDNA of circRNA-OVA (b) 
+showing its successful synthesis. c, Western blot analysis of PKR and pPKR, and gel intensity ratio of pPKR 
+over β-actin in DC2.4 cells LNP-transfected with circRNA-SIINFEKL or 5moU-mRNA-OVA (100 nM, 24 h). *p 
+< 0.05, by paired t-test. d, Complete gel images of Fig. 4f and Supplementary Fig. 14b. 
+ 
+ 
+ 
+  
+Ligationsite
+3k
+2k
+1k
+1: RNA ladder
+2: Precursor RNA   
+before circularization
+3: circRNA-OVA
+123
+a) b)
+0.2 0.4 0.6
+circRNA-SIINFEKL
+mRNA-OVA
+p = 0.038
+P-PKR/β-actin
+pPKR
+β-actin
+PKR
+PBS
+5moU
+-
+mRNA
+-OVA
+circRNA
+-
+SIINFEKL
+c)
+pPKR
+PKR
+β-actin
+pPKR
+β-actin
+PKR
+PBS5moU
+-mRNA
+-OVA
+circRNA
+-SIINFEKL
+PBSSmall 
+circRNA
+Long 
+circRNA
+Poly(I:C)
+d)
+ 
+ 
+ 
+Supplementary Fig. 13 | Flow cytometric results of SIINFEKL/H-2Kb complex levels on vaccine-
+treated DC2.4 cells for benchmarking small circRNA-SIINFEKL vaccine against multiple modified 
+mRNA-SIINFEKL and modified mRNA-OVA vaccines. We compared circRNA-SIINFEKL, 5moU-mRNA-
+SIINFEKL, Ψ-mRNA-SIINFEKL, and 5moU-mRNA-OVA, all formulated in SM-102 LNPs, for in vitro antigen 
+presentation at the corresponding escalating concentrations. All these mRNAs have 5’/3’ UTRs, 3’ A120, and 
+CleanCap. DC2.4 cells were transfected with vaccines for 1-3 days, followed by flow cytometric analysis of 
+H-2Kb/SIINFEKL levels. Ns: non-significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, by one-way 
+ANOVA with Bonferroni post-test. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 14 | Mass dose and molar dose-based comparison of small circRNA vaccines vs 
+three modified mRNA vaccines for PBMC SIINFEKL-specific T cells elicited in mice. a, Study design. 
+C57BL/6 mice (n = 4-8; 6-8 weeks) were immunized with circRNA-SIINFEKL and three modified mRNAs at 
+escalating doses, respectively. b, Tetramer staining results on day 21 suggest that circRNA-SIINFEKL 
+elicited higher fractions of PBMC SIINFEKL-specific T cells than modified mRNAs at the corresponding 
+doses. Data were the same as Figure 5c). c, Molar dose-based comparison of small circRNA vaccines vs 
+three modified mRNA vaccines for PBMC SIINFEKL-specific T cells elicited in mice. Data were converted 
+from Figure b). Asterisks: massstatistical significance of the T cell fraction AUC relative to that for circRNA. 
+  
+Vaccination
+T cell response analysis
+C57BL/6 
+(6-8 weeks)
+Day0 142128 35 180
+131030100
+0
+20
+40
+60
+80
+%SIINFEKL-specific CD8+
+T cells in PBMCs CD8+T cells
+Vaccine dose(μg)
+***
+p = 0.0198
+p = 0.0013
+Day 21
+PBS
+60120180
+0
+20
+40
+60
+80
+PBS
+circRNA-SIINFEKL
+5moU-mRNA-OVA
+5moU-mRNA-SIINFEKL
+Ψ-mRNA-SIINFEKL
+%SIINFEKL+cellsin
+PBMCCD8+Tcells
+205080
+0
+20
+40
+60
+80
+205080
+0
+20
+40
+60
+80
+205080
+0
+20
+40
+60
+80
+205080
+0
+20
+40
+60
+80
+205080
+0
+20
+40
+60
+80
+SIINFEKL+ CD8+ 
+T cells in PBMCs
+Days after priming
+1μg 3μg 10μg 30μg 100μg
+Vaccine (s.c.at tail base)
+Blood Tcell analysis
+014212835496384
+C57Bl/6
+Day
+2448
+90
+95
+100
+Hours post
+vaccination
+Body weight (%)
+✱✱
+✱✱
+30μg(2nddose)
+0.10.31310
+0
+50
+100
+RNA vaccine (µg/mL)
+AUC MFI of
+MHC/Ag on DCs 
+Treatment:
+3days
+131030100
+0
+20
+40
+60
+80
+Mass dose (µg)
+%SIINFEKL+ CD8+ 
+T cells in PBMCs
+PBS
+5moU-mRNA-OVA
+5moU-mRNA-SIINFEKL
+Ψ-mRNA-SIINFEKL
+circRNA
+Day21
+b)
+a) c) d)
+e)
+f) PBS
+LiposomalCpG+OVA
+LNPcircRNA-SIINFEKL
+LNP5moU-mRNA-OVA
+SIINFEKL+
+CD8+Tcells
+1yearold
+C57Bl/6mice
+PBSCpG+OVAmRNA-OVA
+circRNA
+0
+5
+10
+%SIINFEKL+ CD8+ 
+T cells in PBMCs
+✱
+✱
+PBS
+LiposomalCpG+OVA
+LNPcircRNA-SIINFEKL
+LNP5moU-mRNA-OVA
+PBSCpG+OVAmRNA-OVA
+circRNA
+0
+5
+10
+%SIINFEKL+ CD8+ 
+T cells in PBMCs
+✱
+✱
+PBSCpG+OVAmRNA-OVA
+circRNA
+0
+5
+10
+%SIINFEKL+ CD8+ 
+T cells in PBMCs
+✱
+✱
+1050
+g)
+**** *** **** *** ****** ****** ******
+153045607590
+0
+20
+40
+60
+80
+PBS
+5moU-mRNA-OVA
+5moU-mRNA-SIINFEKL
+Ψ-mRNA-SIINFEKL
+SIINFEKL+ CD8+ 
+T cells in PBMCs
+Days after priming
+circRNA-SIINFEKL
+131030100
+0
+20
+40
+60
+80
+Mass dose (µg)
+%SIINFEKL+ CD8+ 
+T cells in PBMCs
+PBS
+5moU-mRNA-OVA
+5moU-mRNA-SIINFEKL
+Ψ-mRNA-SIINFEKL
+circRNA
+153045607590
+0
+20
+40
+60
+80
+PBS
+5moU-mRNA-OVA
+5moU-mRNA-SIINFEKL
+Ψ-mRNA-SIINFEKL
+SIINFEKL+ CD8+ 
+T cells in PBMCs
+Days after priming
+circRNA-SIINFEKL
+or
+3930903009003000
+0
+20
+40
+60
+80
+%SIINFEKL-specific CD8+
+T cells in PBMCs CD8+T cells
+Vaccine dose(pmole)
+Day 21
+a)
+b) c)
+ 
+ 
+ 
+Supplementary Fig. 15 | Mouse body weight changes after administration with small circRNA-
+SIINFEKL as well as modified mRNA-SIINFEKL and modified mRNA-OVA vaccines at escalating 
+doses. a, Study design (Fig. 5). All RNAs, including circRNA-SIINFEKL, 5moU-mRNA-SIINFEKL, Ψ-mRNA-
+SIINFEKL, and 5moU-mRNA-OVA, all separately formulated in SM-102 LNPs. All these mRNAs have 5’/3’ 
+UTRs, 3’ A120, and CleanCap. C57Bl/c mice (n=4-5; 6-8 weeks) were immunized with SM-102 LNPs of 
+circRNA-SIINFEKL and three benchmarking modified mRNA at escalating doses, respectively. b, circRNA-
+SIINFEKL caused less mouse body weight loss than benchmark modified mRNAs at 100 μg dose, as 
+exemplified 1-2 days after the 2nd dose. Data represent mean ± s.e.m. (n = 3-5). c, circRNA-SIINFEKL 
+caused less mouse body weight loss and more rapid recovery than benchmark modified mRNAs except for 
+the doses of 100 μg, as exemplified 0.5-3 days after the 3rd dose. Data represent mean ± s.e.m. (n = 5, 
+except for 100 μg-dose groups in which n = 3). Asterisks: statistical significance relative to circRNA. Ns: non-
+significant, *p < 0.05, **p < 0.01, by one-way ANOVA with Bonferroni post-test. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 16 | Representative flow cytometry plots for the analysis of PBMC SIINFEKL+CD8+ T 
+cells on day 35 after three doses of circRNA-SIINFEKL and benchmark modified mRNA at escalating doses 
+(Fig. 5), as stained using PE-labeled H-2Kb-SIINFEKL tetramer. 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 17 | Representative flow cytometry plots for the analysis of PBMC CD8+ T cell memory 
+elicited by RNA vaccines at escalating doses (day 180) in mice. The CD8+ T cell fractions of effector memory 
+T cells (Tem, CD62L−CD44+), central memory T cells (Tcm, CD62LhighCD44+), and naive T cells 
+(CD62L+CD44−) were quantified. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 18 | The kinetics of PD-1 expression levels on total PBMC CD8+ T cells in mice 
+immunized with circRNA-SIINFEKL and modified mRNA at escalating doses (Fig. 5). The results suggest 
+dose-dependent PD-1 upregulation shortly after immunization. The PD-1 expression levels were significantly 
+reduced starting from at most 21 days after the last immunization (day 49). 
+ 
+  
+
+ 
+ 
+ 
+ 
+Supplementary Fig. 19 | Luminex results of the serum cytokines and chemokines from mice immunized with 
+circRNA-SIINFEKL and benchmark RNA vaccines at a dose of 10 μg (Fig. 5). Serum concentrations of 
+chemokines (Eotaxin, RANTES, MCP-1, MIP-1α, MIP-1β, and KC) and cytokines (IL-3, IL-1β, TNF-α, IL-9, 
+IL-6, IFN-β, IL-2, IL-13, IL-5, IL-1α, IL-10, IL-12p40, G-CSF, and GM-CSF) were measured 6 h after the third 
+dose of escalating doses of circRNA-SIINFEKL, mRNA-OVA, 5moU-mRNA-OVA, and circRNA-OVA 
+formulated in SM-102 LNPs (n = 4). Mice and ministered with PBS or blank LNPs were used as controls. 
+These data were summarized in Fig. 5h. Data: mean ± standard error of the mean (s.e.m.); Asterisks 
+indicate statistically significant differences between circRNA and other groups. **p < 0.01, ***p < 0.001, by 
+one-way ANOVA with Bonferroni post-test. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001, one-way 
+ANOVA with Bonferroni post-test. 
+ 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 20 | Representative flow cytometry plots showing that circRNA-SIINFEKL (3 x 5 μg on 
+days 0, 14, 28) elicited CD8+ T cell memory (day35) in aged mice (1 year) (n = 5). 
+ 
+  
+
+Supplementary Fig. 21 | Small circRNA-Adpgk elicited potent neoantigen Adpgk-specific T cell 
+responses. C57BL/6 mice (n = 5) were vaccinated on day 0, day 14, and day 28 and PBMCs were analyzed
+[vaccines were s.c. administered at mouse tail base; circRNA-Adpgk, liRNA-Adpgk (5 μg), and (CpG + 
+Adpgk) (5 μg CpG + 10 μg Adpgk)]. a, Tetramer staining results showed the fractions of Adpgk+CD8+ T cells
+among all live PBMC CD8+ T cells, indicating that circRNA-Adpgk neoantigen vaccine elicited robust and 
+dose-dependent T cell responses. b, MFI of PD-1 expression on Adpgk+CD8+ T cells than that on total CD8+
+T cells in peripheral blood on day 21 (two-tailed paired t test). c, Representative flow cytometry dot plots of
+effector memory T cells (Tem, CD62L−CD44+), central memory T cells (Tcm, CD62LhighCD44+), and naive T 
+cells (CD62L+CD44−) in peripheral blood on day 70, showing circRNA-induced T cell memory. d, The effector
+memory T cells on Adpgk+CD8+ T cells than that on total CD8+ T cells in peripheral blood on day 70. Data 
+represent mean ± s.e.m. (n = 5). Asterisks in (a) indicate statistically significant differences between circRNA
+and other groups. **p < 0.01, ***p < 0.001, by one-way ANOVA with Bonferroni post-test. 
+
+ 
+ 
+ 
+Supplementary Fig. 22 | Small circRNA-E7 elicited potent HPV E7-specific T cell responses. C57BL/6 
+mice (n = 5) were vaccinated on day 0, day 14, and day 28, followed by PBMC CD8+ T cell analysis 
+[vaccines were s.c. administered in liposome at mouse tail base; circRNA-E7 (5 μg), liRNA-E7 (5 μg), and 
+(CpG + E743-62) (5 μg CpG + 10 μg E743-62)]. a-b, Representative flow cytometry plots (s) and frequency (b) 
+of PBMC E7+CD8+ T cells on day 21, as stained using PE-labeled H-2Db-RAHYNIVTF tetramer. *p < 0.05, 
+**p < 0.01, by one-way ANOVA with Bonferroni post-test. c, Representative flow cytometry results of PBMC 
+Tem, Tcm, and naive T cells on day 70. d, Elevated PD-1 expression on E7+CD8+ T cells relative to that on 
+total PBMC CD8+ T cells on day 21 (**p < 0.01, two-tailed paired t test). 
+ 
+ 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 23 | Representative gating tree used in flow cytometric analysis of tetramer staining of 
+PBMC CD8+ T cells. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 24 | Representative gating tree used in flow cytometric analysis of (a) CD8+ T cells and 
+Adpgk-specific CD8+ T cells, (b) CD4+ T cells and Treg cells, and (b) NK cells in the TME of MC38 tumours. 
+ 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 25 | Representative gating tree used in flow cytometric analysis of (a) DC cells, (b) 
+macrophages, (c) and (c) MDSC cells in the TME of MC38 tumours. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 26 | Representative gating tree used in flow cytometric analysis of circRNA+ 
+CD8+ cDCs in mouse draining lymph nodes. 
+ 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 27 | Representative gating tree used in flow cytometric analysis of circRNA+ CD4+ T-
+cell-priming CD4+ cDCs in draining lymph nodes. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 28 | Representative gating tree used in flow cytometric analysis of circRNA+ migratory 
+CD103+ cDCs in draining lymph nodes. 
+ 
+  
+
+ 
+ 
+ 
+Supplementary Fig. 29 | Representative gating tree used in flow cytometric analysis of circRNA+ 
+macrophage in draining lymph nodes. 
+ 
+ 
+  
+
+ 
+ 
+Supplementary Table 1 | RNA sequences. 
+ 
+Name Sequence (5’ à 3’) 
+LINE1 (ORF2-
+138-86) 
+CGC AUU AUC UCU CCA CGA AUC CAG CCC UUC AAA GGA UAA UAA CAG AAA 
+AAA AC 
+Rbm3-22NT UUU AUA AUU UCU UCU UCC AGA A 
+crTMV 
+(IRESmp75) 
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG A 
+LINE1-
+SIINFEKL  
+CGC AUU AUC UCU CCA CGA AUC CAG CCC UUC AAA GGA UAA UAA CAG AAA 
+AAA ACG GCC ACC AUG GAU AGC AUU AUC AAC UUU GAA AAA CUG 
+crTMV-
+SIINFEKL  
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GAU AGC AUU AUC 
+AAC UUU GAA AAA CUG 
+Rbm3-
+SIINFEKL  
+UUU AUA AUU UCU UCU UCC AGA AUC GCC ACC AUG GAG AGU AUA AUC AAC 
+UUU GAA AAA CUG 
+circRNA-ISQ UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GAG AUU AGC CAG 
+GCG GTG CAC GCC GCC CAC GCC GAG ATC AAC GAG GCC GGA AGG 
+circRNA-
+FLAG 
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GAC UAC AAG GAC 
+GAC GAC GAC AAG AUC AUC 
+circRNA-
+Adpgk 
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GCU AGC AUG ACG 
+AAU AUG GAG CUC AUG 
+circRNA-E7 UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GGC CAG GCC GAG 
+CCC GAC AGG GCC CAC UAC AAC AUC GUG ACC UUC UGC UGC AAG UGC GAC 
+circRNA-
+trp2177-
+190/gp10023-33 
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GCC AAC TGC AGC 
+GTG TAC GAT TTC TTC GTG TGG CTG CAC TAC GCC CTG AAA GTG CCT CGT 
+AAC CAG GAT TGG CTG 
+circRNA-
+trp1103-
+132/trp1455-463 
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG GAC AAC TTC AGC 
+GGC CAC AAC TGC GGC ACC TGT AGG CCT GGC TGG AGG GGC GCC GCC TGC 
+AAT CAG AAG ATC CTG ACC GTG AGG AGG AAC TGC ACC GCC CCT GAC AAC 
+CTG GGC TAC ATG TAA 
+circRNA-
+RBD440-459 
+UUC GUU UGC UUU UUG UAG UAU AAU UAA AUA UUU GUC AUA UAA GAG AUU 
+GGU UAG AGA UUU GUU CUU UGU UUG AUC GCC ACC AUG AAC CTG GAC AGC 
+AAG GTG GGC GGC AAC TAC AAC TAC CTG TAT AGG CTG TTT AGG AAG AGC 
+circRNA-OVA AAAATCCGTTGACCTTAAACGGTCGTGTGGGTTCAAGTCCCTCCACCCCCACGCCG
+GAAACGCAATAGCCGAAAAACAAAAAACAAAAAAAACAAAAAAAAAACCAAAAAAAC
+AAAACACATTAAAACAGCCTGTGGGTTGATCCCACCCACAGGCCCATTGGGCGCTA
+GCACTCTGGTATCACGGTACCTTTGTGCGCCTGTTTTATACCCCCTCCCCCAACTGT
+AACTTAGAAGTAACACACACCGATCAACAGTCAGCGTGGCACACCAGCCACGTTTT
+GATCAAGCACTTCTGTTACCCCGGACTGAGTATCAATAGACTGCTCACGCGGTTGA
+AGGAGAAAGCGTTCGTTATCCGGCCAACTACTTCGAAAAACCTAGTAACACCGTGG
+AAGTTGCAGAGTGTTTCGCTCAGCACTACCCCAGTGTAGATCAGGTCGATGAGTCA
+CCGCATTCCCCACGGGCGACCGTGGCGGTGGCTGCGTTGGCGGCCTGCCCATGG
+GGAAACCCATGGGACGCTCTAATACAGACATGGTGCGAAGAGTCTATTGAGCTAGT
+TGGTAGTCCTCCGGCCCCTGAATGCGGCTAATCCTAACTGCGGAGCACACACCCTC
+AAGCCAGAGGGCAGTGTGTCGTAACGGGCAACTCTGCAGCGGAACCGACTACTTT
+GGGTGTCCGTGTTTCATTTTATTCCTATACTGGCTGCTTATGGTGACAATTGAGAGA
+TCGTTACCATATAGCTATTGGATTGGCCATCCGGTGACTAATAGAGCTATTATATATC
+CCTTTGTTGGGTTTATACCACTTAGCTTGAAAGAGGTTAAAACATTACAATTCATTGT
+TAAGTTGAATACAGCAAAGCCACCATGGGCAGCATCGGCGCCGCCAGCATGGAGTT
+CTGCTTCGACGTGTTCAAGGAGCTGAAGGTGCACCACGCCAACGAGAACATCTTCT
+ACTGCCCCATCGCCATCATGAGCGCCCTGGCCATGGTGTACCTGGGCGCCAAGGA
+CAGCACCCGGACCCAGATCAACAAGGTGGTGCGGTTCGACAAGCTGCCCGGCTTC
+GGCGACAGCATCGAGGCCCAGTGCGGCACCAGCGTGAACGTGCACAGCAGCCTG
+ 
+CGGGACATCCTGAACCAGATCACCAAGCCCAACGACGTGTACAGCTTCAGCCTGGC
+CAGCCGGCTGTACGCCGAGGAGCGGTACCCCATCCTGCCCGAGTACCTGCAGTGC
+GTGAAGGAGCTGTACCGGGGCGGCCTGGAGCCCATCAACTTCCAGACCGCCGCCG
+ACCAGGCCCGGGAGCTGATCAACAGCTGGGTGGAGAGCCAGACCAACGGCATCAT
+CCGGAACGTGCTGCAGCCCAGCAGCGTGGACAGCCAGACCGCCATGGTGCTGGT
+GAACGCCATCGTGTTCAAGGGCCTGTGGGAGAAGACCTTCAAGGACGAGGACACC
+CAGGCCATGCCCTTCCGGGTGACCGAGCAGGAGAGCAAGCCCGTGCAGATGATGT
+ACCAGATCGGCCTGTTCCGGGTGGCCAGCATGGCCAGCGAGAAGATGAAGATCCT
+GGAGCTGCCCTTCGCCAGCGGCACCATGAGCATGCTGGTGCTGCTGCCCGACGAG
+GTGAGCGGCCTGGAGCAGCTGGAGAGCATCATCAACTTCGAGAAGCTGACCGAGT
+GGACCAGCAGCAACGTGATGGAGGAGCGGAAGATCAAGGTGTACCTGCCCCGGAT
+GAAGATGGAGGAGAAGTACAACCTGACCAGCGTGCTGATGGCCATGGGCATCACC
+GACGTGTTCAGCAGCAGCGCCAACCTGAGCGGCATCAGCAGCGCCGAGAGCCTGA
+AGATCAGCCAGGCCGTGCACGCCGCCCACGCCGAGATCAACGAGGCCGGCCGGG
+AGGTGGTGGGCAGCGCCGAGGCCGGCGTGGACGCCGCCAGCGTGAGCGAGGAG
+TTCCGGGCCGACCACCCCTTCCTGTTCTGCATCAAGCACATCGCCACCAACGCCGT
+GCTGTTCTTCGGCCGGTGCGTGAGCCCCTGAAAAAAACAAAAAACAAAACGGCTAT
+TATGCGTTACCGGCGAGACGCTACGGACTT 
+circRNA-RBD CAAAUCCGUUGACCUUAAACGGUCGUGUGGGUUCAAGUCCCUCCACCCCCACGC
+CGGAAACGCAAUAGCCGAAAAACAAAAAACAAAAAAAACAAAAAAAAAACCAAAAAA
+ACAAAACACAUUAAAACAGCGGAUGGGUACCCCACCAUCCGACCCACUGGGUGUA
+GUACUCUGGUACUUCGUACCUUUGUACGCCUGUUCUUCCCAUUGUACCCUUCCU
+GAACUUCCAACCCAAGUAACGUUAGAAGCUCAACAUUUAGUACAACAGGAAGCAC
+CACAUCCAGUGGUGUUUAGUACAAGCACUUCUGUUUCCCCGGAGCGAGGUAUAG
+GCUGUACCCACUGCCAAAAACCUUUAACCGUUAUCCGCCAACCAACUACGUAAAA
+GCUAGUAGUAUUAUGUUUUUAACUAGGCGUUCGAUCAGGUGGAUUUCCCCUCCA
+CUAGUUUGGUCGAUGAGGCUAGGAAUUCCCCACGGGUGACCGUGUCCUAGCCUG
+CGUGGCGGCCAACCCAGCCCACUCACUAUUUGUUUUCGCGCCCAGUUGCAAAAA
+GUGUCGGGGCUGGGACGCCUUUUUAUAGACAUGGUGUGAAGACUCGCAUGUGC
+UUGGUUGUGAUUCCUCCGGCCCCUGAAUGCGGCUAACCUUAACCCUGGAGCCUU
+GUGUCACAAACCAGUGAUGAUAAGGUCGUAAUGAGCAAUUCCGGGACGGGACCG
+ACUACUUUGGGUGUCCGUGUUUCUUAUUUUUCUUAUUAUUGUCUUAUGGUCACA
+GCAUAUAUAUAACAUAUACUGUGAUCACUAGUGCCACCAUGGAUGCAAUGAAGAG
+AGGGCUCUGCUGUGUGCUGCUGCUGUGUGGAGCAGUCUUCGUUUCGCCCAGCC
+AGGAAAUCCAUGCCCGAUUCAGAAGACGCGUCCAGCCAACCGAGAGCAUCGUCA
+GAUUUCCCAACAUUACAAAUCUGUGCCCCUUCGACGAGGUGUUCAACGCCACAC
+GCUUCGCUUCAGUGUACGCAUGGAACCGCAAGCGCAUAUCUAACUGCGUCGCGG
+AUUAUUCUGUCCUCUACAACCUCGCCCCUUUCUUCACCUUCAAGUGCUACGGAG
+UGUCACCGACUAAGCUGAACGAUCUCUGCUUUACCAACGUCUACGCGGACUCCU
+UCGUGAUAAGAGGUGAUGAAGUGAGACAAAUAGCCCCAGGUCAGACUGGUAACA
+UCGCAGAUUACAACUACAAAUUGCCUGAUGAUUUCACUGGUUGCGUUAUCGCGU
+GGAACUCUAAUAAGCUCGAUUCUAAGGUCAGUGGUAACUACAAUUACCUGUACCG
+CUUGUUUAGGAAGUCAAACCUGAAGCCUUUCGAGAGGGAUAUUUCAACCGAAAUC
+UAUCAAGCGGGUAACAAGCCGUGUAACGGUGUGGCAGGAUUUAACUGCUACUUC
+CCCCUGCGGUCUUACAGCUUCCGGCCAACCUAUGGCGUGGGUCACCAACCUUAU
+CGCGUGGUGGUUCUGAGUUUCGAACUGUUGCACGCUCCCGCCACGGUAUGCGG
+UCCCAAGAAGAGCACUAACUUGGUGAAGAAUAAGUGCGUGAAUUUCGGCGGAGG
+AGGCAGCGGCGGAGGAGGCAGCGGAAGCGGCUACAUCCCAGAAGCCCCUAGAGA
+CGGACAGGCUUACGUGCGAAAAGACGGCGAGUGGGUGCUGCUGAGCACAUUCCU
+GGGAAGGAGCUGAUGAUGAACCGGUAAAAAACAAAAAACAAAACGGCUAUUAUGC
+GUUACCGGCGAGACGCUACGGACUU 
+ 
+ 
+  
+ 
+Supplementary Table 2 | Comparison of the structures of circRNA-SIINFEKL, circRNA-OVA, and three 
+modified mRNA encoding OVA or SIINFEKL. The secondary structures were predicted using RNAfold. 
+ 
+ 
+  
+
+ 
+Supplementary Table 3 | A list of antibodies used in this study. 
+Targets Fluorochromes Clones Vendors Catalogue # 
+CD45 Brilliant Violet 
+421 
+30-F11 BioLegend 103133 
+CD11c Alexa Fluor 594 N418 BioLegend 117346 
+CD11b FITC M1/70 BioLegend 101205 
+CD8a APC/Cy7 53-6.7 BioLegend 100713 
+CD4 PerCP/Cy5.5 GK1.5 BioLegend 100433 
+CD103 Brilliant Violet 
+605 
+2E7 BioLegend 121433 
+CD205 PE/Cy7 NLDC-145 BioLegend 138209 
+F4/80 APC/Cy7 BM8 BioLegend 123117 
+CD11b PE/Cy5 M1/70 BioLegend 101209 
+NK1.1 APC S17016D BioLegend 156505 
+CD3 PerCP/Cy5.5 17A2 BioLegend 100217 
+CD279(PD-1) Brilliant Violet 
+421 
+29F.1A12 BioLegend 135217 
+IFN-γ PE XMG1.2 BioLegend 505807 
+TNF-α FITC MP6-XT22 BioLegend 506303 
+CD44 PE/Cy5 IM7 BioLegend 103009 
+CD62L FITC MEL-14 BioLegend 104405 
+CD25 FITC 3C7 BioLegend 101907 
+FoxP3 Alexa Fluor 647 MF-14 BioLegend 126407 
+CD279(PD-1) N/A RMP1-14-CP162 Bio X Cell CP162 
+CD152(CTLA-4) N/A 9H10-CP146 Bio X Cell CP146 
+CD4 N/A YTS 177 Bio X Cell BP0003-3 
+CD8α N/A YTS 169.4 Bio X Cell BP0117 
+NK1.1 N/A PK136 Bio X Cell BP0036 
+Phospho-PKR 
+(Thr446) 
+N/A  Thermo Fisher PA5-121356 
+EIF2AK2/PKR N/A  Thermo Fisher 18244-1-AP 
+FLAG M2 N/A  Sigma-Aldrich F1804 
+𝜷-actin N/A 15G5A11/E2 Thermo Fisher MA1-140 
+ 
+ 
+  
+ 
+Supplementary Table 4 | A list of peptides used in this study. 
+Peptide names Sequences 
+SIINFEKL SIINFEKL 
+ISQ ISQAVHAAHAEINEAGR 
+FLAG DYKDDDDK 
+Adpgk ASMTNMELM 
+HPV-16 E743-62 GQAEPDRAHYNIVTFCCKCD 
+SARS CoV-2 Spike protein 
+RBD440-459 
+NLDSKVGGNYNYLYRLFRKS 
+Trp2177-190 ANCSVYDFFVWLHY 
+gp10023-33 ALKVPRNQDWL 
+Trp1103-132 DNFSGHNCGTCRPGWRGAACNQKILTVRN 
+Trp1455-463 CTAPDNLGYM 
+ 
+ 
+  
+ 
+Supplementary reference 
+Zhuang, Y. et al. PEGylated cationic liposomes robustly augment vaccine-induced immune responses: Role 
+of lymphatic trafficking and biodistribution. J Control Release 159, 135-14 (2012). 
+ 

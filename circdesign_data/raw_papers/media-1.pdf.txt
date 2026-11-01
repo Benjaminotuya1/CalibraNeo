@@ -1,0 +1,789 @@
+
+=== PAGE 1 ===
+Extended Data Figures
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+CR1
+CR2
+CR3
+CR4
+Predicted Secondary structure
+(MFE structures)
+Predicted Secondary structure
+(Pij structures)
+E1/E2
+Spacer
+IRES
+ORF
+E1/E2
+Spacer
+IRES
+ORF
+E1/E2
+Spacer
+IRES
+ORF
+E1/E2
+Spacer
+IRES
+ORF
+Extended Data Figure 1. Secondary structure predictions of CR1–CR4.Left: Predicted minimum free energy (MFE)
+structures. Right: Base-pairing probability (Pij) structures, with intra-region and inter-region base-pairing interactions shown
+in blue and red. Each region is color-coded as indicated.
+29
+=== PAGE 2 ===
+Predicted Secondary structure
+(MFE structures)
+Predicted Secondary structure
+(Pij structures)
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200 1300 1400
+1500
+1600
+1700
+1800
+1900
+2000
+2100
+2200
+2300
+2400
+CR5
+CR6
+CR-Ther
+CR-Novo
+E1/E2
+Spacer
+IRES
+ORF
+E1/E2
+Spacer
+IRES
+ORF
+E1/E2
+Spacer
+IRES
+ORF
+E1/E2
+Spacer
+IRES
+ORF
+Extended Data Figure 2. Secondary structure predictions of CR5, CR6, CR-Ther and CR-Novo.Left: Predicted
+minimum free energy (MFE) structures. Right: Base-pairing probability (Pij) structures, with intra-region and inter-region
+base-pairing interactions shown in blue and red. Each region is color-coded as indicated.
+30
+=== PAGE 3 ===
+CR1CR2CR3CR4CR5CR6
+CR-The
+r
+CR-
+Nov
+o
+LR-nov
+o (mψ)LR-novopolyIC
+0
+200
+400
+600
+800
+IFN-β (pg/ml)
+✱✱✱
+pol
+yI:C R3R3-up
+R3-dow
+n
+3A1 3A2 3A3 3A4 3A5
+0
+20
+40
+60
+80
+100
+800
+1000
+1200
+IFN-β (pg/ml)
+✱
+✱✱
+✱✱
+✱✱
+✱✱✱
+✱✱✱
+R3          R3↑ R3↓          3A1         3A2          3A3           3A4          3A5  
+a
+cb
+Extended Data Figure 3. Purification and innate immunogenicity of circRNA. a,Size-exclusion column (SEC)
+chromatography purification of circRNA. The major peak was crudely segmented into two fractions as R3↑ and R3↓ (left
+panel). The major peak was separated into five fractions as 3A1–3A5 (right panel).b, In vitro interferon β expression level
+from cell culture 24 h post-transfection of circRNAs collected from different SEC fractions.c, In vitro interferon β expression
+level from cell culture 24 h post-transfection of different SEC purified circRNAs or linear mRNA (LR-Novo, mψ refers to N1-
+methylpseudouridine modification).
+31
+=== PAGE 4 ===
+a b
+d e
+Time (d)
+Total Flux [p/s]
+0 1 2 3 4 5 6 7 8
+105
+106
+107
+108
+109
+CR-FLuc-LPP
+LR-FLuc-LPP
+PBS
+** ***
+Time/h
+LR-Fluc
+CR-Fluc
+c
+f
+PBS
+LR-FLuc
+-LPP
+CR-FLuc
+-LPP
+0
+2×108
+4×108
+6×108
+8×108
+AUC (p/s x day)
+x 5.3
+CR1
+-LPP
+CR2
+-LPP
+CR3
+-LPP
+CR4
+-LPP
+CR5
+-LPP
+CR6
+-LPP
+CR-Ther-LPPCR-Novo-LPPLR-Novo-LPP
+0
+50
+100
+150
+0.0
+0.1
+0.2
+0.3
+0.4
+Z-Average (nm)
+PDI
+size
+PDI
+CR1
+-LPP
+CR2
+-LPP
+CR3
+-LPP
+CR4
+-LPP
+CR5
+-LPP
+CR6
+-LPP
+CR-Ther-LPPCR-Novo-LPPLR-Novo-LPP
+15
+20
+25
+30
+35
+40
+Zeta Potential (mV)
+g h i
+CR1
+-LPP
+CR2
+-LPP
+CR3
+-LPP
+CR4
+-LPP
+CR5
+-LPP
+CR6
+-LPP
+CR-The
+r-LPP
+CR-Nov
+o-LPP
+LR-
+Nov
+o-LPP
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+Normalized RNA Concent D0 D30
+GFP Intensity
+Count
+BLK
+LR-GFP
+CR-
+GFP
+50 ng
+200 ng
+500 ng
+500 ng
+Naked
+ circ
+RNA
+LNP
+-circRNA
+LPP-
+circ
+RNA
+0
+20
+40
+60
+80
+100
+83.3
+49.0
+6.3
+Residual circRNA (%)
+✱✱✱✱
+✱✱✱✱
+Extended Data Figure 4. Characterization of Lipopolyplex (LPP)-formulated circRNAs. a,Schematic represen-
+tation of the two-step manufacturing process for LPP-formulated circRNA. The lipid mixture consists of an ionizable lipid, a
+PEGylated lipid, cholesterol, and a helper lipid, combined to encapsulate the circRNA core into a stable nanoparticle structure.
+b, Hydrodynamic size (in nanometers, nm) and polydispersity index (PDI) of LPP-formulated linear RNA (LR-FLuc) and cir-
+cular RNA (CR-FLuc), determined by dynamic light scattering (DLS). Data are represent asmean ± s.d. from three independent
+measurements (n = 3). c, Zeta potential (in millivolts, mV) of LPP-formulated circRNA and linear RNA, reflecting the surface
+charge properties of the nanoparticles. Measurements were conducted in triplicate, with data presented asmean ± s.d. (n = 3).
+d, Representative whole-body in vivo imaging system (IVIS) images of Balb/c mice administered LPP-formulated CR-FLuc or
+LR-FLuc. Bioluminescence was recorded at 6, 24, 48, 72, 96, and 168 hours post-injection to monitor luciferase expression over
+time. e, Total luminescence flux (in photons per second) plotted as a function of time in Balb/c mice (n = 3per group). Data
+are shown for CR-FLuc-LPP (green), LR-FLuc-LPP (pink), and a phosphate-buffered saline (PBS) control (gray), illustrating
+the temporal dynamics of luciferase activity.f, Area under the curve (AUC) of luminescence from 6 to 168 hours, quantifying the
+cumulative luciferase activity for CR-FLuc-LPP, LR-FLuc-LPP, and PBS groups. Each data point represents themean ± s.e.m.
+from three mice.g, Hydrodynamic size (in nm) and PDI of LPP-formulated circRNA and linear RNA, verifying the consistency
+of nanoparticle size and distribution. Data are presented asmean ± s.d. from three independent measurements (n = 3). h, Zeta
+potential (in mV) of LPP-formulated circRNA and linear RNA, further characterizing the surface charge of the nanoparticles.
+Data are presented as mean ± s.d. from three independent measurements (n = 3). i, Storage stability of LPP-formulated
+circRNA and linear RNA at4 ◦C, evaluated by assessing RNA integrity over time to infer the shelf-life potential of circRNA
+vaccines. Samples were tested with RNA integrity normalized to day 0 (set as 1). Data are presented asmean ± s.d. from three
+independent measurements (n = 3).
+32
+=== PAGE 5 ===
+CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Novo
+CR-
+Ther
+100
+101
+102
+103
+104
+884
+575
+2459
+2471
+836
+873
+2623
+1970
+pVNT
+nsns ns ns ns ns ns
+a b c
+d
+CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Novo
+CR-
+Ther
+102
+103
+104
+3847
+1800
+2720
+2797
+2398
+2648
+4645
+7486
+pVNT
+** ***ns ns** ** **
+CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Novo
+CR-
+Ther
+104
+105
+66552
+100432
+60288
+71742
+87136
+134644
+90008
+170511
+pVNT
+ns * ***** *** *****
+CR1 CR2 CR3 CR4 CR5 CR6 CR-Novo CR-Ther
+10 2
+10 3
+10 4
+10 5
+10 6
+pVNT
+D10 D14 D21 D28
+Extended Data Figure 5. In vivo immune responses induced by circRNA rabies vaccine. a–c, Pseudovirus
+neutralizing titer (pVNT) of mice sera immunized with two doses of LPP formulated RNA vaccines on D10 (a), D14 (b) and
+D28 (c). pVNT data were presented asmean ± geometric s.d.. d, Summary of pVNT results from D10 to D28 of all vaccinated
+Balb/c mice (n = 5) Data were presented as geometricmean ± geometric s.d..
+33
+=== PAGE 6 ===
+CR1 CR2
+ CR3
+CR4 CR5
+ CR6
+CR-Novo
+CR-Ther
+Ctrl Stimulated Ctrl Stimulated Ctrl Stimulated
+Ctrl Stimulated Ctrl Stimulated Ctrl Stimulated
+Ctrl Stimulated Ctrl Stimulated
+Extended Data Figure 6. IFN-γ ELISpot analysis of mice splenocytes on Day 28.circDesign-generated sequences
+show robust cellular immune responses triggered. In each panel, the first column represents control group (unstimulated cells)
+while the rest three column refers to three technical replicates of peptide pool stimulated sample. Each row represents the
+sample from one individual mouse.
+34
+=== PAGE 7 ===
+Live/Dead
+SSC-A
+SSC-A
+FSC-A
+SSC-A
+CD3 CD4
+CD8
+IFN-γ
+IFN-γ
+CD3+ CD4+CD3+ CD8+
+CD3+ CD4+CD3+ CD8+
+CD3+ CD8+ CD3+ CD4+
+CD3+ CD4+CD3+ CD8+
+TNF-α
+TNF-α
+IL-2
+IL-2
+IL-4
+IL-4
+CD3+ CD8+
+CD3+ CD4+
+Extended Data Figure 7. The gating strategy for FACS analysis of cell-mediated immune response in mice
+vaccinated with circRNA vaccines. Representative images from an individual mouse splenocyte sample were shown to
+process the FACS data step-by-step and the same gating strategy was applied to all other experimental groups.
+a b c d
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0.0
+0.1
+0.2
+0.3
+IL-2
+% of postive in CD4+ cells
+** ns ns ns ns ns ns*
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0
+1
+2
+3
+TNF-α
+% of postive in CD4+ cells
+nsns ns nsns ns ns ns
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+IFN-γ
+% of postive in CD4+ cells
+ns ns * ns nsnsns ns
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+IL-4
+% of postive in CD4+ cells
+ns nsns ns ns ns ns ns
+e f g h
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+IL-4
+% of postive in CD8+ cells
+ns ns nsns ns ns ns ns
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0
+1
+2
+3
+4
+TNF-α
+% of postive in CD8+ cells
+ns ns ns ns ns ns ns ns
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0
+1
+2
+3
+4
+IFN-γ
+% of postive in CD8+ cells
+ns nsns ns ns ns ns ns
+PBS CR1 CR2 CR3 CR4 CR5 CR6
+CR-
+Ther
+CR-
+Novo
+0
+1
+2
+3
+4
+IL-2
+% of postive in CD8+ cells
+ns nsnsns *** ns ns
+Extended Data Figure 8.In vivo immune response analysis of LPP-Delivered RNA rabies vaccines. a–d,Flow
+cytometry (FACS) analysis of CD8+ T cells secreting IFN-γ (a), TNF-α (b), IL-2 (c) and IL-4 (d), following stimulation with
+a rabies virus glycoprotein (RABV-G) peptide pool.e–h, FACS analysis of CD4+ T cells secreting IFN-γ (e), TNF-α (f), IL-2
+(g) and IL-4 (h), following stimulation with a rabies virus glycoprotein (RABV-G) peptide pool.
+35
+=== PAGE 8 ===
+CR3 structure prediction CR3 Ribo-seq alignment
+a b
+CR-Novo structure prediction CR-Novo Ribo-seq alignment
+c d
+ExtendedDataFigure9. CircularizedRNAbasepairingprobabilityandribosomefootprintsalignment. Pairwise
+visualization of base pairing in CR3 (a) and CR-Novo (c). The circular plot showing ribosome footprint depth on CR3 (b) and
+CR-Novo (d). Each functional region was labeled with different color as indicated.
+36
+=== PAGE 9 ===
+a
+6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168
+104
+106
+108
+108
+109
+1010
+1011
+CR3
+copies/μg RNA
+muscle spleen liver lung heartlymph node kidney brain sm. int.
+6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168 6 244872168
+104
+106
+108
+108
+109
+1010
+1011
+CR-Novo
+copies/μg RNA
+muscle spleen liver lung heartlymph node kidney brain sm.
+int.
+b
+c
+0.3%0.3%
+99.4%
+CR3
+7.7%
+3.7%
+88.5%
+19.6%
+8% 70%
+ muscle at injection site
+ spleen
+ lymph node
+ liver
+ lung
+ heart
+ kidney
+ brain
+ Sm. int.
+66.5% 2.8%
+29.4%
+ muscle
+ spleen
+ lymph node
+ liver
+ lung
+ heart
+ kidney
+ brain
+ sm. int.
+67.1%
+23.3%
+7.4%
+ muscle at injection site
+ spleen
+ lymph node
+ liver
+ lung
+ heart
+ kidney
+ brain
+ Sm. int.
+37.9%
+34.8%
+25.4%
+ muscle at injection site
+ spleen
+ lymph node
+ liver
+ lung
+ heart
+ kidney
+ brain
+ Sm. int.
+v
+2.7%
+20.1%
+74.5%
+ muscle at injection site
+ spleen
+ lymph node
+ liver
+ lung
+ heart
+ kidney
+ brain
+ Sm. int.
+0.1%0.7%
+99%
+ muscle at injection site
+ spleen
+ lymph node
+ liver
+ lung
+ heart
+ kidney
+ brain
+ Sm. int.
+24h6h 48h 72h
+CR-Novo
+muscle
+spleen
+lymph node
+liver
+lung
+heart
+kidney
+brain
+sm. int.
+Extended Data Figure 10. In vivo biodistribution of LPP formulated circRNA. a,b,RT-qPCR quantification of
+CR-Novo (a) and CR3 (b) in different tissues at different time points (6 h, 24 h, 48 h, 72 h, 168 h) in Balb/c mice (n = 5per
+group at each time point).c, Pie plot showing the tissue distribution of circular RNA at various time points.
+37

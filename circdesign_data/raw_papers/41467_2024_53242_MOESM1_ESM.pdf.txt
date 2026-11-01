@@ -1,0 +1,258 @@
+Supplementary Information 1 
+ 2 
+A s ingle-dose c ircular RNA vaccine prevents Zika virus infection  without 3 
+enhancing dengue severity in mice 4 
+ 5 
+Xinglong Liu1,2,#, Zhengfeng Li1,#, Xiaoxia Li1,2,#, Weixuan Wu1,2, Huadong Jiang1,3, 6 
+Yufen Zheng1,2, Junjie Zhou1, Xianmiao Ye4, Junnan Lu1, Wei Wang5, Lei Yu6, Yiping 7 
+Li7, Linbing Qu1, Jianhua Wang1, Feng Li 6, Ling Chen 1,8,*, Linping Wu1,2,*, Liqiang 8 
+Feng1,2,*  9 
+Supplementary Methods 10 
+Production of modified linear mRNAs. mRNAs encoding EDIII -Fc and NS1  were 11 
+synthesized by in vitro transcription. In brief, plasmid templates covering the tPA signal 12 
+sequence and the coding sequences for EDIII-Fc and NS1 were constructed, linearized, 13 
+and transcribed in vitro by T7 RNA polymerase. During the transcription process, co -14 
+transcriptional capping was employed to add cap analogs to the 5’ end of the mRNA in 15 
+real time. Meanwhile, modified nucleobase N1 -Methylpseudouridine-5-Triphosphate 16 
+(m1ψ) was incorporated in place of the standard uridine-5-Triphosphate. Following in 17 
+vitro transcription, mRNA products were purified through the lithium chloride (LiCl) 18 
+method and dissolved in RNase-free water. Finally, purified mRNAs were analyzed by 19 
+agarose gel electrophoresis , quantified by spectrophotometry , and subjected to 20 
+encapsulation by LNPs.  21 
+Supplementary Figures 22 
+ 23 
+ 24 
+ 25 
+Supplementary Fig. 1  (Related to Fig. 1) . Generation and characterization of 26 
+circRNAs based on Ana PIE method. a, Schematic diagram of the circRNA plasmids 27 
+(Ana). Fragments containing each indicated element were inserted downstream of the 28 
+T7 promoter in pGEM-T-easy vector. Coding sequences for EDⅢ, EDⅢ-Fc, EDⅢ-Fd, 29 
+and NS1 were fused with the signal sequence of human tissue plasminogen activator 30 
+(tPA) at 5’ termini. Black arro ws, primers for amplifying the DNA templates for 31 
+circRNA precursors (F, R) and control linear precursors  (F, Rtruncated). Red arrows , 32 
+primers for amplifying junction site. b-d, Purification of the circRNAs encoding EDⅢ 33 
+
+(b), ED Ⅲ-Fc ( c), and EDⅢ-Fd ( d). Graphs of HPLC and images of agarose-gel 34 
+electrophoresis captured at 10 or 30 min are shown. Collected fractions have been  35 
+indicated. Peak fractions containing the majority of circRNAs are marked in red. M, 36 
+DNA marker DL2000, from top to bo ttom: 2000, 1000, 750, 500, 250, 100 bp.  e-g, 37 
+RNase R digestion of the circRNAs encoding EDⅢ (e), EDⅢ-Fc (f), EDⅢ-Fd (g), and 38 
+their respective linear precursors. Images of agarose-gel electrophoresis captured at 10 39 
+and 30 min are shown. h, Junction site PCR and Sanger sequencing . circRNAs and 40 
+control linear precursors were treated with or without RNase R digestion. PCR products 41 
+were analyzed by agarose-gel electrophoresis and Sanger sequencing. Target fragment 42 
+is 223 bp. Shown are the results for Fluc circRNA. Results for other circRNAs are 43 
+similar. i, Western blot analysis of ED Ⅲ, EDⅢ-Fc, and ED Ⅲ-Fd in cell lysates and 44 
+culture media of the transfected HEK293T cells using EDⅢ protein immune mice sera 45 
+in the presence of β-mercaptoethanol. Molecular weights of monomeric EDⅢ, EDⅢ-46 
+Fc, and EDⅢ-Fd are 12, 38, and 15 kDa, respectively. GAPDH in cell lysates was also 47 
+analyzed. j, k, Expression of EGFP in A549 cells (j) and Fluc in HEK293T cells  (k) 48 
+that were transfected with EGFP or Fluc circRNA before or after HPLC purification. 49 
+Scale bar = 200 μm. Data points in ( j, k) represent three technical replicates and 50 
+presented as mean ± s.d. Data are representative of at least two independent experiments 51 
+with similar results. Source data are provided as a Source Data file.  52 
+ 53 
+ 54 
+Supplementary Fig. 2 (Related to Fig. 1). Gating strategies for lymphocyte analysis. 55 
+a, Gating strategy for Tfh cells in the ILNs. Tfh cell designation criteria: CD3+, CD4+, 56 
+CXCR5+, PD-1+. b, Gating strategy for plasma cells and GL7+ GC B cells in the ILNs. 57 
+Plasma cell designation criteria: CD138+, CD45R+. GL7+ GC B cell designation criteria: 58 
+CD38-, CD45R+, CD95+, GL7+. c, Gating strategy for CD4 + T and CD8 + T cells that 59 
+secret IFN-γ, TNFα, or IL-2 in the spleens. 60 
+  61 
+
+ 62 
+ 63 
+Supplementary Fig. 3 (Related to Fig. 2) . Immunogenicity and protective effects 64 
+of EDⅢ -Fc and EDⅢ -Fd circRNAs. a, Growth curves of the pups after ZIKV 65 
+challenge. b, Brain masses of the pups at sacrifice. Box plots indicate median (middle 66 
+line), 25-75 percentile (box), 5-95 percentile (whiskers) and outliers (single points). c, 67 
+Anti-E IgG titers in Ifnar-/- mice at 2 weeks after each immunization.  Serially diluted 68 
+mice sera were measured by ELISA. IgG titers were calculated as the reciprocals of the 69 
+highest dilutions at which the optical density values at 450 nm (OD450) were equal to 70 
+or higher than cut -off values. Limit of detection (LOD) is 100 and marked by gray 71 
+dashed lines. d, Body masses of the Ifnar-/- mice. e, f, ZIKV genome copies in the brains 72 
+(e) and spleens ( f) of the Ifnar-/- mice at sacrifice. Data points represent mean values 73 
+for one group ( a, d), or mean values of two  (c) or three (e, f) technical replicates for 74 
+one mouse. n = 13 (Healthy control, HC), 14 (EDⅢ-Fc), 16 (EDⅢ-Fd) and 10 (PBS) 75 
+for (a, b). n = 6 for ( c-f). Data are representative of two independent experiments and 76 
+presented as mean ± s.d. Comparisons were performed by  one-way ANOV A and 77 
+Tukey’s multiple comparison tests. p values are shown on the graphs.  Source data are 78 
+provided as a Source Data file.  79 
+
+ 80 
+ 81 
+Supplementary Fig. 4 (Related to Fig. 3  and Fig. 4 ). Generation of ZIKV NS1 82 
+circRNA. a, Purification of NS1 circRNA. Graph of HPLC and images of agarose-gel 83 
+electrophoresis captured at 10 and 30 min are shown. Collected fractions have been 84 
+indicated. Peak fraction containing the majority of NS1 circRNA is marked in red. M, 85 
+DNA marker DL5000, from top to bottom : 5000, 3000, 2000, 1500, 1000, 750, 500, 86 
+250, 100 bp.  b, RNase R  digestion of NS1 circRNA . Images of agarose-gel 87 
+electrophoresis captured at 10 and 30 min are shown. Here M is DNA marker DL2000. 88 
+c, Western blot analysis of the culture media of HEK293T cells transfected with NS1 89 
+circRNA using anti -ZIKV NS1 mAb 749-A4 in the absence of β -mercaptoethanol. 90 
+Molecular weight of dimeric NS1 is ~ 80 kDa. Data are representative of at least two 91 
+independent experiments with similar results. Source data are provided as a Source Data 92 
+file.  93 
+
+ 94 
+ 95 
+Supplementary Fig. 5 (Related to Fig. 3 and Fig. 4) . Immunogenicity and 96 
+protective efficacy of the combination of circRNAs encoding EDⅢ-Fc and NS1. a, 97 
+b, Anti-E (a) and anti-NS1 (b) IgG titers at 2 weeks after the first immunization. IgG 98 
+titers in immune mice sera (as shown in Fig. 3 a, n = 10 per group ) were measured by 99 
+ELISA. LODs are 100 and marked by gray dashed lines. c, Brain masses of the pups at 100 
+sacrifice. n = 7 (HC, EN(LNP)), 8 (EN(RNA) , PBS) and 9 (EDⅢ-Fc, NS1). d, e, Anti-101 
+E (d) and anti-NS1 (e) IgG titers at 2 weeks after the second immunization.  n = 6 per 102 
+group. f, Brain masses of the pups at sacrifice. n = 6 (HC), 7 (EDⅢ-Fc) and 8 (EN(LNP), 103 
+EN(RNA), NS1, PBS). Data points represent mean values of two technical replicates  104 
+for one mouse (a, b, d, e), or values for individual mice ( c, f). Data are representative 105 
+of two independent experiments and presented as  mean ± s.d. Comparisons among 106 
+groups were performed by one-way ANOV A and Tukey’s multiple comparison tests. p 107 
+values are shown on the graphs. Source data are provided as a Source Data file. 108 
+
+ 109 
+ 110 
+Supplementary Fig. 6 (Related to Fig. 3  and Fig. 4 ). Immunogenicity and 111 
+protective efficacy of a single-dose circRNA vaccination in adult Ifnar-/- mice. a, 112 
+Schematic diagram of immunization and challenge assay. Twelve-week-old mice (n = 113 
+6 per group, male and female) were i.m. immunized once with EN(LNP), EN(RNA), 114 
+EDⅢ-Fc circRNA, or NS1 circRNA at the indicated doses. Ten days later, mice sera 115 
+were collected. At 12 days after immunization, mice were s.c. challenged with 1 × 105 116 
+FFU of ZIKV. b-d, Anti-E IgG (b), anti-NS1 IgG (c), and nAb (d) titers. IgG and nAbs 117 
+were measured by ELISA and FNT, respectively. LODs are 100 and marked by gray 118 
+dashed lines. e, Body masses of the mice after challenge. f, Survival curves of the mice 119 
+after challenge. Mice that lost 20% of initial body mass es were considered dead and 120 
+euthanized. Comparisons were conducted between each group and HC.  g, ZIKV 121 
+genome copies in the sera at 1, 4, and 7 days after challenge. Data points represent mean 122 
+values of two (b-d) or three (g) technical replicates for one mouse, or mean values for 123 
+one group (e). Data are representative of two inde pendent experiments and presented 124 
+as mean ± s.d. Comparisons were performed by one-way ANOV A and Tukey’s multiple 125 
+comparison tests (b, c, d, g) or Log-rank (Mantel-Cox) tests (f). p values are shown on 126 
+the graphs. Source data are provided as a Source Data file. 127 
+  128 
+
+ 129 
+ 130 
+Supplementary Fig. 7  (Related to Fig. 5) . Kinetics of cross -reactive antibodies 131 
+elicited by EN(LNP) immunization or ZIKV infection.  Eight-week-old female 132 
+C57BL/6 mice were i.m. immunized with EN(LNP) ( 20 μg each circRNA per mouse, 133 
+n = 8) or s.c. infected with ZIKV ( 1 × 105 FFU per mouse, n = 6). At 2, 6, 10, and 12 134 
+weeks after immunization or infection, mice sera were collected. Titers of IgG 135 
+antibodies against ZIKV and DENV were examined by ELISA. LODs are 100 and 136 
+marked by gray dashed lines. Data are rep resentative of at least two indepe ndent 137 
+experiments and presented as mean ± s.d. Comparisons were performed by  unpaired 138 
+two-tailed Student’s t-test. p values are shown on the graphs. Source data are provided 139 
+as a Source Data file. 140 
+  141 
+
+ 142 
+ 143 
+Supplementary Fig. 8. In vivo assessment of the ADE risks of circRNA vaccines on 144 
+DENV2 infection (Related to Fig. 5). a, Mutations in the genome of mouse-adaptive 145 
+DENV2 in comparison with the reference strain. DENV2 strain 16681 was alternatively 146 
+passaged between 1-day-old C57BL/6 pups and Vero cells for 3 cycles. Viral genomes 147 
+were extracted and subjected  to next-generation sequencing and Sanger sequencing. 148 
+Substitutions of nucleotides compared to the genome sequence of original reference 149 
+strain are indicated. Non -synonymous mutations are marked by re d asterisks and the 150 
+locations in viral proteins are indicated. b, Growth curves of 1-day-old ICR mice that 151 
+were infected with 1 × 104 FFU of parental or mouse-adapted DENV2 through an 152 
+intracerebral route. Black arrow indicates the time point of challenge. c, Survival curves 153 
+1-day-old ICR mice after DENV2 challenge. n = 10 per group for (b, c). d, Body masses 154 
+of DENV2-infected Ifnar-/- mice that were passively transferred with immune sera (n = 155 
+5 per group, male and female, as shown in Fig. 5c) prior to challenge. e, Body masses 156 
+of DENV2-infected Ifnar-/- mice that received EN(LNP) immunization (n = 6 per group, 157 
+
+male and female, as shown in Fig. 5f) prior to challenge. Data are representative of two 158 
+independent experiments and presented as mean ± s.d. Comparisons were performed by 159 
+Log-rank ( Mantel-Cox) tests ( c), or by one-way ANOV A and Tukey’s multiple 160 
+comparison tests (d, e). p values are shown on the graphs. The p values in (d, e) indicate 161 
+the difference between ZIKV sera group and either PBS (d) or LNP (e) group at the 162 
+indicated time points. p values are shown on the graphs. Source data are provided as a 163 
+Source Data file.  164 
+ 165 
+ 166 
+Supplementary Fig. 9 (Related to Fig. 6) . Generation of optimized circRNAs. a , 167 
+Schematic diagram of the optimized circRNA plasmid (T4 Td). Each element has been 168 
+indicated. The coding sequences for EDⅢ -Fc and NS1 were fused with tPA signal 169 
+sequence at 5’ termini. Black arrows, primers for amplifying the DNA templates for 170 
+circRNA precursors (F and R) and control linear precursors (F and Rtruncated). Red arrows, 171 
+primers for amplifying junction site. b, c, Purification of optimized circRNAs encoding 172 
+EDⅢ-Fc (b) and NS1 (c). Graphs of HPLC and images of agarose-gel electrophoresis 173 
+captured at 10 or 30 min are shown. Collected fractions are indicated. Peak fractions 174 
+containing the majority of circRNAs are marked in red. M, DNA marker DL5000. d, 175 
+RNase R  digestion of the optimized circRNAs encoding EDⅢ -Fc or NS1, or their 176 
+respective linear precursors. Images of agarose-gel electrophoresis captured at 30 min 177 
+
+are shown. M, DNA marker DL2000.  e, Junction site PCR and Sanger sequencing.  178 
+Optimized circRNAs and control linear precursors were treated with or without RNase 179 
+R digestion and subjected to junction site PCR. Products were analyzed by agarose-gel 180 
+electrophoresis and Sanger sequencing. Target fragment is 303 bp. Shown are the 181 
+results of optimized Gluc circRNA. Results of other optimized circRNAs are similar.  182 
+M, DNA marker DL2000. f, Gluc activities in the culture media. HEK293T cells in 96-183 
+well plates were transfected with prototype (P) or optimized (Opt) Gluc circRNA at 0.2, 184 
+0.1, or 0.05 μg per well. One day later, Gluc activities in the culture media were 185 
+measured. Data points in (f) represent three independent repeats and presented as mean 186 
+± s.d. Data are representative of at least two independent experiments with similar 187 
+results. p values are shown on the graphs.  Source data are provided as a Source Data 188 
+file.  189 
+ 190 
+ 191 
+Supplementary Fig. 10 (Related to Fig. 6).  Comparative analysis of the a ntigen 192 
+expression and immunogenicity of m1ψ modified mRNA and circRNA. a, Western 193 
+blot analysis of EDⅢ -Fc and NS1 in cell lysates or culture media of the transfected 194 
+HEK293T cells. Analysis was performed using EDⅢ protein immune mice sera  or 195 
+ZIKV sera in the absence of β-mercaptoethanol. GAPDH was analyzed in parallel. This 196 
+experiment was performed twice with similar  results. b, Schematic diagram of 197 
+immunization assay. The vaccines, doses, and experimental schedule are indicated. c-e, 198 
+Anti-E IgG (c), anti -NS1 IgG ( d) and anti -ZIKV nAb titers (e) at 14 days after 199 
+immunization. Serially diluted mice sera (n = 6 per group) were measured by ELISA  200 
+and FNT. LODs are 100 and marked by gray dashed lines. f-h, Frequencies of Tfh cells 201 
+in CD4+ T cells (f), activated GL7+ GC B cells in CD38- B cells (g) and plasma cells in 202 
+lymphocytes (h) in the ILNs. At 14 days after im munization, ILN lymphocytes were 203 
+isolated, labeled with surface marker antibodies, and measured by flow cytometry. n = 204 
+3 per group. Gating strategies have been shown in Supplementary Fig. 2.  Data points 205 
+represent mean values of two technical replicates for  one mouse ( c-e) or values for 206 
+individual mice ( f-h). Data are representative of two independent experiments and 207 
+presented as mean ± s.d. Comparisons are performed by one-way analysis of variation 208 
+(ANOV A) and Tukey’s multiple comparison tests. p values are shown on the graphs.  209 
+Source data are provided as a Source Data file.  210 
+
+ 211 
+Supplementary Fig. 11 (Related to Fig. 6). Immunogenicity and protective efficacy 212 
+of a single-dose optimized circRNA vaccine. a, b, Anti-E IgG (a) and anti-NS1 IgG 213 
+(b) titers in C57BL/6 mice that received prototype (P) or optimized (Opt) EN(LNP) (n 214 
+= 6 per group, as shown in Fig. 6c). IgG titers were measured by ELISA. LODs are 100 215 
+and marked by gray dashed lines.  c, Growth curves of the pups after ZIKV challenge. 216 
+d, Brain mass es of the pups at sacrifice.  e, Pathological scores of neonatal brains. 217 
+Meningeal lymphocyte infiltration and cortex laminar necrosis were scored in a single-218 
+blind manner. Box plots in (d, e) indicate median (middle line), 25-75 percentile (box), 219 
+
+5-95 percentile (whiskers) and outliers (single points). n = 10 (HC), 15 (P-5), 12 (P-20) 220 
+and 14 (Opt-5, Opt-20, PBS) for (c-e). f, g, Anti-E IgG (f) and anti-NS1 IgG (g) titers 221 
+in Ifnar-/- mice that received prototype or optimized EN(LNP) . LODs are 100 and 222 
+marked by gray dashed lines. h, Body masses of the Ifnar-/- mice. i, anti-ZIKV nAb 223 
+titers 1 week before or after challenge. LOD is 100 and marked by gray dashed line. n 224 
+= 6 for (f-i). Data points represent mean values of two technical replicates for one 225 
+mouse (a, b, f, g, i), or mean values for one group (c, h). Data are representative of two 226 
+independent experiments and presented as mean ± s.d. Comparisons were performed by 227 
+one-way ANOV A and Tukey’s multiple comparison tests (a, b, d, e, f, g) or by paired, 228 
+two-tailed Student’s test (i). p values are shown on the graphs. Source data are provided 229 
+as a Source Data file.  230 
+Supplementary Table 1. Characterization of LNP formulations used in this study. 231 
+Samples Size (nm) PDIa EEb (%) 
+empty LNPs 79.6±0.62 0.177±0.009 NAc 
+circRNA 
+EDⅢ 83.9±0.28 0.199±0.003 91.16 
+EDⅢ-Fc 87.3±1.09 0.210±0.014 90.38 
+EDⅢ-Fd 83.7±0.96 0.199±0.004 92.05 
+NS1 70.4±0.16 0.143±0.004 95.49 
+EN(RNA) 89.3±0.07 0.152±0.008 93.78 
+Opt-EDⅢ-Fcd 81.3±0.40 0.151±0.008 91.17 
+Opt-NS1d 85.3±0.30 0.182±0.015 95.72 
+mRNA EDⅢ-Fc 91.0±0.20 0.180±0.010 94.33 NS1 75.0±0.86 0.146±0.010 93.82 
+aPolydispersity index (PDI) 232 
+bEncapsulation efficiency (EE) 233 
+cNot Applicable (NA) 234 
+dThe optimized EN(LNP) encompassed two components: optimized EDⅢ-Fc circRNA 235 
+and optimized NS1 circRNA that were encapsulated into LNPs separately. 236 
