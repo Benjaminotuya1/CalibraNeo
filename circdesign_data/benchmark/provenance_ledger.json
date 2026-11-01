@@ -29,8 +29,8 @@
       "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106822/",
       "sequence_status": "NOT_FOUND",
       "outcome_status": "article-level antitumour and anti-inflammatory outcomes reported",
-      "license": "CC BY 4.0 for article; sequence redistribution not established",
-      "retrieval_note": "Official supplement is linked from PMC but returned HTTP 403 in this environment."
+      "license": "CC BY-NC-ND 4.0 for article; sequence redistribution not established",
+      "retrieval_note": "Official PMC XML confirms the CC BY-NC-ND 4.0 article license. Official supplement is linked from PMC but returned HTTP 403 in this environment."
     },
     {
       "source_id": "nature_zika_circ_vaccine_2024",
